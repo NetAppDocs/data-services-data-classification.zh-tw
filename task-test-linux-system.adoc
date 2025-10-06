@@ -37,9 +37,9 @@ summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機�
 
 您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。
 
-你可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+你可以 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
 
-若要在您的雲端提供者環境中建立控制台代理，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+若要在您的雲端提供者環境中建立控制台代理，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
 
 執行先決條件腳本時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇*控制台代理*。
 
@@ -175,16 +175,16 @@ TIP: 對於安裝在沒有網路連線的站點的主機系統，則不需要本
 | 端點 | 目的 
 
 
-| \ https://api.bluexp.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
+| \ https://api.console.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
 
 
 | \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+| \ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https https://dseasb33srnrn.cloudfront.net/ // https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+| \ https://support.compliance.api.console.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
 
 
 | https://github.com/docker https://download.docker.com | 提供docker安裝的必備包。 

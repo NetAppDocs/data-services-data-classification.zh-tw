@@ -11,7 +11,7 @@
 
 以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。
 
-詳細了解 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification部署概述"]。
+詳細了解 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["BlueXP classification部署概述"]。
 
 .改進的掃描性能
 此版本提供了改進的掃描效能。

@@ -173,7 +173,7 @@ IMPORTANT: BlueXP私有模式（傳統BlueXP介面）通常用於沒有網路連
 
 資料分類擷取元數據，例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括資料調查詳情頁面和資料調查報告中顯示的所有元資料。
 
-資料分類可以識別多種類型的私人數據，例如個人資訊（PII）和敏感個人資訊（SPII）。有關私人數據的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html["資料分類掃描的私人資料類別"]。
+資料分類可以識別多種類型的私人數據，例如個人資訊（PII）和敏感個人資訊（SPII）。有關私人數據的詳細信息，請參閱xref:reference-private-data-categories.html[資料分類掃描的私人資料類別]。
 
 
 
@@ -245,7 +245,7 @@ NetApp無法存取敏感數據，也不會在 UI 中顯示它。敏感資料被�
 * 對於本機ONTAP系統：控制台代理程式位於本機。
 
 
-如果您在這些位置有數據，您可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個控制台代理"^]。
+如果您在這些位置有數據，您可能需要使用 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-to-use-multiple-connectors["多個控制台代理"^]。
 
 
 

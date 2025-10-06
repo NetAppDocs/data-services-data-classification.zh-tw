@@ -26,4 +26,4 @@
 * 預計匯出一百萬筆記錄大約需要 35 分鐘。
 
 
-有關數據調查和報告的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的數據"]。
+有關數據調查和報告的詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查組織中儲存的數據"]。

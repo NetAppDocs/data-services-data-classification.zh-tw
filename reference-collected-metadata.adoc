@@ -64,4 +64,4 @@ image:screenshot_scan_analysis_event_filter.png["過濾器的螢幕截圖，用�
 * 「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次造訪時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。
 
 
-如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#data-investigation-report["了解有關數據調查報告的更多信息"^] 。
+如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。link:task-investigate-data.html#data-investigation-report["了解有關數據調查報告的更多信息"^] 。

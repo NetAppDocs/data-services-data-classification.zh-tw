@@ -35,7 +35,7 @@ summary: 有時您可能需要登入NetApp資料分類系統，以便存取日�
 
 需要修改安全性群組入站規則才能存取雲端的系統。有關詳細信息，請參閱：
 
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS 中的安全群組規則"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure 中的安全性群組規則"^]
-* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud 中的防火牆規則"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-aws.html["AWS 中的安全群組規則"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-azure.html["Azure 中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/console-setup-admin/reference-ports-gcp.html["Google Cloud 中的防火牆規則"^]
 

@@ -11,23 +11,23 @@
 .優先進行分類掃描
 資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描的優先級，則映射掃描和分類掃描都會優先處理。
 
-有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"] 。
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"] 。
 
 .支援加拿大個人識別資訊 (PII) 資料類別
 資料分類掃描識別加拿大 PII 資料類別。這些類別包括加拿大所有省份和地區的銀行資訊、護照號碼、社會保險號碼、駕駛執照號碼和健康卡號碼。
 
-有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["個人資料類別"] 。
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["個人資料類別"] 。
 
 .自訂分類（預覽）
 資料分類支援地圖和分類掃描的自訂分類。透過自訂分類，您可以自訂資料分類掃描，以使用正規表示式擷取特定於您的組織的資料。此功能目前處於預覽狀態。
 
-有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["新增自訂分類"] 。
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-custom-classification.html["新增自訂分類"] 。
 
-.已儲存的查詢選項卡
-**政策** 選項卡已重新命名link:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**已儲存的查詢**"]。功能沒有改變。
+.已儲存的搜尋標籤
+**政策** 選項卡已重新命名link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**已儲存的搜尋**"]。功能沒有改變。
 
 .將掃描事件傳送至審核頁面
-資料分類支援發送分類事件（掃描啟動時和掃描結束時）到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console 稽核頁面"^]。
+資料分類支援發送分類事件（掃描啟動時和掃描結束時）到link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console 稽核頁面"^]。
 
 .安全性更新
 * Keras 套件已更新，緩解了漏洞（BDSA-2025-0107 和 BDSA-2025-1984）。

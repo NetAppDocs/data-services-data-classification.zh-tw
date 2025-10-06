@@ -20,7 +20,7 @@ summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類�
 
 == 發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan
 
-如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp控制台中，link:https://docs.netapp.com/us-en/bluexp-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
+如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp控制台中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
 
 
 

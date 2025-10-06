@@ -36,10 +36,10 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]建立控制台代理
 [role="quick-margin-para"]
-如果您還沒有控制台代理， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上，或在雲端的 Linux 主機上。
+如果您還沒有控制台代理， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上，或在雲端的 Linux 主機上。
 
 [role="quick-margin-para"]
-您也可以與您的雲端提供者一起建立控制台代理程式。看 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+您也可以與您的雲端提供者一起建立控制台代理程式。看 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]審查先決條件
 [role="quick-margin-para"]
@@ -56,9 +56,9 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 == 建立控制台代理
 
-您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["控制台功能需要控制台代理"]，但有些情況下您需要立即設定一個。
+您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["控制台功能需要控制台代理"]，但有些情況下您需要立即設定一個。
 
-若要在您的雲端提供者環境中建立一個，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+若要在您的雲端提供者環境中建立一個，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
 
 在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：
 
@@ -72,7 +72,7 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 可以使用任何這些雲端控制台代理程式來掃描本機ONTAP系統、 NetApp檔案共用和資料庫帳戶。
 
-請注意，您還可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+請注意，您還可以 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
 
 安裝資料分類時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理程式部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇**控制台代理**。
 
@@ -210,16 +210,16 @@ NOTE: 安裝後，資料分類主機系統的 IP 位址無法變更。
 | 端點 | 目的 
 
 
-| \ https://api.bluexp.netapp.com | 與控制台的通信，其中包括NetApp帳戶。 
+| \ https://api.console.netapp.com | 與控制台的通信，其中包括NetApp帳戶。 
 
 
 | \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+| \ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https https://dseasb33srnrn.cloudfront.net/ // https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
 
 
-| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+| \ https://support.compliance.api.console.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
 
 
 | https://github.com/docker https://download.docker.com | 提供docker安裝的必備包。 
@@ -293,7 +293,7 @@ image:diagram_deploy_onprem_single_host_internet.png["此圖表顯示了使用�
 只要實例具有互聯網連接，資料分類軟體的升級就會自動進行。
 
 
-NOTE: 當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶、 Azure NetApp Files或 FSx for ONTAP 。在這些情況下，您需要在雲端中部署單獨的控制台代理程式和資料分類實例，並且 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["在連接器之間切換"^]適用於不同的資料來源。
+NOTE: 當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶、 Azure NetApp Files或 FSx for ONTAP 。在這些情況下，您需要在雲端中部署單獨的控制台代理程式和資料分類實例，並且 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["在連接器之間切換"^]適用於不同的資料來源。
 
 
 

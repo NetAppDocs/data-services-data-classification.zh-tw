@@ -5,7 +5,6 @@
   <block id="610f7d5f79f384f359db6b6e03367472" category="inline-link-macro">安裝另一個控制台代理</block>
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">部署另一個資料分類實例</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">使用多個控制台代理</block>
-  <block id="6e34d61d6bca2c00d20d835d229b0cb1" category="paragraph">資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，<block ref="eeefa3a7df6ac6ed2095f7ad46b64f36" category="inline-link-macro-rx"></block>然後<block ref="5eea3619bc46427cc0fe40a7ee99bcc5" category="inline-link-macro-rx"></block>。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱<block ref="79cb417b711835e9290ab9a201050303" category="inline-link-macro-rx"></block>。</block>
   <block id="c459d0d5027551c8ad596d2701837012" category="list-text">與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。</block>
   <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">系統大小</block>
@@ -83,7 +82,6 @@
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。</block>
   <block id="fae29fbaffa78fbfd6537b0feec1a925" category="inline-link">BlueXP classification部署概述</block>
-  <block id="b7f7cb3b83ae19c923f62035dd4305fd" category="paragraph">詳細了解<block ref="cea7a7dae9f7d88b97fa434e79201c9b" category="inline-link-rx"></block>。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="paragraph-title">改進的掃描性能</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">此版本提供了改進的掃描效能。</block>
   <block id="c1922490c576eff789b323f98c667589" category="doc">版本 1.37</block>
@@ -92,7 +90,6 @@
   <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">此版本除了支援先前支援的版本外，還提供了對 Red Hat Enterprise Linux v8.10 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。</block>
   <block id="d4f80552d7e61deedef657200662a6be" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3 和 9.4。</block>
   <block id="4cc849f381058f76f6b72a1c4279393d" category="inline-link">BlueXP classification</block>
-  <block id="02614716996ee79f19fd518d96245572" category="paragraph">詳細了解<block ref="70c3dcecc9d46325f71ec51056cc6355" category="inline-link-rx"></block>。</block>
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">支持 NFS v4.1</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">此版本除了支援先前支援的版本外，還提供對 NFS v4.1 的支援。</block>
   <block id="5ae300808387123005a76abbd5a99f46" category="doc">版本 1.38</block>
@@ -110,7 +107,6 @@
   <block id="d33a90467b78849917ec44b3e694a192" category="list-text">每種類型（檔案、目錄和表格）最多可下載 5 億筆記錄</block>
   <block id="9720aabb6c8d5eb9cfcffd189ef86ed1" category="list-text">預計匯出一百萬筆記錄大約需要 35 分鐘。</block>
   <block id="e7b42111154b9b878df538017c7943a0" category="inline-link">調查組織中儲存的數據</block>
-  <block id="e771ad044e30754f4af0addbc217531d" category="paragraph">有關數據調查和報告的詳細信息，請參閱<block ref="5490a248bca38f18b55b559976dbad47" category="inline-link-rx"></block>。</block>
   <block id="6b9d9a04ff593ff427731819f0c3618f" category="doc">版本 1.40</block>
   <block id="dc4b47101650865122105745fe8d0a2c" category="paragraph-title">支援 RHEL 9.5</block>
   <block id="1d26b47b0bf4a8a52ca8e66bcb8661dc" category="paragraph">此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.5 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。</block>
@@ -139,15 +135,12 @@
   <block id="cb79cf2c786ed3992ebf9c4489793af5" category="paragraph">預設情況下，掃描會按照啟動的順序排隊。透過設定掃描優先權，您可以將掃描移至佇列的最前面。可以對多個掃描進行優先排序。優先權會依照先進先出的順序指定，這表示您優先考慮的第一個掃描將移至佇列的最前面；您優先考慮的第二個掃描將成為佇列中的第二個掃描，依此類推。</block>
   <block id="e04ee48d980fd3722fe28400afcc0416" category="paragraph">優先權是一次性授予的。映射資料的自動重新掃描按照預設順序進行。</block>
   <block id="c92ddb2e7e35e5bd406e62b822c22b14" category="inline-link-macro">僅映射掃描</block>
-  <block id="67fe9ebf97d37e44f7e38b8221cb5c10" category="paragraph">優先權僅限於<block ref="ad7d2e316f23d4f85c7d05a68105a84b" category="inline-link-macro-rx"></block>；它不適用於地圖和分類掃描。</block>
-  <block id="65d0aa01e8cb73d7f5c3ed79051f78c8" category="paragraph">有關更多信息，請參閱<block ref="7906b79b56c525526a8be1ef38207fbe" category="inline-link-macro-rx"></block> 。</block>
   <block id="c3f4889bec03e0a3ba10184db92b3b07" category="paragraph-title">重試所有掃描</block>
   <block id="fc758db0d443b9a8e3de231c43de89d5" category="paragraph">BlueXP classification支援批次重試所有失敗掃描的功能。</block>
   <block id="ce19c0b7b750b810547f423b2290cfd8" category="paragraph">您可以使用**全部重試**功能以批次操作的方式重新嘗試掃描。如果分類掃描因網路中斷等臨時問題而失敗，您可以使用一個按鈕同時重試所有掃描，而不必單獨重試。可根據需要重試掃描多次。</block>
   <block id="c50aaae687f0c98cc88e1445aecee2d4" category="paragraph">若要重試所有掃描：</block>
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">提高分類模型的準確性</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">預定義類別</block>
-  <block id="f436ec850a6acc51f2281d01c1b289da" category="paragraph">機器學習模型的準確率<block ref="fff0603fda0aac9c86fd12605ac8a06f" category="inline-link-macro-rx"></block>提高了11%。</block>
   <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">版本 1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP classification版本包括一般改進和錯誤修復。它還包括：</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">掃描狀態</block>
@@ -160,26 +153,18 @@
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">本地下載調查報告</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP classification支援將資料調查報告下載到本地以便在瀏覽器中查看。如果選擇本機選項，資料調查僅以 CSV 格式提供，並且僅顯示前 10,000 行資料。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">使用BlueXP classification調查組織中儲存的數據</block>
-  <block id="4b23e8e8b3c785425bb2f43c66b07bac" category="paragraph">有關更多信息，請參閱<block ref="7ebae31e4d4430330abc2c251fc33af0" category="inline-link-macro-rx"></block> 。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
   <block id="bb4c36ac9f10bc64e16bd125cb997dcd" category="paragraph">此資料分類版本包括：</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">優先進行分類掃描</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描的優先級，則映射掃描和分類掃描都會優先處理。</block>
-  <block id="57d85b4f49f470b7d997c29f8429b5e7" category="paragraph">有關更多信息，請參閱<block ref="f531a90b2f521cc15b6c40a4fefd348c" category="inline-link-macro-rx"></block> 。</block>
   <block id="d58e3b3044e314bd5b914f8e22d6a0a8" category="paragraph-title">支援加拿大個人識別資訊 (PII) 資料類別</block>
   <block id="e01a3dc881c55884c6048183c704e40b" category="paragraph">資料分類掃描識別加拿大 PII 資料類別。這些類別包括加拿大所有省份和地區的銀行資訊、護照號碼、社會保險號碼、駕駛執照號碼和健康卡號碼。</block>
   <block id="841ba72ee4bfb55c34ecc91bca130388" category="inline-link-macro">個人資料類別</block>
-  <block id="306edd7aeedf6507cc97939f9da0078d" category="paragraph">有關更多信息，請參閱<block ref="4bbd4987f0bfb0027f16d1ecbeb0ac2a" category="inline-link-macro-rx"></block> 。</block>
   <block id="0faf34dc58fa8cc3526b8a0a51850b2b" category="paragraph-title">自訂分類（預覽）</block>
   <block id="3a5909ab4d10a09f1edd87c832553506" category="paragraph">資料分類支援地圖和分類掃描的自訂分類。透過自訂分類，您可以自訂資料分類掃描，以使用正規表示式擷取特定於您的組織的資料。此功能目前處於預覽狀態。</block>
   <block id="68fcca37a232a8993c6b392c92803de3" category="inline-link-macro">新增自訂分類</block>
-  <block id="99eed1f6672cc1f43b2df5c4804244c8" category="paragraph">有關更多信息，請參閱<block ref="dff0174af6dfcf02b13f904a99df6834" category="inline-link-macro-rx"></block> 。</block>
-  <block id="d9fd2e19f645697f8125f2973a36e4cc" category="paragraph-title">已儲存的查詢選項卡</block>
-  <block id="25efc68f5c945b55b2e1783928f30956" category="inline-link-macro">**已儲存的查詢**</block>
-  <block id="ff882fb8bb6d062c5a6386ca03370a0b" category="paragraph">**政策** 選項卡已重新命名<block ref="fcc9e11198db12db661e6accf863f824" category="inline-link-macro-rx"></block>。功能沒有改變。</block>
   <block id="2e2e722b53fe801ed6bcd1713f8325ac" category="paragraph-title">將掃描事件傳送至審核頁面</block>
   <block id="0d01ca23121427aff206ecc678cb7af3" category="inline-link-macro">NetApp Console 稽核頁面</block>
-  <block id="c760bec5d3c809a66d340c87aad1e683" category="paragraph">資料分類支援發送分類事件（掃描啟動時和掃描結束時）到<block ref="5cf8e4e65e05f71735dcd850286cd78b" category="inline-link-macro-rx"></block>。</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">安全性更新</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras 套件已更新，緩解了漏洞（BDSA-2025-0107 和 BDSA-2025-1984）。</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Docker 容器配置已更新。容器不再有權利存取主機的網路介面來製作原始網路封包。透過減少不必要的訪問，此更新可減輕潛在的安全風險。</block>
@@ -202,13 +187,11 @@
   <block id="f12b42eece54a56ffab836a42eb37488" category="cell">文件類型</block>
   <block id="8c8fee331e9f3e5231bff4fd3c702b79" category="cell">非業務數據</block>
   <block id="ce7a0235b268c4eaa207fb036462b6a0" category="cell">開放權限</block>
-  <block id="47e39f40942a49cfb34848514072c778" category="cell">已儲存的查詢</block>
   <block id="8b15c77295fd06496b4e5497d3038948" category="cell">敏感資料和廣泛權限</block>
   <block id="3b082340d0ec4e5cb8705d8e8dbd7b20" category="cell">數據大小</block>
   <block id="3c321d8be960cf9c4e3de3feeb79454d" category="cell">陳舊數據</block>
   <block id="66f1eb6a68ea177f7b25f4befa2afcb5" category="cell">按敏感度等級劃分的頂層資料儲存庫</block>
   <block id="b97835ec7267635dbdb6a030bb594b9b" category="inline-link-macro">查看有關組織中存儲的數據的治理詳細信息</block>
-  <block id="c87807de15a8b516f0524de15fba57a6" category="paragraph">您可以查看上次更新的時間，並手動更新重複檔案、非業務資料、已儲存的查詢、陳舊資料和按敏感度等級劃分的頂級資料儲存庫元件。有關治理儀表板的更多信息，請參閱<block ref="1ce3f0a304b1b93276c322629a323f14" category="inline-link-macro-rx"></block>。</block>
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">性能和安全性改進</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis 已升級，以提高BlueXP classification的可靠性。  BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。</block>
@@ -217,17 +200,14 @@
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">改進了新增文件共用進行掃描的工作流程</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">將文件共享新增至文件共享組的工作流程已經簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-link-macro">掃描檔案共享</block>
-  <block id="c10aaeed86973ee0f442f2e7b73b80b8" category="paragraph">有關更多信息，請參閱<block ref="c56cfb642e9d697265520a2d16e8cbad" category="inline-link-macro-rx"></block> 。</block>
   <block id="2cc1f0459a8aa18da26c0c17c08edd37" category="paragraph-title">增強文件所有者信息</block>
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">現在您可以在「調查」標籤中查看有關捕獲的文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看該用戶擁有的其他物品。此功能僅適用於具有 Active Directory 的工作環境。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">調查組織中儲存的數據</block>
-  <block id="476669d16044da6b8fccc04e3a65c887" category="paragraph">有關更多信息，請參閱<block ref="202490d1a2feeed942d0b33752539ffd" category="inline-link-macro-rx"></block> 。</block>
   <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="doc">版本 1.46</block>
   <block id="98f52421b10c8b076970cd9d4bc2932c" category="paragraph">此資料分類版本包括錯誤修復和以下更新：</block>
   <block id="2c3661dfa2b24a2bf7320699cd536d69" category="paragraph-title">審計頁面中增強的掃描事件洞察</block>
   <block id="56693a88c5f83646349fbcd49bc5c045" category="paragraph">審計頁面現在支援對BlueXP classification的掃描事件的增強洞察。審計頁面現在顯示系統掃描的開始時間、系統狀態以及任何問題。共享和系統的狀態僅適用於映射掃描。</block>
   <block id="00b752fcc4ff0f02c4a53ddfe7ca85f1" category="inline-link-macro">監控NetApp控制台操作</block>
-  <block id="f4994cfd58f7f9c7ef87909cf26088ef" category="paragraph">有關審計頁面的更多信息，請參閱<block ref="89b9ba3fca391e327c51760119274daf" category="inline-link-macro-rx"></block>。</block>
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">支援 RHEL 9.6</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。</block>
   <block id="ffc4cf2b04c0381567893ed4b4045ccf" category="doc">版本 1.47</block>
@@ -237,15 +217,9 @@
   <block id="745be0d280d894f70c3f88e76f519456" category="paragraph">BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。</block>
   <block id="7e4f7c37590688c797d9b40e3a3423e3" category="paragraph">NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。</block>
   <block id="2ef9d641d45afe99b74ad6f9a9f797ad" category="inline-link">NetApp控制台發行說明</block>
-  <block id="9d88b780dd182bc558e5dd7624d35838" category="paragraph">有關更改的詳細信息，請參閱<block ref="857ac87b6d807bceb0af9d0ff774da69" category="inline-link-rx"></block>。</block>
   <block id="d57567637ab51796d55a7b44fb6ebc11" category="paragraph-title">操作（預覽）</block>
-  <block id="3bee4a233eeb7f3ddf8f141c297c72aa" category="paragraph">資料分類現在支援調查頁面中的操作。您可以從資料分類複製、移動和刪除檔案。</block>
-  <block id="47b074b6c38a50f24d2394037df9e007" category="paragraph-title">支援標記文件（預覽）</block>
-  <block id="1ce2d22605a8a281dea6ac1c373a0043" category="paragraph">資料分類現在支援標記單一檔案。使用文件標籤，您可以為特定文件建立自訂標識符，用於識別和過濾資料。透過標籤，您可以識別資料調查中的特定質量，或根據標籤結果建立已儲存的查詢和策略。</block>
   <block id="d9ff86959e1f6d2016c4db58114184ab" category="inline-link-macro">查看檔案元數據</block>
-  <block id="22f0e881e8ef5054d7acbf5d864e7e75" category="paragraph">有關更多信息，請參閱<block ref="8dc97c3711123fd306d6ce2e896174a0" category="inline-link-macro-rx"></block> 。</block>
   <block id="505912d307cab52606f6debfb848dd6b" category="paragraph-title">已儲存查詢的策略（預覽）</block>
-  <block id="a1007eaf34401d51ecc76b27d45038c8" category="paragraph">已儲存的搜尋已重新命名為已儲存的查詢。您也可以將已儲存的查詢轉變為可操作的策略：根據已儲存的查詢結果刪除資料或發送電子郵件通知。</block>
   <block id="663b8460da445a8bdcdacd5586794a5a" category="inline-link-macro">創建策略</block>
   <block id="8ce840152bdbc7f0d0ab73586b35794e" category="paragraph">有關更多信息，請參閱<block ref="8475d31dfff4871bdba543b2c91cd563" category="inline-link-macro-rx"></block> 。</block>
   <block id="5eb2a16d2fa5bf1cf608a92f8904a2ae" category="summary">透過 Web UI 提供的NetApp資料分類功能也可透過 API 提供。</block>
@@ -256,7 +230,6 @@
   <block id="9c0408c775a2b61052a2e700a89f396f" category="list-text">遵守</block>
   <block id="5a935787d6f091fc760443ab4c491465" category="list-text">治理</block>
   <block id="254f642527b45bc260048e30704edb39" category="list-text">配置</block>
-  <block id="8b9894465ae8ffe8540ab225929ef751" category="paragraph">Swagger 文件中的 API 可讓您搜尋、聚合資料、追蹤掃描以及執行複製、移動等操作。</block>
   <block id="3b878279a04dc47d60932cb294d96259" category="section-title">概況</block>
   <block id="0834282da4451153933b764b7c467961" category="paragraph">該 API 使您能夠執行以下功能：</block>
   <block id="e9877434dd91b8be501cfda768f3d62d" category="list-text">匯出訊息</block>
@@ -292,11 +265,9 @@
   <block id="6e333b6c93480f6d32d540f9875aaf58" category="paragraph">可以透過NetApp控制台存取資料分類。</block>
   <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。</block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。</block>
-  <block id="e955295a860e893d00951c8233972d56" category="paragraph">詳細了解<block ref="2f3134b8970d60226f00e362a8c05c8c" category="inline-link-macro-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">特徵</block>
   <block id="37cb16e4669da87ff6f679ed55f7bc40" category="paragraph">資料分類使用人工智慧 (AI)、自然語言處理 (NLP) 和機器學習 (ML) 來理解其掃描的內容，以便提取實體並對內容進行相應的分類。這使得資料分類能夠提供以下功能領域。</block>
   <block id="1302d934616739b1e67d00e4a81af9ca" category="inline-link">了解資料分類的用例</block>
-  <block id="0f7af1e3eff4c9d2897ce2ee43122bb8" category="paragraph"><block ref="c39319a1d73c1cb19b0501d6a5bf8c55" category="inline-link-rx"></block> 。</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="paragraph-title">保持合規</block>
   <block id="eefee6760c920e2f37921a16b9f4ddc6" category="paragraph">資料分類提供了多種工具，可以幫助您實現合規性。您可以使用資料分類來：</block>
   <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">識別個人識別資訊 (PII)。</block>
@@ -313,7 +284,6 @@
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">透過識別重複或與業務無關的資料來提高儲存效率。</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">了解有關Cloud Volumes ONTAP系統分層的更多信息</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">了解有關本地ONTAP系統分層的更多信息</block>
-  <block id="fb9f305ae47362d3da6e3ade499105ee" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="b7350948393fc35e7105d2df80148b7f" category="inline-link-rx"></block> 。</block>
   <block id="14d419d6dcfdbca61341f104ce611d2c" category="section-title">支援的系統和資料來源</block>
   <block id="b06f93a227008c7db0423fc12da7a094" category="paragraph">資料分類可以掃描和分析來自以下類型的系統和資料來源的結構化和非結構化資料：</block>
   <block id="e3c12542b137e17b4e96acf4577f9ef4" category="paragraph">*系統*</block>
@@ -339,7 +309,6 @@
   <block id="73e82d6326f541ace82886b5c0cd44eb" category="inline-xref">為每個雲端提供者部署的執行個體類型</block>
   <block id="af00b9be43eb959d9d26443cb2033e8c" category="list-text">在雲端安裝資料分類需要部署雲端實例，這會導致部署雲端的雲端供應商收取費用。看<block ref="562efa8521f22786acd4dac0160ca725" category="inline-xref-macro-rx"></block> 。如果您在本機系統上安裝資料分類，則無需付費。</block>
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">為每個雲端提供者部署的執行個體類型</block>
-  <block id="b0b0aa0d64e0327d3e981ac99992fdc5" category="list-text">資料分類要求您部署控制台代理程式。在許多情況下，由於您在控制台中使用其他儲存和服務，因此您已經擁有控制台代理程式。控制台代理執行個體會導致其部署所在的雲端提供者收取費用。查看<block ref="48e31103093fd55a8a781c9c8d4b19d2" category="inline-link-rx"></block>。如果您在本機系統上安裝控制台代理，則無需付費。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">資料傳輸成本</block>
   <block id="20a016b26127d34612cd81d9ef817efe" category="paragraph">資料傳輸成本取決於您的設定。如果資料分類實例和資料來源位於相同可用區和區域，則沒有資料傳輸成本。但是，如果資料來源（例如Cloud Volumes ONTAP系統）位於不同的可用區或區域，那麼您的雲端供應商將向您收取資料傳輸費用。請參閱以下連結以了解更多詳細資訊：</block>
   <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS：Amazon Elastic Compute Cloud (Amazon EC2) 定價</block>
@@ -350,7 +319,6 @@
   <block id="b32e9a6456108ba85b0f804d74e36f06" category="list-text"><block ref="b32e9a6456108ba85b0f804d74e36f06" category="inline-link-rx"></block></block>
   <block id="d602cd7dff9038874f4d53bf5f5b80bc" category="section-title">資料分類實例</block>
   <block id="243db0e87ca622775ff7a0bd536434cf" category="inline-link">了解有關控制台代理的更多資訊。</block>
-  <block id="2c6a739fc13c379322ac61da752bb9ae" category="paragraph">當您在雲端部署資料分類時，控制台會將執行個體部署在與控制台代理相同的子網路中。<block ref="75a419b700ff62b06ba829acd5876ea5" category="inline-link-rx"></block></block>
   <block id="2aa86c5208d31611c5b696e1f8b7bcc1" category="inline-image-macro">此圖表顯示了在您的雲端提供者中執行的控制台實例和資料分類實例。</block>
   <block id="e3039a8cdad0a73851473ddb07dde2db" category="paragraph"><block ref="e3039a8cdad0a73851473ddb07dde2db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">請注意預設實例的以下幾點：</block>
@@ -484,7 +452,6 @@
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完整掃描後，您可以將許多附加資料分類功能套用至數據，例如在資料調查頁面中查看和最佳化資料、在檔案中搜尋名稱、複製、移動和刪除來源檔案等。</block>
   <block id="8f6adf4dbf6fab8e9a0fa95709bc6780" category="paragraph">資料分類擷取元數據，例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括資料調查詳情頁面和資料調查報告中顯示的所有元資料。</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-link">資料分類掃描的私人資料類別</block>
-  <block id="d3b8da892fcaa0209443977060316126" category="paragraph">資料分類可以識別多種類型的私人數據，例如個人資訊（PII）和敏感個人資訊（SPII）。有關私人數據的詳細信息，請參閱<block ref="ad46cce0e6275598737aa0430fd9f9f3" category="inline-link-rx"></block>。</block>
   <block id="cc6c818a7ff4844f95f831b7fea5d028" category="section-title">我可以將資料分類資訊限制給特定使用者嗎？</block>
   <block id="6a1848c615c0a6fa2147d1c6a685db83" category="paragraph">是的，資料分類與NetApp控制台完全整合。  NetApp控制台使用者只能查看根據其權限有資格查看的系統的資訊。</block>
   <block id="bd09e325dd3fadca882741496ea0db32" category="paragraph">此外，如果您希望允許某些使用者僅查看資料分類掃描結果而無權管理資料分類設置，則可以為這些使用者指派*分類檢視器*角色（在標準模式下使用NetApp控制台時）或*合規性檢視器*角色（在受限模式下使用NetApp控制台時）。<block ref="d17fd0889fdecbf44291c8706a754975" category="inline-link-macro-rx"></block> 。</block>
@@ -512,7 +479,6 @@
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">對於 GCP 中的Cloud Volumes ONTAP ：控制台代理程式位於 GCP 中。</block>
   <block id="5b048c185021991afc29c7cbfc99edd1" category="list-text">對於本機ONTAP系統：控制台代理程式位於本機。</block>
   <block id="4499f4b8ecc24cd40dec3cac40d24ffb" category="inline-link">多個控制台代理</block>
-  <block id="2949ae303037fe477598c86ea8ec232c" category="paragraph">如果您在這些位置有數據，您可能需要使用<block ref="d8e11d258192aa23649aeec82a62bba0" category="inline-link-rx"></block>。</block>
   <block id="fbb9f7940d33043a3e5b2503379af008" category="section-title">資料分類是否需要存取憑證？</block>
   <block id="f57ddacd84c3e7c699c578225a0b996d" category="paragraph">資料分類本身不會檢索儲存憑證。相反，它們存儲在控制台代理中。</block>
   <block id="79e01ffb0f61cc0708700278781a7228" category="paragraph">資料分類使用資料平面憑證（例如 CIFS 憑證）在掃描之前掛載共用。</block>
@@ -553,7 +519,6 @@
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">開源</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">通知文件提供有關NetApp軟體中使用的第三方版權和許可的資訊。</block>
   <block id="50dbf63cd0ab8144a287e5cd6a0f1de2" category="inline-link">NetApp控制台通知</block>
-  <block id="e672b1ea49afca81ea77f91f12f606ea" category="list-text"><block ref="e672b1ea49afca81ea77f91f12f606ea" category="inline-link-rx"></block></block>
   <block id="f37c3290cc7809950665b5453a791168" category="inline-link-macro">NetApp資料分類聲明</block>
   <block id="ac504804f226f1152fbc41d9f7d275a8" category="list-text"><block ref="ac504804f226f1152fbc41d9f7d275a8" category="inline-link-macro-rx"></block></block>
   <block id="7d8a62fbff7754d15c3345a4a5a2a42c" category="summary">資料分類在對來自資料來源和系統的資料執行分類掃描時收集某些元資料。資料分類可以存取我們對資料進行分類所需的大部分元數據，但有些來源我們無法存取所需的資料。</block>
@@ -590,7 +555,6 @@
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 無法恢復上次存取時間」 - 這顯示由於缺少寫入權限而未分類的檔案。</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次造訪時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。</block>
   <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link">了解有關數據調查報告的更多信息</block>
-  <block id="94a52882adfe57c5834eeba52357fc83" category="paragraph">如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。<block ref="12cdeb999c26684f4f639c285d1ab42e" category="inline-link-rx"></block> 。</block>
   <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">掃描資料庫模式時， NetApp資料分類無法提供某些特性和功能。</block>
   <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp資料分類中支援與不支援的資料庫功能</block>
   <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">掃描資料庫模式時， NetApp資料分類無法提供某些特性和功能。請參閱下面的清單。</block>
@@ -708,11 +672,8 @@
   <block id="69dddba0a55185cef9f4fdc90185faf0" category="list-text"><block ref="d34115f08a9cd05cd08bb71d5c12bce6" prefix="" category="inline-code"></block>= 虛擬機器實例的 IP 位址</block>
   <block id="d80c05f70aef61e54d7435b5f2f7b540" category="paragraph">需要修改安全性群組入站規則才能存取雲端的系統。有關詳細信息，請參閱：</block>
   <block id="60f0453bf0393ab630be6aa37dc20180" category="inline-link">AWS 中的安全群組規則</block>
-  <block id="c1560b054493db03cae97adece148673" category="list-text"><block ref="c1560b054493db03cae97adece148673" category="inline-link-rx"></block></block>
   <block id="569fe31933e5918613ae1efa70e82d16" category="inline-link">Azure 中的安全性群組規則</block>
-  <block id="72a0c1f7935cbaab164295a8fac378d8" category="list-text"><block ref="72a0c1f7935cbaab164295a8fac378d8" category="inline-link-rx"></block></block>
   <block id="e22a4abc98b47ca148e0dfda7e259162" category="inline-link">Google Cloud 中的防火牆規則</block>
-  <block id="9d7d457b861dcdf8b4b7f28f3a120c36" category="list-text"><block ref="9d7d457b861dcdf8b4b7f28f3a120c36" category="inline-link-rx"></block></block>
   <block id="45a11a8c985eaff97501440b44c7931b" category="summary">資料分類可以在您的磁碟區中識別多種類型的私人資料。</block>
   <block id="9a279b74403b50c92a686a9f4191393d" category="doc">NetApp資料分類中的私有資料類別</block>
   <block id="9d1da2aad50a693d2d036e5e45ae2906" category="paragraph">NetApp資料分類可在您的磁碟區和資料庫中識別多種類型的私有資料。</block>
@@ -924,10 +885,8 @@
   <block id="590c4cddccf03d5e6226c6a420453b3a" category="inline-link-macro">了解有關登入控制台的更多信息</block>
   <block id="0dfeedf5746ffe757d9288f5ea0a7c7e" category="paragraph">若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp控制台登入。<block ref="9ff7aa37af5608f3763961558f648927" category="inline-link-macro-rx"></block> 。</block>
   <block id="2152a2d176eba534e81c7e1450f6b5e0" category="inline-link-macro">了解所有服務的控制台存取角色</block>
-  <block id="31491b158b65404937ecc66b819d3d81" category="paragraph">特定任務需要特定的控制台使用者角色。<block ref="c63b2c8d20974c1834bc75207be469f3" category="inline-link-macro-rx"></block> 。</block>
   <block id="135b308ed83c53f1516b7c754566d1c4" category="list-title">開始之前</block>
   <block id="1b8c7f66e9045676fe4f85416e518b8c" category="inline-link-macro">您應該新增一個控制台代理程式。</block>
-  <block id="1142c2246a5ae57a43ec32fa34c32107" category="list-text"><block ref="1142c2246a5ae57a43ec32fa34c32107" category="inline-link-macro-rx"></block></block>
   <block id="88cd5729368801e33f498c554bfb966c" category="inline-link-macro">了解哪種資料分類部署樣式適合您的工作負載。</block>
   <block id="86f7583767096445977fa5ff855fffb0" category="list-text"><block ref="86f7583767096445977fa5ff855fffb0" category="inline-link-macro-rx"></block></block>
   <block id="bccaa4aa80831b76c11240a16447975f" category="inline-link-macro">安慰</block>
@@ -1161,9 +1120,7 @@
   <block id="77b5d2f21e25341a3f84901a513bf64c" category="inline-link">在 AWS 中建立控制台代理</block>
   <block id="5dc317f5e4506014a6457cea6e36b5e8" category="inline-link">在 Azure 中建立控制台代理</block>
   <block id="48c24d9c6f6e8d0b548116a386c62dbe" category="inline-link">在 GCP 中建立控制台代理</block>
-  <block id="9269b303ec3b5551c249a722035ef520" category="paragraph">如果您還沒有控制台代理，請建立一個。看<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>，<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> ， 或者<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="02559d50684120805e2f264bdea2e4c1" category="inline-link">在本機安裝控制台代理</block>
-  <block id="6eb3b1d7a9e4b047c0ac4e6c4c76fcd0" category="paragraph">您還可以<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="0e2ddd6334405299d1b4c44e894c9e78" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>先決條件</block>
   <block id="339dbb3aad86454446f85f0a0a7f7606" category="paragraph">確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。  &lt;&lt; 先決條件，請參閱完整清單&gt;&gt;。</block>
@@ -1172,19 +1129,15 @@
   <block id="9f0ba00e2450c6e218eaa2d60c8c8ee7" category="paragraph">啟動安裝精靈以在雲端部署資料分類實例。</block>
   <block id="f3aee30a3a487c746572616e3f53dc9d" category="section-title">建立控制台代理</block>
   <block id="1f96813eb41ebd0c3dd5544a17de7743" category="inline-link">控制台功能需要控制台代理</block>
-  <block id="183feca85a67d14c7ee7bf94e79ca425" category="paragraph">如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>或者<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block>， 或者<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="d4a7b9e26395cc2d871371cd60caf40e" category="inline-link-rx"></block>，但有些情況下您需要立即設定一個。</block>
   <block id="529213d44c3711e3260c35b12c2d2580" category="paragraph">在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：</block>
   <block id="cfea0a57313e8ccb9a39d4af86e20ca9" category="list-text">在 AWS 中的Cloud Volumes ONTAP或Amazon FSx for ONTAP儲存桶中掃描資料時，您可以使用 AWS 中的控制台代理程式。</block>
   <block id="5603e4788fdafa67a19bd479883972c6" category="list-text">在 Azure 中的Cloud Volumes ONTAP或Azure NetApp Files中掃描資料時，您可以使用 Azure 中的控制台代理程式。</block>
   <block id="49346bec66601a23d58acfc71f396d3f" category="list-text">對於Azure NetApp Files，它必須部署在與您要掃描的磁碟區相同的區域中。</block>
   <block id="2f3343ea56a236ac7df9fd71459af465" category="list-text">在 GCP 中的Cloud Volumes ONTAP中掃描資料時，您可以使用 GCP 中的控制台代理程式。</block>
   <block id="e49d11048063c821e2d61e7d656352c8" category="paragraph">使用任何這些雲端控制台代理時，都可以掃描本機ONTAP系統、 NetApp檔案共用和資料庫。</block>
-  <block id="bdf7e92c75266702aa020b38b94bcfb2" category="paragraph">請注意，您還可以<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>在您的網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
-  <block id="b8c91e73d9bca3aab488aa1e9c034b33" category="paragraph">如你所見，在某些情況下，你可能需要使用<block ref="d2d5c9bbe6a5c3a11bcc18d9c9932817" category="inline-link-rx"></block>。</block>
   <block id="b39e81db6545fcc5e2567ec3c6930540" category="section-title">政府區域支持</block>
   <block id="90476c1dd7be704eec72e67e38b53fff" category="paragraph">當控制台代理部署在政府區域（AWS GovCloud、Azure Gov 或 Azure DoD）時，支援資料分類。以這種方式部署時，資料分類有以下限制：</block>
   <block id="2f39ad11fa41d7d59b3cab13367c7762" category="inline-link">查看有關在政府區域部署控制台代理的更多信息</block>
-  <block id="469b2299225c9649c2f8076ecb2bb940" category="paragraph"><block ref="9ada21d83e897f90787f5eb5f131f279" category="inline-link-rx"></block> 。</block>
   <block id="ee68e5b99222bbc29a480fcb0d1d6ee2" category="section-title">先決條件</block>
   <block id="f4df53c9081ea6340923013025dd19a1" category="paragraph">在雲端部署資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。當您在雲端部署資料分類時，它與控制台代理程式位於同一子網路中。</block>
   <block id="b3afed32875b4a54f2caed1b075ae9f5" category="list-text">啟用資料分類的出站互聯網訪問</block>
@@ -1192,7 +1145,6 @@
   <block id="3f7618999090f33dbcc2e2edc5392f99" category="paragraph">根據您是在 AWS、Azure 還是 GCP 中部署資料分類，請查看下面的對應表格。</block>
   <block id="4ea85be63fc1085d8a7d469d21ced42a" category="open-title">AWS 所需的終端節點</block>
   <block id="b8724da75fb917e992576b17378e66b3" category="cell">端點</block>
-  <block id="e1095ff19466581c5274f67123c95036" category="cell">\ https://api.bluexp.netapp.com</block>
   <block id="c9350c8c56191db5db9cd04a1e21547f" category="cell">與控制台服務（包括NetApp帳戶）的通訊。</block>
   <block id="739c84d599ed76e9cac5ee121e899564" category="cell">\ https://netapp-cloud-account.auth0.com \ https://auth0.com</block>
   <block id="8d461f918f9b37676c35d300a2355df1" category="cell">與控制台網站通信，實現集中用戶身份驗證。</block>
@@ -1203,24 +1155,17 @@
   <block id="9f95203b9ac2e9ce54061e42c78f9259" category="cell">\ https://cognito-idp.us-east-1.amazonaws.com \ https://cognito-identity.us-east-1.amazonaws.com \ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \ https://customer-data-production.s3.us-west-2.amazonaws.com</block>
   <block id="8db7984346884c838bdfacb910058ead" category="cell">啟用資料分類來存取和下載清單和模板，以及發送日誌和指標。</block>
   <block id="7d3a5fc6a103d9c54c1a430dd56ab45f" category="open-title">Azure 所需的終點</block>
-  <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/</block>
   <block id="5147b0c617e7ed1d50e337cd63b46209" category="cell">提供對軟體映像、清單、範本的存取以及發送日誌和指標。</block>
-  <block id="a326c778205842f816c52ca7e63cae5d" category="cell">\ https://support.compliance.api.bluexp.netapp.com/</block>
   <block id="c35738c7864c7cbf5383db60bc7aceb3" category="open-title">GCP 所需的端點</block>
   <block id="0a9279c26692a66680ccd417cfd379e8" category="list-text">確保資料分類具有所需的權限</block>
   <block id="18f2222a552f3462d521b4fcc0450a1e" category="list-text">確保資料分類具有部署資源和為資料分類實例建立安全性群組的權限。</block>
   <block id="d3846482b7a5f3467b05518965422219" category="inline-link-macro">Google Cloud 權限</block>
-  <block id="c46f60718e1e68e31a7a27b785a25a23" category="list-text"><block ref="c46f60718e1e68e31a7a27b785a25a23" category="inline-link-macro-rx"></block></block>
   <block id="d2c0c7feb18d0e89bab9d23b6ec4c042" category="inline-link-macro">AWS 權限</block>
-  <block id="b08bb744ad1ab6a2ee30e20e034859bc" category="list-text"><block ref="b08bb744ad1ab6a2ee30e20e034859bc" category="inline-link-macro-rx"></block></block>
   <block id="bf689424a4d3a62d9c0d40a07107c3d2" category="inline-link-macro">Azure 權限</block>
-  <block id="ff27171010c4f698d0174fb8b8ce6b5d" category="list-text"><block ref="ff27171010c4f698d0174fb8b8ce6b5d" category="inline-link-macro-rx"></block></block>
   <block id="f245a509e7aaad64edcf6b06cce99a16" category="list-text">確保控制台代理可以存取資料分類</block>
   <block id="32c6835118381edea3eb14f6325f21dd" category="list-text">確保控制台代理程式和資料分類實例之間的連線。控制台代理程式的安全性群組必須允許透過連接埠 443 進出資料分類實例的入站和出站流量。此連線支援部署資料分類實例，並允許您查看「合規性和治理」標籤中的資訊。  AWS 和 Azure 的政府區域支援資料分類。</block>
   <block id="4f9872e66e4124b2c51607327d07d6ea" category="inline-link">AWS 中的控制台代理程式規則</block>
-  <block id="2cfb418c9b03a78b4628db2d4a5308d3" category="paragraph">AWS 和 AWS GovCloud 部署需要額外的入站和出站安全群組規則。看<block ref="0e0c0f87c5930eae079944fac5b7de7b" category="inline-link-rx"></block>了解詳情。</block>
   <block id="c8a6f5b35623034a3b81bd2fc65c5050" category="inline-link">Azure 中的控制台代理程式規則</block>
-  <block id="58a1f11b08e6b6505c537698bd9f8330" category="paragraph">Azure 和 Azure 政府部署需要額外的入站和出站安全群組規則。看<block ref="f794f85d9f04e67b11ac004c6249f8d5" category="inline-link-rx"></block>了解詳情。</block>
   <block id="15286b82c79833cde4a68eb8d886e067" category="list-text">確保資料分類能夠持續運行</block>
   <block id="a3fd829019cc6435e00a2120b3eda54c" category="list-text">資料分類實例需要保持開啟狀態以持續掃描您的資料。</block>
   <block id="a33ecb25ee677c728543ed91bd07871f" category="list-text">確保 Web 瀏覽器連接到資料分類</block>
@@ -1269,8 +1214,6 @@
   <block id="f6e3ad4e2f1393513d919f090b15ac68" category="paragraph">雲端 Linux 主機上的典型安裝具有以下元件和連接。</block>
   <block id="698774b1604e7a8a35a9d5fc63549b0f" category="paragraph"><block ref="698774b1604e7a8a35a9d5fc63549b0f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="38a926ae155f71fdb422885eaf7ade84" category="inline-link">在本機部署控制台代理</block>
-  <block id="b0240befb055c97230209f9e65e269ba" category="paragraph">如果您還沒有控制台代理，<block ref="fdb06d31aecc446c27206e56a1fca774" category="inline-link-rx"></block>在您的網路中的 Linux 主機上，或在雲端的 Linux 主機上。</block>
-  <block id="cc358954b03e69a495514d10181db35e" category="paragraph">您也可以與您的雲端提供者一起建立控制台代理程式。看<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>，<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> ， 或者<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="dbb438ff0747a3a5f69dfe3d4e6b3d31" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>審查先決條件</block>
   <block id="259ae55ab8dda4624f19d41ec0f1fb11" category="inline-xref">查看完整列表</block>
   <block id="277d3ba222cfac4014b47f6655e1e476" category="paragraph">確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。<block ref="0ccfce86aa8a501d1ea0230a6f71468a" category="inline-xref-macro-rx"></block> 。</block>
@@ -1278,11 +1221,8 @@
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">您還需要一個符合以下條件的 Linux 系統<block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
   <block id="5d293a2c666c5eead9a1aa1764a54149" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>下載並部署資料分類</block>
   <block id="3f9b883796ce93e6532e3eaa51a72a1e" category="paragraph">從NetApp支援網站下載雲端資料分類軟體，並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈並依照指示部署資料分類實例。</block>
-  <block id="2df8801228b9f867d1952a23ac12122d" category="paragraph">您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="50a9e1d4429bd3b2639aa8c94a28445f" category="inline-link-rx"></block>，但有些情況下您需要立即設定一個。</block>
-  <block id="73bfa7d52c1473a0cd967acf91c73181" category="paragraph">若要在您的雲端提供者環境中建立一個，請參閱<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>，<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> ， 或者<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="8fce3267a5255029e8b05cea0527894e" category="list-text">在 AWS 或Amazon FSx for ONTAP中的Cloud Volumes ONTAP中掃描資料時，您可以使用 AWS 中的控制台代理程式。</block>
   <block id="2244c8c0cb4961ee8fd3125b10b3182b" category="paragraph">可以使用任何這些雲端控制台代理程式來掃描本機ONTAP系統、 NetApp檔案共用和資料庫帳戶。</block>
-  <block id="37f661c44438b7a149ea3d45adee3f29" category="paragraph">請注意，您還可以<block ref="fdb06d31aecc446c27206e56a1fca774" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
   <block id="2456c734678a782575f89ef3370435d9" category="paragraph">安裝資料分類時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理程式部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇**控制台代理**。</block>
   <block id="566ccf048003723333e9b10e7b0ffc81" category="section-title">準備 Linux 主機系統</block>
   <block id="66e4379227a7d33b780ff6f4c095c172" category="paragraph">資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。  Linux 主機可以在您的網路中，也可以在雲端。</block>
@@ -1332,7 +1272,6 @@
   <block id="fd64d5b5c904222e866c887e0cb28537" category="paragraph">看<block ref="dc1d236e8ef0d554549faeaffd48b8b2" category="inline-xref-macro-rx"></block>和<block ref="647d8b86627aa9060250a73a902ae922" category="inline-xref-macro-rx"></block>了解部署資料分類之前的完整要求清單。</block>
   <block id="115f488b6f37a902c94d9f38641f84d9" category="paragraph">只要實例具有互聯網連接，資料分類軟體的升級就會自動進行。</block>
   <block id="ae8f9609c5884d9f4db4d05e14862cd4" category="inline-link">在連接器之間切換</block>
-  <block id="7850445d1a2f56df103b475ba3e52413" category="admonition">當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶、 Azure NetApp Files或 FSx for ONTAP 。在這些情況下，您需要在雲端中部署單獨的控制台代理程式和資料分類實例，並且<block ref="3cd9b819ecbc63be3401566b7b7cbf66" category="inline-link-rx"></block>適用於不同的資料來源。</block>
   <block id="fadc42ee050a70884c159ab263e06542" category="section-title">典型配置的單主機安裝</block>
   <block id="d9cebd32697df61b4cd711b9647c99cf" category="paragraph">在單一本機上安裝資料分類軟體時，請查看要求並遵循下列步驟。</block>
   <block id="0a10409b2f38332b7a7c8f820fc0edd5" category="inline-link">觀看此視頻</block>
@@ -1904,7 +1843,6 @@
   <block id="997021f46ccb2a532d7192cfcff79a31" category="paragraph">完成幾個步驟即可開始使用適用於Azure NetApp Files的NetApp資料分類。</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan</block>
   <block id="e600551a2da340f45ada0f5e1dc6e5a5" category="inline-link-macro">將其新增至系統頁面</block>
-  <block id="202560b77d68da6dabe15e86ad18171c" category="paragraph">如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp控制台中，<block ref="b6bcd8c86645ce69edaf0e98cb142aae" category="inline-link-macro-rx"></block> 。</block>
   <block id="842f910d26756f518671d7ec5b3d5121" category="section-title">部署資料分類實例</block>
   <block id="f4ef9fdcc60c0330381d382e9ec1fc58" category="inline-link-macro">部署資料分類</block>
   <block id="08c4981c70f1e972602ce371c0b2b57b" category="paragraph"><block ref="a2eab8ee506f152cc24568358989ad66" category="inline-link-macro-rx"></block>如果尚未部署實例。</block>
@@ -2123,7 +2061,6 @@
   <block id="60af55bf08ad38c0294a3471f71d0b10" category="cell">創造<block ref="c6f83034cbcf2b49c5be50f2bdf16112" category="inline-link-macro-rx"></block>提供自訂搜尋結果</block>
   <block id="2dfcc311be6fe47855e067cf6907780f" category="cell">能夠運行其他報告</block>
   <block id="921e1958c2e1cced7a0200842dd15ae8" category="cell">能夠查看文件中的元資料**</block>
-  <block id="a1edf1ebd61e8f8488c29f98d1a5a77e" category="paragraph">{asterisk} 資料分類不會對其可掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，<block ref="eeefa3a7df6ac6ed2095f7ad46b64f36" category="inline-link-macro-rx"></block>然後<block ref="5eea3619bc46427cc0fe40a7ee99bcc5" category="inline-link-macro-rx"></block>。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱<block ref="79cb417b711835e9290ab9a201050303" category="inline-link-macro-rx"></block>。</block>
   <block id="62b4a38bfbd6d272f9f899599071cf61" category="paragraph">{asterisk}{asterisk} 在映射掃描期間從檔案中提取以下元資料：</block>
   <block id="10fd66f5b4802aee3a88de2a537a57b4" category="list-text">已用容量</block>
   <block id="18de356008c3efffac62590fd7849509" category="list-text">文件數量</block>
@@ -2272,8 +2209,6 @@
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">驗證所有系統上的所有必要連接埠是否都已啟用。</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">下載並執行先決條件測試腳本。</block>
   <block id="e9baee2a4f78225d19d9d1c38a6df205" category="paragraph">您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。</block>
-  <block id="5b20a9b4287cdda3d76a2d4ceff1cbe5" category="paragraph">你可以<block ref="1e978d352407f0b82159fac054bda46b" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
-  <block id="c458f74efb35b7feee4823fa0fc7fa74" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱<block ref="2113a58ffda8c1384be23b9a8e9df243" category="inline-link-rx"></block>，<block ref="692f98f38a06b1612e2bc5bcb96b0851" category="inline-link-rx"></block> ， 或者<block ref="05f5bb94a6f78a9ffb8eb9f25f04d183" category="inline-link-rx"></block>。</block>
   <block id="e6527c2694cae7b14a8260e681318eb1" category="paragraph">執行先決條件腳本時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇*控制台代理*。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">驗證主機需求</block>
   <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。</block>
@@ -2465,7 +2400,6 @@
   <block id="cc03e6c41965c31f768e9ce4bd324829" category="paragraph"><block ref="b4549212e209f263a3caaae9d9d5e56b" category="inline-link-macro-rx"></block> 。</block>
   <block id="cdbb87700ea6d8c32de7576d1ecb9987" category="paragraph-title">BlueXP classification在限制模式和私人模式下完全受支持</block>
   <block id="7c4ed755305616a8a97076615e4aa1e5" category="inline-link-macro">了解有關連接器的BlueXP部署模式的更多信息</block>
-  <block id="8dea75c06fe7de2f5e657d929b3d5f31" category="paragraph">BlueXP classification現在完全支援沒有網路存取（私人模式）和有限的外部網路存取（受限模式）的網站。<block ref="e514f819f29452d59bd6c581ff940938" category="inline-link-macro-rx"></block> 。</block>
   <block id="8dd6a265487e54146fb2bdfb3e5174a5" category="paragraph-title">升級BlueXP classification的私人模式安裝時可以跳過版本</block>
   <block id="241957d9f6c696915858d43476112454" category="paragraph">現在，即使 BlueXP 分類不是連續的，您也可以升級到較新版本的BlueXP classification。這意味著不再需要目前一次升級BlueXP classification的一個版本的限制。此功能從 1.24 版本開始適用。</block>
   <block id="c77d5103bf67167dd667762d984e1e14" category="paragraph-title">BlueXP classificationAPI 現已可用</block>
@@ -2604,4 +2538,75 @@
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="sidebar">註冊以獲得支持</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="sidebar">獲取協助</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
+  <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>然後<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block>。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block>。</block>
+  <block id="ed86b5b4b59dfed3be7d90507a982e16" category="paragraph">詳細了解<block ref="8a553bdd7b5187af06654af7127bede8" category="inline-link-rx"></block>。</block>
+  <block id="d310870b76fd0108508e2cefec1ac4a4" category="paragraph">有關數據調查和報告的詳細信息，請參閱<block ref="100af2ad54892a67967d5c4b6c0a5d22" category="inline-link-rx"></block>。</block>
+  <block id="ed16e45a63496894d4f69f3ad9257c0a" category="paragraph">優先權僅限於<block ref="9f49d69d8a2b2a5c3ff36b98378f6446" category="inline-link-macro-rx"></block>；它不適用於地圖和分類掃描。</block>
+  <block id="382361d81e14da89918a76b71860bcab" category="paragraph">有關更多信息，請參閱<block ref="2f2c0cf6c40ec606389bccf6943b3b53" category="inline-link-macro-rx"></block> 。</block>
+  <block id="3c83d9ffa8db579e805de307f057c519" category="paragraph">機器學習模型的準確率<block ref="4258f204d4b8f149538aa226ed3589d3" category="inline-link-macro-rx"></block>提高了11%。</block>
+  <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">有關更多信息，請參閱<block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">有關更多信息，請參閱<block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
+  <block id="75d2298c4d2e2b8d379d579c681b0581" category="paragraph">有關更多信息，請參閱<block ref="39444789f4adf1075cd6ff8f0426a2b4" category="inline-link-macro-rx"></block> 。</block>
+  <block id="a31a7b73e0f6489cdde14ea7754e29d2" category="paragraph">有關更多信息，請參閱<block ref="496eb865a6bb9e6228b16bf86701d2c1" category="inline-link-macro-rx"></block> 。</block>
+  <block id="dcc61fc6bf6aa17ea807ec107b3f9682" category="paragraph-title">已儲存的搜尋標籤</block>
+  <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-link-macro">**已儲存的搜尋**</block>
+  <block id="7d05e5a22d1961e95b7be92d35164378" category="paragraph">**政策** 選項卡已重新命名<block ref="8d1bca00b0b16766f87fd78ec3ac185e" category="inline-link-macro-rx"></block>。功能沒有改變。</block>
+  <block id="0fddd3e20389e20ca1c63de5412406ae" category="paragraph">資料分類支援發送分類事件（掃描啟動時和掃描結束時）到<block ref="3dcf10816a01bda1b4320932f26d59f3" category="inline-link-macro-rx"></block>。</block>
+  <block id="e804ac99d8e193e9d3e3437979ce7bdf" category="cell">已儲存的搜尋</block>
+  <block id="190630723d230843de3c85b32a478df5" category="paragraph">您可以查看上次更新的時間，並按敏感度等級手動更新重複文件、非業務資料、已儲存的搜尋、陳舊資料和頂級資料儲存庫元件。有關治理儀表板的更多信息，請參閱<block ref="e54252fa31ad44dc404e5787faf06263" category="inline-link-macro-rx"></block>。</block>
+  <block id="9b403464e6af8d2ec9948d73766ff20b" category="paragraph">有關更多信息，請參閱<block ref="127ec44212ed37ce8b3bcb004aea4f22" category="inline-link-macro-rx"></block> 。</block>
+  <block id="726bb63ef50725c7e3c4766906388acd" category="paragraph">有關更多信息，請參閱<block ref="26029df2267a3a60cd67c1340e62ae48" category="inline-link-macro-rx"></block> 。</block>
+  <block id="2602ef05ceb5e5b51fe554db44e59c2c" category="paragraph">有關審計頁面的更多信息，請參閱<block ref="33e0fa7818f83bbe32f6e9c2e830952c" category="inline-link-macro-rx"></block>。</block>
+  <block id="7c2f2b72d5ae6fd05d7d6047507f2af7" category="paragraph">有關更改的詳細信息，請參閱<block ref="55233a601a39d3cf31ec58df3f760d9b" category="inline-link-rx"></block>。</block>
+  <block id="946f70163294fc4ea89cf3a8a4f7979b" category="paragraph-title">增強調查體驗</block>
+  <block id="576845aedce0c5b1e2da0722b6d5b908" category="paragraph">使用新的可搜尋篩選器、每個值的結果計數、總結關鍵發現的即時見解以及具有可自訂列和滑出詳細資訊窗格的刷新結果表，更快地查找和理解您的資料。</block>
+  <block id="50ccc3c910d687d185cba54457548270" category="paragraph">有關更多信息，請參閱<block ref="93a993564ec95ed7a219162140437cd9" category="inline-link-macro-rx"></block> 。</block>
+  <block id="893b2443c1eb73a025f5c3a5bafda52a" category="paragraph-title">新的治理與合規儀表板</block>
+  <block id="3520b3d47203763a73081f6d97f46d23" category="inline-link-macro">審查有關您的數據的治理信息</block>
+  <block id="885746277f8f91a4f015c86ee1723838" category="inline-link-macro">查看有關您的數據的合規性信息</block>
+  <block id="b079dfcfb953333a976ef2f897a33fe7" category="paragraph">透過直覺的小部件、更清晰的視覺效果和改進的加載性能更快地獲得關鍵見解。有關詳細信息，請參閱<block ref="e763feb2558444e18702b24a8d7b126c" category="inline-link-macro-rx"></block>和<block ref="635393ff0ea5792fd291ac9f76f0ede9" category="inline-link-macro-rx"></block>。</block>
+  <block id="640ed4c4729a4d5d09e9b663e79d7d98" category="paragraph">資料分類現在使您能夠透過條件操作實現治理自動化。您可以建立保留規則，設定自動刪除和定期電子郵件通知，所有這些都可以透過更新的已儲存查詢頁面進行管理。</block>
+  <block id="680190e7731697b57d44b7ccb192ec16" category="paragraph">從調查頁面直接控制 - 單獨或批次刪除、移動、複製或標記文件，以實現高效的資料管理和補救。</block>
+  <block id="89d69ff3dca93dc4c1c160728186e722" category="paragraph-title">支援Google Cloud NetApp Volumes</block>
+  <block id="028f3210e3fb8059c59cfc831af1660c" category="paragraph">資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp控制台輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。</block>
+  <block id="d238b3b06de1f7994bfe976041b5d3e0" category="paragraph">Swagger 文件中的 API 可讓您搜尋、聚合資料、追蹤掃描以及執行複製、移動和刪除等操作。</block>
+  <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">詳細了解<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block>。</block>
+  <block id="89073ebfdec87f01ba2de97bf2838871" category="paragraph"><block ref="f4803e06203a33d5098bb13a3ce23454" category="inline-link-macro-rx"></block> 。</block>
+  <block id="9b317123224190f31630700e3d04b51f" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="e06f3c17ab825c043e1b562901775a66" category="inline-link-rx"></block> 。</block>
+  <block id="1f3c3a2b9e4ca2f543ead53a3346f67f" category="list-text">資料分類要求您部署控制台代理程式。在許多情況下，由於您在控制台中使用其他儲存和服務，因此您已經擁有控制台代理程式。控制台代理執行個體會導致其部署所在的雲端提供者收取費用。查看<block ref="3226d03483e6ef310354bdd4ac85d9e3" category="inline-link-rx"></block>。如果您在本機系統上安裝控制台代理，則無需付費。</block>
+  <block id="036726a14120f1741321547425925892" category="paragraph">當您在雲端部署資料分類時，控制台會將執行個體部署在與控制台代理相同的子網路中。<block ref="16cd0b484440aefb3b12e07bc8224a2c" category="inline-link-rx"></block></block>
+  <block id="0a2a2726fa4f033804e23ae8e734f53d" category="paragraph">資料分類可以識別多種類型的私人數據，例如個人資訊（PII）和敏感個人資訊（SPII）。有關私人數據的詳細信息，請參閱<block ref="99786247576d4194bfb6afa2ffe45770" category="inline-xref-macro-rx"></block>。</block>
+  <block id="adfe462ee0bd220692dba88a90e4ceb4" category="paragraph">如果您在這些位置有數據，您可能需要使用<block ref="7ed7edf7fcb85237714bfffa089220ee" category="inline-link-rx"></block>。</block>
+  <block id="c87093fc5ce0aab848deaeae14c761b9" category="list-text"><block ref="c87093fc5ce0aab848deaeae14c761b9" category="inline-link-rx"></block></block>
+  <block id="527a617e21a6be89120075fb2d22b20d" category="paragraph">如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。<block ref="20c76d71f84d76d844619e46acfe2877" category="inline-link-macro-rx"></block> 。</block>
+  <block id="27a3d1652dd9fbd571f3b5ccab0eed50" category="list-text"><block ref="27a3d1652dd9fbd571f3b5ccab0eed50" category="inline-link-rx"></block></block>
+  <block id="7e27d458c48634cbeeb76bb6c03ef586" category="list-text"><block ref="7e27d458c48634cbeeb76bb6c03ef586" category="inline-link-rx"></block></block>
+  <block id="c5aa111a744149d5d8422337efad453c" category="list-text"><block ref="c5aa111a744149d5d8422337efad453c" category="inline-link-rx"></block></block>
+  <block id="125e13d6ba5a126106e983c6449547d5" category="paragraph">特定任務需要特定的控制台使用者角色。<block ref="b8bf795c21c8bcdf6af09fd1f4de58b8" category="inline-link-macro-rx"></block> 。</block>
+  <block id="d479e9150d1722df7f13bfdb7b76a9cc" category="list-text"><block ref="d479e9150d1722df7f13bfdb7b76a9cc" category="inline-link-macro-rx"></block></block>
+  <block id="6cf086fd7e27f5587a9831d78af8c5b6" category="paragraph">如果您還沒有控制台代理，請建立一個。看<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="1d9503a33ebe4a2fef4b7e15b1c066cd" category="paragraph">您還可以<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。</block>
+  <block id="6b9d8db86615c626426dac3240a23cd9" category="paragraph">如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>或者<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block>， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="92d08814b1d84d2ad7da2f290b48da3c" category="inline-link-rx"></block>，但有些情況下您需要立即設定一個。</block>
+  <block id="db78195627af3608024c56bc521f4e79" category="paragraph">請注意，您還可以<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>在您的網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
+  <block id="7bf578ebca82bd39e9c3d25054af4c2e" category="paragraph">如你所見，在某些情況下，你可能需要使用<block ref="435c5800eb6a11448025dffd7c93a30f" category="inline-link-rx"></block>。</block>
+  <block id="bb3d4632f65d269a14bed66aafbadc3f" category="paragraph"><block ref="7686ee2eb49af977f9d11ac7d13abc66" category="inline-link-rx"></block> 。</block>
+  <block id="8ace43f907c71d8be7768e59cf9e21dc" category="cell">\ https://api.console.netapp.com</block>
+  <block id="fc431d400bfe4f5cd23f193718cbb07c" category="cell">\ https://support.compliance.api.console.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https https://dseasb33srnrn.cloudfront.net/ // https://production.cloudflare.docker.com/</block>
+  <block id="1736780e6be3d8cb864da13d98fbbf4b" category="cell">\ https://support.compliance.api.console.netapp.com/</block>
+  <block id="4f6e5ae613a1ebcc913b95582f6cd2aa" category="list-text"><block ref="4f6e5ae613a1ebcc913b95582f6cd2aa" category="inline-link-macro-rx"></block></block>
+  <block id="f538295cd1adab58523d81b009d10460" category="list-text"><block ref="f538295cd1adab58523d81b009d10460" category="inline-link-macro-rx"></block></block>
+  <block id="8eb3d18173b33d5c81835381167ed653" category="list-text"><block ref="8eb3d18173b33d5c81835381167ed653" category="inline-link-macro-rx"></block></block>
+  <block id="c14a362c422dbada4ffb5cf8f2f83feb" category="paragraph">AWS 和 AWS GovCloud 部署需要額外的入站和出站安全群組規則。看<block ref="3bba4dcb538282ad7d41fffdcefa8502" category="inline-link-rx"></block>了解詳情。</block>
+  <block id="982c80d8c5eaafdc8e310bc40e63651a" category="paragraph">Azure 和 Azure 政府部署需要額外的入站和出站安全群組規則。看<block ref="f5e2689734fd64ad5e48acbcc4fcc6c5" category="inline-link-rx"></block>了解詳情。</block>
+  <block id="82b59f9fa0af81567f72b50790f4f629" category="paragraph">如果您還沒有控制台代理，<block ref="cfd99dbf08b2644a2b80f4083628d19f" category="inline-link-rx"></block>在您的網路中的 Linux 主機上，或在雲端的 Linux 主機上。</block>
+  <block id="a494fc63ddfda2d86d031918323821d3" category="paragraph">您也可以與您的雲端提供者一起建立控制台代理程式。看<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="4cafc02a81b4bd1b606dfca8df731420" category="paragraph">您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="a15e4a30c99c44d85395e2a410c9f061" category="inline-link-rx"></block>，但有些情況下您需要立即設定一個。</block>
+  <block id="4e19f66e9518a806557a0e193973e8f0" category="paragraph">若要在您的雲端提供者環境中建立一個，請參閱<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="e0f0b073962fc9f4e2df84e02be7fc03" category="paragraph">請注意，您還可以<block ref="cfd99dbf08b2644a2b80f4083628d19f" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
+  <block id="cf1c2eb5ef84d0e534bfcb7fd49d58c8" category="admonition">當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶、 Azure NetApp Files或 FSx for ONTAP 。在這些情況下，您需要在雲端中部署單獨的控制台代理程式和資料分類實例，並且<block ref="9d6566a6106fb12cad30cba472097329" category="inline-link-rx"></block>適用於不同的資料來源。</block>
+  <block id="16104e610aa1b9ce4fe67763f74712e0" category="paragraph">如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp控制台中，<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="f7410ef3e853c36f59921100798c91bc" category="paragraph">{asterisk} 資料分類不會對其可掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>然後<block ref="f9b15840f1680c5742db35b8488b732c" category="inline-link-macro-rx"></block>。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block>。</block>
+  <block id="faf8844abf71745359231ca0c3b68035" category="paragraph">你可以<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
+  <block id="da43836db702b2bca882af8c4b45817c" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
+  <block id="d44ef64485a900b8277b565be86f96cb" category="paragraph">BlueXP classification現在完全支援沒有網路存取（私人模式）和有限的外部網路存取（受限模式）的網站。<block ref="c6001acb646c8f6ca2a96471682d570a" category="inline-link-macro-rx"></block> 。</block>
 </blocks>

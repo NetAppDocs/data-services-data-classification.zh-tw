@@ -16,10 +16,10 @@ summary: 透過存取NetApp控制台中的服務開始使用NetApp資料分類�
 
 若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp控制台登入。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有關登入控制台的更多信息"^] 。
 
-特定任務需要特定的控制台使用者角色。link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
+特定任務需要特定的控制台使用者角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
 .開始之前
-* link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["您應該新增一個控制台代理程式。"^]
+* link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["您應該新增一個控制台代理程式。"^]
 * link:task-deploy-cloud-compliance.html["了解哪種資料分類部署樣式適合您的工作負載。"]
 
 
