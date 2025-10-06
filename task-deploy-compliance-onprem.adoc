@@ -1,0 +1,391 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-compliance-onprem.html 
+keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, linux, ubuntu, cloud compliance access, privacy, compliance, on-premises 
+summary: 要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp資料分類，您需要在您的網路或雲端中手動部署 Linux 主機。 
+---
+= 在可存取網際網路的主機上安裝NetApp資料分類
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp資料分類，您需要在您的網路或雲端中手動部署 Linux 主機。
+
+如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則本機安裝是個不錯的選擇。這不是必需的。無論選擇哪一種安裝方法，軟體的功能都是相同的。
+
+資料分類安裝腳本首先檢查系統和環境是否滿足所需的先決條件。如果所有先決條件都滿足，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。link:task-test-linux-system.html["了解如何檢查您的 Linux 主機是否已準備好安裝資料分類"] 。
+
+您所在場所的 Linux 主機上的典型安裝具有以下元件和連接。
+
+image:diagram_deploy_onprem_overview.png["所需控制台和網路組件以及相關連接的圖表。"]
+
+雲端 Linux 主機上的典型安裝具有以下元件和連接。
+
+image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件以及相關連接的圖表。"]
+
+
+
+== 快速啟動
+
+按照以下步驟快速開始，或向下捲動到其餘部分以獲取完整詳細資訊。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]建立控制台代理
+[role="quick-margin-para"]
+如果您還沒有控制台代理， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上，或在雲端的 Linux 主機上。
+
+[role="quick-margin-para"]
+您也可以與您的雲端提供者一起建立控制台代理程式。看 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]審查先決條件
+[role="quick-margin-para"]
+確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。<<啟用資料分類的出站互聯網訪問,查看完整列表>> 。
+
+[role="quick-margin-para"]
+您還需要一個符合以下條件的 Linux 系統<<準備 Linux 主機系統,遵循要求>>。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]下載並部署資料分類
+[role="quick-margin-para"]
+從NetApp支援網站下載雲端資料分類軟體，並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈並依照指示部署資料分類實例。
+
+
+
+== 建立控制台代理
+
+您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["控制台功能需要控制台代理"]，但有些情況下您需要立即設定一個。
+
+若要在您的雲端提供者環境中建立一個，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+
+在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：
+
+* 在 AWS 或Amazon FSx for ONTAP中的Cloud Volumes ONTAP中掃描資料時，您可以使用 AWS 中的控制台代理程式。
+* 在 Azure 中的Cloud Volumes ONTAP或Azure NetApp Files中掃描資料時，您可以使用 Azure 中的控制台代理程式。
++
+對於Azure NetApp Files，它必須部署在與您要掃描的磁碟區相同的區域中。
+
+* 在 GCP 中的Cloud Volumes ONTAP中掃描資料時，您可以使用 GCP 中的控制台代理程式。
+
+
+可以使用任何這些雲端控制台代理程式來掃描本機ONTAP系統、 NetApp檔案共用和資料庫帳戶。
+
+請注意，您還可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機部署控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+
+安裝資料分類時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理程式部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇**控制台代理**。
+
+
+
+== 準備 Linux 主機系統
+
+資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。  Linux 主機可以在您的網路中，也可以在雲端。
+
+確保您可以保持資料分類運行。資料分類機器需要保持開啟以持續掃描您的資料。
+
+* 與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。
+* 在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。
++
+[cols="17,17,27,31"]
+|===
+| 系統大小 | 中央處理器 | RAM（必須停用交換記憶體） | 磁碟 
+
+
+| *超大* | 32 個 CPU | 128 GB 內存  a| 
+** / 上 1 TiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 上可用 895 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+
+
+| *大的* | 16 個 CPU | 64 GB 內存  a| 
+** / 上 500 GiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 或 Podman /var/lib/containers 上可用 400 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+|===
+* 在雲端為資料分類安裝部署運算執行個體時，建議您使用符合上述「大型」系統需求的系統：
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) 執行個體類型*：「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["查看其他 AWS 執行個體類型"^] 。
+** *Azure VM 大小*：「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["查看其他 Azure 執行個體類型"^] 。
+** *GCP 機器類型*：「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["查看其他 GCP 實例類型"^] 。
+
+
+* *UNIX 資料夾權限*：需要以下最低 UNIX 權限：
++
+[cols="25,25"]
+|===
+| 資料夾 | 最低權限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /選擇 | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/系統 | `rwxr-xr-x` 
+|===
+* *作業系統*:
++
+** 以下作業系統需要使用 Docker 容器引擎：
++
+*** Red Hat Enterprise Linux 版本 7.8 與 7.9
+*** Ubuntu 22.04（需要資料分類版本 1.23 或更高版本）
+*** Ubuntu 24.04（需要資料分類版本 1.23 或更高版本）
+
+
+** 以下作業系統需要使用 Podman 容器引擎，並且需要資料分類版本 1.30 或更高版本：
++
+*** Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5 和 9.6。
+
+
+** 必須在主機系統上啟用進階向量擴充 (AVX2)。
+
+
+* *Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。
+* *附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：
++
+** 根據您使用的作業系統，您需要安裝其中一個容器引擎：
++
+*** Docker Engine 版本 19.3.1 或更高版本。 https://docs.docker.com/engine/install/["查看安裝說明"^] 。
+*** Podman 版本 4 或更高版本。若要安裝 Podman，請輸入(`sudo yum install podman netavark -y`）。
+
+
+
+
+
+
+* Python 版本 3.6 或更高版本。 https://www.python.org/downloads/["查看安裝說明"^] 。
++
+** *NTP 注意事項*： NetApp建議設定資料分類系統以使用網路時間協定 (NTP) 服務。資料分類系統和控制台代理系統之間的時間必須同步。
+
+
+
+
+* *Firewalld 注意事項*：如果您打算使用 `firewalld`，我們建議您在安裝資料分類之前啟用它。運行以下命令進行配置 `firewalld`以便與資料分類相容：
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+如果您打算使用其他資料分類主機作為掃描器節點，請在此時將這些規則新增至您的主系統：
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+請注意，每次啟用或更新時都必須重新啟動 Docker 或 Podman `firewalld`設定.
+
+
+
+
+NOTE: 安裝後，資料分類主機系統的 IP 位址無法變更。
+
+
+
+== 啟用資料分類的出站互聯網訪問
+
+資料分類需要出站網路存取。如果您的虛擬或實體網路使用代理伺服器進行網際網路訪問，請確保資料分類執行個體具有出站網際網路存取權限以聯絡下列端點。
+
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \ https://api.bluexp.netapp.com | 與控制台的通信，其中包括NetApp帳戶。 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+
+
+| https://github.com/docker https://download.docker.com | 提供docker安裝的必備包。 
+
+
+| \ http://packages.ubuntu.com/ \ http://archive.ubuntu.com | 提供 Ubuntu 安裝的必備軟體包。 
+|===
+
+
+== 驗證所有必要的連接埠均已啟用
+
+您必須確保所有必要的連接埠都已打開，以便在控制台代理程式、資料分類、Active Directory 和資料來源之間進行通訊。
+
+[cols="25,25,50"]
+|===
+| 連接類型 | 連接埠 | 描述 
+
+
+| 控制台代理<>資料分類 | 8080 (TCP)、443 (TCP) 和 80。9000 | 控制台代理程式的防火牆或路由規則必須允許透過連接埠 443 進出資料分類實例的入站和出站流量。確保連接埠 8080 已打開，以便您可以在控制台中看到安裝進度。如果 Linux 主機上使用防火牆，則 Ubuntu 伺服器內的內部進程需要連接埠 9000。 
+
+
+| 控制台代理<> ONTAP叢集 (NAS) | 443（TCP）  a| 
+控制台使用 HTTPS 發現ONTAP叢集。如果您使用自訂防火牆策略，則它們必須符合以下要求：
+
+* 控制台代理主機必須允許透過連接埠 443 進行出站 HTTPS 存取。如果控制台代理程式位於雲端中，則預先定義的防火牆或路由規則允許所有出站通訊。
+* ONTAP叢集必須允許透過連接埠 443 進行入站 HTTPS 存取。預設的「mgmt」防火牆策略允許來自所有 IP 位址的入站 HTTPS 存取。如果您修改了此預設策略，或建立了自己的防火牆策略，則必須將 HTTPS 協定與該原則關聯並啟用從控制台代理主機的存取。
+
+
+
+
+| 資料分類 <> ONTAP集群  a| 
+* 對於 NFS - 111 (TCP\UDP) 和 2049 (TCP\UDP)
+* 對於 CIFS - 139 (TCP\UDP) 和 445 (TCP\UDP)
+
+ a| 
+資料分類需要與每個Cloud Volumes ONTAP子網路或本地ONTAP系統建立網路連線。  Cloud Volumes ONTAP的防火牆或路由規則必須允許來自資料分類實例的入站連線。
+
+確保這些連接埠對資料分類實例開放：
+
+* 對於 NFS - 111 和 2049
+* 對於 CIFS - 139 和 445
+
+
+NFS 磁碟區匯出策略必須允許從資料分類實例進行存取。
+
+
+
+| 資料分類<> Active Directory | 389（TCP 和 UDP）、636（TCP）、3268（TCP）和 3269（TCP）  a| 
+您必須已經為公司使用者設定了 Active Directory。此外，資料分類需要 Active Directory 憑證來掃描 CIFS 磁碟區。
+
+您必須具有 Active Directory 的資訊：
+
+* DNS 伺服器 IP 位址，或多個 IP 位址
+* 伺服器的使用者名稱和密碼
+* 網域名稱（Active Directory 名稱）
+* 您是否使用安全 LDAP (LDAPS)
+* LDAP 伺服器連接埠（LDAP 通常為 389，安全 LDAP 通常為 636）
+
+
+|===
+
+
+== 在 Linux 主機上安裝資料分類
+
+對於典型配置，您將在單一主機系統上安裝該軟體。<<典型配置的單主機安裝,請參閱此處的步驟>> 。
+
+image:diagram_deploy_onprem_single_host_internet.png["此圖表顯示了使用本地部署且可存取網際網路的單一資料分類實例時可以掃描的資料來源的位置。"]
+
+看<<準備 Linux 主機系統,準備 Linux 主機系統>>和<<啟用資料分類的出站互聯網訪問,審查先決條件>>了解部署資料分類之前的完整要求清單。
+
+只要實例具有互聯網連接，資料分類軟體的升級就會自動進行。
+
+
+NOTE: 當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶、 Azure NetApp Files或 FSx for ONTAP 。在這些情況下，您需要在雲端中部署單獨的控制台代理程式和資料分類實例，並且 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["在連接器之間切換"^]適用於不同的資料來源。
+
+
+
+=== 典型配置的單主機安裝
+
+在單一本機上安裝資料分類軟體時，請查看要求並遵循下列步驟。
+
+https://youtu.be/XiPLaJpfJEI["觀看此視頻"^]了解如何安裝資料分類。
+
+請注意，安裝資料分類時會記錄所有安裝活動。如果您在安裝過程中遇到任何問題，您可以查看安裝審計日誌的內容。它被寫給 `/opt/netapp/install_logs/`。
+
+.開始之前
+* 驗證您的 Linux 系統是否滿足<<準備 Linux 主機系統,主機需求>>。
+* 驗證系統是否安裝了兩個必備軟體套件（Docker Engine 或 Podman 和 Python 3）。
+* 確保您在 Linux 系統上擁有 root 權限。
+* 如果您使用代理程式存取互聯網：
++
+** 您將需要代理伺服器資訊（IP 位址或主機名稱、連接連接埠、連接方案：https 或 http、使用者名稱和密碼）。
+** 如果代理程式正在執行 TLS 攔截，您需要知道資料分類 Linux 系統上儲存 TLS CA 憑證的路徑。
+** 代理必須是非透明的。資料分類目前不支援透明代理。
+** 該用戶必須是本機用戶。不支援網域用戶。
+
+
+* 驗證您的離線環境是否符合要求<<啟用資料分類的出站互聯網訪問,權限和連線性>>。
+
+
+.步驟
+. 從下載資料分類軟體 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp支援站點"^]。您應該選擇的檔案名稱為 *DATASENSE-INSTALLER-<version>.tar.gz*。
+. 將安裝程式檔案複製到您打算使用的 Linux 主機（使用 `scp`或其他方法）。
+. 在主機上解壓縮安裝程式文件，例如：
++
+[source, cli]
+----
+tar -xzf DATASENSE-INSTALLER-V1.25.0.tar.gz
+----
+. 在控制台中，選擇*治理>分類*。
+. 選擇*在本機或雲端部署分類*。
++
+image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
+
+. 根據您是在雲端中準備的實例上還是在本地準備的實例上安裝資料分類，選擇適當的*部署*按鈕來啟動資料分類安裝。
++
+image:screenshot_cloud_compliance_deploy_onprem.png["選擇按鈕在雲端或本機上部署資料分類的螢幕截圖。"]
+
+. 將顯示「在本機部署資料分類」對話方塊。複製提供的命令（例如： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) 並將其貼到文字檔案中，以便稍後使用。然後選擇*關閉*以關閉對話框。
+. 在主機上，輸入您複製的命令，然後按照一系列提示進行操作，或者您可以提供包含所有必需參數的完整命令作為命令列參數。
++
+請注意，安裝程式會執行預檢查以確保您的系統和網路要求滿足，以便成功安裝。 https://youtu.be/5ONowfPWkFs["觀看此視頻"^]了解預檢資訊和意義。
+
++
+[cols="50a,50"]
+|===
+| 根據提示輸入參數： | 輸入完整命令： 
+
+
+ a| 
+.. 貼上從步驟 7 複製的命令：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token>`
++
+如果您在雲端實例上安裝（而不是在您的本地），請新增 `--manual-cloud-install <cloud_provider>`。
+
+.. 輸入資料分類主機的 IP 位址或主機名，以便控制台代理系統可以存取它。
+.. 輸入控制台代理主機的 IP 位址或主機名，以便資料分類系統可以存取它。
+.. 根據提示輸入代理詳細資料。如果您的控制台代理已經使用代理，則無需在此處再次輸入此信息，因為資料分類將自動使用控制台代理所使用的代理。
+
+| 或者，您可以提前建立整個命令，提供必要的主機和代理參數：
+`sudo ./install.sh -a <account_id> -c <client_id> -t <user_token> --host <ds_host> --manager-host <cm_host> --manual-cloud-install <cloud_provider> --proxy-host <proxy_host> --proxy-port <proxy_port> --proxy-scheme <proxy_scheme> --proxy-user <proxy_user> --proxy-password <proxy_password> --cacert-folder-path <ca_cert_dir>` 
+|===
++
+變數值：
+
++
+** _account_id_ = NetApp帳號 ID
+** _client_id_ = 控制台代理客戶端 ID（如果客戶端 ID 中沒有後綴“clients”，則新增後綴）
+** _user_token_ = JWT 使用者存取權令牌
+** _ds_host_ = 資料分類 Linux 系統的 IP 位址或主機名稱。
+** _cm_host_ = 控制台代理系統的 IP 位址或主機名稱。
+** _cloud_provider_ = 在雲端實例上安裝時，根據雲端提供者輸入「AWS」、「Azure」或「Gcp」。
+** _proxy_host_ = 如果主機位於代理伺服器後面，則為代理伺服器的 IP 或主機名稱。
+** _proxy_port_ = 連接到代理伺服器的連接埠（預設為 80）。
+** _proxy_scheme_ = 連接方案：https 或 http（預設 http）。
+** _proxy_user_ = 如果需要基本驗證，則經過驗證的使用者連接到代理伺服器。使用者必須是本機使用者 - 不支援網域使用者。
+** _proxy_password_ = 您指定的使用者名稱的密碼。
+** _ca_cert_dir_ = 資料分類 Linux 系統上包含附加 TLS CA 憑證包的路徑。僅當代理執行 TLS 攔截時才需要。
+
+
+
+
+.結果
+資料分類安裝程式安裝套件、註冊安裝並安裝資料分類。安裝可能需要 10 到 20 分鐘。
+
+如果主機和控制台代理執行個體之間透過連接埠 8080 建立連接，您將在控制台的「資料分類」標籤中看到安裝進度。
+
+.下一步
+您可以從設定頁面選擇要掃描的資料來源。

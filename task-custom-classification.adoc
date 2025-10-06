@@ -1,0 +1,38 @@
+---
+sidebar: sidebar 
+permalink: task-custom-classification.html 
+keywords: custom classification, customize, regular expression, keyword, regex 
+summary: NetApp資料分類使您能夠自訂敏感資訊的搜索，並根據與您的組織相關的個別模式和關鍵字自訂服務。 
+---
+= 在NetApp資料分類中建立自訂分類
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+使用NetApp資料分類，您可以建立敏感資訊的自訂搜尋。搜尋範圍可以限定為正規表示式（regex）。
+
+
+
+== 建立自訂分類
+
+自訂分類僅適用於地圖和分類掃描，不適用於僅映射掃描。此功能目前處於預覽狀態。
+
+.步驟
+. 選擇**自訂分類**選項卡。
+. 選擇**新增分類器**按鈕。
+. 為新分類器新增分類器名稱和描述。
+. 選擇將分類器新增為*個人識別碼*或*類別*。
++
+image:screenshot-custom-classifier-name.png["新增分類器的螢幕截圖"]
+
+. 選擇“下一步”。
+. 若要將自訂新增為正規表示式，請選擇**自訂正規表示式**，然後選擇**下一步**。
+. 新增一個模式來檢測資料的特定資訊。選擇**驗證**來確認您輸入的語法。image:screenshot-create-logic-regex.png["建立正規表示式的對話框的螢幕截圖。"]
+. 選擇**完成**來建立自訂分類。
+
+
+新的定制將在下一次計劃掃描中捕獲。若要查看結果，請參閱xref:task-generating-compliance-reports.html[產生合規性報告]。

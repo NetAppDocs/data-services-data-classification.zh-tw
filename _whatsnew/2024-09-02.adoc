@@ -1,0 +1,12 @@
+= 版本 1.35
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.35
+
+.掃描StorageGRID數據
+BlueXP classification支援掃描StorageGRID中的資料。
+
+有關詳細信息，請參閱link:task-scanning-storagegrid.html["掃描StorageGRID數據"]。

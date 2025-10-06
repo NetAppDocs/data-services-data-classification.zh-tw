@@ -1,0 +1,52 @@
+---
+sidebar: sidebar 
+permalink: task-managing-compliance.html 
+keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
+summary: 如果需要，您可以停止資料分類掃描一個或多個系統、資料庫、文件共用群組、OneDrive 帳戶、Google Drive 帳戶或 SharePoint 帳戶。 
+---
+= 從NetApp資料分類中刪除資料來源
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果需要，您可以停止NetApp資料分類掃描一個或多個系統、資料庫或檔案共用群組。
+
+
+
+== 停用系統的合規性掃描
+
+當您停用掃描時，資料分類不再掃描系統上的數據，並且它會從資料分類實例中刪除索引的合規性洞察（系統本身的資料不會被刪除）。
+
+. 從「配置」頁面中，選擇image:button-gallery-options.gif["更多按鈕"]系統行中的按鈕，然後*停用資料分類*。
+
+
+
+TIP: 您也可以在選擇系統時從「服務」面板停用系統的合規性掃描。
+
+
+
+== 從資料分類中刪除資料庫
+
+如果您不再想掃描某個資料庫，您可以從資料分類介面將其刪除並停止所有掃描。
+
+. 從「配置」頁面中，選擇image:button-gallery-options.gif["更多按鈕"]資料庫行中的按鈕，然後*刪除資料庫伺服器*。
+
+
+
+
+== 從資料分類中刪除一組檔案共享
+
+如果您不再想從文件共享群組掃描使用者文件，您可以從資料分類介面刪除文件共用群組並停止所有掃描。
+
+.步驟
+. 從「配置」頁面中，選擇image:button-gallery-options.gif["更多按鈕"]檔案共用群組行中的按鈕，然後按一下*刪除檔案共用群組*。
++
+image:screenshot_compliance_remove_db.png["掃描配置頁面中刪除資料庫伺服器按鈕的螢幕截圖。"]
+
+. 從確認對話方塊中選擇*刪除共享群組*。
+

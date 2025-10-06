@@ -1,0 +1,81 @@
+---
+sidebar: sidebar 
+permalink: task-controlling-private-data.html 
+keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
+summary: '透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您還可以透過查看資料分類在您的資料中發現的類別和文件類型來獲得可見性。' 
+---
+= 使用NetApp資料分類查看組織中儲存的私人資料的合規性詳細信息
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您也可以透過查看NetApp資料分類在您的資料中找到的類別和檔案類型來獲得可見性。
+
+
+NOTE: 只有當您執行完整的分類掃描時，才可以獲得檔案級合規性詳細資訊。僅映射掃描不會產生文件級詳細資訊。
+
+預設情況下，資料分類儀表板顯示所有系統和資料庫的合規性資料。若要僅查看部分系統的數據，請選擇它們。
+
+image:screenshot_compliance_dashboard.png["資料分類儀表板的螢幕截圖"]
+
+您可以從資料調查頁面過濾結果，並將結果報告下載為 CSV 檔案。看link:task-investigate-data.html["在資料調查頁面中過濾數據"]了解詳情。
+
+
+
+== 查看包含個人資料的文件
+
+資料分類會自動識別資料中的特定單字、字串和模式（正規表示式）。link:link:reference-private-data-categories.html["例如，信用卡號、社會安全號碼、銀行帳號、密碼等等。"]資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。
+
+您也可以建立自訂搜尋字詞來識別特定於您組織的個人資料。有關更多信息，請參閱link:task-custom-classification.html["建立自訂分類"] 。
+
+對於某些類型的個人數據，資料分類使用_鄰近驗證_來驗證其發現。透過尋找與找到的個人資料接近的一個或多個預定義關鍵字來進行驗證。例如，如果資料分類看到旁邊有一個近似詞（例如，_SSN_ 或 _social security_），它就會將美國社會安全號碼 (SSN) 識別為 SSN。link:reference-private-data-categories.html["個人資料表"]顯示資料分類何時使用鄰近驗證。
+
+.步驟
+. 從資料分類選單中，選擇“*合規性*”標籤。
+. 要調查所有個人資料的詳細信息，請選擇個人資料百分比旁邊的圖示。
++
+image:screenshot_compliance_dashboard.png["資料分類儀表板的螢幕截圖"]
+
+. 要調查特定類型的個人資料的詳細信息，請選擇*查看全部*，然後選擇特定類型的個人資料（例如電子郵件地址）的*調查結果*箭頭圖示。
++
+image:screenshot_personal_files.png["個人文件對話框的螢幕截圖，您可以在其中選擇個人資料類型旁邊的調查結果圖示。"]
+
+. 透過搜尋、排序、擴展特定文件的詳細資訊、選擇「調查結果」箭頭查看屏蔽資訊或下載文件列表來調查資料。
++
+下圖顯示在目錄（共享和資料夾）中找到的個人資料。在「結構化」標籤中，您可以查看資料庫中的個人資料。在「非結構化」標籤中，您可以查看檔案層級資料。
+
++
+image:screenshot_compliance_investigation_page.png["點擊“調查結果”後在文件中發現的詳細資訊的螢幕截圖。"]
+
++
+image:screenshot_compliance_investigation_page_directory.png["點擊“調查結果”後在目錄中找到的詳細資訊的螢幕截圖。"]
+
+
+
+
+
+== 查看包含敏感個人資料的文件
+
+資料分類會自動識別隱私法規所定義的特殊類型的敏感個人資訊，例如 https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR 第 9 條和第 10 條"^]。例如，有關一個人的健康、種族或性取向的資訊。link:reference-private-data-categories.html["查看完整列表"] 。資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。
+
+資料分類使用人工智慧、自然語言處理 (NLP)、機器學習 (ML) 和認知運算 (CC) 來理解其掃描的內容的含義，以便提取實體並對其進行相應的分類。
+
+例如，GDPR 資料的一個敏感類別是種族來源。由於其 NLP 能力，資料分類可以區分「喬治是墨西哥人」（表示 GDPR 第 9 條規定的敏感資料）和「喬治正在吃墨西哥食物」之間的區別。
+
+
+NOTE: 掃描敏感個人資料時僅支援英文。稍後將添加對更多語言的支援。
+
+.步驟
+. 從資料分類選單中，選擇*合規性*。
+. 要調查所有敏感個人資料的詳細信息，請找到**敏感個人資訊結果**卡，然後選擇**顯示全部**。
++
+image:screenshot-sensitive-personal.png["敏感個人資訊結果卡的螢幕截圖"] 。
+
+. 要調查特定類型的敏感個人資料的詳細信息，請選擇“查看全部”，然後選擇特定類型的敏感個人資料的“調查結果”箭頭圖示。
+. 透過搜尋、排序、擴展特定文件的詳細資訊、點擊「調查結果」查看封鎖資訊或下載文件清單來調查資料。
+

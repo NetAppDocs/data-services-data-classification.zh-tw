@@ -1,0 +1,17 @@
+= 版本 1.42
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.42
+
+此次BlueXP classification發布包括：
+
+.工作環境批次掃描
+BlueXP classification支援工作環境的批次操作。您可以選擇啟用對應掃描、啟用對應和分類掃描、停用掃描或在工作環境中跨磁碟區建立自訂設定。如果您對單一磁碟區進行選擇，它將覆寫批次選擇。若要執行批次操作，請導覽至**配置**頁面並進行選擇。
+
+.本地下載調查報告
+BlueXP classification支援將資料調查報告下載到本地以便在瀏覽器中查看。如果選擇本機選項，資料調查僅以 CSV 格式提供，並且僅顯示前 10,000 行資料。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["使用BlueXP classification調查組織中儲存的數據"] 。

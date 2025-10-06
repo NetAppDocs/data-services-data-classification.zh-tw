@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-using-policies-deprecated.html 
+redirect: data-services-data-classification/task-uninstall.html 
+---
+= 
+:allow-uri-read: 
+
+

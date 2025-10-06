@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-managing-compliance-deprecated.html 
+redirect: data-services-data-classification/task-managing-compliance.html 
+---
+= 
+:allow-uri-read: 
+
+

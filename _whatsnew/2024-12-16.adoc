@@ -1,0 +1,9 @@
+= 版本 1.38
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.38
+
+此BlueXP classification版本包括一般改進和錯誤修復。

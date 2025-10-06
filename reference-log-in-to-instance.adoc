@@ -1,0 +1,41 @@
+---
+sidebar: sidebar 
+permalink: reference-log-in-to-instance.html 
+keywords: log in, data sense, classification 
+summary: 有時您可能需要登入NetApp資料分類系統，以便存取日誌檔案或編輯設定檔。 
+---
+= 登入NetApp資料分類系統
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您需要登入NetApp資料分類系統，以便存取日誌檔案或編輯設定檔。
+
+當資料分類安裝在您本地的 Linux 機器上或在雲端部署的 Linux 機器上時，您可以直接存取設定檔和腳本。
+
+當資料分類部署在雲端時，您需要透過 SSH 連線到資料分類實例。您可以透過輸入使用者和密碼，或使用控制台代理安裝期間提供的 SSH 金鑰，透過 SSH 連線到系統。  SSH 指令是：
+
+`ssh -i <path_to_the_ssh_key> <machine_user>@<datasense_ip>`
+
+* `<path_to_the_ssh_key>`= ssh 驗證金鑰的位置
+* `<machine_user>:`
++
+** 對於 AWS：使用 <ec2-user>
+** 對於 Azure：使用為控制台執行個體建立的用戶
+** 對於 GCP：使用為控制台實例建立的用戶
+
+
+* `<datasense_ip>`= 虛擬機器實例的 IP 位址
+
+
+需要修改安全性群組入站規則才能存取雲端的系統。有關詳細信息，請參閱：
+
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS 中的安全群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure 中的安全性群組規則"^]
+* https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-gcp.html["Google Cloud 中的防火牆規則"^]
+

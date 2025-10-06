@@ -1,0 +1,264 @@
+---
+sidebar: sidebar 
+permalink: task-test-linux-system.html 
+keywords: cloud compliance, bluexp, data sense, get started, deploy, data classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site 
+summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機上執行腳本來驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點。 
+---
+= 檢查您的 Linux 主機是否已準備好安裝NetApp資料分類
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+在 Linux 主機上手動安裝NetApp資料分類之前，可以選擇在主機上執行腳本以驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點（暗站）。
+
+還有一個先決條件測試腳本，它是資料分類安裝腳本的一部分。此處所述的腳本專門為想要獨立於執行資料分類安裝腳本來驗證 Linux 主機的使用者設計。
+
+
+
+== 入門
+
+您將執行以下任務。
+
+. 如果您尚未安裝控制台代理，則可以選擇安裝。您可以在未安裝控制台代理的情況下執行測試腳本，但腳本會檢查控制台代理程式和資料分類主機之間的連線 - 因此建議您安裝控制台代理程式。
+. 準備主機並驗證其是否滿足所有要求。
+. 啟用資料分類主機的出站網際網路存取。
+. 驗證所有系統上的所有必要連接埠是否都已啟用。
+. 下載並執行先決條件測試腳本。
+
+
+
+
+== 建立控制台代理
+
+您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。
+
+你可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+
+若要在您的雲端提供者環境中建立控制台代理，請參閱 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+
+執行先決條件腳本時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇*控制台代理*。
+
+
+
+== 驗證主機需求
+
+資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。
+
+* 與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。
+* 在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。
++
+[cols="17,17,27,31"]
+|===
+| 系統大小 | 中央處理器 | RAM（必須停用交換記憶體） | 磁碟 
+
+
+| *超大* | 32 個 CPU | 128 GB 內存  a| 
+** / 上 1 TiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 上可用 895 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+
+
+| *大的* | 16 個 CPU | 64 GB 內存  a| 
+** / 上 500 GiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 或 Podman /var/lib/containers 上可用 400 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+|===
+* 在雲端為資料分類安裝部署運算執行個體時，建議您使用符合上述「大型」系統需求的系統：
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) 執行個體類型*：「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["查看其他 AWS 執行個體類型"^] 。
+** *Azure VM 大小*：「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["查看其他 Azure 執行個體類型"^] 。
+** *GCP 機器類型*：「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["查看其他 GCP 實例類型"^] 。
+
+
+* *UNIX 資料夾權限*：需要以下最低 UNIX 權限：
++
+[cols="25,25"]
+|===
+| 資料夾 | 最低權限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /選擇 | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/系統 | `rwxr-xr-x` 
+|===
+* *作業系統*:
++
+** 以下作業系統需要使用 Docker 容器引擎：
++
+*** Red Hat Enterprise Linux 版本 7.8 與 7.9
+*** Ubuntu 22.04（需要資料分類版本 1.23 或更高版本）
+*** Ubuntu 24.04（需要資料分類版本 1.23 或更高版本）
+
+
+** 以下作業系統需要使用 Podman 容器引擎，並且需要資料分類版本 1.30 或更高版本：
++
+*** Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5 和 9.6。
+
+
+** 必須在主機系統上啟用進階向量擴充 (AVX2)。
+
+
+* *Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。
+* *附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：
++
+** 根據您使用的作業系統，您需要安裝其中一個容器引擎：
++
+*** Docker Engine 版本 19.3.1 或更高版本。 https://docs.docker.com/engine/install/["查看安裝說明"^] 。
+*** Podman 版本 4 或更高版本。若要安裝 Podman，請輸入(`sudo yum install podman netavark -y`）。
+
+
+
+
+
+
+* Python 版本 3.6 或更高版本。 https://www.python.org/downloads/["查看安裝說明"^] 。
++
+** *NTP 注意事項*： NetApp建議設定資料分類系統以使用網路時間協定 (NTP) 服務。資料分類系統和控制台代理系統之間的時間必須同步。
+
+
+
+
+* *Firewalld 注意事項*：如果您打算使用 `firewalld`，我們建議您在安裝資料分類之前啟用它。運行以下命令進行配置 `firewalld`以便與資料分類相容：
++
+....
+firewall-cmd --permanent --add-service=http
+firewall-cmd --permanent --add-service=https
+firewall-cmd --permanent --add-port=80/tcp
+firewall-cmd --permanent --add-port=8080/tcp
+firewall-cmd --permanent --add-port=443/tcp
+firewall-cmd --reload
+....
++
+如果您打算使用其他資料分類主機作為掃描器節點（在分散式模型中），請在此時將這些規則新增至您的主系統：
+
++
+....
+firewall-cmd --permanent --add-port=2377/tcp
+firewall-cmd --permanent --add-port=7946/udp
+firewall-cmd --permanent --add-port=7946/tcp
+firewall-cmd --permanent --add-port=4789/udp
+....
++
+請注意，每次啟用或更新時都必須重新啟動 Docker 或 Podman `firewalld`設定.
+
+
+
+
+
+== 啟用資料分類的出站互聯網訪問
+
+資料分類需要出站網路存取。如果您的虛擬或實體網路使用代理伺服器進行網際網路訪問，請確保資料分類執行個體具有出站網際網路存取權限以聯絡下列端點。
+
+
+TIP: 對於安裝在沒有網路連線的站點的主機系統，則不需要本節。
+
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \ https://api.bluexp.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+
+
+| https://github.com/docker https://download.docker.com | 提供docker安裝的必備包。 
+
+
+| \ http://packages.ubuntu.com/ \ http://archive.ubuntu.com | 提供 Ubuntu 安裝的必備軟體包。 
+|===
+
+
+== 驗證所有必要的連接埠均已啟用
+
+您必須確保所有必要的連接埠都已打開，以便在控制台代理程式、資料分類、Active Directory 和資料來源之間進行通訊。
+
+[cols="25,25,50"]
+|===
+| 連接類型 | 連接埠 | 描述 
+
+
+| 控制台代理<>資料分類 | 8080 (TCP)、443 (TCP) 和 80。9000 | 控制台代理程式的防火牆或路由規則必須允許透過連接埠 443 進出資料分類實例的入站和出站流量。確保連接埠 8080 已打開，以便您可以在控制台中看到安裝進度。如果 Linux 主機上使用防火牆，則 Ubuntu 伺服器內的內部進程需要連接埠 9000。 
+
+
+| 控制台代理<> ONTAP叢集 (NAS) | 443（TCP）  a| 
+控制台使用 HTTPS 發現ONTAP叢集。如果您使用自訂防火牆策略，控制台代理主機必須允許透過連接埠 443 進行出站 HTTPS 存取。如果控制台代理程式位於雲端中，則預先定義的防火牆或路由規則允許所有出站通訊。
+
+|===
+
+
+== 執行資料分類先決條件腳本
+
+請依照以下步驟執行資料分類先決條件腳本。
+
+https://youtu.be/5ONowfPWkFs?si=QLGUw8mqPrz9qs4B["觀看此視頻"^]了解如何執行先決條件腳本並解釋結果。
+
+.開始之前
+* 驗證您的 Linux 系統是否滿足<<驗證主機需求,主機需求>>。
+* 驗證系統是否安裝了兩個必備軟體套件（Docker Engine 或 Podman 和 Python 3）。
+* 確保您在 Linux 系統上擁有 root 權限。
+
+
+.步驟
+. 從下載資料分類先決條件腳本 https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp支援站點"^]。您應該選擇的檔案名稱為 *standalone-pre-requisite-tester-<version>*。
+. 將檔案複製到您計劃使用的 Linux 主機（使用 `scp`或其他方法）。
+. 分配運行腳本的權限。
++
+[source, cli]
+----
+chmod +x standalone-pre-requisite-tester-v1.25.0
+----
+. 使用以下命令運行腳本。
++
+[source, cli]
+----
+ ./standalone-pre-requisite-tester-v1.25.0 <--darksite>
+----
++
+僅當您在沒有網際網路存取的主機上執行腳本時才新增選項「--darksite」。當主機未連接到網際網路時，某些先決條件測試將被跳過。
+
+. 腳本會提示您輸入資料分類主機的 IP 位址。
++
+** 輸入 IP 位址或主機名稱。
+
+
+. 該腳本會提示您是否安裝了控制台代理程式。
++
+** 如果您沒有安裝控制台代理，請輸入 *N*。
+** 如果您確實安裝了控制台代理，請輸入 *Y*。然後輸入控制台代理的 IP 位址或主機名，以便測試腳本可以測試此連線。
+
+
+. 該腳本在系統上執行各種測試，並在運行過程中顯示結果。完成後，它會將會話日誌寫入名為 `prerequisites-test-<timestamp>.log`在目錄中 `/opt/netapp/install_logs`。
+
+
+.結果
+如果所有先決條件測試均成功運行，您可以在準備就緒後在主機上安裝資料分類。
+
+如果發現任何問題，則將其歸類為“建議”或“需要”修復。建議的問題通常是會使資料分類掃描和分類任務運作速度變慢的項目。這些項目不需要更正 - 但您可能需要解決它們。
+
+如果您有任何「必要」問題，您應該修復這些問題並再次執行先決條件測試腳本。

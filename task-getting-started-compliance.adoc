@@ -1,0 +1,120 @@
+---
+sidebar: sidebar 
+permalink: task-getting-started-compliance.html 
+keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense 
+summary: 完成幾個步驟即可開始使用NetApp資料分類掃描您的Cloud Volumes ONTAP和本機ONTAP磁碟區。 
+---
+= 使用NetApp資料分類掃描Cloud Volumes ONTAP和本地ONTAP卷
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成幾個步驟即可開始使用NetApp資料分類掃描您的Cloud Volumes ONTAP和本機ONTAP磁碟區。
+
+
+
+== 先決條件
+
+在啟用資料分類之前，請確保您具有支援的配置。
+
+* 如果您正在掃描可透過網路存取的Cloud Volumes ONTAP和本機ONTAP系統，您可以link:task-deploy-cloud-compliance.html["在雲端部署資料分類"]或者link:task-deploy-compliance-onprem.html["在可以存取互聯網的本地位置"]。
+* 如果您要掃描安裝在沒有網路存取的暗站中的本機ONTAP系統，則需要link:task-deploy-compliance-dark-site.html["在沒有網路存取的相同本地位置部署資料分類"]。這要求將控制台代理部署在同一本地位置。
+
+
+
+
+== 在您的系統中啟用資料分類掃描
+
+您可以在任何支援的雲端供應商的Cloud Volumes ONTAP系統以及本機ONTAP叢集上啟用資料分類掃描。
+
+.步驟
+. 從資料分類選單中，選擇*配置*。
++
+配置頁面顯示多個系統。
+
++
+image:screen-cl-config-cvo.png["顯示Cloud Volumes ONTAP系統的設定標籤的螢幕截圖。"]
+
+. 選擇一個系統，然後選擇*配置*。
++
+image:screen-cl-config-cvo-map-options.png["配置標籤的螢幕截圖顯示了映射和分類儲存庫的選項。"]
+
+. 如果您不介意是否重設上次存取時間，請開啟*缺少「寫入屬性」權限時掃描*開關，無論權限為何，都會掃描所有檔案。
++
+頁面頂部的「缺少「寫入屬性」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會對檔案進行分類，因為資料分類無法將「上次存取時間」還原為原始時間戳記。link:reference-collected-metadata.html["了解更多"^] 。
+
+. 選擇如何掃描每個系統中的磁碟區。link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["了解映射和分類掃描"]：
++
+** 若要對應所有捲，請選擇*映射*。
+** 若要對應和分類所有捲，請選擇*映射和分類*。
+** 若要自訂每個磁碟區的掃描，請選擇*自訂*，然後選擇要對應和/或分類的磁碟區。
+
+
+. 在確認對話方塊中，選擇「*核准*」以使資料分類開始掃描您的磁碟區。
+
+
+.結果
+資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類開始掃描，結果就會開始出現在合規性儀表板中。完成所需的時間取決於資料量——可能是幾分鐘或幾小時。
+
+
+NOTE: 資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["查看有關此數據分類限制的更多詳細信息"^] 。
+
+
+
+== 驗證資料分類是否有權存取卷
+
+透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要向資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
+
+.清單
+* 確保資料分類實例與包含Cloud Volumes ONTAP或本地ONTAP叢集的磁碟區的每個網路之間存在網路連線。
+* 確保Cloud Volumes ONTAP的安全群組允許來自資料分類實例的入站流量。
++
+您可以為來自資料分類實例的 IP 位址的流量開啟安全性群組，也可以為來自虛擬網路內部的所有流量開啟安全性群組。
+
+* 確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。
+
+
+.步驟
+. 從資料分類選單中，選擇*配置*。
++
+image:screen-cl-config-cvo-map-options.png["配置標籤的螢幕截圖顯示了映射和分類儲存庫的選項。"]..如果您使用 CIFS，請向資料分類提供 Active Directory 憑證，以便它可以掃描 CIFS 磁碟區。對於每個系統，選擇*編輯 CIFS 憑證*並輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。
+
++
++ 憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。
+
++
++ 如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。
+
++
++ 輸入憑證後，您應該會看到一則訊息，提示所有 CIFS 磁碟區均已成功驗證。
+
+. 在設定頁面上，選擇*設定*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。
+
+
+
+
+== 停用卷上的合規性掃描
+
+您可以隨時從設定頁面啟動或停止系統中的僅對應掃描或對應和分類掃描。您也可以從僅映射掃描變更為映射和分類掃描，反之亦然。我們建議您掃描所有磁碟區。
+
+
+NOTE: 只有當您在標題區域中設定了 *Map* 或 *Map & Classify* 設定時，才會自動掃描新增到系統的新磁碟區。當標題區域中的選項設定為*自訂*或*關閉*時，您需要在系統中新增的每個新磁碟區上啟動對應和/或完整掃描。
+
+.步驟
+. 從資料分類選單中，選擇*配置*。
+. 選擇您想要變更的系統的*配置*按鈕。
++
+image:screen-cl-config-cvo-map-options.png["配置標籤的螢幕截圖顯示了映射和分類儲存庫的選項。"]
+
+. 執行下列操作之一：
++
+** 若要停用對磁碟區的掃描，請在磁碟區中選擇「*關閉*」。
+** 若要停用所有磁碟區的掃描，請在標題區域中選擇「*關閉*」。
+
+
+

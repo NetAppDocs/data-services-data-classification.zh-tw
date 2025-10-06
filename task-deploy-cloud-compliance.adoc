@@ -1,0 +1,247 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-cloud-compliance.html 
+keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
+summary: 完成幾個步驟即可在雲端部署NetApp資料分類。  NetApp控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。 
+---
+= 使用NetApp控制台在雲端部署NetApp資料分類
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以使用NetApp控制台在雲端部署NetApp資料分類。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。
+
+請注意，您還可以link:task-deploy-compliance-onprem.html["在可以存取網際網路的 Linux 主機上安裝資料分類"]。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇 - 但這不是必需的。無論您選擇哪一種安裝方法，軟體的功能都完全相同。
+
+
+
+== 快速啟動
+
+按照以下步驟快速開始，或向下捲動到其餘部分以獲取完整詳細資訊。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]建立控制台代理
+[role="quick-margin-para"]
+如果您還沒有控制台代理，請建立一個。看 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+
+[role="quick-margin-para"]
+您還可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]先決條件
+[role="quick-margin-para"]
+確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。  << 先決條件，請參閱完整清單>>。
+
+.image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]部署資料分類
+[role="quick-margin-para"]
+啟動安裝精靈以在雲端部署資料分類實例。
+
+
+
+== 建立控制台代理
+
+如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^]， 或者 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#when-a-connector-is-required["控制台功能需要控制台代理"]，但有些情況下您需要立即設定一個。
+
+在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：
+
+* 在 AWS 中的Cloud Volumes ONTAP或Amazon FSx for ONTAP儲存桶中掃描資料時，您可以使用 AWS 中的控制台代理程式。
+* 在 Azure 中的Cloud Volumes ONTAP或Azure NetApp Files中掃描資料時，您可以使用 Azure 中的控制台代理程式。
++
+** 對於Azure NetApp Files，它必須部署在與您要掃描的磁碟區相同的區域中。
+
+
+* 在 GCP 中的Cloud Volumes ONTAP中掃描資料時，您可以使用 GCP 中的控制台代理程式。
+
+
+使用任何這些雲端控制台代理時，都可以掃描本機ONTAP系統、 NetApp檔案共用和資料庫。
+
+請注意，您還可以 https://docs.netapp.com/us-en/bluexp-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+
+如你所見，在某些情況下，你可能需要使用 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#multiple-connectors["多個控制台代理"]。
+
+
+TIP: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+
+
+
+=== 政府區域支持
+
+當控制台代理部署在政府區域（AWS GovCloud、Azure Gov 或 Azure DoD）時，支援資料分類。以這種方式部署時，資料分類有以下限制：
+
+https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-restricted-mode.html["查看有關在政府區域部署控制台代理的更多信息"^] 。
+
+
+
+== 先決條件
+
+在雲端部署資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。當您在雲端部署資料分類時，它與控制台代理程式位於同一子網路中。
+
+啟用資料分類的出站互聯網訪問:: 資料分類需要出站網路存取。如果您的虛擬或實體網路使用代理伺服器進行網際網路訪問，請確保資料分類執行個體具有出站網際網路存取權限以聯絡下列端點。代理必須是非透明的。目前不支援透明代理。
++
+--
+根據您是在 AWS、Azure 還是 GCP 中部署資料分類，請查看下面的對應表格。
+
+--
+
+
+[role="tabbed-block"]
+====
+.AWS 所需的終端節點
+--
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \ https://api.bluexp.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
+
+
+| \ https://cloud-compliance-support-netapp.s3.us-west-2.amazonaws.com \ https://hub.docker.com \ https://auth.docker.io https://production.cloudflare.docker.com/ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ | 提供對軟體映像、清單和範本的存取。 
+
+
+| \ https://kinesis.us-east-1.amazonaws.com | 使NetApp能夠從稽核記錄中串流資料。 
+
+
+| \ https://cognito-idp.us-east-1.amazonaws.com \ https://cognito-identity.us-east-1.amazonaws.com \ https://user-feedback-store-prod.s3.us-west-2.amazonaws.com \ https://customer-data-production.s3.us-west-2.amazonaws.com | 啟用資料分類來存取和下載清單和模板，以及發送日誌和指標。 
+|===
+--
+.Azure 所需的終點
+--
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \ https://api.bluexp.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+|===
+--
+.GCP 所需的端點
+--
+[cols="43,57"]
+|===
+| 端點 | 目的 
+
+
+| \ https://api.bluexp.netapp.com | 與控制台服務（包括NetApp帳戶）的通訊。 
+
+
+| \ https://netapp-cloud-account.auth0.com \ https://auth0.com | 與控制台網站通信，實現集中用戶身份驗證。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \ 決https://production.cloudflare.docker.com/ | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
+
+
+| \ https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+|===
+--
+====
+確保資料分類具有所需的權限:: 確保資料分類具有部署資源和為資料分類實例建立安全性群組的權限。
++
+--
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-gcp.html["Google Cloud 權限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-aws.html#classification["AWS 權限"^]
+* link:https://docs.netapp.com/us-en/bluexp-setup-admin/reference-permissions-azure.html#classification["Azure 權限"^]
+
+
+--
+確保控制台代理可以存取資料分類:: 確保控制台代理程式和資料分類實例之間的連線。控制台代理程式的安全性群組必須允許透過連接埠 443 進出資料分類實例的入站和出站流量。此連線支援部署資料分類實例，並允許您查看「合規性和治理」標籤中的資訊。  AWS 和 Azure 的政府區域支援資料分類。
++
+--
+AWS 和 AWS GovCloud 部署需要額外的入站和出站安全群組規則。看 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-aws.html["AWS 中的控制台代理程式規則"^]了解詳情。
+
+Azure 和 Azure 政府部署需要額外的入站和出站安全群組規則。看 https://docs.netapp.com/us-en/bluexp-setup-admin/reference-ports-azure.html["Azure 中的控制台代理程式規則"^]了解詳情。
+
+--
+確保資料分類能夠持續運行:: 資料分類實例需要保持開啟狀態以持續掃描您的資料。
+確保 Web 瀏覽器連接到資料分類:: 啟用資料分類後，請確保使用者從與資料分類實例有連接的主機存取控制台介面。
++
+--
+資料分類實例使用私人 IP 位址來確保索引資料無法被網際網路存取。因此，您用來存取控制台的 Web 瀏覽器必須連線到該私人 IP 位址。此連線可以來自與雲端提供者的直接連線（例如 VPN），也可以來自與資料分類執行個體位於同一網路內的主機。
+
+--
+檢查您的 vCPU 限制:: 確保您的雲端提供者的 vCPU 限制允許部署具有必要數量的核心的執行個體。您需要驗證控制台運作區域中相關執行個體系列的 vCPU 限制。link:concept-classification.html#the-data-classification-instance["查看所需的實例類型"] 。
++
+--
+有關 vCPU 限制的更多詳細信息，請參閱以下連結：
+
+* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 文件：Amazon EC2 服務配額"^]
+* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 文件：虛擬機器 vCPU 配額"^]
+* https://cloud.google.com/compute/quotas["Google Cloud 文件：資源配額"^]
+
+
+--
+
+
+
+
+== 在雲端部署資料分類
+
+請依照下列步驟在雲端部署資料分類實例。控制台代理程式將在雲端部署實例，然後在該實例上安裝資料分類軟體。
+
+在預設實例類型不可用的區域中，資料分類在link:reference-instance-types.html["備用實例類型"]。
+
+[role="tabbed-block"]
+====
+.在 AWS 中部署
+--
+.步驟
+. 從資料分類主頁中，選擇*在本地或雲端部署分類*。
++
+image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
+
+. 從「安裝」頁面，選擇「部署」>「部署」以使用「大型」實例大小並啟動雲端部署精靈。
+. 精靈在執行部署步驟時會顯示進度。當需要輸入或遇到問題時，系統會提示您。
+. 當實例部署完畢並安裝資料分類後，選擇「繼續設定」進入「設定」頁面。
+
+
+--
+.在 Azure 中部署
+--
+.步驟
+. 從資料分類主頁中，選擇*在本地或雲端部署分類*。
++
+image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
+
+. 選擇*部署*以啟動雲端部署精靈。
+. 精靈在執行部署步驟時會顯示進度。如果遇到任何問題，它將停止並提示輸入。
+. 當實例部署完畢並安裝資料分類後，選擇「繼續設定」進入「設定」頁面。
+
+
+--
+.在 Google Cloud 部署
+--
+.步驟
+. 從資料分類主頁中，選擇*治理>分類*。
+. 選擇*在本機或雲端部署分類*。
++
+image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
+
+. 選擇*部署*以啟動雲端部署精靈。
+. 精靈在執行部署步驟時會顯示進度。如果遇到任何問題，它將停止並提示輸入。
+. 當實例部署完畢並安裝資料分類後，選擇「繼續設定」進入「設定」頁面。
+
+
+--
+====
+.結果
+控制台在您的雲端提供者中部署資料分類執行個體。
+
+只要實例具有互聯網連接，控制台代理和資料分類軟體的升級就會自動進行。
+
+.下一步
+您可以從設定頁面選擇要掃描的資料來源。

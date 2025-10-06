@@ -1,0 +1,82 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-storagegrid.html 
+keywords: cloud compliance, enable cloud compliance, privacy, compliance, object storage, data sense 
+summary: 完成幾個步驟即可直接使用NetApp資料分類開始掃描StorageGRID內的資料。 
+---
+= 使用NetApp資料分類掃描StorageGRID數據
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成幾個步驟即可直接使用NetApp資料分類開始掃描StorageGRID內的資料。
+
+
+
+== 查看StorageGRID要求
+
+在啟用資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。
+
+* 您需要有端點 URL 才能連接物件儲存服務。
+* 您需要擁有來自StorageGRID的存取金鑰和金鑰，以便資料分類可以存取儲存桶。
+
+
+
+
+== 部署資料分類實例
+
+如果尚未部署實例，則部署資料分類。
+
+如果您正在掃描可透過網際網路存取的StorageGRID數據，您可以link:task-deploy-cloud-compliance.html["在雲端部署資料分類"^]或者link:task-deploy-compliance-onprem.html["在可以存取網際網路的本地位置部署資料分類"^]。
+
+如果您要掃描安裝在沒有網路存取的暗站中的StorageGRID數據，則需要link:task-deploy-compliance-dark-site.html["在沒有網路存取的相同本地位置部署資料分類"^]。這也要求將控制台代理部署在同一本地位置。
+
+
+
+== 將StorageGRID服務新增至資料分類
+
+新增StorageGRID服務。
+
+.步驟
+. 從資料分類選單中，選擇*配置*選項。
+. 在設定頁面中，選擇「新增系統」>「新增StorageGRID」。
+. 在新增StorageGRID服務對話方塊中，輸入StorageGRID服務的詳細資訊並選擇*繼續*。
++
+.. 輸入您想要使用的系統名稱。此名稱應反映您要連線的StorageGRID服務的名稱。
+.. 輸入 Endpoint URL 以存取物件儲存服務。
+.. 輸入存取密鑰和密鑰，以便資料分類可以存取StorageGRID中的儲存桶。
++
+image:screenshot-scanning-storagegrid-add.png["輸入值以存取StorageGRID服務的對話框的螢幕截圖。"]
+
+
+
+
+
+.結果
+StorageGRID已新增至系統清單。
+
+
+
+== 在StorageGRID桶上啟用和停用合規性掃描
+
+在StorageGRID上啟用資料分類後，下一步是設定要掃描的儲存桶。資料分類發現這些儲存桶並將它們顯示在您建立的系統中。
+
+.步驟
+. 在設定頁面中，找到StorageGRID系統。
+. 在StorageGRID系統圖塊上，選擇 *配置*。
+. 完成以下步驟之一來啟用或停用掃描：
++
+** 若要對儲存體桶啟用僅對應掃描，請選擇*Map*。
+** 若要對儲存桶啟用完整掃描，請選擇*Map & Classify*。
+** 若要停用儲存桶的掃描，請選擇「關閉」。
+
+
+
+
+.結果
+資料分類開始掃描您啟用的儲存桶。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。如果有任何錯誤，它們將出現在「狀態」列中，並顯示修復錯誤所需的操作。

@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-scanning-s3.html 
+redirect: data-services-data-classification/task-scanning-overview.html 
+---
+= 
+:allow-uri-read: 
+
+

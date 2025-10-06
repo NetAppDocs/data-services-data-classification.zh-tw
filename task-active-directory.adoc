@@ -1,0 +1,119 @@
+---
+sidebar: sidebar 
+permalink: task-active-directory.html 
+keywords: active directory, ad, data sense, cloud data sense 
+summary: 您可以將全域 Active Directory 與NetApp資料分類集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。 
+---
+= 將您的 Active Directory 與NetApp資料分類集成
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以將全域 Active Directory 與NetApp資料分類集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。
+
+當您設定某些資料來源（如下所列）時，您需要輸入 Active Directory 憑證以便資料分類掃描 CIFS 磁碟區。此集成為資料分類提供了駐留在這些資料來源中的資料的檔案擁有者和權限詳細資訊。為這些資料來源輸入的 Active Directory 可能與您在此輸入的全域 Active Directory 憑證不同。資料分類將在所有整合的活動目錄中尋找使用者和權限詳細資訊。
+
+此整合在資料分類的以下位置提供了附加資訊：
+
+* 您可以使用“文件所有者”link:task-investigate-data.html["篩選"]並在調查窗格中的文件元資料中查看結果。它不是包含 SID（安全性識別碼）的檔案擁有者，而是填入實際的使用者名稱。
++
+您也可以查看更多關於檔案擁有者的詳細資訊：帳戶名稱、電子郵件地址和 SAM 帳戶名稱，或查看該使用者擁有的項目。
+
+* 你可以看到link:task-investigate-data.html["完整檔案權限"]當您按一下「查看所有權限」按鈕時，每個檔案和目錄都會顯示所有權限。
+* 在link:task-controlling-governance-data.html["治理儀表板"]，開啟權限面板將顯示有關您的資料的更詳細的詳細資訊。
+
+
+
+NOTE: 本機使用者 SID 和來自未知網域的 SID 不會轉換為實際使用者名稱。
+
+
+
+== 支援的資料來源
+
+Active Directory 與資料分類的整合可以識別來自下列資料來源的資料：
+
+* 本地ONTAP系統
+* Cloud Volumes ONTAP
+* Azure NetApp Files
+* 適用於ONTAP的 FSx
+
+
+
+
+== 連接到您的 Active Directory 伺服器
+
+部署資料分類並啟動資料來源掃描後，您可以將資料分類與 Active Directory 整合。可以使用 DNS 伺服器 IP 位址或 LDAP 伺服器 IP 位址存取 Active Directory。
+
+Active Directory 憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。
+
+對於 CIFS 磁碟區/檔案共用，如果您想確保檔案的「上次存取時間」不會因資料分類掃描而改變，則使用者應該具有寫入屬性權限。如果可能的話，我們建議將 Active Directory 設定的使用者作為組織中對所有檔案具有權限的父群組的一部分。
+
+.要求
+* 您必須已經為公司使用者設定了 Active Directory。
+* 您必須具有 Active Directory 的資訊：
++
+** DNS 伺服器 IP 位址，或多個 IP 位址
++
+或者
+
++
+LDAP 伺服器 IP 位址，或多個 IP 位址
+
+** 存取伺服器的使用者名稱和密碼
+** 網域名稱（Active Directory 名稱）
+** 您是否使用安全 LDAP (LDAPS)
+** LDAP 伺服器連接埠（LDAP 通常為 389，安全 LDAP 通常為 636）
+
+
+* 必須開啟以下連接埠以供資料分類實例進行出站通訊：
++
+[cols="20,20,30,30"]
+|===
+| 協定 | 港口 | 目的地 | 目的 
+
+
+| TCP 和 UDP | 389 | 活動目錄 | LDAP 
+
+
+| TCP | 636 | 活動目錄 | 透過 SSL 的 LDAP 
+
+
+| TCP | 3268 | 活動目錄 | 全域目錄 
+
+
+| TCP | 3269 | 活動目錄 | 透過 SSL 的全域目錄 
+|===
+
+
+.步驟
+. 在資料分類設定頁面中，按一下*新增 Active Directory*。
++
+image:screenshot_compliance_integrate_active_directory.png["螢幕截圖顯示按一下按鈕將 Active Directory 伺服器新增至資料分類。"]
+
+. 在「連接到 Active Directory」對話方塊中，輸入 Active Directory 詳細訊息，然後按一下「連線」。
++
+如果需要，您可以透過選擇「新增 IP」來新增多個 IP 位址。
+
++
+image:screenshot_compliance_active_directory_dialog.png["定義要與資料分類整合的 Active Directory 的對話方塊的螢幕截圖。"]
+
++
+資料分類整合到 Active Directory，並在設定頁面中新增一個新部分。
+
++
+image:screenshot_compliance_active_directory_added.png["螢幕截圖顯示了資料分類中整合的新 Active Directory。"]
+
+
+
+
+
+== 管理您的 Active Directory 集成
+
+如果您需要修改 Active Directory 整合中的任何值，請按一下「*編輯*」按鈕並進行變更。
+
+您也可以選擇image:button-gallery-options.gif["更多按鈕"]按鈕，然後*刪除 Active Directory*。

@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-managing-data-fusion.html 
+redirect: data-services-data-classification/task-custom-classification.html 
+---
+= 
+:allow-uri-read: 
+
+

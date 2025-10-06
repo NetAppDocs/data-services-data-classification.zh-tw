@@ -1,0 +1,60 @@
+---
+indexpage:
+  title: NetApp資料分類文檔
+  summary: NetApp資料分類可讓您掃描和分類組織混合多雲中的資料。資料分類利用人工智慧驅動的自然語言處理 (NLP) 進行情境資料分析和分類，為您提供對資料的可操作洞察，以滿足合規性要求、檢測安全漏洞、優化成本並加速遷移。
+  keywords: bluexp, data classification, cloud data sense, data sense, compliance,
+    security, netapp console, bluexp classification
+  lead: NetApp資料分類可讓您掃描和分類組織混合多雲中的資料。資料分類利用人工智慧驅動的自然語言處理 (NLP) 進行情境資料分析和分類，為您提供對資料的可操作洞察，以滿足合規性要求、檢測安全漏洞、優化成本並加速遷移。
+  tiles:
+  - title: 開始
+    links:
+    - title: 了解資料分類
+      url: concept-classification.html
+    - title: 什麼是新的
+      url: whats-new.html
+    - title: 在雲端部署資料分類
+      url: task-deploy-cloud-compliance.html
+    - title: 在有網際網路的 Linux 主機上安裝資料分類
+      url: task-deploy-compliance-onprem.html
+  - title: 掃描資料來源
+    links:
+    - title: 掃描Amazon FSx for ONTAP卷
+      url: task-scanning-fsx.html
+    - title: 掃描Azure NetApp Files卷
+      url: task-scanning-anf.html
+    - title: 掃描Cloud Volumes ONTAP卷
+      url: task-getting-started-compliance.html
+    - title: 掃描資料庫模式
+      url: task-scanning-databases.html
+    - title: 掃描檔案共用（CIFS、NFS）
+      url: task-scanning-file-shares.html
+    - title: 掃描本地ONTAP卷
+      url: task-getting-started-compliance.html
+    - title: 掃描StorageGRID
+      url: task-scanning-storagegrid.html
+  - title: 查看有關您的數據的詳細信息
+    links:
+    - title: 查看包含私人資訊的文件
+      url: task-controlling-private-data.html
+    - title: 查看儲存中重複的文件
+      url: task-investigate-data.html#check-for-duplicate-files-in-your-storage-systems
+    - title: 過濾資料以查看特定文件
+      url: task-investigate-data.html
+    - title: 建立已儲存的查詢
+      url: task-using-policies.html
+    - title: 產生合規性報告
+      url: task-generating-compliance-reports.html
+    - title: 回應資料主體存取請求
+      url: task-generating-compliance-reports.html
+  - title: 部落格和社區
+    links:
+    - title: NetApp控制台
+      url: https://www.netapp.com/console
+    - title: NetApp資料服務
+      url: https://www.netapp.com/data-services/
+    - title: NetApp社群
+      url: https://community.netapp.com/
+    - title: 資料分類用例
+      url: https://bluexp.netapp.com/netapp-cloud-data-sense
+    - title: 資料分類影片
+      url: https://youtube.com/playlist?list=PLdXI3bZJEw7m0dFDhu3w6Yqt71Zqyl2Pw

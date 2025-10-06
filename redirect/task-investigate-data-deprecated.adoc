@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-investigate-data-deprecated.html 
+redirect: data-services-data-classification/task-investigate-data.html 
+---
+= 
+:allow-uri-read: 
+
+

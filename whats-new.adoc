@@ -1,0 +1,711 @@
+---
+sidebar: sidebar 
+permalink: whats-new.html 
+keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
+summary: 了解BlueXP classification的新功能。 
+---
+= NetApp資料分類的新功能
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+了解NetApp資料分類的新功能。
+
+
+
+== 2025年10月6日
+
+
+
+=== 版本 1.47
+
+.BlueXP classification現為NetApp資料分類
+BlueXP classification已重新命名為NetApp資料分類。除了重命名之外，使用者介面也得到了增強。
+
+.BlueXP現在是NetApp控制台
+BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
+
+NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
+
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-relnotes/index.html["NetApp控制台發行說明"]。
+
+.操作（預覽）
+資料分類現在支援調查頁面中的操作。您可以從資料分類複製、移動和刪除檔案。
+
+.支援標記文件（預覽）
+資料分類現在支援標記單一檔案。使用文件標籤，您可以為特定文件建立自訂標識符，用於識別和過濾資料。透過標籤，您可以識別資料調查中的特定質量，或根據標籤結果建立已儲存的查詢和策略。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["查看檔案元數據"] 。
+
+.已儲存查詢的策略（預覽）
+已儲存的搜尋已重新命名為已儲存的查詢。您也可以將已儲存的查詢轉變為可操作的策略：根據已儲存的查詢結果刪除資料或發送電子郵件通知。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["創建策略"] 。
+
+
+
+== 2025年8月11日
+
+
+
+=== 版本 1.46
+
+此資料分類版本包括錯誤修復和以下更新：
+
+.審計頁面中增強的掃描事件洞察
+審計頁面現在支援對BlueXP classification的掃描事件的增強洞察。審計頁面現在顯示系統掃描的開始時間、系統狀態以及任何問題。共享和系統的狀態僅適用於映射掃描。
+
+有關審計頁面的更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html["監控NetApp控制台操作"^]。
+
+.支援 RHEL 9.6
+此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4 和 9.5。
+
+
+
+== 2025年7月14日
+
+
+
+=== 版本 1.45
+
+此BlueXP classification版本包括優化資源利用率的程式碼變更以及：
+
+.改進了新增文件共用進行掃描的工作流程
+將文件共享新增至文件共享組的工作流程已經簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-scanning-file-shares.html["掃描檔案共享"] 。
+
+.增強文件所有者信息
+現在您可以在「調查」標籤中查看有關捕獲的文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看該用戶擁有的其他物品。此功能僅適用於具有 Active Directory 的工作環境。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的數據"] 。
+
+
+
+== 2025年6月10日
+
+
+
+=== 版本 1.44
+
+此次BlueXP classification發布包括：
+
+.改進了治理儀表板的更新時間
+治理儀表板各個組件的更新時間已改善。下表顯示了每個組件的更新頻率。
+
+[cols="1,1"]
+|===
+| 成分 | 更新時間 
+
+
+| 數據時代 | 24小時 
+
+
+| 類別 | 24小時 
+
+
+| 數據概覽 | 5分鐘 
+
+
+| 重複文件 | 2小時 
+
+
+| 文件類型 | 24小時 
+
+
+| 非業務數據 | 2小時 
+
+
+| 開放權限 | 24小時 
+
+
+| 已儲存的查詢 | 2小時 
+
+
+| 敏感資料和廣泛權限 | 24小時 
+
+
+| 數據大小 | 24小時 
+
+
+| 陳舊數據 | 2小時 
+
+
+| 按敏感度等級劃分的頂層資料儲存庫 | 2小時 
+|===
+您可以查看上次更新的時間，並手動更新重複檔案、非業務資料、已儲存的查詢、陳舊資料和按敏感度等級劃分的頂級資料儲存庫元件。有關治理儀表板的更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-controlling-governance-data.html["查看有關組織中存儲的數據的治理詳細信息"]。
+
+.性能和安全性改進
+已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。
+
+.錯誤修復
+Redis 已升級，以提高BlueXP classification的可靠性。  BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。
+
+
+
+== 2025年5月12日
+
+
+
+=== 版本 1.43
+
+此資料分類版本包括：
+
+.優先進行分類掃描
+資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描的優先級，則映射掃描和分類掃描都會優先處理。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"] 。
+
+.支援加拿大個人識別資訊 (PII) 資料類別
+資料分類掃描識別加拿大 PII 資料類別。這些類別包括加拿大所有省份和地區的銀行資訊、護照號碼、社會保險號碼、駕駛執照號碼和健康卡號碼。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-personal-data["個人資料類別"] 。
+
+.自訂分類（預覽）
+資料分類支援地圖和分類掃描的自訂分類。透過自訂分類，您可以自訂資料分類掃描，以使用正規表示式擷取特定於您的組織的資料。此功能目前處於預覽狀態。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-custom-classification.html["新增自訂分類"] 。
+
+.已儲存的查詢選項卡
+**政策** 選項卡已重新命名link:https://docs.netapp.com/us-en/bluexp-classification/task-using-policies.html["**已儲存的查詢**"]。功能沒有改變。
+
+.將掃描事件傳送至審核頁面
+資料分類支援發送分類事件（掃描啟動時和掃描結束時）到link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console 稽核頁面"^]。
+
+.安全性更新
+* Keras 套件已更新，緩解了漏洞（BDSA-2025-0107 和 BDSA-2025-1984）。
+* Docker 容器配置已更新。容器不再有權利存取主機的網路介面來製作原始網路封包。透過減少不必要的訪問，此更新可減輕潛在的安全風險。
+
+
+.效能增強
+已經實施了程式碼增強，以減少 RAM 使用率並提高資料分類的整體效能。
+
+.錯誤修復
+導致StorageGRID掃描失敗、調查頁面過濾選項無法載入以及無法下載大容量評估的資料發現評估的錯誤已修復。
+
+
+
+== 2025年4月14日
+
+
+
+=== 版本 1.42
+
+此次BlueXP classification發布包括：
+
+.工作環境批次掃描
+BlueXP classification支援工作環境的批次操作。您可以選擇啟用對應掃描、啟用對應和分類掃描、停用掃描或在工作環境中跨磁碟區建立自訂設定。如果您對單一磁碟區進行選擇，它將覆寫批次選擇。若要執行批次操作，請導覽至**配置**頁面並進行選擇。
+
+.本地下載調查報告
+BlueXP classification支援將資料調查報告下載到本地以便在瀏覽器中查看。如果選擇本機選項，資料調查僅以 CSV 格式提供，並且僅顯示前 10,000 行資料。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html#create-the-data-investigation-report["使用BlueXP classification調查組織中儲存的數據"] 。
+
+
+
+== 2025年3月10日
+
+
+
+=== 版本 1.41
+
+此BlueXP classification版本包括一般改進和錯誤修復。它還包括：
+
+.掃描狀態
+BlueXP classification追蹤磁碟區上的初始映射和分類掃描的即時進度。單獨的進度條追蹤映射和分類掃描，顯示掃描文件總數的百分比。您也可以將滑鼠停留在進度條上以查看已掃描的檔案數和檔案總數。追蹤掃描狀態可以更深入地了解掃描進度，使您能夠更好地規劃掃描並了解資源分配。
+
+若要查看掃描狀態，請導覽至BlueXP classification中的**配置**，然後選擇**工作環境配置**。每卷的進度均以行顯示。
+
+
+
+== 2025年2月19日
+
+
+
+=== 版本 1.40
+
+此BlueXP classification版本包括以下更新。
+
+.支援 RHEL 9.5
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.5 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4 和 9.5。
+
+.優先進行僅映射掃描
+當進行僅映射掃描時，您可以優先考慮最重要的掃描。當您擁有多個工作環境並希望確保首先完成高優先掃描時，此功能會有所幫助。
+
+預設情況下，掃描會按照啟動的順序排隊。透過設定掃描優先權，您可以將掃描移至佇列的最前面。可以對多個掃描進行優先排序。優先權會依照先進先出的順序指定，這表示您優先考慮的第一個掃描將移至佇列的最前面；您優先考慮的第二個掃描將成為佇列中的第二個掃描，依此類推。
+
+優先權是一次性授予的。映射資料的自動重新掃描按照預設順序進行。
+
+優先權僅限於link:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["僅映射掃描"^]；它不適用於地圖和分類掃描。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"^] 。
+
+.重試所有掃描
+BlueXP classification支援批次重試所有失敗掃描的功能。
+
+您可以使用**全部重試**功能以批次操作的方式重新嘗試掃描。如果分類掃描因網路中斷等臨時問題而失敗，您可以使用一個按鈕同時重試所有掃描，而不必單獨重試。可根據需要重試掃描多次。
+
+若要重試所有掃描：
+
+. 從BlueXP classification選單中，選擇 *配置*。
+. 若要重試所有失敗的掃描，請選擇*重試所有掃描*。
+
+
+.提高分類模型的準確性
+機器學習模型的準確率link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["預定義類別"]提高了11%。
+
+
+
+== 2025年1月22日
+
+
+
+=== 版本 1.39
+
+此BlueXP classification版本更新了資料調查報告的匯出流程。此匯出更新對於對您的資料執行額外分析、對資料建立額外視覺化或與他人分享資料調查結果很有用。
+
+以前，數據調查報告匯出限制為 10,000 行。在此版本中，限制已被取消，以便您可以匯出所有資料。此變更使您能夠從數據調查報告中匯出更多數據，從而為您的數據分析提供更大的靈活性。
+
+您可以選擇工作環境、磁碟區、目標資料夾以及 JSON 或 CSV 格式。匯出的檔案名稱包含時間戳，以協助您識別資料的匯出時間。
+
+支援的工作環境包括：
+
+* Cloud Volumes ONTAP
+* 適用於ONTAP的 FSx
+* ONTAP
+* 共享群組
+
+
+從數據調查報告匯出數據有以下限制：
+
+* 每種類型（檔案、目錄和表格）最多可下載 5 億筆記錄
+* 預計匯出一百萬筆記錄大約需要 35 分鐘。
+
+
+有關數據調查和報告的詳細信息，請參閱 https://docs.netapp.com/us-en/bluexp-classification/task-investigate-data.html["調查組織中儲存的數據"]。
+
+
+
+== 2024年12月16日
+
+
+
+=== 版本 1.38
+
+此BlueXP classification版本包括一般改進和錯誤修復。
+
+
+
+== 2024年11月4日
+
+
+
+=== 版本 1.37
+
+此BlueXP classification版本包括以下更新。
+
+.支援 RHEL 8.10
+此版本除了支援先前支援的版本外，還提供了對 Red Hat Enterprise Linux v8.10 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3 和 9.4。
+
+詳細了解 https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"]。
+
+.支持 NFS v4.1
+此版本除了支援先前支援的版本外，還提供對 NFS v4.1 的支援。
+
+詳細了解 https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["BlueXP classification"]。
+
+
+
+== 2024年10月10日
+
+
+
+=== 版本 1.36
+
+.支援 RHEL 9.4
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。
+
+詳細了解 https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["BlueXP classification部署概述"]。
+
+.改進的掃描性能
+此版本提供了改進的掃描效能。
+
+
+
+== 2024年9月2日
+
+
+
+=== 版本 1.35
+
+.掃描StorageGRID數據
+BlueXP classification支援掃描StorageGRID中的資料。
+
+有關詳細信息，請參閱link:task-scanning-storagegrid.html["掃描StorageGRID數據"]。
+
+
+
+== 2024年8月5日
+
+
+
+=== 版本 1.34
+
+此BlueXP classification版本包括以下更新。
+
+.從 CentOS 改為 Ubuntu
+BlueXP classification已將其針對 Microsoft Azure 和 Google Cloud Platform (GCP) 的 Linux 作業系統從 CentOS 7.9 更新為 Ubuntu 22.04。
+
+有關部署詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html#prepare-the-linux-host-system["在具有網際網路存取權限的Linux主機上安裝並準備Linux主機系統"]。
+
+
+
+== 2024年7月1日
+
+
+
+=== 版本 1.33
+
+.支援 Ubuntu
+此版本支援 Ubuntu 24.04 Linux 平台。
+
+.地圖掃描收集元數據
+在映射掃描期間從文件中提取以下元數據，並將其顯示在治理、合規性和調查儀表板上：
+
+* 工作環境
+* 工作環境類型
+* 儲存庫
+* 文件類型
+* 已用容量
+* 文件數量
+* 文件大小
+* 文件創建
+* 文件上次訪問
+* 文件上次修改時間
+* 文件發現時間
+* 權限擷取
+
+
+.儀表板中的附加數據
+此版本更新了映射掃描期間治理、合規和調查儀表板中顯示的資料。
+
+有關詳細信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["映射和分類掃描之間有什麼區別"] 。
+
+
+
+== 2024年6月5日
+
+
+
+=== 版本 1.32
+
+.配置頁面中的新映射狀態列
+此版本現在在設定頁面中顯示一個新的對應狀態列。新列可協助您識別映射是否正在運行、排隊、暫停或更多。
+
+有關狀態的解釋，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html["更改掃描設定"]。
+
+
+
+== 2024年5月15日
+
+
+
+=== 版本 1.31
+
+.分類是BlueXP中的一項核心服務
+BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。無需分類許可或付費訂閱。由於我們將BlueXP classification功能的重點放在新版本掃描NetApp儲存系統上，因此某些舊功能將僅對先前已支付授權費用的客戶可用。當付費合約到期時，這些舊功能的使用將失效。
+
+
+NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+
+
+
+== 2024年4月1日
+
+
+
+=== 版本 1.30
+
+.增加了對 RHEL v8.8 和 v9.3 BlueXP classification的支持
+此版本除了先前支援的 9.x 之外，還支援 Red Hat Enterprise Linux v8.8 和 v9.3，它需要 Podman，而不是 Docker 引擎。這適用於BlueXP classification的任何手動本機安裝。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2 和 9.3。
+
+詳細了解 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["BlueXP classification部署概述"]。
+
+如果您在本機的 RHEL 8 或 9 主機上安裝連接器，則支援BlueXP classification。如果 RHEL 8 或 9 主機位於 AWS、Azure 或 Google Cloud 中，則不受支援。
+
+.刪除了啟動審計日誌收集的選項
+啟動審計日誌收集的選項已停用。
+
+.掃描速度提高
+輔助掃描節點的掃描性能得到了改善。如果您需要額外的掃描處理能力，您可以新增更多掃描器節點。有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["在可以存取網際網路的主機上安裝BlueXP classification"]。
+
+.自動升級
+如果您在具有網路存取權限的系統上部署了BlueXP classification，則系統會自動升級。以前，升級發生在自上次用戶活動以來經過特定時間之後。在此版本中，如果當地時間在凌晨 1:00 至凌晨 5:00 之間， BlueXP classification將自動升級。如果當地時間不在這些時間範圍內，則升級將在使用者上次活動後經過特定時間後進行。有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["在可以存取網際網路的 Linux 主機上安裝"]。
+
+如果您在沒有網路存取的情況下部署了BlueXP classification，則需要手動升級。有關詳細信息，請參閱 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["在沒有網路存取的 Linux 主機上安裝BlueXP classification"]。
+
+
+
+== 2024年3月4日
+
+
+
+=== 版本 1.29
+
+.現在您可以排除駐留在特定資料來源目錄中的掃描數據
+如果您希望BlueXP classification排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至BlueXP classification的設定檔。此功能可讓您避免掃描不必要的目錄，或避免傳回錯誤的個人資料結果。
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-exclude-scan-paths.html["了解更多"] 。
+
+.超大型實例支援現已合格
+如果您需要BlueXP classification來掃描超過 2.5 億個文件，您可以在雲端部署或本地安裝中使用超大實例。這種系統最多可以掃描 5 億個檔案。
+
+https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html#the-data-classification-instance["了解更多"] 。
+
+
+
+== 2024年1月10日
+
+
+
+=== 版本 1.27
+
+.調查頁面結果顯示總大小以及項目總數
+調查頁面中的過濾結果除了顯示文件總數外，還顯示項目的總大小。這在移動檔案、刪除檔案等操作時很有幫助。
+
+.將其他群組 ID 配置為“向組織開放”
+現在，如果群組最初沒有設定該權限，您可以直接從BlueXP classification將 NFS 中的群組 ID 配置為「向組織開放」。任何附加了這些群組 ID 的文件和資料夾都將在調查詳情頁面中顯示為「向組織開放」。了解如何link:https://docs.netapp.com/us-en/data-services-data-classification/task-add-group-id-as-open.html["添加其他群組 ID 作為“對組織開放”"]。
+
+
+
+== 2023年12月14日
+
+
+
+=== 版本 1.26.6
+
+此版本包含一些小的改進。
+
+該版本還刪除了以下選項：
+
+* 啟動審計日誌收集的選項已停用。
+* 在目錄調查期間，無法使用目錄計算個人識別資訊 (PII) 資料數量的選項。請參閱link:task-investigate-data.html["調查組織中儲存的數據"] 。
+* 使用 Azure 資訊保護 (AIP) 標籤整合資料的選項已停用。
+
+
+
+
+== 2023年11月6日
+
+
+
+=== 版本 1.26.3
+
+此版本已修復以下問題
+
+* 修正了儀表板中顯示系統掃描的檔案數量不一致的問題。
+* 透過處理和報告名稱和元資料中帶有特殊字元的檔案和目錄來改善掃描行為。
+
+
+
+
+== 2023年10月4日
+
+
+
+=== 版本 1.26
+
+.支援在 RHEL 版本 9 上本機安裝BlueXP classification
+Red Hat Enterprise Linux 8 和 9 版本不支援 Docker 引擎；而BlueXP classification安裝則需要引擎。我們現在支援在 RHEL 9.0、9.1 和 9.2 上使用 Podman 版本 4 或更高版本作為容器基礎架構進行BlueXP classification安裝。如果您的環境需要使用最新版本的 RHEL，現在您可以在使用 Podman 時安裝BlueXP classification（版本 1.26 或更高版本）。
+
+目前，在使用 RHEL 9.x 時，我們不支援暗站安裝或分散式掃描環境（使用主節點和遠端掃描器節點）。
+
+
+
+== 2023年9月5日
+
+
+
+=== 版本 1.25
+
+.中小型部署暫時無法使用
+當您在 AWS 中部署BlueXP classification實例時，此時無法選擇 *部署 > 配置* 並選擇小型或中型實例。您仍然可以透過選擇*部署>部署*來使用大實例大小部署實例。
+
+.在調查結果頁面中為最多 100,000 個項目新增標籤
+過去，您一次只能在調查結果頁面中將標籤套用至單一頁面（20 個項目）。現在您可以在調查結果頁面中選擇*所有*項目並將標籤應用於所有項目 - 一次最多 100,000 個項目。
+
+.識別最小檔案大小為 1 MB 的重複文件
+BlueXP classification僅用於在檔案大小為 50 MB 或更大時識別重複檔案。現在可以識別以 1 MB 開頭的重複檔案。您可以使用調查頁面過濾器「檔案大小」和「重複」來查看您的環境中哪些特定大小的檔案是重複的。
+
+
+
+== 2023年7月17日
+
+
+
+=== 版本 1.24
+
+.BlueXP classification識別出兩種新的德國個人數據
+BlueXP classification可以識別和分類包含以下類型資料的檔案：
+
+* 德國身分證 (Personalausweisnummer)
+* 德國社會安全號 (Sozialversicherungsnummer)
+
+
+link:https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html#types-of-personal-data["查看BlueXP classification可以在您的資料中識別的所有類型的個人數據"] 。
+
+.BlueXP classification在限制模式和私人模式下完全受支持
+BlueXP classification現在完全支援沒有網路存取（私人模式）和有限的外部網路存取（受限模式）的網站。link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-modes.html["了解有關連接器的BlueXP部署模式的更多信息"^] 。
+
+.升級BlueXP classification的私人模式安裝時可以跳過版本
+現在，即使 BlueXP 分類不是連續的，您也可以升級到較新版本的BlueXP classification。這意味著不再需要目前一次升級BlueXP classification的一個版本的限制。此功能從 1.24 版本開始適用。
+
+.BlueXP classificationAPI 現已可用
+BlueXP classificationAPI 可讓您執行操作、建立查詢以及匯出有關您正在掃描的資料的資訊。互動式文件可透過 Swagger 取得。該文件分為多個類別，包括調查、合規、治理和配置。每個類別都是對BlueXP classificationUI 中的選項卡的引用。
+
+link:https://docs.netapp.com/us-en/data-services-data-classification/api-classification.html["了解有關BlueXP classificationAPI 的更多信息"] 。
+
+
+
+== 2023年6月6日
+
+
+
+=== 版本 1.23
+
+.搜尋資料主體名稱時現在支援日語
+現在，在回應資料主體存取請求 (DSAR) 時搜尋主體名稱時可以輸入日文名稱。您可以生成link:https://docs.netapp.com/us-en/data-services-data-classification/task-generating-compliance-reports.html["資料主體存取請求報告"]以及由此產生的資訊。您還可以在link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["資料調查頁面中的「資料主體」過濾器"]識別包含主題名稱的文件。
+
+.Ubuntu 現在是受支援的 Linux 發行版，您可以在其上安裝BlueXP classification
+Ubuntu 22.04 已被認定為BlueXP classification的支援作業系統。您可以在網路中的 Ubuntu Linux 主機上安裝BlueXP classification，或使用安裝程式 1.23 版本在雲端中的 Linux 主機上安裝。 https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-onprem.html["看看如何在安裝了 Ubuntu 的主機上安裝BlueXP classification"] 。
+
+.新的BlueXP classification安裝不再支援 Red Hat Enterprise Linux 8.6 和 8.7
+這些版本不支援新的部署，因為 Red Hat 不再支援 Docker，而 Docker 是先決條件。如果您有在 RHEL 8.6 或 8.7 上執行的現有BlueXP classification機器， NetApp將繼續支援您的設定。
+
+.BlueXP classification可以配置為 FPolicy 收集器，以從ONTAP系統接收 FPolicy 事件
+您可以啟用檔案存取稽核日誌功能，在BlueXP classification系統上收集在工作環境中的磁碟區上偵測到的檔案存取事件。  BlueXP classification可以擷取以下類型的 FPolicy 事件以及對您的檔案執行操作的使用者：建立、讀取、寫入、刪除、重新命名、變更擁有者/權限以及變更 SACL/DACL。
+
+.暗網現已支援 Data Sense BYOL 許可證
+現在，您可以將 Data Sense BYOL 授權上傳到暗站中的BlueXP digital wallet中，以便在許可證不足時收到通知。
+
+
+
+== 2023年4月3日
+
+
+
+=== 版本 1.22
+
+.新數據發現評估報告
+數據發現評估報告對掃描環境進行了高級分析，以突出顯示系統的發現並顯示關注區域和潛在的補救步驟。本報告的目標是提高人們對資料治理問題、資料安全漏洞以及資料集的資料合規性差距的認識。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["了解如何產生和使用數據發現評估報告"] 。
+
+.能夠在雲端中的較小實例上部署BlueXP classification
+在 AWS 環境中從BlueXP連接器部署BlueXP classification時，現在您可以從兩個比預設執行個體更小的執行個體類型中進行選擇。如果您正在掃描小型環境，這可以幫助您節省雲端成本。但是，使用較小的實例時存在一些限制。 https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["查看可用的實例類型和限制"] 。
+
+.現在可以使用獨立腳本在BlueXP classification安裝之前驗證您的 Linux 系統
+如果您想獨立於執行BlueXP classification安裝來驗證您的 Linux 系統是否符合所有先決條件，您可以下載一個單獨的腳本，該腳本僅測試先決條件。 https://docs.netapp.com/us-en/data-services-data-classification/task-test-linux-system.html["了解如何檢查您的 Linux 主機是否已準備好安裝BlueXP classification"] 。
+
+
+
+== 2023年3月7日
+
+
+
+=== 版本 1.21
+
+.從BlueXP classificationUI 新增您自己的自訂類別的新功能
+BlueXP classification現在可讓您新增自己的自訂類別，以便BlueXP classification能夠識別適合這些類別的檔案。  BlueXP classification有很多 https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["預定義類別"]，因此此功能可讓您新增自訂類別，以識別在資料中找到組織獨有的資訊的位置。
+
+.現在您可以從BlueXP classificationUI 新增自訂關鍵字
+BlueXP classification已經能夠添加自訂關鍵字， BlueXP classification將在未來的掃描中識別這些關鍵字。但是，您需要登入BlueXP classificationLinux 主機並使用命令列介面新增關鍵字。在此版本中，新增自訂關鍵字的功能位於BlueXP classificationUI 中，這使得新增和編輯這些關鍵字變得非常容易。
+
+.當「上次訪問時間」發生變化時， BlueXP classification不會掃描文件
+預設情況下，如果BlueXP classification沒有足夠的「寫入」權限，系統將不會掃描磁碟區中的文件，因為BlueXP classification無法將「上次存取時間」恢復為原始時間戳記。但是，如果您不介意將上次訪問時間重置為文件中的原始時間，則可以在配置頁面中覆蓋此行為，以便BlueXP classification可以掃描卷，而不管權限如何。
+
+與此功能結合，新增了名為「掃描分析事件」的新篩選器，以便您可以查看未分類的文件，因為BlueXP classification無法恢復上次存取時間，或即使BlueXP classification無法恢復上次存取時間也已分類的文件。
+
+https://docs.netapp.com/us-en/data-services-data-classification/reference-collected-metadata.html["詳細了解「上次造訪時間戳記」以及BlueXP classification所需的權限"] 。
+
+.BlueXP classification可識別三種新的個人資料類型
+BlueXP classification可以識別和分類包含以下類型資料的檔案：
+
+* 波札那身分證（奧芒）號碼
+* 波札那護照號碼
+* 新加坡國民登記身分證（NRIC）
+
+
+https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["查看BlueXP classification可以在您的資料中識別的所有類型的個人數據"] 。
+
+.更新了目錄的功能
+* 資料調查報告的「精簡版 CSV 報告」選項現在包含來自目錄的資訊。
+* 「上次造訪」時間過濾器現在顯示檔案和目錄的上次存取時間。
+
+
+.安裝增強功能
+* 對於沒有網路存取的網站（暗站）， BlueXP classification安裝程式現在會執行預檢查，以確保您的系統和網路要求符合成功安裝的要求。
+* 安裝審計日誌檔案現在已儲存；它們被寫入 `/ops/netapp/install_logs`。
+
+
+
+
+== 2023年2月5日
+
+
+
+=== 版本 1.20
+
+.能夠向任何電子郵件地址發送基於策略的通知電子郵件
+在BlueXP classification的早期版本中，當某些關鍵策略傳回結果時，您可以向您帳戶中的BlueXP使用者發送電子郵件警報。此功能使您能夠在不在線時收到通知以保護您的資料。現在，您也可以從策略向不在您的BlueXP帳戶中的任何其他使用者（最多 20 個電子郵件地址）發送電子郵件警報。
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["詳細了解如何根據策略結果發送電子郵件提醒"] 。
+
+.現在您可以從BlueXP classificationUI 新增個人模式
+BlueXP classification已經能夠添加自訂“個人資料”， BlueXP classification將在未來的掃描中識別這些資料。但是，您需要登入BlueXP classificationLinux 主機並使用命令列新增自訂模式。在此版本中，使用正規表示式新增個人模式的功能位於BlueXP classificationUI 中，因此可以非常輕鬆地新增和編輯這些自訂模式。
+
+.使用BlueXP classification可以移動 1500 萬個文件
+過去，您可以透過BlueXP classification將最多 100,000 個來源檔案移至任何 NFS 共用。現在您一次最多可以移動 1500 萬個檔案。
+
+.能夠查看有權存取 SharePoint Online 檔案的使用者數量
+過濾器「具有存取權限的使用者數量」現在支援儲存在 SharePoint Online 儲存庫中的檔案。過去僅支援 CIFS 共享上的檔案。請注意，此時不基於活動目錄的 SharePoint 群組將不會計入此篩選器。
+
+.操作狀態面板中新增了新的「部分成功」狀態
+新的「部分成功」狀態表示BlueXP classification作業已完成，有些專案失敗，有些專案成功，例如，當您移動或刪除 100 個檔案時。此外，「完成」狀態已重新命名為「成功」。過去，「完成」狀態可能會列出成功和失敗的操作。現在「成功」狀態意味著所有項目上的所有操作都成功。 https://docs.netapp.com/us-en/data-services-data-classification/task-view-compliance-actions.html["了解如何查看操作狀態面板"] 。
+
+
+
+== 2023年1月9日
+
+
+
+=== 版本 1.19
+
+.能夠查看包含敏感資料和過於寬鬆的文件圖表
+治理儀表板新增了一個新的「敏感資料和廣泛權限」區域，該區域提供了包含敏感資料（包括敏感資料和敏感個人資料）且過於寬鬆的文件的熱圖。這可以幫助您了解敏感資料可能的風險。 https://docs.netapp.com/us-en/data-services-data-classification/task-controlling-governance-data.html["了解更多"] 。
+
+.資料調查頁面新增三個過濾器
+新的過濾器可用於優化資料調查頁面中顯示的結果：
+
+* 「具有存取權限的使用者數」過濾器顯示哪些檔案和資料夾對一定數量的使用者開放。您可以選擇一個數字範圍來優化結果 - 例如，查看 51-100 個使用者可以存取哪些檔案。
+* 現在，「建立時間」、「發現時間」、「上次修改時間」和「上次存取時間」篩選器可讓您建立自訂日期範圍，而不僅僅是選擇預先定義的日期範圍。例如，您可以尋找「建立時間」超過 6 個月的文件，或「上次修改時間」在「最近 10 天」內的文件。
+* 現在，「檔案路徑」篩選器可讓您指定要從篩選查詢結果中排除的路徑。如果您輸入包含和排除某些資料的路徑， BlueXP classification會先在包含的路徑中找到所有文件，然後從排除的路徑中刪除文件，然後顯示結果。
+
+
+https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["查看可用於調查資料的所有過濾器的列表"] 。
+
+.BlueXP classification可以辨識日本個人編號
+BlueXP classification可以識別和分類包含日本個人編號（也稱為 My Number）的檔案。這包括個人和企業我的號碼。 https://docs.netapp.com/us-en/data-services-data-classification/reference-private-data-categories.html["查看BlueXP classification可以在您的資料中識別的所有類型的個人數據"] 。

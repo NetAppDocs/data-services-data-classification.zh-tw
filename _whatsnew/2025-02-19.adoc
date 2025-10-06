@@ -1,0 +1,39 @@
+= 版本 1.40
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.40
+
+此BlueXP classification版本包括以下更新。
+
+.支援 RHEL 9.5
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.5 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+
+以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4 和 9.5。
+
+.優先進行僅映射掃描
+當進行僅映射掃描時，您可以優先考慮最重要的掃描。當您擁有多個工作環境並希望確保首先完成高優先掃描時，此功能會有所幫助。
+
+預設情況下，掃描會按照啟動的順序排隊。透過設定掃描優先權，您可以將掃描移至佇列的最前面。可以對多個掃描進行優先排序。優先權會依照先進先出的順序指定，這表示您優先考慮的第一個掃描將移至佇列的最前面；您優先考慮的第二個掃描將成為佇列中的第二個掃描，依此類推。
+
+優先權是一次性授予的。映射資料的自動重新掃描按照預設順序進行。
+
+優先權僅限於link:https://docs.netapp.com/us-en/bluexp-classification/concept-classification.html["僅映射掃描"^]；它不適用於地圖和分類掃描。
+
+有關更多信息，請參閱link:https://docs.netapp.com/us-en/bluexp-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"^] 。
+
+.重試所有掃描
+BlueXP classification支援批次重試所有失敗掃描的功能。
+
+您可以使用**全部重試**功能以批次操作的方式重新嘗試掃描。如果分類掃描因網路中斷等臨時問題而失敗，您可以使用一個按鈕同時重試所有掃描，而不必單獨重試。可根據需要重試掃描多次。
+
+若要重試所有掃描：
+
+. 從BlueXP classification選單中，選擇 *配置*。
+. 若要重試所有失敗的掃描，請選擇*重試所有掃描*。
+
+
+.提高分類模型的準確性
+機器學習模型的準確率link:https://docs.netapp.com/us-en/bluexp-classification/reference-private-data-categories.html#types-of-sensitive-personal-datapredefined-categories["預定義類別"]提高了11%。

@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-controlling-governance-dashboard-deprecated.html 
+redirect: data-services-data-classification/task-controlling-governance-data.html 
+---
+= 
+:allow-uri-read: 
+
+

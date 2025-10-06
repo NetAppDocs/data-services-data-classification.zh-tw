@@ -1,0 +1,54 @@
+---
+sidebar: sidebar 
+permalink: task-uninstall.html 
+keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
+summary: 您可以卸載資料分類軟體來解決問題或從主機永久刪除該軟體。刪除實例也會刪除索引資料所在的關聯磁碟。資料分類掃描的所有資訊將永久刪除。 
+---
+= 卸載NetApp資料分類
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+您可以解除安裝NetApp Data Classification 來解決問題或永久從主機移除該軟體。刪除實例也會刪除索引資料所在的關聯磁碟，這表示資料分類掃描的所有資訊都將永久刪除。
+
+您需要使用的步驟取決於您是在雲端還是在本機上部署資料分類。
+
+
+
+== 從雲端提供者卸載資料分類
+
+. 從資料分類中，選擇**配置**。
+. 在配置頁面底部，選擇**卸載分類**。
++
+image:screenshot-uninstall.png["卸載資料分類按鈕的螢幕截圖。"]
+
+. 在對話方塊中，輸入「卸載」以繼續中斷資料分類實例與控制台代理程式的連線。選擇**卸載**進行確認。
+. 在「卸載分類」對話方塊中，鍵入「*卸載*」以確認您要中斷資料分類執行個體與控制台代理程式的連接，然後選擇「*卸載*」。
+. 要完成卸載過程，請前往雲端提供者的控制台並刪除資料分類實例。此實例名為 _CloudCompliance_，並帶有與之連接的產生的雜湊值（UUID）。例如：_CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+
+
+
+
+== 從本地部署卸載資料分類
+
+. 從資料分類中，選擇**配置**。
+. 在配置頁面底部，選擇**卸載分類**。
++
+image:screenshot-uninstall.png["卸載資料分類按鈕的螢幕截圖。"]
+
+. 在對話方塊中，輸入「卸載」以繼續中斷資料分類實例與控制台代理程式的連線。選擇**卸載**進行確認。
+. 若要從主機卸載軟體，請執行 `cleanup.sh`資料分類主機上的腳本，例如：
++
+[source, cli]
+----
+cleanup.sh
+----
++
+該腳本位於 `/install/light_probe/onprem_installer/cleanup.sh`目錄。了解如何link:reference-log-in-to-instance.html["登入資料分類主機"]。
+
+

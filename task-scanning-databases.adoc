@@ -1,0 +1,117 @@
+---
+sidebar: sidebar 
+permalink: task-scanning-databases.html 
+keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
+summary: 完成幾個步驟即可開始使用NetApp資料分類掃描資料庫模式。 
+---
+= 使用NetApp資料分類掃描資料庫模式
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+完成幾個步驟即可開始使用NetApp資料分類掃描資料庫模式。
+
+
+
+== 審查先決條件
+
+在啟用資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。
+
+
+
+=== 支援的資料庫
+
+資料分類可以掃描以下資料庫中的模式：
+
+* 亞馬遜關係型資料庫服務 (Amazon RDS)
+* MongoDB
+* MySQL
+* 甲骨文
+* PostgreSQL
+* SAP HANA
+* SQL 伺服器 (MSSQL)
+
+
+
+CAUTION: 資料庫中必須啟用統計資訊收集功能。
+
+
+
+=== 資料庫要求
+
+任何與資料分類實例連接的資料庫都可以掃描，無論它託管在何處。您只需要以下資訊即可連接到資料庫：
+
+* IP 位址或主機名
+* 港口
+* 服務名稱（僅用於存取 Oracle 資料庫）
+* 允許讀取架構的憑證
++
+選擇使用者名稱和密碼時，請務必選擇對要掃描的所有模式和表格具有完全讀取權限的使用者名稱和密碼。我們建議您為資料分類系統建立一個具有所有必需權限的專用使用者。
+
+
+
+
+NOTE: 對於 MongoDB，需要只讀管理員角色。
+
+
+
+== 部署資料分類實例
+
+如果尚未部署實例，則部署資料分類。
+
+如果您正在掃描可透過網際網路存取的資料庫模式，您可以link:task-deploy-cloud-compliance.html["在雲端部署資料分類"^]或者link:task-deploy-compliance-onprem.html["在可以存取網際網路的本地位置部署資料分類"^]。
+
+如果您正在掃描安裝在沒有網路存取的暗網中的資料庫模式，則需要link:task-deploy-compliance-dark-site.html["在沒有網路存取的相同本地位置部署資料分類"^]。這也要求將控制台代理部署在同一本地位置。
+
+
+
+== 新增資料庫伺服器
+
+新增架構所在的資料庫伺服器。
+
+. 從資料分類選單中，選擇*配置*。
+. 在設定頁面中，選擇*新增系統* > *新增資料庫伺服器*。
+. 輸入所需資訊以識別資料庫伺服器。
++
+.. 選擇資料庫類型。
+.. 輸入連接埠和主機名稱或 IP 位址以連接到資料庫。
+.. 對於 Oracle 資料庫，輸入服務名稱。
+.. 輸入憑證以便資料分類可以存取伺服器。
+.. 選擇*新增資料庫伺服器*。
++
+image:screenshot_compliance_add_db_server_dialog.png["新增資料庫伺服器頁面的螢幕截圖，以便您識別資料庫。"]
+
+
+
+
+
+該資料庫已新增至系統清單。
+
+
+
+== 啟用和停用資料庫模式的合規性掃描
+
+您可以隨時停止或開始對您的模式進行全面掃描。
+
+
+TIP: 沒有選項可以選擇僅映射資料庫模式的掃描。
+
+. 在配置頁面中，選擇要設定的資料庫的*配置*按鈕。
++
+image:screenshot_compliance_db_server_config.png["掃描配置頁面的螢幕截圖，您可以在其中選擇配置按鈕。"]
+
+. 透過向右移動滑桿來選擇要掃描的模式。
++
+image:screenshot_compliance_select_schemas.png["掃描配置頁面的螢幕截圖，您可以在其中選擇要掃描的模式。"]
+
+
+
+.結果
+資料分類開始掃描您啟用的資料庫模式。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。如果有任何錯誤，它們將出現在「狀態」列中，並顯示修復錯誤所需的操作。
+
+資料分類每天掃描您的資料庫一次；資料庫不像其他資料來源那樣被連續掃描。

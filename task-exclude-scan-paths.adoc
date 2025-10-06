@@ -1,0 +1,160 @@
+---
+sidebar: sidebar 
+permalink: task-exclude-scan-paths.html 
+keywords: exclude scans, folders, directories 
+summary: 如果您希望NetApp資料分類排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將排除這些目錄中的掃描資料。 
+---
+= 從NetApp資料分類掃描排除特定目錄
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+如果您希望NetApp資料分類從掃描中排除特定目錄，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將從掃描中排除這些目錄。
+
+
+NOTE: 預設情況下，資料分類掃描排除與磁碟區中的來源相同的磁碟區快照資料。
+
+
+
+== 支援的資料來源
+
+以下資料來源中的 NFS 和 CIFS 共用支援從資料分類掃描中排除特定目錄：
+
+* 本地ONTAP
+* Cloud Volumes ONTAP
+* Amazon FSx for NetApp ONTAP
+* Azure NetApp Files
+* 常規文件共享
+
+
+
+
+== 定義要排除在掃描之外的目錄
+
+在將目錄排除在分類掃描之外之前，您需要登入資料分類系統，以便可以編輯設定檔並執行腳本。了解如何link:reference-log-in-to-instance.html["登入資料分類系統"]取決於您是否在 Linux 機器上手動安裝了該軟體，或者是否在雲端部署了該實例。
+
+.注意事項
+* 每個資料分類系統最多可以排除 50 個目錄路徑。
+* 排除目錄路徑可能會影響掃描時間。
+
+
+.步驟
+. 在資料分類系統上，前往“/opt/netapp/config/custom_configuration”，然後開啟文件 `data_provider.yaml`。
+. 在「exclude:」行下的「data_providers」部分中，輸入要排除的目錄路徑。例如：
++
+....
+exclude:
+- "folder1"
+- "folder2"
+....
++
+請勿修改此文件中的任何其他內容。
+
+. 儲存對文件的變更。
+. 前往“/opt/netapp/Datasense/tools/customer_configuration/data_providers”並執行以下腳本：
+
+
+`update_data_providers_from_config_file.sh`
+
++ 此指令將要排除在掃描範圍之外的目錄提交給分類引擎。
+
+.結果
+對您的資料進行的所有後續掃描都將排除對這些指定目錄的掃描。
+
+您可以使用相同的步驟從排除清單中新增、編輯或刪除項目。執行腳本提交更改後，修改後的排除清單將會更新。
+
+
+
+== 範例
+
+.配置1：
+名稱中包含「folder1」的每個資料夾都將被排除在所有資料來源之外。
+
+....
+data_providers:
+   exclude:
+   - "folder1"
+....
+.將被排除的路徑的預期結果：
+* /CVO1/資料夾1
+* /CVO1/資料夾1名稱
+* /CVO1/資料夾10
+* /CVO1/*資料夾1
+* /CVO1/+資料夾1名稱
+* /CVO1/notfolder10
+* /CVO22/資料夾1
+* /CVO22/資料夾1名稱
+* /CVO22/資料夾10
+
+
+.不會被排除的路徑範例：
+* /CVO1/*資料夾
+* /CVO1/資料夾名稱
+* /CVO22/*folder20
+
+
+.配置2：
+僅在名稱開頭包含“*folder1”的每個資料夾都將被排除。
+
+....
+data_providers:
+   exclude:
+   - "\\*folder1"
+....
+.將被排除的路徑的預期結果：
+* /CVO/*資料夾1
+* /CVO/*資料夾1名稱
+* /CVO/*資料夾10
+
+
+.不會被排除的路徑範例：
+* /CVO/資料夾1
+* /CVO/資料夾1名稱
+* /CVO/not*folder10
+
+
+.配置3：
+資料來源「CVO22」中名稱中包含「folder1」的每個資料夾都將被排除。
+
+....
+data_providers:
+   exclude:
+   - "CVO22/folder1"
+....
+.將被排除的路徑的預期結果：
+* /CVO22/資料夾1
+* /CVO22/資料夾1名稱
+* /CVO22/資料夾10
+
+
+.不會被排除的路徑範例：
+* /CVO1/資料夾1
+* /CVO1/資料夾1名稱
+* /CVO1/資料夾10
+
+
+
+
+== 轉義資料夾名稱中的特殊字符
+
+如果您的資料夾名稱包含以下特殊字元之一，並且您想要排除該資料夾中的資料進行掃描，則需要在資料夾名稱前使用轉義序列 \\。
+
+ ., +, *, ?, ^, $, (, ), [, ], {, }, |
+例如：
+
+來源中的路徑： `/project/*not_to_scan`
+
+排除文件中的語法： `"\\*not_to_scan"`
+
+
+
+== 查看目前排除列表
+
+內容可能 `data_provider.yaml`設定檔與運行後實際提交的內容不同 `update_data_providers_from_config_file.sh`腳本。若要查看已從資料分類掃描中排除的目前目錄列表，請從「/opt/netapp/Datasense/tools/customer_configuration/data_providers」執行下列命令：
+
+ get_data_providers_configuration.sh

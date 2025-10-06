@@ -1,0 +1,90 @@
+= 
+:allow-uri-read: 
+
+
+* 與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。
+* 在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。
++
+[cols="17,17,27,31"]
+|===
+| 系統大小 | 中央處理器 | RAM（必須停用交換記憶體） | 磁碟 
+
+
+| *超大* | 32 個 CPU | 128 GB 內存  a| 
+** / 上 1 TiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 上可用 895 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+
+
+| *大的* | 16 個 CPU | 64 GB 內存  a| 
+** / 上 500 GiB SSD，或 /opt 上 100 GiB 可用
+** /var/lib/docker 或 Podman /var/lib/containers 上可用 400 GiB
+** /tmp 上 5 GiB
+** *對於 Podman，/var/tmp 上有 30 GB*
+
+
+|===
+* 在雲端為資料分類安裝部署運算執行個體時，建議您使用符合上述「大型」系統需求的系統：
++
+** *Amazon Elastic Compute Cloud (Amazon EC2) 執行個體類型*：「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["查看其他 AWS 執行個體類型"^] 。
+** *Azure VM 大小*：「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["查看其他 Azure 執行個體類型"^] 。
+** *GCP 機器類型*：「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["查看其他 GCP 實例類型"^] 。
+
+
+* *UNIX 資料夾權限*：需要以下最低 UNIX 權限：
++
+[cols="25,25"]
+|===
+| 資料夾 | 最低權限 
+
+
+| /tmp | `rwxrwxrwt` 
+
+
+| /選擇 | `rwxr-xr-x` 
+
+
+| /var/lib/docker | `rwx------` 
+
+
+| /usr/lib/systemd/系統 | `rwxr-xr-x` 
+|===
+* *作業系統*:
++
+** 以下作業系統需要使用 Docker 容器引擎：
++
+*** Red Hat Enterprise Linux 版本 7.8 與 7.9
+*** Ubuntu 22.04（需要資料分類版本 1.23 或更高版本）
+*** Ubuntu 24.04（需要資料分類版本 1.23 或更高版本）
+
+
+** 以下作業系統需要使用 Podman 容器引擎，並且需要資料分類版本 1.30 或更高版本：
++
+*** Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5 和 9.6。
+
+
+** 必須在主機系統上啟用進階向量擴充 (AVX2)。
+
+
+* *Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。
+* *附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：
++
+** 根據您使用的作業系統，您需要安裝其中一個容器引擎：
++
+*** Docker Engine 版本 19.3.1 或更高版本。 https://docs.docker.com/engine/install/["查看安裝說明"^] 。
+*** Podman 版本 4 或更高版本。若要安裝 Podman，請輸入(`sudo yum install podman netavark -y`）。
+
+
+
+
+
+
+* Python 版本 3.6 或更高版本。 https://www.python.org/downloads/["查看安裝說明"^] 。
++
+** *NTP 注意事項*： NetApp建議設定資料分類系統以使用網路時間協定 (NTP) 服務。資料分類系統和控制台代理系統之間的時間必須同步。
+
+
+

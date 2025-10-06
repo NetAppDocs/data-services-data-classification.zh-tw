@@ -1,0 +1,8 @@
+---
+permalink: data-services-data-classification/task-managing-repo-scanning-deprecated.html 
+redirect: data-services-data-classification/task-managing-repo-scanning.html 
+---
+= 
+:allow-uri-read: 
+
+

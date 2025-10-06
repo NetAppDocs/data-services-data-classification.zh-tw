@@ -1,0 +1,67 @@
+---
+sidebar: sidebar 
+permalink: reference-instance-types.html 
+keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
+summary: 資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，建議您使用具有「大型」特性的系統以實現全部功能。 
+---
+= 支援的NetApp資料分類實例類型
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp資料分類軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，我們建議您使用具有「大型」特性的系統以實現全部功能。
+
+您可以在較少 CPU 和較少 RAM 的系統上部署資料分類，但在使用這些功能較弱的系統時會受到一些限制。link:concept-classification.html["了解這些限制"^] 。
+
+在下表中，如果標記為「預設」的系統在您安裝資料分類的區域中不可用，則將部署表中的下一個系統。
+
+
+
+== AWS 執行個體類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 實例類型 
+
+
+| 特大號 | 32 個 CPU、128 GB RAM、1 TiB gp3 SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.8xlarge"^](預設) 
+
+
+| 大的 | 16 個 CPU、64 GB RAM、500 GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge"^]（預設）m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge 
+
+
+| 中等的 | 8 個 CPU、32 GB RAM、200 GiB SSD | https://aws.amazon.com/ec2/instance-types/m6i/["m6i.2xlarge"^]（預設）m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge 
+
+
+| 小的 | 8 個 CPU、16 GB RAM、100 GiB SSD | https://aws.amazon.com/ec2/instance-types/c6a/["c6a.2xlarge"^]（預設）c5a.2xlarge c5.2xlarge c4.2xlarge 
+|===
+
+
+== Azure 執行個體類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 實例類型 
+
+
+| 特大號 | 32 個 CPU、128 GB RAM、OS 磁碟（2,048 GiB，最小吞吐量 250 MB/s）和資料磁碟（1 TiB SSD，最小吞吐量 750 MB/s） | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^](預設) 
+
+
+| 大的 | 16 個 CPU、64 GB RAM、500 GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^](預設) 
+|===
+
+
+== GCP 實例類型
+
+[cols="20,30,25"]
+|===
+| 系統大小 | 規格 | 實例類型 
+
+
+| 大的 | 16 個 CPU、64 GB RAM、500 GiB SSD | https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-標準-16"^]（預設）n2d-standard-16 n1-standard-16 
+|===

@@ -1,0 +1,226 @@
+---
+sidebar: sidebar 
+permalink: concept-classification.html 
+keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, bluexp, bluexp classification, netapp console 
+summary: 資料分類是NetApp控制台的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。 
+---
+= 了解NetApp資料分類
+:allow-uri-read: 
+:no-hardbreaks: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp資料分類是NetApp控制台的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。
+
+
+IMPORTANT: 從 1.31 版開始，資料分類作為NetApp控制台中的一項核心功能提供。無需額外付費。無需分類許可或訂閱。  + 如果您一直在使用舊版本 1.30 或更早版本，則該版本在您的訂閱到期之前可用。
+
+
+
+== NetApp控制台
+
+可以透過NetApp控制台存取資料分類。
+
+NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+
+您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
+
+詳細了解link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-overview.html["NetApp控制台"^]。
+
+
+
+== 特徵
+
+資料分類使用人工智慧 (AI)、自然語言處理 (NLP) 和機器學習 (ML) 來理解其掃描的內容，以便提取實體並對內容進行相應的分類。這使得資料分類能夠提供以下功能領域。
+
+https://bluexp.netapp.com/netapp-cloud-data-sense["了解資料分類的用例"^] 。
+
+.保持合規
+資料分類提供了多種工具，可以幫助您實現合規性。您可以使用資料分類來：
+
+* 識別個人識別資訊 (PII)。
+* 根據 GDPR、CCPA、PCI 和 HIPAA 隱私法規的要求識別廣泛的敏感個人資訊。
+* 根據姓名或電子郵件地址回應資料主體存取請求 (DSAR)。
+
+
+.加強安全
+資料分類可以識別可能被犯罪分子存取的資料。您可以使用資料分類來：
+
+* 識別向整個組織或公眾公開的所有具有開放權限的文件和目錄（共用和資料夾）。
+* 識別位於初始專用位置之外的敏感資料。
+* 遵守資料保留政策。
+* 使用__Policies__自動偵測新的安全性問題，以便安全人員可以立即採取行動。
+
+
+.優化儲存使用情況
+資料分類提供可協助您降低儲存總擁有成本 (TCO) 的工具。您可以使用資料分類來：
+
+* 透過識別重複或與業務無關的資料來提高儲存效率。
+* 透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["了解有關Cloud Volumes ONTAP系統分層的更多信息"^] 。 https://docs.netapp.com/us-en/bluexp-tiering/concept-cloud-tiering.html["了解有關本地ONTAP系統分層的更多信息"^] 。
+
+
+
+
+== 支援的系統和資料來源
+
+資料分類可以掃描和分析來自以下類型的系統和資料來源的結構化和非結構化資料：
+
+*系統*
+
+* Amazon FSx for NetApp ONTAP管理
+* Azure NetApp Files
+* Cloud Volumes ONTAP （部署在 AWS、Azure 或 GCP 中）
+* 本地ONTAP集群
+* StorageGRID
+
+
+*資料來源*
+
+* NetApp檔案分享
+* 資料庫:
++
+** 亞馬遜關係型資料庫服務 (Amazon RDS)
+** MongoDB
+** MySQL
+** 甲骨文
+** PostgreSQL
+** SAP HANA
+** SQL 伺服器 (MSSQL)
+
+
+
+
+資料分類支援 NFS 版本 3.x、4.0 和 4.1，以及 CIFS 版本 1.x、2.0、2.1 和 3.0。
+
+
+
+== 成本
+
+資料分類可以免費使用。無需分類許可或付費訂閱。
+
+
+
+=== 基礎設施成本
+
+* 在雲端安裝資料分類需要部署雲端實例，這會導致部署雲端的雲端供應商收取費用。看<<資料分類實例,為每個雲端提供者部署的執行個體類型>> 。如果您在本機系統上安裝資料分類，則無需付費。
+* 資料分類要求您部署控制台代理程式。在許多情況下，由於您在控制台中使用其他儲存和服務，因此您已經擁有控制台代理程式。控制台代理執行個體會導致其部署所在的雲端提供者收取費用。查看 https://docs.netapp.com/us-en/bluexp-setup-admin/task-install-connector-on-prem.html["為每個雲端提供者部署的執行個體類型"^]。如果您在本機系統上安裝控制台代理，則無需付費。
+
+
+
+
+=== 資料傳輸成本
+
+資料傳輸成本取決於您的設定。如果資料分類實例和資料來源位於相同可用區和區域，則沒有資料傳輸成本。但是，如果資料來源（例如Cloud Volumes ONTAP系統）位於不同的可用區或區域，那麼您的雲端供應商將向您收取資料傳輸費用。請參閱以下連結以了解更多詳細資訊：
+
+* https://aws.amazon.com/ec2/pricing/on-demand/["AWS：Amazon Elastic Compute Cloud (Amazon EC2) 定價"^]
+* https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure：頻寬定價詳情"^]
+* https://cloud.google.com/storage-transfer/pricing["Google Cloud：儲存傳輸服務定價"^]
+
+
+
+
+== 資料分類實例
+
+當您在雲端部署資料分類時，控制台會將執行個體部署在與控制台代理相同的子網路中。 https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html["了解有關控制台代理的更多資訊。"^]
+
+image:diagram_cloud_compliance_instance.png["此圖表顯示了在您的雲端提供者中執行的控制台實例和資料分類實例。"]
+
+請注意預設實例的以下幾點：
+
+* 在 AWS 中，資料分類在 https://aws.amazon.com/ec2/instance-types/m6i/["m6i.4xlarge 實例"^]帶有 500 GiB GP2 磁碟。作業系統映像是 Amazon Linux 2。在 AWS 中部署時，如果您要掃描少量數據，則可以選擇較小的執行個體大小。
+* 在 Azure 中，資料分類在link:https://docs.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3 VM"^]帶有 500 GiB 磁碟。作業系統映像是 Ubuntu 22.04。
+* 在 GCP 中，資料分類在link:https://cloud.google.com/compute/docs/general-purpose-machines#n2_machines["n2-standard-16 虛擬機"^]配備 500 GiB 標準持久性磁碟。作業系統映像是 Ubuntu 22.04。
+* 在預設實例不可用的區域中，資料分類在備用實例上運行。link:reference-instance-types.html["查看替代實例類型"] 。
+* 此實例名為 _CloudCompliance_，並帶有與之連接的產生的雜湊值（UUID）。例如：_CloudCompliance-16bb6564-38ad-4080-9a92-36f5fd2f71c7_
+* 每個控制台代理程式僅部署一個資料分類實例。
+
+
+您也可以在您的場所內的 Linux 主機上或您首選的雲端提供者的主機上部署資料分類。無論您選擇哪一種安裝方法，軟體的功能都完全相同。只要實例可以存取互聯網，資料分類軟體的升級就會自動進行。
+
+
+TIP: 實例應始終保持運行，因為資料分類會持續掃描資料。
+
+*在不同的實例類型上部署*
+
+查看實例類型的以下規範：
+
+[cols="18,31,51"]
+|===
+| 系統大小 | 規格 | 限制 
+
+
+| 特大號 | 32 個 CPU、128 GB RAM、1 TiB SSD | 最多可掃描 5 億個文件。 
+
+
+| 大（預設） | 16 個 CPU、64 GB RAM、500 GiB SSD | 最多可掃描 2.5 億個文件。 
+|===
+在 Azure 或 GCP 中部署資料分類時，如果您想使用較小的實例類型，請發送電子郵件至 ng-contact-data-sense@netapp.com 尋求協助。
+
+
+
+== 資料分類掃描的工作原理
+
+從高層次來看，資料分類掃描的工作原理如下：
+
+. 您在控制台中部署資料分類實例。
+. 您可以在一個或多個資料來源上啟用進階映射（稱為「僅映射」掃描）或深層掃描（稱為「映射和分類」掃描）。
+. 資料分類使用人工智慧學習過程掃描資料。
+. 您可以使用提供的儀表板和報告工具來幫助您實現合規性和治理工作。
+
+
+啟用資料分類並選擇要掃描的儲存庫（這些是磁碟區、資料庫模式或其他使用者資料）後，它會立即開始掃描資料以識別個人和敏感資料。在大多數情況下，您應該專注於掃描即時生產數據，而不是備份、鏡像或 DR 網站。然後，資料分類會對應您的組織數據，對每個檔案進行分類，並識別和提取資料中的實體和預定義模式。掃描結果是個人資訊、敏感個人資訊、資料類別和文件類型的索引。
+
+資料分類透過安裝 NFS 和 CIFS 磁碟區像任何其他客戶端一樣連接到資料。  NFS 磁碟區會自動以唯讀方式訪問，而您需要提供 Active Directory 憑證來掃描 CIFS 磁碟區。
+
+image:diagram_cloud_compliance_scan.png["此圖表顯示了在您的雲端提供者中執行的控制台實例和資料分類實例。資料分類實例連接到 NFS 和 CIFS 捲和資料庫以對其進行掃描。"]
+
+初步掃描後，資料分類將以循環方式持續掃描您的資料以偵測增量變化。這就是為什麼保持實例運行很重要。
+
+您可以在磁碟區層級或資料庫模式層級啟用和停用掃描。
+
+
+NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/bluexp-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/bluexp-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/bluexp-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+
+
+
+== 映射掃描和分類掃描之間有什麼區別
+
+您可以在資料分類中進行兩種類型的掃描：
+
+* **僅映射掃描**僅提供資料的進階概覽，並在選定的資料來源上執行。僅映射掃描比映射和分類掃描花費的時間更少，因為它們不存取文件來查看其中的資料。您可能希望首先執行此操作來確定研究領域，然後對這些領域執行地圖和分類掃描。
+* **地圖和分類掃描** 為您的資料提供深層掃描。
+
+
+有關映射掃描和分類掃描之間的差異的詳細信息，請參閱link:task-scanning-overview.html["映射和分類掃描之間有什麼區別？"]。
+
+
+
+== 資料分類所分類的信息
+
+資料分類收集、索引並分配以下資料的類別：
+
+* 關於文件的*標準元資料*：文件類型、大小、建立和修改日期等等。
+* *個人資料*：個人識別資訊 (PII)，例如電子郵件地址、身分證號碼或信用卡號，資料分類使用檔案中的特定單字、字串和模式進行識別。link:task-controlling-private-data.html#view-files-that-contain-personal-data["了解有關個人資料的更多信息"^] 。
+* *敏感個人資訊*：《一般資料保護規範》（GDPR）和其他隱私法規定義的特殊類型的敏感個人資訊（SPII），例如健康資料、種族血統或政治觀點。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["了解有關敏感個人資料的更多信息"^] 。
+* *類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。link:task-controlling-private-data.html#view-files-by-categories["了解有關類別的更多信息"^] 。
+* *類型*：資料分類取得其掃描的資料並按文件類型細分。link:task-controlling-private-data.html#view-files-by-file-types["了解有關類型的更多信息"^] 。
+* *名稱實體識別*：資料分類使用人工智慧從文件中提取人們的自然名稱。link:task-generating-compliance-reports.html["了解如何回應資料主體存取請求"^] 。
+
+
+
+
+== 網路概述
+
+資料分類可以在您選擇的任何地方部署單一伺服器或叢集：在雲端或本地端。伺服器透過標準協定連接到資料來源，並在 Elasticsearch 叢集中對結果進行索引，該叢集也部署在同一台伺服器上。這使得能夠支援多雲、跨雲端、私有雲和本地環境。
+
+控制台使用安全性群組部署資料分類實例，該安全性群組啟用來自控制台代理程式的入站 HTTP 連線。
+
+當您在 SaaS 模式下使用控制台時，與控制台的連線透過 HTTPS 提供，並且您的瀏覽器和資料分類實例之間發送的私人資料使用 TLS 1.2 進行端對端加密保護，這表示NetApp和第三方無法讀取它。
+
+出站規則完全開放。需要網路存取來安裝和升級資料分類軟體以及發送使用情況指標。
+
+如果您有嚴格的網路要求，link:task-deploy-cloud-compliance.html#prerequisites["了解資料分類聯繫的端點"^] 。
