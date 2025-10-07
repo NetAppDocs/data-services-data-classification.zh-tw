@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-overview.html 
 keywords: cloud compliance, get started, enable cloud compliance, cifs credentials, smb credentials, cloud compliance access, privacy, compliance, dp volumes, data protection volumes, CVO, Cloud Volumes ONTAP, data sense, cloud data sense, mapping-only scans, map and classify, map & classify 
-summary: 使用NetApp資料分類掃描您的資料來源。 
+summary: 使用NetApp Data Classification掃描您的資料來源。 
 ---
-= 使用NetApp資料分類掃描資料來源
+= 使用NetApp Data Classification掃描資料來源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 使用NetApp資料分類掃描您的資料來源。
 
 
 [role="lead"]
-NetApp資料分類會掃描您選擇的儲存庫（磁碟區、資料庫模式或其他使用者資料）中的數據，以識別個人和敏感資料。然後，資料分類會對應您的組織資料、對每個文件進行分類並識別資料中的預定義模式。掃描結果是個人資訊、敏感個人資訊、資料類別和文件類型的索引。
+NetApp Data Classification會掃描您選擇的儲存庫（磁碟區、資料庫模式或其他使用者資料）中的數據，以識別個人和敏感資料。然後，資料分類會對應您的組織資料、對每個文件進行分類並識別資料中的預定義模式。掃描結果是個人資訊、敏感個人資訊、資料類別和文件類型的索引。
 
 初步掃描後，資料分類將以循環方式持續掃描您的資料以偵測增量變化。這就是為什麼保持實例運行很重要。
 
@@ -72,7 +72,7 @@ NetApp資料分類會掃描您選擇的儲存庫（磁碟區、資料庫模式�
 
 | 能夠查看文件中的元資料** | 不 | 是的 
 |===
-{asterisk} 資料分類不會對其可掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:task-deploy-overview.html["部署另一個資料分類實例"]。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+{asterisk} 資料分類不會對其可掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
 
 {asterisk}{asterisk} 在映射掃描期間從檔案中提取以下元資料：
 

@@ -11,7 +11,7 @@
 .審計頁面中增強的掃描事件洞察
 審計頁面現在支援對BlueXP classification的掃描事件的增強洞察。審計頁面現在顯示系統掃描的開始時間、系統狀態以及任何問題。共享和系統的狀態僅適用於映射掃描。
 
-有關審計頁面的更多信息，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["監控NetApp控制台操作"^]。
+有關審計頁面的更多信息，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["監控NetApp Console操作"^]。
 
 .支援 RHEL 9.6
 此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。

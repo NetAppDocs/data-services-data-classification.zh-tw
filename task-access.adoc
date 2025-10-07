@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-access.html 
 keywords: log in, sign in 
-summary: 透過存取NetApp控制台中的服務開始使用NetApp資料分類。 
+summary: 透過存取NetApp Console中的服務開始使用NetApp Data Classification。 
 ---
-= 存取NetApp資料分類
+= 存取NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :icons: font
@@ -12,9 +12,9 @@ summary: 透過存取NetApp控制台中的服務開始使用NetApp資料分類�
 
 
 [role="lead"]
-您可以透過NetApp控制台存取NetApp資料分類。
+您可以透過NetApp Console存取NetApp Data Classification。
 
-若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp控制台登入。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有關登入控制台的更多信息"^] 。
+若要登入控制台，您可以使用您的NetApp支援網站憑證，也可以使用您的電子郵件和密碼註冊NetApp Console登入。link:https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-logging-in.html["了解有關登入控制台的更多信息"^] 。
 
 特定任務需要特定的控制台使用者角色。link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html["了解所有服務的控制台存取角色"^] 。
 
@@ -26,7 +26,7 @@ summary: 透過存取NetApp控制台中的服務開始使用NetApp資料分類�
 .步驟
 . 在 Web 瀏覽器中，導覽至link:https://console.netapp.com/["安慰"^]。
 . 登入控制台。
-. 從NetApp控制台首頁中，選擇「治理」>「資料分類」。
+. 從NetApp Console主頁中，選擇「治理」>「資料分類」。
 . 如果這是您第一次造訪資料分類，則會出現登入頁面。
 +
 選擇*在本機或雲端部署分類*以開始部署您的分類實例。有關詳細信息，請參閱link:task-deploy-cloud-compliance.html["您應該使用哪種資料分類部署？"]

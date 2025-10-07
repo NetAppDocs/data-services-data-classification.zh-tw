@@ -4,7 +4,7 @@ permalink: task-managing-compliance.html
 keywords: remove, stop, stop scans, stop scanning, cloud compliance, stop cloud compliance, deactivate, deactivating cloud compliance, data sense 
 summary: 如果需要，您可以停止資料分類掃描一個或多個系統、資料庫、文件共用群組、OneDrive 帳戶、Google Drive 帳戶或 SharePoint 帳戶。 
 ---
-= 從NetApp資料分類中刪除資料來源
+= 從NetApp Data Classification中刪除資料來源
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 如果需要，您可以停止資料分類掃描一個或多個系統�
 
 
 [role="lead"]
-如果需要，您可以停止NetApp資料分類掃描一個或多個系統、資料庫或檔案共用群組。
+如果需要，您可以停止NetApp Data Classification掃描一個或多個系統、資料庫或檔案共用群組。
 
 
 
@@ -46,7 +46,7 @@ TIP: 您也可以在選擇系統時從「服務」面板停用系統的合規性
 .步驟
 . 從「配置」頁面中，選擇image:button-gallery-options.gif["更多按鈕"]檔案共用群組行中的按鈕，然後按一下*刪除檔案共用群組*。
 +
-image:screenshot_compliance_remove_db.png["掃描配置頁面中刪除資料庫伺服器按鈕的螢幕截圖。"]
+image:screenshot_compliance_remove_db.png["掃描配置頁面中「刪除資料庫伺服器」按鈕的螢幕截圖。"]
 
 . 從確認對話方塊中選擇*刪除共享群組*。
 

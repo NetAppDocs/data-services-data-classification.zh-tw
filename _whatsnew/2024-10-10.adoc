@@ -7,7 +7,7 @@
 === 版本 1.36
 
 .支援 RHEL 9.4
-此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
 
 以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。
 

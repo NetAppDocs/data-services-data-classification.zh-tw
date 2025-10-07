@@ -4,7 +4,7 @@ permalink: task-scanning-anf.html
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
 summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類。 
 ---
-= 使用NetApp資料分類掃描Azure NetApp Files卷
+= 使用NetApp Data Classification掃描Azure NetApp Files卷
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類�
 
 
 [role="lead"]
-完成幾個步驟即可開始使用適用於Azure NetApp Files的NetApp資料分類。
+完成幾個步驟即可開始使用適用於Azure NetApp Files的NetApp Data Classification。
 
 
 
 == 發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan
 
-如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp控制台中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
+如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
 
 
 

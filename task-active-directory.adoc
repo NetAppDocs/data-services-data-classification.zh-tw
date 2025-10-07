@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-active-directory.html 
 keywords: active directory, ad, data sense, cloud data sense 
-summary: 您可以將全域 Active Directory 與NetApp資料分類集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。 
+summary: 您可以將全域 Active Directory 與NetApp Data Classification集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。 
 ---
-= 將您的 Active Directory 與NetApp資料分類集成
+= 將您的 Active Directory 與NetApp Data Classification集成
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 您可以將全域 Active Directory 與NetApp資料分類集成，以�
 
 
 [role="lead"]
-您可以將全域 Active Directory 與NetApp資料分類集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。
+您可以將全域 Active Directory 與NetApp Data Classification集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。
 
 當您設定某些資料來源（如下所列）時，您需要輸入 Active Directory 憑證以便資料分類掃描 CIFS 磁碟區。此集成為資料分類提供了駐留在這些資料來源中的資料的檔案擁有者和權限詳細資訊。為這些資料來源輸入的 Active Directory 可能與您在此輸入的全域 Active Directory 憑證不同。資料分類將在所有整合的活動目錄中尋找使用者和權限詳細資訊。
 

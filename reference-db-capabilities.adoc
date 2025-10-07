@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-db-capabilities.html 
 keywords: database actions, database filters, supported, unsupported 
-summary: 掃描資料庫模式時， NetApp資料分類無法提供某些特性和功能。 
+summary: 掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。 
 ---
-= NetApp資料分類中支援與不支援的資料庫功能
+= NetApp Data Classification中支援和不支援的資料庫功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 掃描資料庫模式時， NetApp資料分類無法提供某些特性�
 
 
 [role="lead"]
-掃描資料庫模式時， NetApp資料分類無法提供某些特性和功能。請參閱下面的清單。
+掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。請參閱下面的清單。
 
 您可以將資料庫模式新增至資料分類進行掃描link:task-scanning-databases.html["如這裡所述"^]。
 

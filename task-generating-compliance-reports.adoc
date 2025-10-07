@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-generating-compliance-reports.html 
 keywords: report, privacy, risk, privacy risk assessment, compliance status, severity, compliance, privacy risk, data subjects, privacy, credit cards, pci dss, hipaa, csv file, json file, dsar 
-summary: NetApp資料分類提供報告，您可以使用這些報告來更好地了解組織的資料隱私計畫的狀態。 
+summary: NetApp Data Classification提供報告，您可以使用這些報告來更好地了解組織的資料隱私計畫的狀態。 
 ---
-= 查看NetApp資料分類合規性報告
+= 查看NetApp Data Classification合規性報告
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: NetApp資料分類提供報告，您可以使用這些報告來更好�
 
 
 [role="lead"]
-NetApp資料分類提供報告，您可以使用這些報告來更好地了解組織的資料隱私計畫的狀態。
+NetApp Data Classification提供報告，您可以使用這些報告來更好地了解組織的資料隱私計畫的狀態。
 
 預設情況下，資料分類儀表板顯示所有系統、資料庫和資料來源的合規性和治理資料。如果您想要查看僅包含部分系統資料的報告，您可以進行篩選以僅查看這些系統的資料。
 
@@ -47,7 +47,7 @@ NetApp資料分類提供報告，您可以使用這些報告來更好地了解�
 .步驟
 . 從資料分類選單中，選擇*合規性*。
 . 選擇系統過濾器下拉式選單，然後選擇系統。
-. 選擇**接受**以確認您的選擇。
+. 選擇**接受**來確認您的選擇。
 +
 image:screenshot-report-filter.png["螢幕顯示系統過濾。"]
 
@@ -142,7 +142,7 @@ image:screenshot-report-options.png["合規性頁面中的報告選項的螢幕�
 
 == 支付卡產業資料安全標準 (PCI DSS) 報告
 
-支付卡產業資料安全標準 (PCI DSS) 報告可以幫助您識別信用卡資訊在文件中的分佈。
+支付卡產業資料安全標準 (PCI DSS) 報告可以幫助您識別文件中信用卡資訊的分佈。
 
 該報告包含以下資訊：
 

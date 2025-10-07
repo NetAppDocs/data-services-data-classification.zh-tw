@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-controlling-governance-data.html 
 keywords: savings, stale data, duplicate data, highlights, data discovery assessment report, data mapping overview report, data repositories, sensitive data, wide permissions, open permissions, age of data, size of data, classification, costs of data 
-summary: 控制與組織儲存資源上的資料相關的成本。  NetApp資料分類可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。 
+summary: 控制與組織儲存資源上的資料相關的成本。  NetApp Data Classification可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。 
 ---
-= 使用NetApp資料分類查看組織中儲存的資料的治理詳細信息
+= 使用NetApp Data Classification查看組織中儲存的資料的治理詳細信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 控制與組織儲存資源上的資料相關的成本。  NetApp資料
 
 
 [role="lead"]
-控制與組織儲存資源上的資料相關的成本。  NetApp資料分類可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。
+控制與組織儲存資源上的資料相關的成本。  NetApp Data Classification可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。
 
 您應該從這裡開始您的研究。從治理儀表板中，您可以選擇一個區域進行進一步調查。
 
@@ -29,7 +29,7 @@ summary: 控制與組織儲存資源上的資料相關的成本。  NetApp資料
 image:screenshot_compliance_governance_dashboard.png["資料分類治理儀表板的螢幕截圖。"]
 
 .步驟
-. 從NetApp控制台選單中，選擇 *治理 > 分類*。
+. 從NetApp Console選單中，選擇 *治理 > 分類*。
 . 選擇*治理*。
 +
 出現治理儀表板。

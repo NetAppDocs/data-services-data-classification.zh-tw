@@ -4,7 +4,7 @@ permalink: reference-instance-types.html
 keywords: BlueXP classification, installation, deployment, instance, virtual machine, cpu, ram, memory, disk, capacity 
 summary: 資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，建議您使用具有「大型」特性的系統以實現全部功能。 
 ---
-= 支援的NetApp資料分類實例類型
+= 支援的NetApp Data Classification實例類型
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 資料分類軟體必須在滿足特定作業系統需求、RAM 需求�
 
 
 [role="lead"]
-NetApp資料分類軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，我們建議您使用具有「大型」特性的系統以實現全部功能。
+NetApp Data Classification軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，我們建議您使用具有「大型」特性的系統以實現全部功能。
 
 您可以在較少 CPU 和較少 RAM 的系統上部署資料分類，但在使用這些功能較弱的系統時會受到一些限制。link:concept-classification.html["了解這些限制"^] 。
 

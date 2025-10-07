@@ -57,4 +57,4 @@
 已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。
 
 .錯誤修復
-Redis 已升級，以提高BlueXP classification的可靠性。  BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。
+Redis 已升級，以提高BlueXP classification的可靠性。BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。

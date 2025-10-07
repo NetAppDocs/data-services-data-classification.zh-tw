@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-fsx.html 
 keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, fsx, fsx for ontap, aws, data sense 
-summary: 完成幾個步驟即可開始使用NetApp資料分類掃描Amazon FSx for ONTAP磁碟區。 
+summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。 
 ---
-= 使用NetApp資料分類掃描Amazon FSx for ONTAP卷
+= 使用NetApp Data Classification掃描Amazon FSx for ONTAP卷
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 完成幾個步驟即可開始使用NetApp資料分類掃描Amazon FSx 
 
 
 [role="lead"]
-完成幾個步驟即可開始使用NetApp資料分類掃描Amazon FSx for ONTAP磁碟區。
+完成幾個步驟即可開始使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。
 
 
 
@@ -57,7 +57,7 @@ link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署�
 
 您可以為 FSx for ONTAP磁碟區啟用資料分類。
 
-. 從NetApp控制台，*治理 > 分類*。
+. 從NetApp Console，*治理 > 分類*。
 . 從資料分類選單中，選擇*配置*。
 +
 image:screenshot_fsx_scanning_activate.png["部署資料分類實例後立即顯示的「配置」標籤的螢幕截圖。"]

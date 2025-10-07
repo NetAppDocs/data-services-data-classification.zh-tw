@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-log-in-to-instance.html 
 keywords: log in, data sense, classification 
-summary: 有時您可能需要登入NetApp資料分類系統，以便存取日誌檔案或編輯設定檔。 
+summary: 有時您可能需要登入NetApp Data Classification系統，以便存取日誌檔案或編輯設定檔。 
 ---
-= 登入NetApp資料分類系統
+= 登入NetApp Data Classification系統
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 有時您可能需要登入NetApp資料分類系統，以便存取日�
 
 
 [role="lead"]
-您需要登入NetApp資料分類系統，以便存取日誌檔案或編輯設定檔。
+您需要登入NetApp Data Classification系統，以便存取日誌檔案或編輯設定檔。
 
 當資料分類安裝在您本地的 Linux 機器上或在雲端部署的 Linux 機器上時，您可以直接存取設定檔和腳本。
 

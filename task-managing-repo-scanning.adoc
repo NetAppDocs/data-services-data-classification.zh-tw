@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-managing-repo-scanning.html 
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
-summary: 您可以在NetApp資料分類中管理每個系統和資料來源中的資料掃描方式。您可以在「儲存庫」基礎上進行變更；這表示您可以根據正在掃描的資料來源類型對每個磁碟區、儲存桶、共用、模式、使用者等進行變更。 
+summary: 您可以在NetApp Data Classification中管理在每個系統和資料來源中掃描資料的方式。您可以在「儲存庫」基礎上進行變更；這表示您可以根據正在掃描的資料來源類型對每個磁碟區、儲存桶、共用、模式、使用者等進行變更。 
 ---
-= 更改儲存庫的NetApp資料分類掃描設置
+= 更改儲存庫的NetApp Data Classification掃描設置
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,13 +16,13 @@ summary: 您可以在NetApp資料分類中管理每個系統和資料來源中�
 [role="lead"]
 您可以管理在每個系統和資料來源中如何掃描資料。您可以在「儲存庫」基礎上進行變更；這表示您可以根據正在掃描的資料來源類型對每個磁碟區、模式、使用者等進行變更。
 
-您可以更改的一些內容包括是否掃描儲存庫，以及NetApp資料分類是否執行link:concept-classification.html["映射掃描或映射和分類掃描"]。您也可以暫停和恢復掃描，例如，如果您需要在一段時間內停止掃描某個磁碟區。
+您可以更改的一些內容包括是否掃描儲存庫，以及NetApp Data Classification是否正在執行link:concept-classification.html["映射掃描或映射和分類掃描"]。您也可以暫停和恢復掃描，例如，如果您需要在一段時間內停止掃描某個磁碟區。
 
 
 
 == 查看儲存庫的掃描狀態
 
-您可以查看NetApp資料分類正在為每個系統和資料來源掃描的各個儲存庫（磁碟區、儲存桶等）。您還可以看到有多少已被“映射”，有多少已被“分類”。分類需要更長的時間，因為所有資料都進行了完整的 AI 識別。
+您可以查看NetApp Data Classification正在為每個系統和資料來源掃描的各個儲存庫（磁碟區、儲存桶等）。您還可以看到有多少已被“映射”，有多少已被“分類”。分類需要更長的時間，因為所有資料都進行了完整的 AI 識別。
 
 您可以在設定頁面查看各個工作環境的掃描狀態：
 

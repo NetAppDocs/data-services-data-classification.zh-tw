@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-compliance-onprem.html 
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, linux, ubuntu, cloud compliance access, privacy, compliance, on-premises 
-summary: 要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp資料分類，您需要在您的網路或雲端中手動部署 Linux 主機。 
+summary: 要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp Data Classification，您需要在您的網路或雲端中手動部署 Linux 主機。 
 ---
-= 在可存取網際網路的主機上安裝NetApp資料分類
+= 在可存取網際網路的主機上安裝NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 要在您的網路中的 Linux 主機或具有 Internet 存取權限的
 
 
 [role="lead"]
-要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp資料分類，您需要在您的網路或雲端中手動部署 Linux 主機。
+要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp Data Classification，您需要在您的網路或雲端中手動部署 Linux 主機。
 
 如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則本機安裝是個不錯的選擇。這不是必需的。無論選擇哪一種安裝方法，軟體的功能都是相同的。
 

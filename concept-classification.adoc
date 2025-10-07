@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: concept-classification.html 
 keywords: artificial intelligence, ai, compliance, cloud compliance, dsar, personal data, personal information, sensitive, personal sensitive data, gdpr, hipaa, scans, scanning,  governance, cloud data sense, data sense, privacy control, classification, optimization, bluexp, bluexp classification, netapp console 
-summary: 資料分類是NetApp控制台的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。 
+summary: 資料分類是NetApp Console的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。 
 ---
-= 了解NetApp資料分類
+= 了解NetApp Data Classification
 :allow-uri-read: 
 :no-hardbreaks: 
 :nofooter: 
@@ -14,22 +14,22 @@ summary: 資料分類是NetApp控制台的資料治理服務，它可以掃描�
 
 
 [role="lead"]
-NetApp資料分類是NetApp控制台的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。
+NetApp Data Classification是NetApp Console的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。
 
 
-IMPORTANT: 從 1.31 版開始，資料分類作為NetApp控制台中的一項核心功能提供。無需額外付費。無需分類許可或訂閱。  + 如果您一直在使用舊版本 1.30 或更早版本，則該版本在您的訂閱到期之前可用。
+IMPORTANT: 從 1.31 版開始，資料分類作為NetApp Console中的一項核心功能提供。無需額外付費。無需分類許可或訂閱。  + 如果您一直在使用舊版本 1.30 或更早版本，則該版本在您的訂閱到期之前可用。
 
 
 
-== NetApp控制台
+== NetApp Console
 
-可以透過NetApp控制台存取資料分類。
+可以透過NetApp Console存取資料分類。
 
-NetApp控制台提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
 
-您不需要許可證或訂閱即可開始使用NetApp控制台，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連接時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
+您不需要許可證或訂閱即可開始使用NetApp Console，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連線時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
 
-詳細了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp控制台"^]。
+詳細了解link:https://docs.netapp.com/us-en/console-setup-admin/concept-overview.html["NetApp Console"^]。
 
 
 
@@ -184,7 +184,7 @@ image:diagram_cloud_compliance_scan.png["此圖表顯示了在您的雲端提供
 您可以在磁碟區層級或資料庫模式層級啟用和停用掃描。
 
 
-NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
 
 
 

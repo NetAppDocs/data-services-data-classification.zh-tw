@@ -4,7 +4,7 @@ permalink: task-scanning-file-shares.html
 keywords: cloud compliance, enable cloud compliance, privacy, compliance, file shares, nfs, cifs, smb, data sense, 7-mode 
 summary: 完成幾個步驟即可開始使用資料分類直接掃描非NetApp NFS 或 CIFS 檔案共用。這些文件共用可以駐留在本機或雲端。 
 ---
-= 使用NetApp資料分類掃描檔案共享
+= 使用NetApp Data Classification掃描檔案共用
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 完成幾個步驟即可開始使用資料分類直接掃描非NetApp N
 
 
 [role="lead"]
-要掃描檔案共享，您必須先在NetApp資料分類中建立一個檔案共享群組。檔案共用群組適用於本機或雲端中託管的 NFS 或 CIFS (SMB) 共用。
+若要掃描檔案共用，您必須先在NetApp Data Classification中建立檔案共用群組。檔案共用群組適用於本機或雲端中託管的 NFS 或 CIFS (SMB) 共用。
 
 
 NOTE: 資料分類核心版本不支援掃描非NetApp檔案共享的資料。

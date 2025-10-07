@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-exclude-scan-paths.html 
 keywords: exclude scans, folders, directories 
-summary: 如果您希望NetApp資料分類排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將排除這些目錄中的掃描資料。 
+summary: 如果您希望NetApp Data Classification排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將排除這些目錄中的掃描資料。 
 ---
-= 從NetApp資料分類掃描排除特定目錄
+= 從NetApp Data Classification掃描排除特定目錄
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 如果您希望NetApp資料分類排除駐留在特定資料來源目�
 
 
 [role="lead"]
-如果您希望NetApp資料分類從掃描中排除特定目錄，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將從掃描中排除這些目錄。
+如果您希望NetApp Data Classification從掃描中排除特定目錄，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將從掃描中排除這些目錄。
 
 
 NOTE: 預設情況下，資料分類掃描排除與磁碟區中的來源相同的磁碟區快照資料。

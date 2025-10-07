@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-deploy-cloud-compliance.html 
 keywords: cloud compliance, data sense, quickstart, outbound internet, endpoints, cloud compliance internet, browser connectivity, cloud compliance access, privacy, compliance, bluexp classification, classification, netapp console, 
-summary: 完成幾個步驟即可在雲端部署NetApp資料分類。  NetApp控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。 
+summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  NetApp Console將資料分類執行個體部署在與控制台代理程式相同的雲端提供者網路中。 
 ---
-= 使用NetApp控制台在雲端部署NetApp資料分類
+= 使用NetApp Console在雲端部署NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 完成幾個步驟即可在雲端部署NetApp資料分類。  NetApp控
 
 
 [role="lead"]
-您可以使用NetApp控制台在雲端部署NetApp資料分類。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。
+您可以使用NetApp Console在雲端部署NetApp Data Classification。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。
 
 請注意，您還可以link:task-deploy-compliance-onprem.html["在可以存取網際網路的 Linux 主機上安裝資料分類"]。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇 - 但這不是必需的。無論您選擇哪一種安裝方法，軟體的功能都完全相同。
 
@@ -63,7 +63,7 @@ summary: 完成幾個步驟即可在雲端部署NetApp資料分類。  NetApp控
 如你所見，在某些情況下，你可能需要使用 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["多個控制台代理"]。
 
 
-TIP: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+TIP: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
 
 
 

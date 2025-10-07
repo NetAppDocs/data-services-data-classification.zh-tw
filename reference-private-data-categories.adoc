@@ -4,7 +4,7 @@ permalink: reference-private-data-categories.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, categories, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, sex, criminal, compliance, privacy, 
 summary: 資料分類可以在您的磁碟區中識別多種類型的私人資料。 
 ---
-= NetApp資料分類中的私有資料類別
+= NetApp Data Classification中的私有資料類別
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 資料分類可以在您的磁碟區中識別多種類型的私人資�
 
 
 [role="lead"]
-NetApp資料分類可在您的磁碟區和資料庫中識別多種類型的私有資料。
+NetApp Data Classification可在您的磁碟區和資料庫中識別多種類型的私有資料。
 
 資料分類識別兩種類型的個人資料：
 

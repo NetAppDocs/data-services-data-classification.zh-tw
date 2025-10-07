@@ -4,7 +4,7 @@ permalink: task-controlling-private-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights 
 summary: '透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您還可以透過查看資料分類在您的資料中發現的類別和文件類型來獲得可見性。' 
 ---
-= 使用NetApp資料分類查看組織中儲存的私人資料的合規性詳細信息
+= 使用NetApp Data Classification查看組織中儲存的私人資料的合規性詳細信息
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: '透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII
 
 
 [role="lead"]
-透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您也可以透過查看NetApp資料分類在您的資料中找到的類別和檔案類型來獲得可見性。
+透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您也可以透過查看NetApp Data Classification在您的資料中找到的類別和檔案類型來獲得可見性。
 
 
 NOTE: 只有當您執行完整的分類掃描時，才可以獲得檔案級合規性詳細資訊。僅映射掃描不會產生文件級詳細資訊。

@@ -4,7 +4,7 @@ permalink: task-uninstall.html
 keywords: remove, delete, stop, stop scans, stop scanning, delete cloud data sense, terminate, deactivate, data sense 
 summary: 您可以卸載資料分類軟體來解決問題或從主機永久刪除該軟體。刪除實例也會刪除索引資料所在的關聯磁碟。資料分類掃描的所有資訊將永久刪除。 
 ---
-= 卸載NetApp資料分類
+= 卸載NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 您可以卸載資料分類軟體來解決問題或從主機永久刪�
 
 
 [role="lead"]
-您可以解除安裝NetApp Data Classification 來解決問題或永久從主機移除該軟體。刪除實例也會刪除索引資料所在的關聯磁碟，這表示資料分類掃描的所有資訊都將永久刪除。
+您可以解除安裝NetApp Data Classification來解決問題或永久從主機移除該軟體。刪除實例也會刪除索引資料所在的關聯磁碟，這表示資料分類掃描的所有資訊都將永久刪除。
 
 您需要使用的步驟取決於您是在雲端還是在本機上部署資料分類。
 

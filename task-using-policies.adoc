@@ -4,7 +4,7 @@ permalink: task-using-policies.html
 keywords: compliance, privacy, filter data, highlights, policies, notifications, saved query, tags, data sense, edit query 
 summary: 已儲存的查詢是自訂篩選器，可在調查頁面中提供常見合規性查詢的搜尋結果。資料分類根據常見請求提供了一組預設保存的查詢，或者您可以建立自己的查詢。 
 ---
-= 使用NetApp資料分類管理已儲存的查詢
+= 使用NetApp Data Classification管理已儲存的查詢
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

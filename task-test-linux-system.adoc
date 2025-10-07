@@ -4,7 +4,7 @@ permalink: task-test-linux-system.html
 keywords: cloud compliance, bluexp, data sense, get started, deploy, data classification, cloud compliance access, compliance, on-premises, linux, test linux system, docker, podman, ubuntu, rhel, dark site 
 summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機上執行腳本來驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點。 
 ---
-= 檢查您的 Linux 主機是否已準備好安裝NetApp資料分類
+= 檢查您的 Linux 主機是否已準備好安裝NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機�
 
 
 [role="lead"]
-在 Linux 主機上手動安裝NetApp資料分類之前，可以選擇在主機上執行腳本以驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點（暗站）。
+在 Linux 主機上手動安裝NetApp Data Classification之前，可以選擇在主機上執行腳本以驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點（暗站）。
 
 還有一個先決條件測試腳本，它是資料分類安裝腳本的一部分。此處所述的腳本專門為想要獨立於執行資料分類安裝腳本來驗證 Linux 主機的使用者設計。
 
@@ -259,6 +259,6 @@ chmod +x standalone-pre-requisite-tester-v1.25.0
 .結果
 如果所有先決條件測試均成功運行，您可以在準備就緒後在主機上安裝資料分類。
 
-如果發現任何問題，則將其歸類為“建議”或“需要”修復。建議的問題通常是會使資料分類掃描和分類任務運作速度變慢的項目。這些項目不需要更正 - 但您可能需要解決它們。
+如果發現任何問題，則將其歸類為“建議”或“需要”修復。建議的問題通常是會使資料分類掃描和分類任務運作速度變慢的項目。這些項目不需要糾正 - 但您可能需要解決它們。
 
 如果您有任何「必要」問題，您應該修復這些問題並再次執行先決條件測試腳本。

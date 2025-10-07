@@ -4,7 +4,7 @@ permalink: task-add-group-id-as-open.html
 keywords: permissions, open to organization, file access 
 summary: '當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時，它們定義了檔案或資料夾的權限；例如它們是否「對組織開放」。如果某些群組 ID (GID) 最初未設定「開放給組織」權限級別，則可以將該權限新增至 GID，以便附加該 GID 的任何檔案和資料夾都將被視為「開放給組織」。' 
 ---
-= 在NetApp資料分類中將其他群組 ID 定義為對組織開放
+= 在NetApp Data Classification其他群組 ID 定義為對組織開放
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -16,7 +16,7 @@ summary: '當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時，�
 [role="lead"]
 當群組 ID (GID) 附加到 NFS 檔案共用中的檔案或資料夾時，它們定義了檔案或資料夾的權限；例如它們是否「對組織開放」。如果某些 GID 最初未設定「開放給組織」權限級別，您可以向 GID 新增該權限，以便任何附加了該 GID 的檔案和資料夾都將被視為「開放給組織」。
 
-在您進行此變更並且NetApp資料分類重新掃描您的檔案和資料夾後，任何附加了這些群組 ID 的檔案和資料夾都將在「調查詳細資料」頁面中顯示此權限，並且它們也會出現在您顯示檔案權限的報表中。
+在您進行此變更並且NetApp Data Classification重新掃描您的檔案和資料夾後，任何附加了這些群組 ID 的檔案和資料夾都將在「調查詳細資料」頁面中顯示此權限，並且它們也會出現在您顯示檔案權限的報表中。
 
 要啟動此功能，您需要登入資料分類系統，以便可以編輯設定檔並執行腳本。了解如何link:reference-log-in-to-instance.html["登入資料分類系統"]取決於您是否在 Linux 機器上手動安裝了該軟體，或者是否在雲端部署了該實例。
 

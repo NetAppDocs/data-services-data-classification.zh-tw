@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-custom-classification.html 
 keywords: custom classification, customize, regular expression, keyword, regex 
-summary: NetApp資料分類使您能夠自訂敏感資訊的搜索，並根據與您的組織相關的個別模式和關鍵字自訂服務。 
+summary: NetApp Data Classification使您能夠自訂敏感資訊的搜索，並根據與您的組織相關的個別模式和關鍵字自訂服務。 
 ---
-= 在NetApp資料分類中建立自訂分類
+= 在NetApp Data Classification中建立自訂分類
 :allow-uri-read: 
 :nofooter: 
 :icons: font
@@ -13,7 +13,7 @@ summary: NetApp資料分類使您能夠自訂敏感資訊的搜索，並根據�
 
 
 [role="lead"]
-使用NetApp資料分類，您可以建立敏感資訊的自訂搜尋。搜尋範圍可以限定為正規表示式（regex）。
+使用NetApp Data Classification，您可以建立敏感資訊的自訂搜尋。搜尋範圍可以限定為正規表示式（regex）。
 
 
 

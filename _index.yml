@@ -1,6 +1,6 @@
 ---
 indexpage:
-  title: NetApp資料分類文檔
+  title: NetApp Data Classification文檔
   summary: NetApp資料分類可讓您掃描和分類組織混合多雲中的資料。資料分類利用人工智慧驅動的自然語言處理 (NLP) 進行情境資料分析和分類，為您提供對資料的可操作洞察，以滿足合規性要求、檢測安全漏洞、優化成本並加速遷移。
   keywords: bluexp, data classification, cloud data sense, data sense, compliance,
     security, netapp console, bluexp classification
@@ -48,9 +48,9 @@ indexpage:
       url: task-generating-compliance-reports.html
   - title: 部落格和社區
     links:
-    - title: NetApp控制台
+    - title: NetApp Console
       url: https://www.netapp.com/console
-    - title: NetApp資料服務
+    - title: NetApp Data Services
       url: https://www.netapp.com/data-services/
     - title: NetApp社群
       url: https://community.netapp.com/

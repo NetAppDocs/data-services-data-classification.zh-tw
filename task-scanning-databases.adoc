@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: task-scanning-databases.html 
 keywords: cloud compliance, enable cloud compliance, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, databases, database schemas, Oracle, SAP HANA, SQL Server, MongoDB, PostgreSQL, data sense 
-summary: 完成幾個步驟即可開始使用NetApp資料分類掃描資料庫模式。 
+summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描資料庫模式。 
 ---
-= 使用NetApp資料分類掃描資料庫模式
+= 使用NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 完成幾個步驟即可開始使用NetApp資料分類掃描資料庫�
 
 
 [role="lead"]
-完成幾個步驟即可開始使用NetApp資料分類掃描資料庫模式。
+完成幾個步驟即可開始使用NetApp Data Classification掃描資料庫模式。
 
 
 

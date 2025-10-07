@@ -4,7 +4,7 @@ permalink: task-investigate-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies,json, csv, data investigation, data investigation report, download report, file metadata, file permissions, duplicate files, saved search 
 summary: 您可以透過查看資料調查頁面中的詳細資訊來調查來自您組織的資料。查看治理儀表板後，您可以在這裡繼續您的研究。 
 ---
-= 使用NetApp資料分類調查組織中儲存的數據
+= 使用NetApp Data Classification調查組織中儲存的數據
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -238,7 +238,7 @@ TIP: 您可以展開該群組的某個層級來查看屬於該群組的使用者
 
 您可以檢查儲存系統中是否儲存了重複的檔案。如果您想確定可以節省儲存空間的區域，這將非常有用。確保具有特定權限或敏感資訊的某些檔案不會在儲存系統中不必要地重複也是很好的。
 
-您的所有 1 MB 或更大文件（不包括資料庫）或包含個人或敏感個人資訊的文件都會進行比較，以查看是否有重複文件。
+您的所有文件（不包括資料庫）如果大小為 1 MB 或更大，或包含個人或敏感個人信息，都會被進行比較，以查看是否有重複。
 
 資料分類使用雜湊技術來確定重複檔案。如果任何檔案與另一個檔案具有相同的雜湊碼，那麼您可以 100% 確定這些檔案是完全重複的 - 即使檔案名稱不同。
 
@@ -275,7 +275,7 @@ TIP: 您可以使用此頁面提供的「檔案雜湊」值並將其直接輸入
 
 如果資料分類正在掃描檔案（非結構化資料）、目錄（資料夾和檔案共用）和資料庫（結構化資料），則最多可以下載三個報表檔案。
 
-文件被拆分為具有固定行數或記錄數的文件：
+檔案被分割成具有固定行數或記錄數的檔案：
 
 * JSON：每份報告 100,000 筆記錄，產生大約需要 5 分鐘
 * CSV：每份報告 200,000 筆記錄，產生大約需要 4 分鐘

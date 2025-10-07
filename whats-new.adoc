@@ -4,7 +4,7 @@ permalink: whats-new.html
 keywords: 'what"s new, features, new, release notes, bugs, limitations, known issues, enhancements, fixes, data sense, cloud data sense, bluexp, bluexp classification' 
 summary: 了解BlueXP classification的新功能。 
 ---
-= NetApp資料分類的新功能
+= NetApp Data Classification分類的新功能
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,7 +14,7 @@ summary: 了解BlueXP classification的新功能。
 
 
 [role="lead"]
-了解NetApp資料分類的新功能。
+了解NetApp Data Classification的新功能。
 
 
 
@@ -24,15 +24,15 @@ summary: 了解BlueXP classification的新功能。
 
 === 版本 1.47
 
-.BlueXP classification現為NetApp資料分類
-BlueXP classification已重新命名為NetApp資料分類。除了重命名之外，使用者介面也得到了增強。
+.BlueXP classification現為NetApp Data Classification
+BlueXP classification已重新命名為NetApp Data Classification。除了重命名之外，使用者介面也得到了增強。
 
-.BlueXP現在是NetApp控制台
+.BlueXP現在是NetApp Console
 BlueXP已重新命名並重新設計，以更好地反映其在管理資料基礎架構中的作用。
 
-NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
+NetApp Console提供企業級跨本地和雲端環境的儲存和資料服務的集中管理，提供即時洞察、更快的工作流程和簡化的管理。
 
-有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp控制台發行說明"]。
+有關更改的詳細信息，請參閱 https://docs.netapp.com/us-en/console-relnotes/index.html["NetApp Console發行說明"]。
 
 .增強調查體驗
 使用新的可搜尋篩選器、每個值的結果計數、總結關鍵發現的即時見解以及具有可自訂列和滑出詳細資訊窗格的刷新結果表，更快地查找和理解您的資料。
@@ -53,7 +53,7 @@ NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務�
 有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html#view-file-metada["調查數據"] 。
 
 .支援Google Cloud NetApp Volumes
-資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp控制台輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。
+資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp Console輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。
 
 
 
@@ -68,7 +68,7 @@ NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務�
 .審計頁面中增強的掃描事件洞察
 審計頁面現在支援對BlueXP classification的掃描事件的增強洞察。審計頁面現在顯示系統掃描的開始時間、系統狀態以及任何問題。共享和系統的狀態僅適用於映射掃描。
 
-有關審計頁面的更多信息，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["監控NetApp控制台操作"^]。
+有關審計頁面的更多信息，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html["監控NetApp Console操作"^]。
 
 .支援 RHEL 9.6
 此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。
@@ -154,7 +154,7 @@ NetApp控制台提供企業級跨本地和雲端環境的儲存和資料服務�
 已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。
 
 .錯誤修復
-Redis 已升級，以提高BlueXP classification的可靠性。  BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。
+Redis 已升級，以提高BlueXP classification的可靠性。BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。
 
 
 
@@ -167,7 +167,7 @@ Redis 已升級，以提高BlueXP classification的可靠性。  BlueXP classifi
 此資料分類版本包括：
 
 .優先進行分類掃描
-資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描的優先級，則映射掃描和分類掃描都會優先處理。
+資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描優先級，則映射掃描和分類掃描都會優先處理。
 
 有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"] 。
 
@@ -242,7 +242,7 @@ BlueXP classification追蹤磁碟區上的初始映射和分類掃描的即時�
 此BlueXP classification版本包括以下更新。
 
 .支援 RHEL 9.5
-此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.5 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.5 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
 
 以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4 和 9.5。
 
@@ -322,7 +322,7 @@ BlueXP classification支援批次重試所有失敗掃描的功能。
 此BlueXP classification版本包括以下更新。
 
 .支援 RHEL 8.10
-此版本除了支援先前支援的版本外，還提供了對 Red Hat Enterprise Linux v8.10 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v8.10 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
 
 以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3 和 9.4。
 
@@ -342,7 +342,7 @@ BlueXP classification支援批次重試所有失敗掃描的功能。
 === 版本 1.36
 
 .支援 RHEL 9.4
-此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於BlueXP classification的任何手動本機安裝，包括暗站部署。
+此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
 
 以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。
 
@@ -437,7 +437,7 @@ BlueXP classification已將其針對 Microsoft Azure 和 Google Cloud Platform (
 BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。無需分類許可或付費訂閱。由於我們將BlueXP classification功能的重點放在新版本掃描NetApp儲存系統上，因此某些舊功能將僅對先前已支付授權費用的客戶可用。當付費合約到期時，這些舊功能的使用將失效。
 
 
-NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。+ 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
+NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
 
 
 
