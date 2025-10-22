@@ -253,7 +253,6 @@
   <block id="d57567637ab51796d55a7b44fb6ebc11" category="paragraph-title">操作（預覽）</block>
   <block id="680190e7731697b57d44b7ccb192ec16" category="paragraph">從調查頁面直接控制 - 單獨或批次刪除、移動、複製或標記文件，以實現高效的資料管理和補救。</block>
   <block id="89d69ff3dca93dc4c1c160728186e722" category="paragraph-title">支援Google Cloud NetApp Volumes</block>
-  <block id="028f3210e3fb8059c59cfc831af1660c" category="paragraph">資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp Console輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。</block>
   <block id="5eb2a16d2fa5bf1cf608a92f8904a2ae" category="summary">透過 Web UI 提供的NetApp Data Classification功能也可透過 API 提供。</block>
   <block id="e5ae04a842e199bfb2c83e0176275a5e" category="doc">NetApp Data ClassificationAPI</block>
   <block id="8d1948df96be05c01e7136dc702e5932" category="paragraph">透過 Web UI 提供的NetApp Data Classification功能也可透過 REST API 提供。</block>
@@ -319,7 +318,6 @@
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">透過識別重複或與業務無關的資料來提高儲存效率。</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">了解有關Cloud Volumes ONTAP系統分層的更多信息</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">了解有關本地ONTAP系統分層的更多信息</block>
-  <block id="9b317123224190f31630700e3d04b51f" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="e06f3c17ab825c043e1b562901775a66" category="inline-link-rx"></block> 。</block>
   <block id="14d419d6dcfdbca61341f104ce611d2c" category="section-title">支援的系統和資料來源</block>
   <block id="b06f93a227008c7db0423fc12da7a094" category="paragraph">資料分類可以掃描和分析來自以下類型的系統和資料來源的結構化和非結構化資料：</block>
   <block id="e3c12542b137e17b4e96acf4577f9ef4" category="paragraph">*系統*</block>
@@ -410,9 +408,6 @@
   <block id="902c63c889818696415465bcf8e0b76b" category="inline-link-macro">了解有關敏感個人資料的更多信息</block>
   <block id="e60672f803602bf222f416a6205b3b39" category="list-text">*敏感個人資訊*：《一般資料保護規範》（GDPR）和其他隱私法規定義的特殊類型的敏感個人資訊（SPII），例如健康資料、種族血統或政治觀點。<block ref="6221f6509a9900ea9a8146767340b3a8" category="inline-link-macro-rx"></block> 。</block>
   <block id="6a92cf43085c9bfddf06d24557be9d88" category="inline-link-macro">了解有關類別的更多信息</block>
-  <block id="5badd7449ae6b26469255f50a65f81e6" category="list-text">*類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。<block ref="722783767558c868b0670a999b08f996" category="inline-link-macro-rx"></block> 。</block>
-  <block id="5cb163817b0d897b166cc75827e8c477" category="inline-link-macro">了解有關類型的更多信息</block>
-  <block id="e9a1ac97bbbe34a2ac9989e7b6e46fcd" category="list-text">*類型*：資料分類取得其掃描的資料並按文件類型細分。<block ref="a23a1c3a68ab723cb619be8574a4637d" category="inline-link-macro-rx"></block> 。</block>
   <block id="13d0a191166a1a3dc29ebcd8e3aae81f" category="inline-link-macro">了解如何回應資料主體存取請求</block>
   <block id="ff80eccbdfe1ad9fdbbd3d1942864e42" category="list-text">*名稱實體識別*：資料分類使用人工智慧從文件中提取人們的自然名稱。<block ref="8e814e02dddb19e3bb4166c15fc34470" category="inline-link-macro-rx"></block> 。</block>
   <block id="7b895b198aba9634ffec5e0ec9a3aff4" category="section-title">網路概述</block>
@@ -596,8 +591,6 @@
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">過濾器選擇包括：</block>
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 無法恢復上次存取時間」 - 這顯示由於缺少寫入權限而未分類的檔案。</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次存取時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。</block>
-  <block id="529e58159a0567a96e1265aa7c80760b" category="inline-link-macro">了解有關數據調查報告的更多信息</block>
-  <block id="527a617e21a6be89120075fb2d22b20d" category="paragraph">如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。<block ref="20c76d71f84d76d844619e46acfe2877" category="inline-link-macro-rx"></block> 。</block>
   <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。</block>
   <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp Data Classification中支援和不支援的資料庫功能</block>
   <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。請參閱下面的清單。</block>
@@ -1044,8 +1037,6 @@
   <block id="dc6d9a4419750aae3db17878ffe18e5c" category="inline-link-macro">查看顯示的重複檔案類型</block>
   <block id="5791d2ebf242b348a1cbfa550a356083" category="list-text">*重複檔案* - 您正在掃描的資料來源中其他位置重複的檔案。<block ref="4f528c73ac5ca4ef85380f36d4dccad7" category="inline-link-macro-rx"></block> 。</block>
   <block id="dfd23906ba391609b608a93fdd40fdb2" category="admonition">如果您的任何資料來源實現了資料分層，則可以在「陳舊資料」類別中識別已經駐留在物件儲存中的舊資料。</block>
-  <block id="bd203b634f0baf19f7dc16bb7777276f" category="section-title">建立數據發現評估報告</block>
-  <block id="dd1535c28f9298eb259ec7b1044576aa" category="paragraph">數據發現評估報告對掃描環境進行了高級分析，以顯示關注區域和潛在的補救步驟。結果基於數據的映射和分類。本報告的目標是提高您對資料集三個重要面向的認識：</block>
   <block id="21021ea0e52be8e9c599f4dff41e5be0" category="cell">特徵</block>
   <block id="4fc6419c6a12af16883e770d99dbf849" category="cell">資料治理問題</block>
   <block id="29682fe2b70e1decc5fcddf7dc56bb80" category="cell">您擁有的所有數據以及可以減少數據量以節省成本的區域的詳細圖片。</block>
@@ -1361,9 +1352,6 @@
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">將安裝程式檔案複製到您打算使用的 Linux 主機（使用<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block>或其他方法）。</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">在主機上解壓縮安裝程式文件，例如：</block>
   <block id="f74ff5e319b8679db4cb8aab068461b0" category="list-text">在控制台中，選擇*治理&gt;分類*。</block>
-  <block id="0d95a08f2a398b91d89d59fe584125fa" category="list-text">根據您是在雲端中準備的實例上還是在本地準備的實例上安裝資料分類，選擇適當的*部署*按鈕來啟動資料分類安裝。</block>
-  <block id="61e502f75046009c8f7e172353c01f46" category="inline-image-macro">選擇按鈕在雲端或本機上部署資料分類的螢幕截圖。</block>
-  <block id="4df2d8ccf8e96a6ee638e4eeec016d8c" category="paragraph"><block ref="4df2d8ccf8e96a6ee638e4eeec016d8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="1781a6174152dad2cbc44fa1aedd744a" category="list-text">將顯示「在本機部署資料分類」對話方塊。複製提供的命令（例如：<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block> ) 並將其貼到文字檔案中，以便稍後使用。然後選擇*關閉*以關閉對話框。</block>
   <block id="9c219f00fda547ddab566c43975acd6b" category="list-text">在主機上，輸入您複製的命令，然後按照一系列提示進行操作，或者您可以提供包含所有必需參數的完整命令作為命令列參數。</block>
   <block id="e3dd4dfda4973beedb5de6104236142b" category="paragraph">請注意，安裝程式會執行預檢查以確保您的系統和網路要求滿足，以便成功安裝。<block ref="dea23cd1830b75045583053d44b9aee3" category="inline-link-rx"></block>了解預檢資訊和意義。</block>
@@ -1463,12 +1451,6 @@
   <block id="2ffbb4d4b106c6402d19dceecdbdd3ac" category="list-text">只有當您對資料來源執行完整分類掃描時，才可取得合規性報告。已進行僅映射掃描的資料來源只能產生資料映射報告。</block>
   <block id="49e4565ecb975105c89d40403267b6a2" category="list-text">NetApp無法保證資料分類識別的個人資料和敏感個人資料 100% 的準確性。您應該始終透過查看數據來驗證資訊。</block>
   <block id="b4223e54de7bb06eb93615ec4a7887e5" category="paragraph">以下報告可用於資料分類：</block>
-  <block id="46e3b95cc12c4fba5a55ddd543dff215" category="list-text">*資料發現評估報告*：對掃描環境進行高級分析，以突出系統的發現並顯示關注領域和潛在的補救步驟。</block>
-  <block id="5e83638af643acf178e1a4b351856b6c" category="list-text">*資料映射報告*：提供有關係統中檔案的大小和數量的資訊。這包括使用容量、資料年限、資料大小和檔案類型。</block>
-  <block id="9909dc2351eca640364cec030cf9786c" category="list-text">*資料主體存取請求報告*：使您能夠提取包含有關資料主體的特定名稱或個人識別碼資訊的所有文件的報告。</block>
-  <block id="33f6511365a85edd06d0094f0ab09328" category="list-text">*HIPAA 報告*：幫助您識別文件中健康資訊的分佈。</block>
-  <block id="e883052b60bcd04edd516ceb983401c9" category="list-text">*PCI DSS 報告*：幫助您識別文件中信用卡資訊的分佈。</block>
-  <block id="05bbeb335d6ce4af3edd8e3632e01959" category="list-text">*隱私風險評估報告*：提供來自您的資料的隱私見解和隱私風險評分。</block>
   <block id="ab8e4c2175f43bc36ea1e7d7134d793e" category="list-text">*特定資訊類型的報告*：可提供包含已識別文件（包含個人資料和敏感個人資料）詳細資訊的報告。您也可以查看按類別和文件類型細分的文件。</block>
   <block id="da6aa36452d97d74b7d583d7dc704b4d" category="section-title">選擇報告系統</block>
   <block id="a77562c0bf4c2ab9ac5dd5d38593f494" category="paragraph">您可以過濾資料分類合規性儀表板的內容，以查看所有系統和資料庫的合規性數據，或僅查看特定係統的合規性數據。</block>
@@ -1488,15 +1470,6 @@
   <block id="95fbc0e5629d1a6565b155bfc1a72f1f" category="inline-link-macro">任何個人資訊類型</block>
   <block id="b1756115b43af54f8219ae6280f166c5" category="paragraph">搜尋資料主體的全名或已知標識符，然後下載檔案清單報表或 DSAR 報表。您可以透過以下方式搜尋<block ref="76348aa3184d665f25590b1b87226e3a" category="inline-link-macro-rx"></block>。</block>
   <block id="3fb31cc8efb6a784adfa36f5dcbd6dcb" category="admonition">搜尋資料主體的姓名時支援英語、德語、日語和西班牙語。稍後將添加對更多語言的支援。</block>
-  <block id="29f679f7789bb30cd1bcd7ad23a88cf9" category="list-text">從合規性頁面中，選擇*資料主體*。</block>
-  <block id="f1c85eaf16c9599d4afcc94f0e5efb53" category="list-text">搜尋資料主體的全名或已知標識符。</block>
-  <block id="6cb73fb6662a2fc29c22c33577236835" category="paragraph">以下是搜尋名字 _john doe_ 的範例：</block>
-  <block id="209250b28ac23172bfd50430c08a4a0f" category="inline-image-macro">資料主體搜尋的螢幕截圖。</block>
-  <block id="16acbc92d3d99885771a85d366df1c57" category="paragraph"><block ref="16acbc92d3d99885771a85d366df1c57" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="59772cd45fd7de7bdf8d9834ebca71e7" category="list-text">選擇以下可用選項之一：</block>
-  <block id="b4182caab927feb27f9e7550fcaa58b3" category="list-text">*下載 DSAR 報告*：您可以向資料主體發送的對存取請求的正式回應。該報告包含基於數據分類在數據主體上發現的數據自動生成的信息，旨在用作模板。您應該填寫表格並在將其發送給資料主體之前進行內部審查。</block>
-  <block id="45c652234dbe5a9ab1456e9185eb8770" category="list-text">*調查結果*：此頁面可讓您透過搜尋、排序、擴展特定文件的詳細資訊以及下載文件清單來調查資料。</block>
-  <block id="da4fc4e9038590549f810ab20ac23f1d" category="admonition">如果結果超過 10,000 個，則文件清單中僅顯示前 10,000 個。</block>
   <block id="7a9564db05d5df4911abd4316ec3590c" category="section-title">健康保險流通與責任法案（HIPAA）報告</block>
   <block id="735e90eb124ecb1c36c6b0e2b385d879" category="paragraph">健康保險流通與責任法案 (HIPAA) 報告可以幫助您識別包含健康資訊的文件。它旨在幫助您的組織遵守 HIPAA 資料隱私法的要求。資料分類尋找的資訊包括：</block>
   <block id="9965e5c3b37cecfca0bb5cbb1e086c48" category="list-text">健康參考模式</block>
@@ -1640,24 +1613,12 @@
   <block id="ad22f2fca687e339c3a99a799f95294a" category="list-text">如果您正在掃描可透過網路存取的Cloud Volumes ONTAP和本機ONTAP系統，您可以<block ref="9b986a8a976281324b99a59b146b499c" category="inline-link-macro-rx"></block>或者<block ref="5a9b85c630cd221f1500d766974af691" category="inline-link-macro-rx"></block>。</block>
   <block id="6517e955ead8d5182c698dcb9a58bf28" category="inline-link-macro">在沒有網路存取的相同本地位置部署資料分類</block>
   <block id="36f6e1fd37b21d9b861f6ed7b94c0222" category="list-text">如果您要掃描安裝在沒有網路存取的暗站中的本機ONTAP系統，則需要<block ref="246da64168958d93ec1ede0bb19391a7" category="inline-link-macro-rx"></block>。這要求將控制台代理部署在同一本地位置。</block>
-  <block id="476d10250886e011c43077ba982f3c6c" category="section-title">在您的系統中啟用資料分類掃描</block>
-  <block id="2b461a614bb4a396f0f7b860a32c018d" category="paragraph">您可以在任何支援的雲端供應商的Cloud Volumes ONTAP系統以及本機ONTAP叢集上啟用資料分類掃描。</block>
   <block id="9904bc0365845ca1f4d75c8cc21aef31" category="list-text">從資料分類選單中，選擇*配置*。</block>
-  <block id="eeda9021cd4bb48743afdb8915e48c3b" category="paragraph">配置頁面顯示多個系統。</block>
-  <block id="453793acc565974735e19d5e2f2c36a8" category="inline-image-macro">顯示Cloud Volumes ONTAP系統的設定標籤的螢幕截圖。</block>
-  <block id="5f4e46608a9737d82d7ff44695d4a60c" category="paragraph"><block ref="5f4e46608a9737d82d7ff44695d4a60c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="464c1ddcab7010f1d33492dd93698132" category="list-text">選擇一個系統，然後選擇*配置*。</block>
   <block id="5d15c50f3095cbbe7f9a035fc3d0eea3" category="inline-image-macro">配置標籤的螢幕截圖顯示了映射和分類儲存庫的選項。</block>
   <block id="b74f578f58008eb6143bc5548b5fce12" category="paragraph"><block ref="b74f578f58008eb6143bc5548b5fce12" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="76159f8794878cfdca3d443c777ec734" category="list-text">如果您不介意是否重設上次存取時間，請開啟*缺少「寫入屬性」權限時掃描*開關，無論權限為何，都會掃描所有檔案。</block>
-  <block id="1f8a6c0c6f2225ae1d08579bc12988dc" category="paragraph">頁面頂部的「缺少「寫入屬性」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會對檔案進行分類，因為資料分類無法將「上次存取時間」還原為原始時間戳記。<block ref="d409432f1fbbcae04423137914c922d7" category="inline-link-macro-rx"></block> 。</block>
   <block id="dd786557a341a9cbd5fb1a642121a675" category="inline-link-macro">了解映射和分類掃描</block>
   <block id="c1b4fdc92468de00b14dcd8a25ee45c4" category="list-text">選擇如何掃描每個系統中的磁碟區。<block ref="7b158dfd9db05429635fb61176fa9ead" category="inline-link-macro-rx"></block>：</block>
-  <block id="325b2ca13daa9b67fd9c628d47370752" category="list-text">若要對應所有捲，請選擇*映射*。</block>
-  <block id="6524373e17cb08862d56de19b1a8d2b6" category="list-text">若要對應和分類所有捲，請選擇*映射和分類*。</block>
-  <block id="2258a9bb47cd683ffec374980f6db176" category="list-text">若要自訂每個磁碟區的掃描，請選擇*自訂*，然後選擇要對應和/或分類的磁碟區。</block>
   <block id="e6154c92adc2673acc400ede114332fe" category="list-text">在確認對話方塊中，選擇「*核准*」以使資料分類開始掃描您的磁碟區。</block>
-  <block id="90222740ce3b3ee6041b16c414d08e80" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類開始掃描，結果就會開始出現在合規性儀表板中。完成所需的時間取決於資料量——可能是幾分鐘或幾小時。</block>
   <block id="a2bbcc880bc925fcb9628a10c1e7b25d" category="inline-link-macro">查看有關此數據分類限制的更多詳細信息</block>
   <block id="a8daee0219cefa4a18a4479f1e1157b4" category="admonition">資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。<block ref="6dfc18994c4552d1f1c67fa40d6a2418" category="inline-link-macro-rx"></block> 。</block>
   <block id="4ebb6b3e78fe363abc8cca5976bcf110" category="section-title">驗證資料分類是否有權存取卷</block>
@@ -1667,16 +1628,7 @@
   <block id="1da60e205d29e073bd7fd30e4a0fdc96" category="list-text">確保Cloud Volumes ONTAP的安全群組允許來自資料分類實例的入站流量。</block>
   <block id="b70afa530c4cdfc09ac2c1e2f5493937" category="paragraph">您可以為來自資料分類實例的 IP 位址的流量開啟安全性群組，也可以為來自虛擬網路內部的所有流量開啟安全性群組。</block>
   <block id="cb95847988547647f53dba4f37025693" category="list-text">確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。</block>
-  <block id="91464bd52ce7bdd3203d6872d1a9ebac" category="paragraph"><block ref="b74f578f58008eb6143bc5548b5fce12" category="inline-image-macro-rx" type="image"></block>..如果您使用 CIFS，請向資料分類提供 Active Directory 憑證，以便它可以掃描 CIFS 磁碟區。對於每個系統，選擇*編輯 CIFS 憑證*並輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。</block>
-  <block id="d581500d4075d23ad57e63d6a7f2cf6f" category="paragraph">+ 憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。</block>
-  <block id="17d3a5b204e87e7f2cdc81a482b36a51" category="paragraph">+ 輸入憑證後，您應該會看到一則訊息，提示所有 CIFS 磁碟區均已成功驗證。</block>
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">在設定頁面上，選擇*設定*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。</block>
-  <block id="072aa046dbe770717df535187221d112" category="section-title">停用卷上的合規性掃描</block>
-  <block id="abc00b55bc4fdab9344bb3a37c3f61e5" category="paragraph">您可以隨時從設定頁面啟動或停止系統中的僅對應掃描或對應和分類掃描。您也可以從僅映射掃描變更為映射和分類掃描，反之亦然。我們建議您掃描所有磁碟區。</block>
-  <block id="d0a3b0b2a3cf0b5a6975da087e225239" category="admonition">只有當您在標題區域中設定了 *Map* 或 *Map &amp; Classify* 設定時，才會自動掃描新增到系統的新磁碟區。當標題區域中的選項設定為*自訂*或*關閉*時，您需要在系統中新增的每個新磁碟區上啟動對應和/或完整掃描。</block>
-  <block id="5783a21ca051c64f8ea556c601a18b89" category="list-text">選擇您想要變更的系統的*配置*按鈕。</block>
-  <block id="a9ee13c2bd1bbf8024db5dca75abc71c" category="list-text">若要停用對磁碟區的掃描，請在磁碟區中選擇「*關閉*」。</block>
-  <block id="8fdad01ebf5555cab54cc02a6d72d532" category="list-text">若要停用所有磁碟區的掃描，請在標題區域中選擇「*關閉*」。</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">您可以透過查看資料調查頁面中的詳細資訊來調查來自您組織的資料。查看治理儀表板後，您可以在這裡繼續您的研究。</block>
   <block id="4c257f0482d661d1986f92f057e1c581" category="doc">使用NetApp Data Classification調查組織中儲存的數據</block>
   <block id="7ce237dbe0011dccdc7c96c7be17d6ec" category="paragraph">資料調查儀表板顯示文件和目錄層級的資料洞察，使您能夠對結果進行排序和過濾。數據調查頁面提供有關文件和目錄元數據和權限的見解以及識別重複文件。透過文件、目錄和資料庫層級的洞察，您可以採取措施來提高組織的合規性並節省儲存空間。資料調查頁面還支援移動、複製和刪除檔案。</block>
@@ -1911,10 +1863,7 @@
   <block id="997021f46ccb2a532d7192cfcff79a31" category="paragraph">完成幾個步驟即可開始使用適用於Azure NetApp Files的NetApp Data Classification。</block>
   <block id="8c89db674531ab536128087dfb6cbe4f" category="section-title">發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan</block>
   <block id="e600551a2da340f45ada0f5e1dc6e5a5" category="inline-link-macro">將其新增至系統頁面</block>
-  <block id="16104e610aa1b9ce4fe67763f74712e0" category="paragraph">如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> 。</block>
   <block id="842f910d26756f518671d7ec5b3d5121" category="section-title">部署資料分類實例</block>
-  <block id="f4ef9fdcc60c0330381d382e9ec1fc58" category="inline-link-macro">部署資料分類</block>
-  <block id="08c4981c70f1e972602ce371c0b2b57b" category="paragraph"><block ref="a2eab8ee506f152cc24568358989ad66" category="inline-link-macro-rx"></block>如果尚未部署實例。</block>
   <block id="6e18d9515dc0a188cd6d24f6fbce6465" category="paragraph">掃描Azure NetApp Files區時，資料分類必須部署在雲端中，並且必須部署在與要掃描的磁碟區相同的區域中。</block>
   <block id="244dfe89822bd7a0557bf1e5e9251080" category="paragraph">*注意：*掃描Azure NetApp Files區時，目前不支援在本機位置部署資料分類。</block>
   <block id="6ff7a146d1b3d9e61301aa10f8f9c71b" category="section-title">在您的系統中啟用資料分類</block>
@@ -1927,7 +1876,6 @@
   <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">啟用和停用磁碟區上的合規性掃描</block>
   <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">看<block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block>了解詳情。</block>
   <block id="fcb8c9e04be809b808c3a4762413c376" category="list-text">在確認對話方塊中，選擇*批准*。</block>
-  <block id="58596b43fa0da77fa09156a77f62f84a" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。</block>
   <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">預設情況下，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的文件，因為資料分類無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次造訪時間是否重設，請選擇*或為每個磁碟區選擇掃描類型*。結果頁面有一個您可以啟用的設置，以便資料分類可以掃描卷，而不管權限如何。</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">了解此資料分類限制</block>
   <block id="fcc492b009ae46bdb956c856d82562f9" category="list-text">資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。<block ref="951289bfacd7a4614d2fd45503ad30db" category="inline-link-macro-rx"></block> 。</block>
@@ -1945,16 +1893,8 @@
   <block id="87c4bf333272894340d4edac3e344ef9" category="inline-image-macro">螢幕截圖顯示了設定頁面和一個已成功提供 CIFS 憑證的Cloud Volumes ONTAP系統。</block>
   <block id="f7a83214cccc2107033915c49ad94424" category="paragraph"><block ref="f7a83214cccc2107033915c49ad94424" category="inline-image-macro-rx" type="image"></block></block>
   <block id="61777805153edfb68af7738669a8fa28" category="list-text">在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。</block>
-  <block id="11c0618f00a2a20779f1301b6ed3756a" category="paragraph">例如，下圖顯示了四個磁碟區；其中一個磁碟區由於資料分類實例和磁碟區之間的網路連線問題而無法掃描。</block>
-  <block id="37e8780dd1c236a72c4c4669055cc457" category="inline-image-macro">掃描配置中的「檢視詳細資料」頁面的螢幕截圖顯示了四個磁碟區；其中一個磁碟區由於資料分類和磁碟區之間的網路連線而未被掃描。</block>
-  <block id="6a0cd34de7667c5acba37346803ad9b5" category="paragraph"><block ref="6a0cd34de7667c5acba37346803ad9b5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="feadd870c347e81191ecf88a8502e539" category="admonition">只有當您在標題區域中設定了 *Map* 或 *Map &amp; Classify* 設定時，才會自動掃描新增到系統的新磁碟區。當在標題區域設定為*自訂*或*關閉*時，您需要在系統中新增的每個新磁碟區上啟動對應和/或完整掃描。</block>
-  <block id="8fd1f03ce02f0c86f6f90ec7723333ab" category="paragraph">頁面頂部的「缺少「寫入屬性」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。如果您不介意是否重設上次造訪時間，請開啟開關，無論權限為何，都會掃描所有檔案。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block> 。</block>
   <block id="7cac696e69d17c5d85711c514e2a9a5a" category="inline-image-macro">配置頁面的螢幕截圖，您可以在其中啟用或停用對單一磁碟區的掃描。</block>
   <block id="a981acc4f50e3ee8e07a0e56bb5a7350" category="paragraph"><block ref="a981acc4f50e3ee8e07a0e56bb5a7350" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="d1d296f2b9e5b8b2cc3d8284c315711a" category="list-text">若要在磁碟區上啟用僅對應掃描，請在磁碟區中選擇 *Map*。若要在所有磁碟區上啟用，請在標題區域中選擇*地圖*。</block>
-  <block id="2510c0a0455bb61d4cb97e4ad009c1bd" category="list-text">若要對磁碟區啟用完整掃描，請在磁碟區中選擇*對應和分類*。若要在所有磁碟區上啟用，請在標題區域中選擇*Map &amp; Classify*。</block>
-  <block id="c2855e2ec2a3b644fcf3de0a8f9d45c5" category="list-text">若要停用對磁碟區的掃描，請在磁碟區中選擇「*關閉*」。若要停用所有磁碟區的掃描，請在標題區域中選擇「*關閉*」。</block>
   <block id="5e401746ac770afb258cea4e5cf7ad29" category="summary">完成幾個步驟即可開始使用NetApp Data Classification掃描資料庫模式。</block>
   <block id="40d306ce1d993a8a634f1ca31c94917b" category="doc">使用NetApp Data Classification</block>
   <block id="5de07b40dee2a8b07f30a0fd66bd33fa" category="section-title">審查先決條件</block>
@@ -2086,8 +2026,6 @@
   <block id="d95da9bdbf1342c2dce70b19e5d5b976" category="list-text">確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。</block>
   <block id="3ab8ec1d34ec6751cd2fd013afb62e68" category="list-text">如果您使用 CIFS，請向資料分類提供 Active Directory 憑證，以便它可以掃描 CIFS 磁碟區。</block>
   <block id="0103a3d43d27c69471f2460c49eee7ab" category="list-text">對於每個系統，選擇*編輯 CIFS 憑證*並輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。</block>
-  <block id="96c78f8fbceb946764c1312e2c06283f" category="list-text">在設定頁面中，找到要掃描的磁碟區的系統。</block>
-  <block id="c3341bb4de7c50914afc4d1735bc5a60" category="list-text">若要在磁碟區上啟用僅對應掃描，請在磁碟區中選擇 *Map*。或者，若要在所有磁碟區上啟用，請在標題區域中選擇*地圖*。若要對磁碟區啟用完整掃描，請在磁碟區中選擇*對應和分類*。或者，要在所有磁碟區上啟用，請在標題區域中選擇*Map &amp; Classify*。</block>
   <block id="3f0bbcbd675537960ef9995a958d5fe0" category="section-title">掃描資料保護卷</block>
   <block id="848e71e211eddc5e24c1f7f1238c21d8" category="paragraph">預設情況下，不會掃描資料保護 (DP) 卷，因為它們未暴露在外部，且資料分類無法存取它們。這些是來自 FSx for ONTAP檔案系統的SnapMirror操作的目標磁碟區。</block>
   <block id="cc2aceb1237f12696c6da3c671aebf3a" category="paragraph">最初，磁碟區清單將這些磁碟區標識為_類型_ *DP*，其_狀態_ *未掃描*和_所需操作_ *啟用對 DP 磁碟區的存取*。</block>
@@ -2366,7 +2304,6 @@
   <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">包含具有個人資料識別碼（包括身分證號碼、稅務識別號碼、駕駛執照號碼、藥品 ID 或護照號碼）的文件或資料庫列的文件</block>
   <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">**敏感個人資料 - 高風險**</block>
   <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">包含超過 20 個敏感個人資料識別碼的文件或資料庫列中超過 50% 的行包含敏感個人數據</block>
-  <block id="08aececdd8070f547d2aa65ea8c35446" category="summary">了解BlueXP classification的新功能。</block>
   <block id="d0e6c573ecf8ac47b2b78a9239242114" category="doc">NetApp Data Classification分類的新功能</block>
   <block id="8b3921668a0940681eb83704de3fcb36" category="paragraph">了解NetApp Data Classification的新功能。</block>
   <block id="a41dd7aa7d921f9f0881a705d3679e6c" category="section-title">2025年10月6日</block>
@@ -2609,4 +2546,64 @@
   <block id="42748df9eaa0be17ddc5cc1593cf57ab" category="sidebar">註冊以獲得支持</block>
   <block id="fabfc25ef8996fd90836e58a4c0b26b6" category="sidebar">獲取協助</block>
   <block id="1fe917b01f9a3f87fa2d7d3b7643fac1" category="sidebar">常問問題</block>
+  <block id="b2298dd9d2802bd7b073b30e599e43ff" category="paragraph">您可以隨時從設定頁面啟動或停止任何系統上的掃描。您也可以將掃描從僅映射掃描切換到映射和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。</block>
+  <block id="8880d0f7664fb31681a5fef5eb98795a" category="admonition">只有當您在標題區域中選擇了 *Map* 或 *Map &amp; Classify* 設定時，才會自動掃描新增至系統的新磁碟區。當在標題區域設定為*自訂*或*關閉*時，您需要在系統中新增的每個新磁碟區上啟動對應和/或完整掃描。</block>
+  <block id="d1e404bd72a088f4b783934c2182e410" category="paragraph">頁面頂部的「缺少「寫入」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。如果您不介意是否重設上次造訪時間，請開啟開關，無論權限為何，都會掃描所有檔案。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>。</block>
+  <block id="6efba9911ae8a5ed2cca805be1fc83f4" category="admonition">只有當您在標題區域中設定了 *Map* 或 *Map &amp; Classify* 設定時，才會自動掃描新增到系統的新磁碟區。當所有磁碟區的設定都是「自訂」或「關閉」時，您需要為新增的每個新磁碟區手動啟動掃描。</block>
+  <block id="7ff68e6cc5913763234b88a7877435bb" category="list-text">選擇一個系統，然後選擇*配置*。</block>
+  <block id="d05f690978afd870edb801524582f61d" category="list-text">若要啟用或停用所有磁碟區的掃描，請在所有磁碟區上方的標題中選擇**對應**、**對應和分類**或**關閉**。</block>
+  <block id="0cad8a14659284dd06732703372a030a" category="paragraph">若要啟用或停用對單一卷的掃描，請在清單中找到該卷，然後選擇卷名稱旁的**映射**、**映射和分類**或**關閉**。</block>
+  <block id="564008122b0cfa508443563de48651bb" category="paragraph">當您啟用掃描時，資料分類將開始掃描您在系統中選擇的磁碟區。一旦資料分類開始掃描，結果就會開始出現在合規性儀表板中。掃描完成時間取決於資料量，從幾分鐘到幾小時不等。</block>
+  <block id="8af0afdbb3b40b944bf32c94da112796" category="inline-link-macro">掃描Google Cloud NetApp Volumes</block>
+  <block id="0613f78859d4c1ee40ebf4902778200d" category="paragraph">資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp Console輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。有關詳細信息，請參閱 <block ref="ebe8ee8c7142d7ba7fe5b46fcd6a51db" category="inline-link-macro-rx"></block>。</block>
+  <block id="78fec667589f53471f473945289b1df5" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> 。</block>
+  <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。<block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>。</block>
+  <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">了解有關數據調查報告的更多信息</block>
+  <block id="802848fafcfe67f4f3f9ecf3f0a85b90" category="paragraph">如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>。</block>
+  <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">建立數據發現評估報告</block>
+  <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">數據發現評估報告對掃描環境進行了高級分析，以顯示關注區域和潛在的補救步驟。結果基於數據的映射和分類。本報告的目標是提高您對資料集三個重要面向的認識：</block>
+  <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">根據您是在雲端中準備的實例上還是在本機準備的實例上安裝資料分類，選擇適當的*部署*選項來啟動資料分類安裝。</block>
+  <block id="69f2abd0525f7c8325420a2a45195fc5" category="list-text">*資料發現評估報告*：對掃描環境進行高級分析，以突出系統的發現並顯示關注領域和潛在的補救步驟。此報告可在治理儀表板中找到。</block>
+  <block id="f274b9a79af61a0ea5d3e21e13430239" category="list-text">*完整資料映射概覽報表*：提供有關係統中檔案的大小和數量的資訊。這包括使用容量、資料年限、資料大小和檔案類型。此報告可在治理儀表板中找到。</block>
+  <block id="db21a8a70959fc6cc58d5b69bc9c685b" category="list-text">*資料主體存取請求報告*：使您能夠提取包含有關資料主體的特定名稱或個人識別碼資訊的所有文件的報告。此報告可在合規性儀表板中找到。</block>
+  <block id="71f18eb1fddf0fef7ea666b53ceb9f4c" category="list-text">*HIPAA 報告*：幫助您識別文件中健康資訊的分佈。此報告可在合規性儀表板中找到。</block>
+  <block id="60b1dc86f7b7ed593b895f2aeb926a6f" category="list-text">*PCI DSS 報告*：幫助您識別文件中信用卡資訊的分佈。此報告可在合規性儀表板中找到。</block>
+  <block id="e61d04b92724ce7d4ce7cb24b30ecbeb" category="list-text">*隱私風險評估報告*：提供來自您的資料的隱私見解和隱私風險評分。此報告可在合規性儀表板中找到。</block>
+  <block id="11aa88efe743b518058706b0031336f9" category="list-text">在合規性頁面中，找到**資料主體**選項卡。</block>
+  <block id="65f79833b84c202256676879e561be15" category="list-text">在「資料主體」部分，輸入名稱或已知標識符，然後選擇「搜尋」。</block>
+  <block id="ceec5886c06b751735fa0cd650e74f36" category="inline-image-macro">DSAR搜尋截圖</block>
+  <block id="6b67279e8975ffe073ee4c072ec4f34d" category="list-text">搜尋完成後，選擇**下載**以存取資料主體存取請求回應。選擇**調查結果**以在資料調查頁面中查看更多資訊。<block ref="e3a0ceab4233f46b959fad85d3bdfd74" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="3d16b16f7cb7025ce35d7943ee636d0b" category="list-text">查看資料分類中的結果或透過選擇下載圖示將其下載為報告。</block>
+  <block id="c37a420b5813583a66070dd39d40b015" category="list-text">選擇下載圖示後，配置您的下載設定：</block>
+  <block id="f48bf29dea0f45fe801bf049014646eb" category="list-text">選擇影片格式：CSV 或 JSON</block>
+  <block id="ec77b435e67524fd5267854c5d5b10c7" category="list-text">輸入*報告名稱*</block>
+  <block id="698386230a5cefc7da951d7bfbb830de" category="list-text">選擇匯出目的地：*系統*或您的*本機*機器。</block>
+  <block id="fdcc6f322514e1d4dbe972bee0af1c43" category="paragraph">如果您選擇系統，則會下載所有資料。您還必須選擇*系統*、*磁碟區*和*目標資料夾路徑*。</block>
+  <block id="9c9202e7a07e03be52243b3cedd00e15" category="paragraph">如果您選擇*本地*，則會將報告限制為前 10,000 行非結構化資料；5,000 行非結構化資料和 1,000 行結構化資料。</block>
+  <block id="489d650cff602991a8254badb67f7fc0" category="inline-image-macro">下載報告選項的螢幕截圖</block>
+  <block id="d92ec11e353863659ec083dd3cb4ab40" category="list-text">選擇**下載報告**開始下載。<block ref="48f681e58a358bb92f8ec86db72a6c4b" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="95a431ef24e5dfc79c56f963ac7152d6" category="paragraph">資料分類產生 PDF 報告。</block>
+  <block id="488e0d6ceb8ec3581068670e21c24460" category="list-text">如果您使用 CIFS，請向資料分類提供 Active Directory 憑證，以便它可以掃描 CIFS 磁碟區。對於每個系統，選擇*編輯 CIFS 憑證*並輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。</block>
+  <block id="47bea0551af7a88193903676421a2884" category="paragraph">如果您正確輸入了憑證，則會出現一則訊息確認所有 CIFS 磁碟區均已成功驗證。</block>
+  <block id="d6031f6c8e1261817237e5395a82b07d" category="section-title">啟用或停用磁碟區上的合規性掃描</block>
+  <block id="5002a922d131391bac1c30df26fed3ac" category="summary">掃描您的Google Cloud NetApp Volumes系統以維持合規性和治理標準。</block>
+  <block id="85e2307ed44638546f781d27f1748e91" category="doc">使用NetApp Data Classification掃描Google Cloud NetApp Volumes</block>
+  <block id="4227556560d7227155d186a336f967ba" category="paragraph">NetApp Data Classification支援Google Cloud NetApp Volumes作為一個系統。了解如何掃描您的Google Cloud NetApp Volumes系統。</block>
+  <block id="221432fff89c56eb709a8c6f2fe91dbc" category="section-title">發現您要掃描的Google Cloud NetApp Volumes系統</block>
+  <block id="4a80274dcf991c34b5956171c013c144" category="inline-link-macro">將其新增至系統頁面</block>
+  <block id="6c02eb9be6799dbf80efa5f0aa684d9e" category="paragraph">如果您要掃描的Google Cloud NetApp Volumes系統尚未作為系統出現在NetApp Console中，<block ref="4a990c89039ed63fb3397a291c6b4c94" category="inline-link-macro-rx"></block> 。</block>
+  <block id="c6ca688dd863d55aabff9036130681db" category="paragraph">掃描Google Cloud NetApp Volumes時，資料分類必須部署在雲端中，並且必須部署在與您要掃描的磁碟區相同的區域。</block>
+  <block id="5db988cb24f7297a901e30610a6311f8" category="paragraph">*注意：*掃描Google Cloud NetApp Volumes時，目前不支援在本機位置部署資料分類。</block>
+  <block id="9d71375186fc16753f5fc52f0b7f7114" category="paragraph">您可以在Google Cloud NetApp Volumes系統上啟用資料分類。</block>
+  <block id="5f9f4942401b1722e0938999c6900678" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量：幾分鐘到幾個小時。您可以在**配置**選單的**系統配置**部分追蹤初始掃描的進度。資料分類顯示每次掃描的進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。</block>
+  <block id="1be72743ebc9f808e07668557f3066d7" category="list-text">資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。<block ref="951289bfacd7a4614d2fd45503ad30db" category="inline-link-macro-rx"></block>。</block>
+  <block id="d51134943b678d0d2956c736054dc528" category="paragraph">透過檢查您的網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。對於 CIFS 卷，您需要為資料分類提供 CIFS 憑證。</block>
+  <block id="19a3e4c5ff68ea69d240c24d1c6103de" category="admonition">對於Google Cloud NetApp Volumes，資料分類只能掃描與控制台位於同一區域的磁碟區。</block>
+  <block id="e1332040409adf9251afa1321cf23a20" category="list-text">確保資料分類實例與包含Google Cloud NetApp Volumes的每個網路之間存在網路連線。</block>
+  <block id="45da27524d791af6f1e571237da8df65" category="paragraph">如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> 。</block>
+  <block id="8021d90ea4b4eaa60c6b67625b16c3ac" category="list-text">若要自訂每個磁碟區的掃描，請選擇*或選擇每個磁碟區的掃描類型*，然後選擇要對應或對應和分類的磁碟區。</block>
+  <block id="afde9dfecafd1f2bf5ef9e57f63f9a3c" category="paragraph">看<block ref="1f890962458e680b3a8ca61bbf2ebac4" category="inline-xref-macro-rx"></block>了解詳情。</block>
+  <block id="144c87632bc931491147f528950c078a" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。資料分類顯示每次掃描的進度條。您可以將滑鼠懸停在進度條上，以查看相對於磁碟區中檔案總數的已掃描檔案數。</block>
+  <block id="548327497cb41bdd13e0097d7dc46a2a" category="paragraph">憑證可以是唯讀的；提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。</block>
+  <block id="3449262b29ef380e61e714ff68b5d32c" category="list-text">在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態。如有必要，請修正任何錯誤，例如網路連線問題。</block>
 </blocks>

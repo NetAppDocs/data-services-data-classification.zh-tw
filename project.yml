@@ -42,14 +42,16 @@ sidebar:
       entries:
       - title: 掃描資料來源概覽
         url: "/task-scanning-overview.html"
-      - title: Azure NetApp Files
-        url: "/task-scanning-anf.html"
       - title: 適用於ONTAP 的Amazon FSx
         url: "/task-scanning-fsx.html"
+      - title: Azure NetApp Files
+        url: "/task-scanning-anf.html"
       - title: Cloud Volumes ONTAP和本地ONTAP
         url: "/task-getting-started-compliance.html"
       - title: 資料庫模式
         url: "/task-scanning-databases.html"
+      - title: Google Cloud NetApp Volumes
+        url: "/task-scan-google-cloud.html"
       - title: 文件共享
         url: "/task-scanning-file-shares.html"
       - title: StorageGRID

@@ -1,10 +1,10 @@
 ---
 sidebar: sidebar 
-permalink: task-scanning-anf.html 
-keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, ANF, azure netApp files, data sense 
-summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類。 
+permalink: task-scan-google-cloud.html 
+keywords: cloud compliance, get started, enable cloud compliance, cloud compliance access, privacy, compliance, google cloud, google cloud netapp volumes 
+summary: 掃描您的Google Cloud NetApp Volumes系統以維持合規性和治理標準。 
 ---
-= 使用NetApp Data Classification掃描Azure NetApp Files卷
+= 使用NetApp Data Classification掃描Google Cloud NetApp Volumes
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,13 +14,13 @@ summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類�
 
 
 [role="lead"]
-完成幾個步驟即可開始使用適用於Azure NetApp Files的NetApp Data Classification。
+NetApp Data Classification支援Google Cloud NetApp Volumes作為一個系統。了解如何掃描您的Google Cloud NetApp Volumes系統。
 
 
 
-== 發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan
+== 發現您要掃描的Google Cloud NetApp Volumes系統
 
-如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
+如果您要掃描的Google Cloud NetApp Volumes系統尚未作為系統出現在NetApp Console中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
 
 
 
@@ -28,27 +28,24 @@ summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類�
 
 link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署實例。
 
-掃描Azure NetApp Files區時，資料分類必須部署在雲端中，並且必須部署在與要掃描的磁碟區相同的區域中。
+掃描Google Cloud NetApp Volumes時，資料分類必須部署在雲端中，並且必須部署在與您要掃描的磁碟區相同的區域。
 
-*注意：*掃描Azure NetApp Files區時，目前不支援在本機位置部署資料分類。
+*注意：*掃描Google Cloud NetApp Volumes時，目前不支援在本機位置部署資料分類。
 
 
 
 == 在您的系統中啟用資料分類
 
-您可以在Azure NetApp Files區上啟用資料分類。
+您可以在Google Cloud NetApp Volumes系統上啟用資料分類。
 
 . 從資料分類選單中，選擇*配置*。
-+
-image:screenshot_cloud_compliance_anf_scan_config.png["部署資料分類實例後立即顯示的「配置」標籤的螢幕截圖。"]
-
 . 選擇如何掃描每個系統中的磁碟區。link:concept-classification.html#whats-the-difference-between-mapping-and-classification-scans["了解映射和分類掃描"]：
 +
 ** 若要對應所有捲，請選擇*映射所有磁碟區*。
 ** 若要對應和分類所有捲，請選擇*映射和分類所有捲*。
-** 若要自訂每個磁碟區的掃描，請選擇*或選擇每個磁碟區的掃描類型*，然後選擇要對應或對應和分類的磁碟區。
+** 若要自訂每個磁碟區的掃描，請選擇*或選擇每個磁碟區的掃描類型*，然後選擇要對應和/或分類的磁碟區。
 +
-看<<啟用或停用磁碟區上的合規性掃描,啟用或停用磁碟區上的合規性掃描>>了解詳情。
+看<<啟用和停用磁碟區上的合規性掃描,啟用和停用磁碟區上的合規性掃描>>了解詳情。
 
 
 
@@ -56,23 +53,23 @@ image:screenshot_cloud_compliance_anf_scan_config.png["部署資料分類實例�
 
 
 .結果
-資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。資料分類顯示每次掃描的進度條。您可以將滑鼠懸停在進度條上，以查看相對於磁碟區中檔案總數的已掃描檔案數。
+資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量：幾分鐘到幾個小時。您可以在**配置**選單的**系統配置**部分追蹤初始掃描的進度。資料分類顯示每次掃描的進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。
 
 * 預設情況下，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的文件，因為資料分類無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次造訪時間是否重設，請選擇*或為每個磁碟區選擇掃描類型*。結果頁面有一個您可以啟用的設置，以便資料分類可以掃描卷，而不管權限如何。
-* 資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["了解此資料分類限制"^] 。
+* 資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["了解此資料分類限制"^]。
 
 
 
 
 == 驗證資料分類是否有權存取卷
 
-透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要為資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
+透過檢查您的網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。對於 CIFS 卷，您需要為資料分類提供 CIFS 憑證。
 
 
-NOTE: 對於Azure NetApp Files，資料分類只能掃描與控制台位於同一區域的磁碟區。
+NOTE: 對於Google Cloud NetApp Volumes，資料分類只能掃描與控制台位於同一區域的磁碟區。
 
 .清單
-* 確保資料分類實例與包含Azure NetApp Files區的每個網路之間存在網路連線。
+* 確保資料分類實例與包含Google Cloud NetApp Volumes的每個網路之間存在網路連線。
 * 確保以下連接埠對資料分類實例開放：
 +
 ** 對於 NFS – 連接埠 111 和 2049。
@@ -87,7 +84,7 @@ NOTE: 對於Azure NetApp Files，資料分類只能掃描與控制台位於同�
 +
 .. 如果您使用 CIFS（SMB），請確保 Active Directory 憑證正確。對於每個系統，選擇*編輯 CIFS 憑證*，然後輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。
 +
-憑證可以是唯讀的；提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。
+憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。
 
 +
 如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。
@@ -100,12 +97,12 @@ image:screenshot_cifs_status.gif["螢幕截圖顯示了設定頁面和一個已�
 
 
 
-. 在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態。如有必要，請修正任何錯誤，例如網路連線問題。
+. 在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。
 
 
 
 
-== 啟用或停用磁碟區上的合規性掃描
+== 啟用和停用磁碟區上的合規性掃描
 
 您可以隨時從設定頁面啟動或停止任何系統上的掃描。您也可以將掃描從僅映射掃描切換到映射和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
 

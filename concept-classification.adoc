@@ -60,7 +60,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 資料分類提供可協助您降低儲存總擁有成本 (TCO) 的工具。您可以使用資料分類來：
 
 * 透過識別重複或與業務無關的資料來提高儲存效率。
-* 透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["了解有關Cloud Volumes ONTAP系統分層的更多信息"^] 。 https://docs.netapp.com/us-en/data-services-tiering/concept-cloud-tiering.html["了解有關本地ONTAP系統分層的更多信息"^] 。
+* 透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["了解有關Cloud Volumes ONTAP系統分層的更多信息"^] 。 https://docs.netapp.com/us-en/data-services-cloud-tiering/concept-cloud-tiering.html["了解有關本地ONTAP系統分層的更多信息"^] 。
 
 
 
@@ -207,8 +207,9 @@ NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控�
 * 關於文件的*標準元資料*：文件類型、大小、建立和修改日期等等。
 * *個人資料*：個人識別資訊 (PII)，例如電子郵件地址、身分證號碼或信用卡號，資料分類使用檔案中的特定單字、字串和模式進行識別。link:task-controlling-private-data.html#view-files-that-contain-personal-data["了解有關個人資料的更多信息"^] 。
 * *敏感個人資訊*：《一般資料保護規範》（GDPR）和其他隱私法規定義的特殊類型的敏感個人資訊（SPII），例如健康資料、種族血統或政治觀點。link:task-controlling-private-data.html#view-files-that-contain-sensitive-personal-data["了解有關敏感個人資料的更多信息"^] 。
-* *類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。link:task-controlling-private-data.html#view-files-by-categories["了解有關類別的更多信息"^] 。
-* *類型*：資料分類取得其掃描的資料並按文件類型細分。link:task-controlling-private-data.html#view-files-by-file-types["了解有關類型的更多信息"^] 。
+* *類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。link:task-controlling-governance-data.html["了解有關類別的更多信息"^]。
+
+
 * *名稱實體識別*：資料分類使用人工智慧從文件中提取人們的自然名稱。link:task-generating-compliance-reports.html["了解如何回應資料主體存取請求"^] 。
 
 
