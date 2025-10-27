@@ -1093,7 +1093,6 @@
   <block id="6faa7316e918356238e87a35180d5a8c" category="summary">透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您還可以透過查看資料分類在您的資料中發現的類別和文件類型來獲得可見性。</block>
   <block id="bedf3c3b5f85b6881b51c82e987aacb6" category="doc">使用NetApp Data Classification查看組織中儲存的私人資料的合規性詳細信息</block>
   <block id="b150bdb391d0c1a200595690e12ccafc" category="paragraph">透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您也可以透過查看NetApp Data Classification在您的資料中找到的類別和檔案類型來獲得可見性。</block>
-  <block id="0250718154d4bff43956fd8d158badc3" category="admonition">只有當您執行完整的分類掃描時，才可以獲得檔案級合規性詳細資訊。僅映射掃描不會產生文件級詳細資訊。</block>
   <block id="df3a98c599157e875757f5737769d82a" category="paragraph">預設情況下，資料分類儀表板顯示所有系統和資料庫的合規性資料。若要僅查看部分系統的數據，請選擇它們。</block>
   <block id="77c3a6438f91ef76936e32e87dfaf3e0" category="inline-image-macro">資料分類儀表板的螢幕截圖</block>
   <block id="6fb0e60704ddb660539546b0d73ee807" category="paragraph"><block ref="6fb0e60704ddb660539546b0d73ee807" category="inline-image-macro-rx" type="image"></block></block>
@@ -1101,7 +1100,6 @@
   <block id="6ea10a425f58f819d9e06c9f29ff141d" category="paragraph">您可以從資料調查頁面過濾結果，並將結果報告下載為 CSV 檔案。看<block ref="70fd9e5a2e3fb16954088b6ec652d9bc" category="inline-link-macro-rx"></block>了解詳情。</block>
   <block id="f9643188d49ee294212ab09521305bdd" category="section-title">查看包含個人資料的文件</block>
   <block id="dd1467728450c4a369282c49d1556c37" category="inline-link-macro">例如，信用卡號、社會安全號碼、銀行帳號、密碼等等。</block>
-  <block id="f2fb76fe772f38fe5964daae7588a806" category="paragraph">資料分類會自動識別資料中的特定單字、字串和模式（正規表示式）。<block ref="9b071fdcbf97a615ac065063e71f58ca" category="inline-link-macro-rx"></block>資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。</block>
   <block id="b3d4fb955e1630fd4184c8964a1f4fdb" category="inline-link-macro">建立自訂分類</block>
   <block id="4b760cb0a54b4c608b7deaa08d52f3c3" category="paragraph">您也可以建立自訂搜尋字詞來識別特定於您組織的個人資料。有關更多信息，請參閱<block ref="702fa1a9e503f253a2dc3aea49d5216d" category="inline-link-macro-rx"></block> 。</block>
   <block id="ff63178a8a067a8614bbbfdf75252bf4" category="inline-link-macro">個人資料表</block>
@@ -1112,9 +1110,6 @@
   <block id="a57085e0d2cc8f29312af67916a9b6f6" category="inline-image-macro">個人文件對話框的螢幕截圖，您可以在其中選擇個人資料類型旁邊的調查結果圖示。</block>
   <block id="25bacb716a6ef90884a5d3ec138fabdf" category="paragraph"><block ref="25bacb716a6ef90884a5d3ec138fabdf" category="inline-image-macro-rx" type="image"></block></block>
   <block id="c958130fa0d53d18dee7cca66d9897e3" category="list-text">透過搜尋、排序、擴展特定文件的詳細資訊、選擇「調查結果」箭頭查看屏蔽資訊或下載文件列表來調查資料。</block>
-  <block id="2e4a987846fa1e715c9257dcbf994dcc" category="paragraph">下圖顯示在目錄（共享和資料夾）中找到的個人資料。在「結構化」標籤中，您可以查看資料庫中的個人資料。在「非結構化」標籤中，您可以查看檔案層級資料。</block>
-  <block id="bfe1194df41f0cc26cfdf2f75931ac0d" category="inline-image-macro">點擊“調查結果”後在文件中發現的詳細資訊的螢幕截圖。</block>
-  <block id="67524a6d2ea2d542c817bd783e914070" category="paragraph"><block ref="67524a6d2ea2d542c817bd783e914070" category="inline-image-macro-rx" type="image"></block></block>
   <block id="5529cbafb2e0562120cf639c1f822fa6" category="inline-image-macro">點擊“調查結果”後在目錄中找到的詳細資訊的螢幕截圖。</block>
   <block id="886eca0ba693f7fa50ef2d9fe4c0887f" category="paragraph"><block ref="886eca0ba693f7fa50ef2d9fe4c0887f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2d46c3977746d66d8fa8c15b6bc98d6c" category="section-title">查看包含敏感個人資料的文件</block>
@@ -1798,18 +1793,12 @@
   <block id="c7fa83e1836cada62d287dfbba3779c2" category="paragraph">對話方塊中將顯示一則訊息，提示正在下載報告。</block>
   <block id="239c6b7b6b21f69be28a2d744f12415f" category="section-title">根據選定的篩選器建立已儲存的查詢</block>
   <block id="b5a2b88422c8fb1a7a5ed89ddab5b1a7" category="admonition">結果可能需要最多 15 分鐘才會顯示在「已儲存的查詢」頁面上。</block>
-  <block id="32d12a01915c880cd8562309834a784c" category="summary">如果需要，您可以停止資料分類掃描一個或多個系統、資料庫、文件共用群組、OneDrive 帳戶、Google Drive 帳戶或 SharePoint 帳戶。</block>
   <block id="1751b4ab0bbbd8808618f730b51665b7" category="doc">從NetApp Data Classification中刪除資料來源</block>
   <block id="7a80e4c6d3c7f343eb1d975a94ccb55a" category="paragraph">如果需要，您可以停止NetApp Data Classification掃描一個或多個系統、資料庫或檔案共用群組。</block>
-  <block id="f24ba04e977ad9bfd6378f63b69efa7c" category="section-title">停用系統的合規性掃描</block>
-  <block id="972eb2452b4121fa7140b741a28cbc12" category="paragraph">當您停用掃描時，資料分類不再掃描系統上的數據，並且它會從資料分類實例中刪除索引的合規性洞察（系統本身的資料不會被刪除）。</block>
   <block id="9c80e63be351b07c3f6d89a0342243d4" category="list-text">從「配置」頁面中，選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>系統行中的按鈕，然後*停用資料分類*。</block>
-  <block id="c833d2d4e46179fc93a0b799cbd59db1" category="admonition">您也可以在選擇系統時從「服務」面板停用系統的合規性掃描。</block>
   <block id="ecf12691469c058016b0daa71b0a4aac" category="section-title">從資料分類中刪除資料庫</block>
-  <block id="2a9d61a027886b5ccbe9404e94a24711" category="paragraph">如果您不再想掃描某個資料庫，您可以從資料分類介面將其刪除並停止所有掃描。</block>
   <block id="33a74c27f54695807d7c17126606dd9b" category="list-text">從「配置」頁面中，選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>資料庫行中的按鈕，然後*刪除資料庫伺服器*。</block>
   <block id="ccc7b20c65cb0c5abb8132c10e481d16" category="section-title">從資料分類中刪除一組檔案共享</block>
-  <block id="68e7dbd782620b5af1eafa4fded9329f" category="paragraph">如果您不再想從文件共享群組掃描使用者文件，您可以從資料分類介面刪除文件共用群組並停止所有掃描。</block>
   <block id="c16ad793ec0335438d151ae80a49d06f" category="list-text">從「配置」頁面中，選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>檔案共用群組行中的按鈕，然後按一下*刪除檔案共用群組*。</block>
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">掃描配置頁面中「刪除資料庫伺服器」按鈕的螢幕截圖。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
@@ -1925,7 +1914,6 @@
   <block id="975a926a0acffc9710e8ecd51beec54b" category="inline-image-macro">新增資料庫伺服器頁面的螢幕截圖，以便您識別資料庫。</block>
   <block id="7c6692b3993d10f33b7ccf14b4d921b5" category="paragraph"><block ref="7c6692b3993d10f33b7ccf14b4d921b5" category="inline-image-macro-rx" type="image"></block></block>
   <block id="65cc8158f6711bb49f118b7acdf2a0be" category="paragraph">該資料庫已新增至系統清單。</block>
-  <block id="0dacbfa35e4a190378a78ef8c1f6a644" category="section-title">啟用和停用資料庫模式的合規性掃描</block>
   <block id="b7a17432eb09c32a574991d9b6b0be00" category="paragraph">您可以隨時停止或開始對您的模式進行全面掃描。</block>
   <block id="bee9dc960933af9ecc3b6f30878d28e4" category="admonition">沒有選項可以選擇僅映射資料庫模式的掃描。</block>
   <block id="64f99cdcf52c853ffbb49b495c84036b" category="list-text">在配置頁面中，選擇要設定的資料庫的*配置*按鈕。</block>
@@ -1934,7 +1922,6 @@
   <block id="b1f7c7e36d5ee01af131dd25c658e41f" category="list-text">透過向右移動滑桿來選擇要掃描的模式。</block>
   <block id="cc939570e2fbb3d7e526d9e3e757a5f0" category="inline-image-macro">掃描配置頁面的螢幕截圖，您可以在其中選擇要掃描的模式。</block>
   <block id="46e57bba2892a9df10ae0b7ae9e43f45" category="paragraph"><block ref="46e57bba2892a9df10ae0b7ae9e43f45" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e6fdece27945197e38c908c70523618d" category="paragraph">資料分類開始掃描您啟用的資料庫模式。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。如果有任何錯誤，它們將出現在「狀態」列中，並顯示修復錯誤所需的操作。</block>
   <block id="932e89f9a0afb86f1dbbbe9b3df22cd0" category="paragraph">資料分類每天掃描您的資料庫一次；資料庫不像其他資料來源那樣被連續掃描。</block>
   <block id="e30d9ca93fc0fd537332d2e38acec91a" category="summary">完成幾個步驟即可開始使用資料分類直接掃描非NetApp NFS 或 CIFS 檔案共用。這些文件共用可以駐留在本機或雲端。</block>
   <block id="0f72b70bfac03431d35b47a72230f8c2" category="doc">使用NetApp Data Classification掃描檔案共用</block>
@@ -1967,7 +1954,6 @@
   <block id="e80b5dfbb6519cb4346daba78481ae2e" category="list-text">若要對檔案共用啟用完整掃描，請選擇*Map &amp; Classify*。</block>
   <block id="6bfd17d888fc4197713ca925797fb9c5" category="list-text">若要停用檔案共用上的掃描，請選擇「*關閉*」。</block>
   <block id="7dddb69b6a0edfdc36d8b02a6d9df2ce" category="inline-link-macro">從資料分類中的資料來源收集的元資料</block>
-  <block id="0d504ad5d6661bc349e04cc645aee29e" category="admonition">頁面頂部的「缺少「寫入屬性」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。  + 如果將*缺少「寫入屬性」權限時掃描*切換為*開*，則掃描將重置上次存取時間並掃描所有文件，而不管權限如何。  + 要了解有關上次訪問時間戳的更多信息，請參閱<block ref="4111f68b8172bf2a11dc2f4f2bf1638d" category="inline-link-macro-rx"></block>。</block>
   <block id="6fd2d8d813fca5453b27470ce0140b6e" category="inline-xref-macro">追蹤掃描進度</block>
   <block id="449d5e7cbe79f73cd89251e014e63c5d" category="paragraph">資料分類開始掃描您新增的檔案共用中的檔案。你可以<block ref="49703064e6182ae52c2dba4f03d70acb" category="inline-xref-macro-rx"></block>並在**儀表板**中查看掃描結果。</block>
   <block id="20a9fbab57f89c185c5017371353fc11" category="admonition">如果對於使用 Kerberos 驗證的 CIFS 配置的掃描未成功完成，請檢查**配置**選項卡中是否有錯誤。</block>
@@ -1981,14 +1967,11 @@
   <block id="37930ddda6375efa5dff13cff9b3134c" category="list-text">選擇身份驗證方法：**NTLM** 或 **Kerberos**。</block>
   <block id="1fe8e9edee1eb819b2183f754c26e179" category="list-text">輸入 Active Directory **使用者名稱**和**密碼**。</block>
   <block id="3a6b529abf055bb666a3d0f7b1f4056a" category="list-text">選擇**儲存**以完成該過程。</block>
-  <block id="f7066b9bcef508a56d9d043a9fb1fe1d" category="list-title">將文件共享新增至合規掃描</block>
   <block id="ad0577638876c42601046d9f6255f464" category="list-text">選擇 **+ 新增共享**。</block>
   <block id="3af4ae7b28ddfe38307ff8527d9da313" category="paragraph">如果您要將文件共用新增至已設定的協議，則無需進行任何變更。</block>
   <block id="b5b8e67d6a37d24ad73c89e4c7ac8c9e" category="inline-link-macro">先決條件</block>
-  <block id="61cfa51582cec46d576d45cd093d79ef" category="paragraph">如果您要使用第二種協定新增檔案共用，請確保您已正確配置身份驗證，如<block ref="aaf48cddad89107947ab6e7eca766e41" category="inline-link-macro-rx"></block>。</block>
   <block id="4459627c70285484d5cdd635a0dc2851" category="list-text">使用以下格式新增要掃描的檔案共用（每行一個檔案共用）<block ref="5d0795d5bd729889f583de7b0928eaea" prefix=" " category="inline-code"></block> 。</block>
   <block id="dadf1d57ce39c4b00e52377a9d1d4fd7" category="list-text">選擇**繼續**以完成新增檔案共用。</block>
-  <block id="0eb30c84638dc32a52a08e70a70b2a55" category="list-title">從合規性掃描中刪除檔案共享</block>
   <block id="673556dfdd8f6028bacdc57618e6a2fc" category="list-text">選擇要從中刪除檔案共享的系統。</block>
   <block id="f76618a8e4af059632c87ab1f949bbe1" category="list-text">選擇*配置*。</block>
   <block id="7ce65bddfd6fa76c1434a83bb91b5c59" category="list-text">在配置頁面中，選擇操作<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block>對於要刪除的檔案共用。</block>
@@ -1997,7 +1980,6 @@
   <block id="b42fc0af753e0ff8c5de1ac5d8dfe183" category="list-text">選擇**配置**選單。</block>
   <block id="84b821970ecbb0174dcf872c53a41c61" category="list-text">選擇**系統配置**。</block>
   <block id="4dab3403a8ef3e75300fdb00c849b967" category="list-text">對於儲存庫，檢查掃描進度列以查看其狀態。</block>
-  <block id="ead021602fced47069d7dd9807d4cc58" category="summary">完成幾個步驟即可開始使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。</block>
   <block id="59e1dcfd3e173c8343f739b2b614df5b" category="doc">使用NetApp Data Classification掃描Amazon FSx for ONTAP卷</block>
   <block id="36f0a71e9bee5a8dc762d73b5add2f4c" category="list-text">您需要 AWS 中一個活動的控制台代理來部署和管理資料分類。</block>
   <block id="6bd47121e87da35c1c6a91d9e139c7e7" category="list-text">建立系統時選擇的安全群組必須允許來自資料分類實例的流量。您可以使用連接到 FSx for ONTAP檔案系統的 ENI 找到關聯的安全性群組，並使用 AWS 管理主控台對其進行編輯。</block>
@@ -2014,7 +1996,6 @@
   <block id="0fcb706116784d393e130e46263f6513" category="paragraph">您可以為 FSx for ONTAP磁碟區啟用資料分類。</block>
   <block id="8b65644c82c9ff63e2837ffd13955343" category="list-text">從NetApp Console，*治理 &gt; 分類*。</block>
   <block id="27462f4f526cf4cc66a79a05b8b16d3d" category="paragraph"><block ref="27462f4f526cf4cc66a79a05b8b16d3d" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="1f7853c0557afea9514ce9a1acd1d091" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果將在合規性儀表板中提供。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中總檔案數的已掃描檔案數。</block>
   <block id="b7867613e8028dc8e311552eb7346350" category="paragraph">透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。</block>
   <block id="20bf35b225fc9945c8fa998e3fe1a308" category="paragraph">您需要向資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。</block>
   <block id="26df3c05a484f6dafaf2085e9f725f92" category="list-text">在配置頁面上，選擇*查看詳細資訊*以查看狀態並修正任何錯誤。</block>
@@ -2125,7 +2106,6 @@
   <block id="780ada7e88da33155d8e1741033fefa2" category="inline-image-macro">輸入值以存取StorageGRID服務的對話框的螢幕截圖。</block>
   <block id="f0a329a1a31172f9c327937f7f02e88f" category="paragraph"><block ref="f0a329a1a31172f9c327937f7f02e88f" category="inline-image-macro-rx" type="image"></block></block>
   <block id="690634a0e2d86617a916d6604a041d76" category="paragraph">StorageGRID已新增至系統清單。</block>
-  <block id="149bb086304a69799f52fb84d5e33370" category="section-title">在StorageGRID桶上啟用和停用合規性掃描</block>
   <block id="c0a8d0058a2dcc6d89286c21b353249b" category="paragraph">在StorageGRID上啟用資料分類後，下一步是設定要掃描的儲存桶。資料分類發現這些儲存桶並將它們顯示在您建立的系統中。</block>
   <block id="6054a341661a40b8d4ceca9b3794abb7" category="list-text">在設定頁面中，找到StorageGRID系統。</block>
   <block id="7d322931eb9196b6f20b43ad0525dc8c" category="list-text">在StorageGRID系統圖塊上，選擇 *配置*。</block>
@@ -2585,7 +2565,6 @@
   <block id="95a431ef24e5dfc79c56f963ac7152d6" category="paragraph">資料分類產生 PDF 報告。</block>
   <block id="488e0d6ceb8ec3581068670e21c24460" category="list-text">如果您使用 CIFS，請向資料分類提供 Active Directory 憑證，以便它可以掃描 CIFS 磁碟區。對於每個系統，選擇*編輯 CIFS 憑證*並輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。</block>
   <block id="47bea0551af7a88193903676421a2884" category="paragraph">如果您正確輸入了憑證，則會出現一則訊息確認所有 CIFS 磁碟區均已成功驗證。</block>
-  <block id="d6031f6c8e1261817237e5395a82b07d" category="section-title">啟用或停用磁碟區上的合規性掃描</block>
   <block id="5002a922d131391bac1c30df26fed3ac" category="summary">掃描您的Google Cloud NetApp Volumes系統以維持合規性和治理標準。</block>
   <block id="85e2307ed44638546f781d27f1748e91" category="doc">使用NetApp Data Classification掃描Google Cloud NetApp Volumes</block>
   <block id="4227556560d7227155d186a336f967ba" category="paragraph">NetApp Data Classification支援Google Cloud NetApp Volumes作為一個系統。了解如何掃描您的Google Cloud NetApp Volumes系統。</block>
@@ -2602,8 +2581,31 @@
   <block id="e1332040409adf9251afa1321cf23a20" category="list-text">確保資料分類實例與包含Google Cloud NetApp Volumes的每個網路之間存在網路連線。</block>
   <block id="45da27524d791af6f1e571237da8df65" category="paragraph">如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，<block ref="feb1b46dea58df1c0d569dc99576840c" category="inline-link-macro-rx"></block> 。</block>
   <block id="8021d90ea4b4eaa60c6b67625b16c3ac" category="list-text">若要自訂每個磁碟區的掃描，請選擇*或選擇每個磁碟區的掃描類型*，然後選擇要對應或對應和分類的磁碟區。</block>
-  <block id="afde9dfecafd1f2bf5ef9e57f63f9a3c" category="paragraph">看<block ref="1f890962458e680b3a8ca61bbf2ebac4" category="inline-xref-macro-rx"></block>了解詳情。</block>
   <block id="144c87632bc931491147f528950c078a" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果就會顯示在合規性儀表板中。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。資料分類顯示每次掃描的進度條。您可以將滑鼠懸停在進度條上，以查看相對於磁碟區中檔案總數的已掃描檔案數。</block>
   <block id="548327497cb41bdd13e0097d7dc46a2a" category="paragraph">憑證可以是唯讀的；提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。</block>
   <block id="3449262b29ef380e61e714ff68b5d32c" category="list-text">在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態。如有必要，請修正任何錯誤，例如網路連線問題。</block>
+  <block id="cd514ed653be2ae51991f51ded3f537c" category="admonition">只有當您執行完整分類掃描時，才可獲得文件級合規性詳細資訊。僅映射掃描不會產生文件級詳細資訊。</block>
+  <block id="7914c7314cd1487f85ca4e63aac4adda" category="paragraph">資料分類會自動識別資料中的特定單字、字串和模式（正規表示式）。<block ref="8eea65c990c4a78489b8d3e4e6b97f4d" category="inline-link-macro-rx"></block>資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。</block>
+  <block id="3e5818fd29d048fcd92e901319015392" category="paragraph">下圖顯示在目錄（共享和資料夾）中找到的個人資料。在「結構化」標籤中，您可以查看資料庫中的個人資料。在「非結構化」標籤中，您可以查看檔案層級資料。</block>
+  <block id="3c7277a39785ee38a40688e10e12e05f" category="inline-image-macro">點擊“調查結果”後在文件中發現的詳細資訊的螢幕截圖。</block>
+  <block id="c720fa8d3efc22da94c66e59bba84143" category="paragraph"><block ref="c720fa8d3efc22da94c66e59bba84143" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="1a801b1d929d4be2f53ad63a279f3d76" category="section-title">啟用或停用磁碟區掃描</block>
+  <block id="0bc6951d2abddb002c7f04be15da0389" category="summary">如果需要，您可以停止資料分類掃描系統、資料庫或檔案共用群組。</block>
+  <block id="1e27313fe6835191d8609078072e8e0a" category="section-title">停用系統掃描</block>
+  <block id="03ee6bef68fb7d51c30b769ae5a4a40d" category="paragraph">當您停用掃描時，資料分類不再掃描系統上的數據，並且它會從資料分類實例中刪除索引的見解。系統本身的資料不會被刪除。</block>
+  <block id="d08c57af0bb12c6deeb47c1035f6ebfd" category="admonition">您也可以在選擇系統時從「服務」面板停用系統掃描。</block>
+  <block id="1090c27e7274f80192fdb01a823bb6c7" category="paragraph">如果您不再需要掃描某個資料庫，您可以從資料分類介面將其刪除並停止所有掃描。</block>
+  <block id="87a7c58f622f64c54d94dcf6131e8301" category="paragraph">如果您不再想從文件共享群組掃描使用者文件，您可以從資料分類介面刪除文件共用群組並停止所有掃描。</block>
+  <block id="5671a8dc34db32b5b91ae95b40d2301d" category="section-title">啟用和停用磁碟區上的掃描</block>
+  <block id="86e95ca158606e78121192465eaeabb7" category="paragraph">看<block ref="686e1938325decfc2a79c67557fd799f" category="inline-xref-macro-rx"></block>了解詳情。</block>
+  <block id="d8b681cac56dc69ce3433568af1a665a" category="section-title">啟用和停用資料庫模式掃描</block>
+  <block id="917b988c0adb3b0135615d421cf88938" category="paragraph">資料分類開始掃描您啟用的資料庫模式。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。每次掃描的進度都顯示為進度條。您也可以將滑鼠停留在進度列上，查看相對於磁碟區中檔案總數的已掃描檔案數。如果有任何錯誤，它們將出現在「狀態」列中，並顯示修復錯誤所需的操作。</block>
+  <block id="07eed0901150316384032dc417d627a2" category="admonition">頁面頂部的「缺少「寫入屬性」權限時掃描」開關預設為停用狀態。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。+ 如果將*缺少「寫入屬性」權限時掃描*切換為*開*，則掃描將重置上次存取時間並掃描所有文件，而不管權限如何。+ 要了解有關上次訪問時間戳的更多信息，請參閱<block ref="efbe79d0ae711b4cfcab53d208f81146" category="inline-link-macro-rx"></block>。</block>
+  <block id="08590bff640c2b2f21573d82cabbbf58" category="list-title">將文件共享新增至掃描</block>
+  <block id="cdf23675f1cc1c4c447126386d1ad999" category="paragraph">如果您要使用第二種協定新增檔案共用，請確保您已正確配置身份驗證，詳情請見<block ref="aaf48cddad89107947ab6e7eca766e41" category="inline-link-macro-rx"></block>。</block>
+  <block id="41c35cf711634c651b9ce14c4c087e02" category="list-title">從掃描中刪除檔案共享</block>
+  <block id="f7a456f89f201e8afb58ab4d822279e3" category="summary">完成幾個步驟即可開始使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。</block>
+  <block id="36f8a3fbb42c62950bf715fc90c03897" category="paragraph">完成幾個步驟即可使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。</block>
+  <block id="020090d3590a2184408809832f12a6c5" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果將在合規性儀表板中提供。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。在進度條中追蹤每次掃描的進度；您可以將滑鼠懸停在進度條上，以查看相對於磁碟區中總檔案數的掃描檔案數。</block>
+  <block id="3eb0c5821ef609291db2736478cac268" category="section-title">啟用並停用StorageGRID桶上的掃描</block>
 </blocks>
