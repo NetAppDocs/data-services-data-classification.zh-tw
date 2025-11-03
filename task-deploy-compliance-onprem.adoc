@@ -219,7 +219,7 @@ NOTE: 安裝後，資料分類主機系統的 IP 位址無法變更。
 | \ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/. | 提供對軟體映像、清單、範本的存取以及發送日誌和指標。 
 
 
-| \ https://support.compliance.api.console.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
+| https://support.compliance.api.bluexp.netapp.com/ | 使NetApp能夠從稽核記錄中串流資料。 
 
 
 | https://github.com/docker https://download.docker.com | 提供docker安裝的必備包。 
