@@ -2608,4 +2608,5 @@
   <block id="36f8a3fbb42c62950bf715fc90c03897" category="paragraph">完成幾個步驟即可使用NetApp Data Classification掃描Amazon FSx for ONTAP磁碟區。</block>
   <block id="020090d3590a2184408809832f12a6c5" category="paragraph">資料分類開始掃描您在系統中選擇的磁碟區。一旦資料分類完成初始掃描，結果將在合規性儀表板中提供。所需時間取決於資料量——可能是幾分鐘或幾小時。您可以透過導航到**配置**選單然後選擇**系統配置**來追蹤初始掃描的進度。在進度條中追蹤每次掃描的進度；您可以將滑鼠懸停在進度條上，以查看相對於磁碟區中總檔案數的掃描檔案數。</block>
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">啟用並停用StorageGRID桶上的掃描</block>
+  <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/.</block>
 </blocks>
