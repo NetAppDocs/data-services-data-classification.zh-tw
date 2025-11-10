@@ -162,7 +162,6 @@
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">使用BlueXP classification調查組織中儲存的數據</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">有關更多信息，請參閱<block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
   <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
-  <block id="bb4c36ac9f10bc64e16bd125cb997dcd" category="paragraph">此資料分類版本包括：</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">優先進行分類掃描</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描優先級，則映射掃描和分類掃描都會優先處理。</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">有關更多信息，請參閱<block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
@@ -1735,8 +1734,6 @@
   <block id="293d9f51d90274c3eb6f28b88bdf5b95" category="list-text">選擇使用者或群組的名稱以重新整理調查頁面，以便您可以看到該使用者或群組有權存取的所有檔案和目錄。</block>
   <block id="33f1c68834e7b02c4c8b3b9dc4f796d3" category="section-title">檢查儲存系統中的重複文件</block>
   <block id="d353221e429d4e01e167115856394ba7" category="paragraph">您可以檢查儲存系統中是否儲存了重複的檔案。如果您想確定可以節省儲存空間的區域，這將非常有用。確保具有特定權限或敏感資訊的某些檔案不會在儲存系統中不必要地重複也是很好的。</block>
-  <block id="6c8f43fb3633672815a9819858118a4c" category="paragraph">您的所有文件（不包括資料庫）如果大小為 1 MB 或更大，或包含個人或敏感個人信息，都會被進行比較，以查看是否有重複。</block>
-  <block id="1767c0592d0d28cdc0d9d1cd49e52537" category="paragraph">資料分類使用雜湊技術來確定重複檔案。如果任何檔案與另一個檔案具有相同的雜湊碼，那麼您可以 100% 確定這些檔案是完全重複的 - 即使檔案名稱不同。</block>
   <block id="54a7c4785d3d9e01ac8323dfbb334a4b" category="list-text">在「篩選器」窗格中，選擇「檔案大小」以及「重複」（「有重複」）以查看您的環境中哪些特定大小範圍的檔案是重複的。</block>
   <block id="4cf8fbbd65dba65137f55960d10a2882" category="list-text">或者，下載重複檔案的清單並將其發送給儲存管理員，以便他們可以決定可以刪除哪些檔案（如果有）。</block>
   <block id="3d860adc4ff3b65fee4d550f4bf11f96" category="list-text">您可以選擇刪除、標記或移動重複的檔案。選擇您想要執行操作的文件，然後選擇適當的操作。</block>
@@ -1803,7 +1800,6 @@
   <block id="3d04e82ecfc4b95e7eb8eaf404dffadc" category="inline-image-macro">掃描配置頁面中「刪除資料庫伺服器」按鈕的螢幕截圖。</block>
   <block id="b695958db24ae26377f1c2e3a62b14eb" category="paragraph"><block ref="b695958db24ae26377f1c2e3a62b14eb" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a5776459fdb4aaf699684c46e41832a8" category="list-text">從確認對話方塊中選擇*刪除共享群組*。</block>
-  <block id="032990a2d529d70fdd578fbef47579da" category="summary">您可以在NetApp Data Classification中管理在每個系統和資料來源中掃描資料的方式。您可以在「儲存庫」基礎上進行變更；這表示您可以根據正在掃描的資料來源類型對每個磁碟區、儲存桶、共用、模式、使用者等進行變更。</block>
   <block id="de10ad3938875667137fa1bd63542e62" category="doc">更改儲存庫的NetApp Data Classification掃描設置</block>
   <block id="161ac81baea8064d1337229d7ba5864f" category="paragraph">您可以管理在每個系統和資料來源中如何掃描資料。您可以在「儲存庫」基礎上進行變更；這表示您可以根據正在掃描的資料來源類型對每個磁碟區、模式、使用者等進行變更。</block>
   <block id="e4723f182b426a80c2a46707ff02e15e" category="inline-link-macro">映射掃描或映射和分類掃描</block>
@@ -1811,12 +1807,10 @@
   <block id="8f737a8c409b235d7a43941682f2a548" category="section-title">查看儲存庫的掃描狀態</block>
   <block id="4fc4ab7968a59d858d5c460fb64f3f3c" category="paragraph">您可以查看NetApp Data Classification正在為每個系統和資料來源掃描的各個儲存庫（磁碟區、儲存桶等）。您還可以看到有多少已被“映射”，有多少已被“分類”。分類需要更長的時間，因為所有資料都進行了完整的 AI 識別。</block>
   <block id="e415c7da5280de793049e6b59816274d" category="paragraph">您可以在設定頁面查看各個工作環境的掃描狀態：</block>
-  <block id="209f3dabc722accc7b4db77a133ef209" category="list-text">*初始化*（淺藍色點）：地圖或分類配置已啟動。在開始「待處理佇列」狀態之前，這會持續幾秒鐘。</block>
   <block id="fbbc6bcf9c53aaad4b5476065f315bb1" category="list-text">*待處理佇列*（橘色圓點）：掃描任務正在等待列入掃描佇列。</block>
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*已排隊*（橘色圓點）：任務已成功新增至掃描佇列。當佇列中的捲輪到達時，系統將開始映射或分類該磁碟區。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*正在運行*（綠點）：佇列中的掃描任務正在選定的儲存庫上積極進行。</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*完成*（綠點）：儲存庫掃描已完成。</block>
-  <block id="da30b4408b5e1540ac02763204c943ad" category="list-text">*暫停*（灰點）：您選擇了「暫停」選項來暫停掃描。雖然系統中沒有顯示音量的變化，但仍會顯示掃描的見解。</block>
   <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*錯誤*（紅點）：掃描無法完成，因為遇到了問題。如果您需要完成某項操作，錯誤將出現在「所需操作」列下的工具提示中。否則，系統將顯示“錯誤”狀態並嘗試恢復。完成後，狀態就會改變。</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*未掃描*：選擇了「關閉」磁碟區配置，系統未掃描該磁碟區。</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">顯示如何選擇系統配置按鈕的螢幕截圖。</block>
@@ -1825,7 +1819,6 @@
   <block id="c794003b8b71c52d57b2d4a1adc1e35c" category="list-text">在掃描配置頁面中，查看所有儲存庫的掃描設定。</block>
   <block id="bf3aeefcdd65b55f2612004f45b7257f" category="inline-image-macro">螢幕截圖顯示您的儲存桶是否正在掃描以及目前掃描狀態。</block>
   <block id="69c5667893c99e5a388e892cc9784e66" category="paragraph"><block ref="69c5667893c99e5a388e892cc9784e66" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="3c6eaacb9399946d9d6cd4ced08320bf" category="list-text">將遊標停留在「映射狀態」列中的圖表上，查看每個儲存庫（本例中為儲存桶）中仍需對應或分類的檔案數。</block>
   <block id="0e7c3262eaa1e23e978644965f5cfcad" category="section-title">更改儲存庫的掃描類型</block>
   <block id="af0f4aea5a591706300708a645397bc4" category="paragraph">您可以隨時從設定頁面啟動或停止系統中的僅對應掃描或對應和分類掃描。您也可以從僅映射掃描變更為映射和分類掃描，反之亦然。</block>
   <block id="1a8f03950c641e2ffffb33146f70ef55" category="admonition">資料庫不能設定為僅映射掃描。資料庫掃描可以關閉或開啟；其中「開啟」相當於「映射和分類」。</block>
@@ -1842,8 +1835,6 @@
   <block id="fbadcaa7267ae823837aff45d0dd7135" category="paragraph">如果您不再需要監控儲存庫（例如磁碟區）的合規性，則可以停止掃描它。您可以透過關閉掃描來實現此目的。當掃描關閉時，有關該磁碟區的所有索引和資訊將從系統中刪除，並且掃描資料的收費也將停止。</block>
   <block id="565a8976f79d6c76ecebff0fff08e98a" category="list-text">在掃描設定頁面中選擇「*關閉*」以停止掃描特定儲存桶。</block>
   <block id="3ea62d70182e6d0c238badaaf224dff9" category="section-title">暫停並恢復儲存庫掃描</block>
-  <block id="7445e229a53051f98f4c5bb878a24db4" category="paragraph">如果您想暫時停止掃描某些內容，您可以「暫停」儲存庫掃描。暫停掃描意味著資料分類將不會對儲存庫的變更或新增執行任何未來掃描，但所有目前結果仍將顯示在系統中。暫停掃描並不會停止對已掃描的資料收費，因為資料仍然存在。</block>
-  <block id="0f9fab6026fbdbed86f2befe8eae64e1" category="paragraph">您可以隨時「恢復」掃描。</block>
   <block id="5ad3e303fff11348579be9fa7186a3bf" category="inline-image-macro">操作圖示</block>
   <block id="ceb02fa059b59b1ab250e24b23e83492" category="list-text">在掃描配置頁面中，選擇操作<block ref="9599256bd913e17dd34fce684015b2f9" category="inline-image-macro-rx" type="image"></block>圖示.</block>
   <block id="d7530ec47cb0f60bf26bff38cfcd4f1f" category="list-text">選擇「*暫停*」暫停對磁碟區的掃描，或選擇「*恢復*」恢復先前已暫停的磁碟區的掃描。</block>
@@ -1862,8 +1853,6 @@
   <block id="f3bf83f2c7aadc341ac1678567775abc" category="list-text">若要對應所有捲，請選擇*映射所有磁碟區*。</block>
   <block id="c854572c2f5a5368403f0ee57aa1bb29" category="list-text">若要對應和分類所有捲，請選擇*映射和分類所有捲*。</block>
   <block id="9071a661cd1f2da138650405c0f6579b" category="list-text">若要自訂每個磁碟區的掃描，請選擇*或選擇每個磁碟區的掃描類型*，然後選擇要對應和/或分類的磁碟區。</block>
-  <block id="5c4a0511ffaeef83ec4f6f814c84e1f5" category="inline-xref">啟用和停用磁碟區上的合規性掃描</block>
-  <block id="c0c91d6f7c9b085f79f701932b3d9cc7" category="paragraph">看<block ref="95ce3baacaaadbae6a6ffc1a8884d40a" category="inline-xref-macro-rx"></block>了解詳情。</block>
   <block id="fcb8c9e04be809b808c3a4762413c376" category="list-text">在確認對話方塊中，選擇*批准*。</block>
   <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">預設情況下，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的文件，因為資料分類無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次造訪時間是否重設，請選擇*或為每個磁碟區選擇掃描類型*。結果頁面有一個您可以啟用的設置，以便資料分類可以掃描卷，而不管權限如何。</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">了解此資料分類限制</block>
@@ -2610,4 +2599,23 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">啟用並停用StorageGRID桶上的掃描</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/.</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">https://support.compliance.api.bluexp.netapp.com/</block>
+  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">本次BlueXP分類版本包含：</block>
+  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">版本 1.48</block>
+  <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">本次資料分類版本更新包括錯誤修復、安全性改進和效能提升。</block>
+  <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">增強掃描進度清晰度</block>
+  <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">掃描配置現在包含對掃描完成情況的更深入洞察。以前，進度條只在掃描進行時顯示。現在，掃描完成後進度條仍然可見，以確認掃描已成功完成。您也可以查看已對應和已掃描的檔案數量。</block>
+  <block id="dc9fb8f25cdf758c060f4782f41b0b0f" category="paragraph">有關掃描設定的更多信息，請參閱 <block ref="19cf1405cd38e956788f418f2be34a68" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb3cd7064baa457b68c9e6f4bc37005a" category="paragraph">資料分類會比較所有檔案（資料庫除外）是否有重複項，如果存在重複項，則進行以下操作：</block>
+  <block id="0ca96e556827c0f5e25df8d0643f52ed" category="list-text">1 MB 或更大</block>
+  <block id="618a117288f96069f1cdbf0f4bded643" category="list-text">或包含個人資訊或敏感個人資訊</block>
+  <block id="4e1bd09c39656dc2fa486f909e1674e7" category="paragraph">資料分類使用雜湊技術來確定重複檔案。如果一個檔案的雜湊碼與另一個檔案相同，即使檔案名稱不同，這兩個檔案也是完全相同的副本。</block>
+  <block id="b747cc8e0f2203370a4d444fcd5f79d5" category="summary">了解如何在NetApp Data Classification中修改系統的掃描設定。</block>
+  <block id="e27531ce5aac82b10b93cae589814bb8" category="list-text">*初始化*（淺藍色點）：地圖或分類配置已啟動。此狀態會短暫顯示，然後過渡到「待處理佇列」狀態。</block>
+  <block id="fc0e8f9e94436c57e95a54ba5403b593" category="list-text">*已暫停*（灰點）：您已暫停掃描。雖然系統中未顯示音量變化，但掃描結果仍可使用。</block>
+  <block id="2b275cce14d9fa4c2f7c2b688661866a" category="list-text">掃描期間，將遊標停留在「對應狀態」列中的進度條上，即可查看該儲存庫中待對應或分類的檔案數量。</block>
+  <block id="97b34fd1037fad45811be37e77cc8ee3" category="paragraph">如果您想暫時停止掃描某些內容，您可以「暫停」儲存庫掃描。暫停掃描意味著資料分類將不再對儲存庫中的變更或新增執行任何未來的掃描。所有目前的掃描結果仍可在資料分類中查看。</block>
+  <block id="dafb48c379602976f883f38decad477b" category="paragraph">即使暫停掃描，也不會免除計費費用，因為資料仍然保留在系統中。</block>
+  <block id="76d0e11c30b5dcbca92c93eb0f33daec" category="paragraph">您可以隨時恢復掃描。</block>
+  <block id="e018b56ef561ad538d1aca1d6fae6b6c" category="paragraph">看<block ref="15dceb3fb9d388923f206ab616cd56a9" category="inline-xref-macro-rx"></block>了解詳情。</block>
+  <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
 </blocks>

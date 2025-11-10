@@ -1,0 +1,14 @@
+= 版本 1.48
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.48
+
+本次資料分類版本更新包括錯誤修復、安全性改進和效能提升。
+
+.增強掃描進度清晰度
+掃描配置現在包含對掃描完成情況的更深入洞察。以前，進度條只在掃描進行時顯示。現在，掃描完成後進度條仍然可見，以確認掃描已成功完成。您也可以查看已對應和已掃描的檔案數量。
+
+有關掃描設定的更多信息，請參閱 link:task-managing-repo-scanning.html#view-the-scan-status-for-your-repositories["更改儲存庫的NetApp Data Classification掃描設置"^]。
