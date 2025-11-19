@@ -26,10 +26,10 @@ summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  N
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-1.png["一"]建立控制台代理
 [role="quick-margin-para"]
-如果您還沒有控制台代理，請建立一個。看 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+如果您還沒有控制台代理，請建立一個。看link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["在 AWS 中建立控制台代理"^]，link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["在 Azure 中建立控制台代理"^] ， 或者link:https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["在 GCP 中建立控制台代理"^]。
 
 [role="quick-margin-para"]
-您還可以 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。
+你也可以link:https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["在本機安裝控制台代理"^]在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]先決條件
 [role="quick-margin-para"]
@@ -43,7 +43,7 @@ summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  N
 
 == 建立控制台代理
 
-如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^]， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#when-a-connector-is-required["控制台功能需要控制台代理"]，但有些情況下您需要立即設定一個。
+如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["在 AWS 中建立控制台代理"^]或者 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["在 Azure 中建立控制台代理"^]， 或者 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["在 GCP 中建立控制台代理"^]。大多數情況下，您可能需要在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["控制台功能需要控制台代理"]但有些情況下，你需要現在就設定一個。
 
 在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：
 
@@ -58,9 +58,9 @@ summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  N
 
 使用任何這些雲端控制台代理時，都可以掃描本機ONTAP系統、 NetApp檔案共用和資料庫。
 
-請注意，您還可以 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+請注意，您也可以 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["在本機安裝控制台代理"^]在網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
 
-如你所見，在某些情況下，你可能需要使用 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#multiple-connectors["多個控制台代理"]。
+可能有些情況下你需要使用 https://docs.netapp.com/us-en/console-setup-admin/concept-agents.html#multiple-systems-and-agents["多個控制台代理"^]。
 
 
 TIP: 資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，link:https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html#connector-installation["安裝另一個控制台代理"^]然後link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-overview.html["部署另一個資料分類實例"]。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/task-manage-multiple-connectors.html#switch-between-connectors["使用多個控制台代理"^]。
@@ -71,7 +71,7 @@ TIP: 資料分類不會對其可以掃描的資料量施加限制。每個控制
 
 當控制台代理部署在政府區域（AWS GovCloud、Azure Gov 或 Azure DoD）時，支援資料分類。以這種方式部署時，資料分類有以下限制：
 
-https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["查看有關在政府區域部署控制台代理的更多信息"^] 。
+link:https://docs.netapp.com/us-en/console-setup-admin/task-install-restricted-mode.html["了解如何在政府區域部署控制台代理"^]。
 
 
 
@@ -179,9 +179,9 @@ Azure 和 Azure 政府部署需要額外的入站和出站安全群組規則。�
 --
 有關 vCPU 限制的更多詳細信息，請參閱以下連結：
 
-* https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 文件：Amazon EC2 服務配額"^]
-* https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 文件：虛擬機器 vCPU 配額"^]
-* https://cloud.google.com/compute/quotas["Google Cloud 文件：資源配額"^]
+* link:https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-resource-limits.html["AWS 文件：Amazon EC2 服務配額"^]
+* link:https://docs.microsoft.com/en-us/azure/virtual-machines/linux/quotas["Azure 文件：虛擬機器 vCPU 配額"^]
+* link:https://docs.cloud.google.com/docs/quotas/view-manage["Google Cloud 文件：資源配額"^]
 
 
 --
