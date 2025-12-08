@@ -2618,4 +2618,36 @@
   <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
   <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
   <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
+  <block id="6a6493990827c82055e808631b52c236" category="doc">版本 1.49</block>
+  <block id="640602402999fbf572de482a35f449bc" category="paragraph">本次資料分類版本更新包含錯誤修復和以下更新：</block>
+  <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">在健康監測儀表板中監控指標和效能</block>
+  <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">資料分類現在提供了一個健康監控儀表板，可以即時監控您的資源，並提供有關記憶體使用情況、磁碟使用情況、磁碟使用率等方面的見解。借助健康監控儀表板提供的信息，您可以查看部署的基礎架構，並獲得優化儲存和效能的見解。</block>
+  <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">監控資料分類的運作狀況</block>
+  <block id="699330677c1a0f32d795bf5b4ef62c06" category="paragraph">有關詳細信息，請參閱 <block ref="47a26f0a929ccc455d276fcbc1329665" category="inline-link-macro-rx"></block>。</block>
+  <block id="bf17c0b6bb3350440ee2a9bb4f2c9d89" category="paragraph-title">提升了裝載性能</block>
+  <block id="b6a3c9ea2c8f586e05010be520e7c46c" category="paragraph">資料分類中所有頁面的載入效能均已提升，從而創造了更有效率的使用者體驗。</block>
+  <block id="c7a647b1e9f70e39870907a0d37fc861" category="summary">資料分類能夠提供關於使用情況和利用情況的洞察，從而幫助優化效能和解決問題。</block>
+  <block id="c208094b8f607967357f585bbb210ee8" category="doc">監控NetApp Data Classification的運作狀況</block>
+  <block id="55378ce4db7316dfb9237beedafacea5" category="paragraph">NetApp Data Classification健康監視器儀表板提供即時監控和效能洞察。健康監視器會捕獲有關您的資料分類基礎架構、系統運行狀況、使用指標和利用率資料的信息，使您能夠識別和解決問題。</block>
+  <block id="74284c840f1a46105287599aeeb36666" category="section-title">健康監測洞察</block>
+  <block id="99c8a52d112bc64ea49b7c3ae9466bb1" category="paragraph">健康監測儀錶板以四類資訊呈現資訊。</block>
+  <block id="31d69bd302c379e8dd3809d44fd66b0b" category="list-text">**基礎設施狀況**</block>
+  <block id="224bc922db3535905d796b83072bab9e" category="paragraph">查看版本狀態、系統穩定性、部署類型和機器規模等資訊。</block>
+  <block id="6cf6002236ce4335abed24751f5b76ab" category="list-text">**問題容器**</block>
+  <block id="36dc167dffd8c19c769e418537d40622" category="paragraph">查看「問題容器」字段，以了解哪些容器已停止或頻繁重新啟動。利用這些資訊調查具體的容器。</block>
+  <block id="fecbcd93350c62d4fa51da76bf1a71d1" category="list-text">系統資訊</block>
+  <block id="56c4481830e251a9c86a214c55e28f89" category="paragraph">系統資訊面板會擷取有關NetApp Console和資料分類的關鍵訊息，例如公用和私人 IP 位址、主機名稱、作業系統、控制台版本和控制台 ID。</block>
+  <block id="daf2396a7df11bb386f6f0b6e764d25d" category="list-text">**用途和使用方法**</block>
+  <block id="c0da9201fe0226c2cfae194eb58f075e" category="paragraph">查看 CPU 使用率、磁碟使用率、磁碟使用率和記憶體使用率。這些值以儲存單位（GB）或總使用量的百分比顯示。如果任何欄位顯示警告，請選擇該警告以取得相關資訊和補救建議。</block>
+  <block id="0e5df83893e08f2ce609d5d98a243034" category="section-title">訪問健康監測儀表板</block>
+  <block id="e56e80fd2d4ecf280907b94ef6dc65d3" category="list-text">在資料分類中，選擇**配置**。</block>
+  <block id="0ba19edf70d40c73c09b6ece96976c62" category="list-text">在「配置」標題下，選擇「資料分類運作狀況監視器」。</block>
+  <block id="9849eb5259dead598d64015da2440d80" category="list-text">在健康監測儀表板中，您可以：</block>
+  <block id="1e89a4779f111b1b55332c656e31c873" category="list-text">審查使用情況和利用情況。如果任何使用情況或使用率指標顯示警告，請選擇該警告以取得解決問題的建議。</block>
+  <block id="1f3e983d3d3718d5420e82cddb623f74" category="list-text">切換圖表以顯示 CPU 使用率、磁碟使用率、磁碟使用率和記憶體使用率。您可以變更 x 軸，以按小時（6、12 或 24 小時）或天（2、7 或 14 天）顯示內容。</block>
+  <block id="741cc455cec02a51740c82ff294658cd" category="list-text">刷新儀錶板以查看最新資料指標。</block>
+  <block id="323f5d636a1eaba87aab3adcb85ff2db" category="inline-image-macro">健康監測儀表板的螢幕截圖</block>
+  <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
+  <block id="3b02682cee7334412169a53934571445" category="sidebar">監控系統健康狀況</block>
 </blocks>

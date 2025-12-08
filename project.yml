@@ -78,6 +78,8 @@ sidebar:
       url: "/task-managing-repo-scanning.html"
     - title: 產生合規性報告
       url: "/task-generating-compliance-reports.html"
+    - title: 監控系統健康狀況
+      url: "/task-health-monitor.html"
   - title: 管理資料分類
     entries:
     - title: 從掃描中排除目錄

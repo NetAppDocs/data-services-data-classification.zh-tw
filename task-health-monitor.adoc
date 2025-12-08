@@ -1,0 +1,62 @@
+---
+sidebar: sidebar 
+permalink: task-health-monitor.html 
+keywords: health monitor, disk usage, disk utilization, cpu usage, memory usage, metrics 
+summary: 資料分類能夠提供關於使用情況和利用情況的洞察，從而幫助優化效能和解決問題。 
+---
+= 監控NetApp Data Classification的運作狀況
+:hardbreaks:
+:allow-uri-read: 
+:firstname: :nofooter
+:author: :nofooter
+:authorinitials: :
+:authors: :nofooter
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification健康監視器儀表板提供即時監控和效能洞察。健康監視器會捕獲有關您的資料分類基礎架構、系統運行狀況、使用指標和利用率資料的信息，使您能夠識別和解決問題。
+
+
+
+== 健康監測洞察
+
+健康監測儀錶板以四類資訊呈現資訊。
+
+* **基礎設施狀況**
++
+查看版本狀態、系統穩定性、部署類型和機器規模等資訊。
+
+* **問題容器**
++
+查看「問題容器」字段，以了解哪些容器已停止或頻繁重新啟動。利用這些資訊調查具體的容器。
+
+* 系統資訊
++
+系統資訊面板會擷取有關NetApp Console和資料分類的關鍵訊息，例如公用和私人 IP 位址、主機名稱、作業系統、控制台版本和控制台 ID。
+
+* **用途和使用方法**
++
+查看 CPU 使用率、磁碟使用率、磁碟使用率和記憶體使用率。這些值以儲存單位（GB）或總使用量的百分比顯示。如果任何欄位顯示警告，請選擇該警告以取得相關資訊和補救建議。
+
+
+
+
+
+== 訪問健康監測儀表板
+
+. 在資料分類中，選擇**配置**。
+. 在「配置」標題下，選擇「資料分類運作狀況監視器」。
+. 在健康監測儀表板中，您可以：
++
+** 審查使用情況和利用情況。如果任何使用情況或使用率指標顯示警告，請選擇該警告以取得解決問題的建議。
+** 切換圖表以顯示 CPU 使用率、磁碟使用率、磁碟使用率和記憶體使用率。您可以變更 x 軸，以按小時（6、12 或 24 小時）或天（2、7 或 14 天）顯示內容。
+** 刷新儀錶板以查看最新資料指標。
++
+image:health-monitor.png["健康監測儀表板的螢幕截圖"]
+
+
+
+
