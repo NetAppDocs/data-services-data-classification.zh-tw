@@ -6,7 +6,6 @@
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">部署另一個資料分類實例</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">使用多個控制台代理</block>
   <block id="813ae9f2c1d0f0f27d01eeab67dcb1d7" category="paragraph">資料分類不會對其可以掃描的資料量施加限制。每個控制台代理程式支援掃描和顯示 500 TiB 的資料。要掃描超過 500 TiB 的數據，<block ref="d1d02c710daba5ea82985e30be7b0051" category="inline-link-macro-rx"></block>然後<block ref="b84ff2addee2a287f168d097865dda36" category="inline-link-macro-rx"></block>。 + 控制台 UI 顯示來自單一連接器的資料。有關查看來自多個控制台代理的資料的提示，請參閱<block ref="1fc134af43ed7d59a9071c288f242f94" category="inline-link-macro-rx"></block>。</block>
-  <block id="c459d0d5027551c8ad596d2701837012" category="list-text">與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。</block>
   <block id="14246e64b6cc314c499299b0f4808cdb" category="list-text">在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。</block>
   <block id="8c270421a057347baf727ea386f58d8f" category="cell">系統大小</block>
   <block id="2b55387dd066c5bac646ac61543d152d" category="cell">中央處理器</block>
@@ -2167,7 +2166,6 @@
   <block id="1be13928b8bb7dda39b97e766c497b4e" category="summary">在 Linux 主機上手動安裝資料分類之前，您可以在主機上執行腳本來驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點。</block>
   <block id="16b2ab7371415f7c5eda355d2064fce6" category="doc">檢查您的 Linux 主機是否已準備好安裝NetApp Data Classification</block>
   <block id="1cd2484a5f2f38d921ddaabe75696063" category="paragraph">在 Linux 主機上手動安裝NetApp Data Classification之前，可以選擇在主機上執行腳本以驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點（暗站）。</block>
-  <block id="d415bef0d68feb20309fa2927304dc79" category="paragraph">還有一個先決條件測試腳本，它是資料分類安裝腳本的一部分。此處所述的腳本專門為想要獨立於執行資料分類安裝腳本來驗證 Linux 主機的使用者設計。</block>
   <block id="bf647454e36069fd16f1a7a35cf6a865" category="section-title">入門</block>
   <block id="88a37f7fbc3214e9153d0377c4db9ded" category="paragraph">您將執行以下任務。</block>
   <block id="241053df5606e0d439be4d3e91d4224b" category="list-text">如果您尚未安裝控制台代理，則可以選擇安裝。您可以在未安裝控制台代理的情況下執行測試腳本，但腳本會檢查控制台代理程式和資料分類主機之間的連線 - 因此建議您安裝控制台代理程式。</block>
@@ -2176,11 +2174,7 @@
   <block id="1dc78a625057b828e3c9842b6a68f0f6" category="list-text">驗證所有系統上的所有必要連接埠是否都已啟用。</block>
   <block id="638dfa4dd42c802c871ad02b969b48ab" category="list-text">下載並執行先決條件測試腳本。</block>
   <block id="e9baee2a4f78225d19d9d1c38a6df205" category="paragraph">您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。</block>
-  <block id="faf8844abf71745359231ca0c3b68035" category="paragraph">你可以<block ref="343ab61366cc70436c2320a4d03ee96b" category="inline-link-rx"></block>在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
-  <block id="da43836db702b2bca882af8c4b45817c" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
-  <block id="e6527c2694cae7b14a8260e681318eb1" category="paragraph">執行先決條件腳本時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇*控制台代理*。</block>
   <block id="93144470251168b3e5488b736447f48f" category="section-title">驗證主機需求</block>
-  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。</block>
   <block id="2e7d217490cca9f4436994c93bba3bd5" category="paragraph">如果您打算使用其他資料分類主機作為掃描器節點（在分散式模型中），請在此時將這些規則新增至您的主系統：</block>
   <block id="810dff52416162c2f79a643152a575ba" category="admonition">對於安裝在沒有網路連線的站點的主機系統，則不需要本節。</block>
   <block id="2c9810189a9662217559e6c599b47a67" category="cell">8080 (TCP)、443 (TCP) 和 80。9000</block>
@@ -2650,4 +2644,13 @@
   <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">監控系統健康狀況</block>
+  <block id="199728aa05786f9f41b3140d025353e2" category="list-text">資料分類必須運行在專用主機上。主機不能與其他應用程式或第三方軟體（例如防毒軟體）共用。</block>
+  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">資料分類安裝腳本包含一個測試腳本，以確保您的環境符合要求。您可以單獨執行此腳本來驗證 Linux 主機是否已準備就緒，然後再執行安裝腳本。</block>
+  <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">你可以 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。如果控制台代理程式安裝在本機，您也可以在本機安裝資料分類。</block>
+  <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱：</block>
+  <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
+  <block id="a3ac13f6218d44f6f15beadc4d86502e" category="list-text"><block ref="a3ac13f6218d44f6f15beadc4d86502e" category="inline-link-rx"></block></block>
+  <block id="99472e84d7b0a6bdf69b082286217650" category="list-text"><block ref="99472e84d7b0a6bdf69b082286217650" category="inline-link-rx"></block></block>
+  <block id="6c1aa195a9abc1b402b9f2ded0d68124" category="paragraph">執行先決條件腳本時，需要控制台代理系統的 IP 位址或主機名稱。如果您在本機安裝了控制台代理，則可以取得此資訊。如果控制台代理程式部署在雲端，您可以從控制台中找到此資訊：選擇說明圖標，然後選擇「支援」；在「代理程式和審核」部分，選擇「前往代理程式」。</block>
+  <block id="7a49d8bea04f537bdd8b9c0dadc345aa" category="paragraph">資料分類軟體必須運行在滿足特定作業系統要求、記憶體需求和軟體要求的主機上。</block>
 </blocks>

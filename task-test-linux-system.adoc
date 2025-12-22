@@ -16,7 +16,7 @@ summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機�
 [role="lead"]
 在 Linux 主機上手動安裝NetApp Data Classification之前，可以選擇在主機上執行腳本以驗證安裝資料分類的所有先決條件是否都已具備。您可以在網路中的 Linux 主機上或雲端中的 Linux 主機上執行此腳本。主機可以連接到互聯網，或者主機可以駐留在沒有互聯網訪問的站點（暗站）。
 
-還有一個先決條件測試腳本，它是資料分類安裝腳本的一部分。此處所述的腳本專門為想要獨立於執行資料分類安裝腳本來驗證 Linux 主機的使用者設計。
+資料分類安裝腳本包含一個測試腳本，以確保您的環境符合要求。您可以單獨執行此腳本來驗證 Linux 主機是否已準備就緒，然後再執行安裝腳本。
 
 
 
@@ -24,11 +24,11 @@ summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機�
 
 您將執行以下任務。
 
-. 如果您尚未安裝控制台代理，則可以選擇安裝。您可以在未安裝控制台代理的情況下執行測試腳本，但腳本會檢查控制台代理程式和資料分類主機之間的連線 - 因此建議您安裝控制台代理程式。
-. 準備主機並驗證其是否滿足所有要求。
-. 啟用資料分類主機的出站網際網路存取。
-. 驗證所有系統上的所有必要連接埠是否都已啟用。
-. 下載並執行先決條件測試腳本。
+* 如果您尚未安裝控制台代理，則可以選擇安裝。您可以在未安裝控制台代理的情況下執行測試腳本，但腳本會檢查控制台代理程式和資料分類主機之間的連線 - 因此建議您安裝控制台代理程式。
+* 準備主機並驗證其是否滿足所有要求。
+* 啟用資料分類主機的出站網際網路存取。
+* 驗證所有系統上的所有必要連接埠是否都已啟用。
+* 下載並執行先決條件測試腳本。
 
 
 
@@ -37,19 +37,24 @@ summary: 在 Linux 主機上手動安裝資料分類之前，您可以在主機�
 
 您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。
 
-你可以 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^]在您的網路中的 Linux 主機上或雲端中的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。
+你可以 link:https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-on-prem.html["在本機安裝控制台代理"^] 在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。如果控制台代理程式安裝在本機，您也可以在本機安裝資料分類。
 
-若要在您的雲端提供者環境中建立控制台代理，請參閱 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^] ， 或者 https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]。
+若要在您的雲端提供者環境中建立控制台代理，請參閱：
 
-執行先決條件腳本時，您將需要控制台代理系統的 IP 位址或主機名稱。如果您在您的場所安裝了控制台代理，您將獲得此資訊。如果控制台代理部署在雲端中，您可以從控制台中找到此資訊：選擇幫助圖標，然後選擇*支援*，然後選擇*控制台代理*。
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-aws.html["在 AWS 中建立控制台代理"^]
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-azure.html["在 Azure 中建立控制台代理"^]
+* https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-connector-google.html["在 GCP 中建立控制台代理"^]
+
+
+執行先決條件腳本時，需要控制台代理系統的 IP 位址或主機名稱。如果您在本機安裝了控制台代理，則可以取得此資訊。如果控制台代理程式部署在雲端，您可以從控制台中找到此資訊：選擇說明圖標，然後選擇「支援」；在「代理程式和審核」部分，選擇「前往代理程式」。
 
 
 
 == 驗證主機需求
 
-資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。
+資料分類軟體必須運行在滿足特定作業系統要求、記憶體需求和軟體要求的主機上。
 
-* 與其他應用程式共享的主機不支援資料分類 - 該主機必須是專用主機。
+* 資料分類必須運行在專用主機上。主機不能與其他應用程式或第三方軟體（例如防毒軟體）共用。
 * 在您的場所建立主機系統時，您可以根據計劃進行資料分類掃描的資料集的大小從這些系統大小中進行選擇。
 +
 [cols="17,17,27,31"]
