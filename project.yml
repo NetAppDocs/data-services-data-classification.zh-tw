@@ -86,6 +86,8 @@ sidebar:
       url: "/task-exclude-scan-paths.html"
     - title: 將現有群組 ID 定義為“對組織開放”
       url: "/task-add-group-id-as-open.html"
+    - title: 定義過期數據
+      url: "/task-stale-data.html"
     - title: 從資料分類中刪除資料來源
       url: "/task-managing-compliance.html"
     - title: 卸載資料分類

@@ -1,0 +1,29 @@
+---
+sidebar: sidebar 
+permalink: task-stale-data.html 
+keywords: support registration, register for support, support, nss account, add nss account, 
+summary: 自訂NetApp Data Classification中過期資料的定義，使報告符合您的組織需求。 
+---
+= 在NetApp Data Classification中自訂過期資料定義
+:allow-uri-read: 
+:icons: font
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification可識別過時數據，協助您發現節省成本的機會和治理風險。由於不同組織環境中對過時資料的定義可能有所不同，因此您可以自訂資料分類如何定義過時資料。
+
+過期資料可以根據其上次造訪時間或上次修改時間來定義。時段選擇範圍從 6 個月前到 10 年前。
+
+預設情況下，如果資料上次修改時間距今已有三年，則該資料視為過期資料。
+
+.定義過期數據
+. 在勒索軟體復原能力中，選擇**配置**。
+. 在「配置」頁面中，捲動至「**過期資料定義**」標題。
+. 在「檔案屬性」下拉式功能表中，選擇是否要根據檔案的「上次存取時間」或「上次修改時間」來定義過期資料。
+. 選擇過期資料定義的時間段。
++
+image:stale-data.png["過時資料定義選項的螢幕截圖"]
+
+. 選擇**儲存**。
+
