@@ -33,7 +33,7 @@ summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  N
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-2.png["二"]先決條件
 [role="quick-margin-para"]
-確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。  << 先決條件，請參閱完整清單>>。
+請確保您的環境能夠符合先決條件。這包括該實例的對外網際網路存取、Console agent 與 Data Classification 之間透過 443 埠的連線，以及其他要求。<<先決條件,查看完整列表>>。
 
 .image:https://raw.githubusercontent.com/NetAppDocs/common/main/media/number-3.png["三"]部署資料分類
 [role="quick-margin-para"]

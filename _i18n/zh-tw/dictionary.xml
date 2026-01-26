@@ -1138,7 +1138,6 @@
   <block id="02559d50684120805e2f264bdea2e4c1" category="inline-link">在本機安裝控制台代理</block>
   <block id="aada29daee1d64ed0fe907043855cb7e" category="inline-image-macro">二</block>
   <block id="0e2ddd6334405299d1b4c44e894c9e78" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block>先決條件</block>
-  <block id="339dbb3aad86454446f85f0a0a7f7606" category="paragraph">確保您的環境能夠滿足先決條件。這包括實例的出站互聯網存取、控制台代理和資料分類之間透過連接埠 443 的連接等等。  &lt;&lt; 先決條件，請參閱完整清單&gt;&gt;。</block>
   <block id="ca8a2087e5557e317599344687a57391" category="inline-image-macro">三</block>
   <block id="891a7c41846b6bf598b53fd8ad9e3f49" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>部署資料分類</block>
   <block id="9f0ba00e2450c6e218eaa2d60c8c8ee7" category="paragraph">啟動安裝精靈以在雲端部署資料分類實例。</block>
@@ -2722,4 +2721,5 @@
   <block id="1d593c3f7480ada9580d93cd753c3f93" category="paragraph">這是系統產生的映射到您的電子郵件的 ID。在*NSS 管理*頁面上，您可以顯示來自<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="4a0d328244ebc11cdcdafe7537ab73a0" category="section-title">2026年1月14日</block>
+  <block id="0683badfe3a5feea962602495f98c990" category="paragraph">請確保您的環境能夠符合先決條件。這包括該實例的對外網際網路存取、Console agent 與 Data Classification 之間透過 443 埠的連線，以及其他要求。<block ref="c513c1ef65e57d26fcca4062f05d2f7b" category="inline-xref-macro-rx"></block>。</block>
 </blocks>
