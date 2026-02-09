@@ -1,0 +1,27 @@
+= 版本 1.50
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.50
+
+本次資料分類版本更新包含錯誤修復和以下更新：
+
+.直接從 NetApp Console 畫布啟動 Amazon FSxN for ONTAP 的資料分類
+現在您可以直接從 NetApp Console 畫布啟用適用於 ONTAP 系統的 Amazon FSxN，從而更快地啟動 FSxN 系統的資料分類。
+
+有關將資料分類與 Amazon FSxN for ONTAP 搭配使用的詳細資訊，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-fsx.html["掃描 Amazon FSxN for ONTAP 磁碟區"^]。
+
+.提高了調查目錄的匯出限制
+現在，從 Investigation 儀表板匯出目錄調查報告時，您可以包含 10,000 行資料。與先前的 5,000 行限制相比，這項提升支援更大規模的資料治理和合規性調查。
+
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查數據"^]。
+
+.提高了複製和移動的限制
+現在複製或移動檔案時，您可以移動最大 250 MB 的檔案，比之前的 50 MB 限制有所增加。
+
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查數據"^]。
+
+.改善低解析度螢幕的顯示效果
+Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。

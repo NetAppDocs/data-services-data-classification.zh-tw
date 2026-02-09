@@ -1,0 +1,8 @@
+---
+permalink: reference-db-capabilities.html 
+redirect: data-services-data-classification/concept-classification.html 
+---
+= 
+:allow-uri-read: 
+
+

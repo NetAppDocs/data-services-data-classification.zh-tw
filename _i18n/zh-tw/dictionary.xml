@@ -586,29 +586,10 @@
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">過濾器選擇包括：</block>
   <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 無法恢復上次存取時間」 - 這顯示由於缺少寫入權限而未分類的檔案。</block>
   <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次存取時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。</block>
-  <block id="eacfad7ae9e6aba32bdbef2948b1d628" category="summary">掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。</block>
-  <block id="e6dbbec80e173d3f91cf2b227477d31c" category="doc">NetApp Data Classification中支援和不支援的資料庫功能</block>
-  <block id="ad52d3616ca8f733ae442a642767c792" category="paragraph">掃描資料庫模式時， NetApp Data Classification無法提供某些特性和功能。請參閱下面的清單。</block>
-  <block id="990222def8053839fd07dd4a3c81e9dc" category="inline-link-macro">如這裡所述</block>
-  <block id="69ff49bbb82445d0bebdf7216cb4bd32" category="paragraph">您可以將資料庫模式新增至資料分類進行掃描<block ref="32350e7a1f032d301549bb941192cdc0" category="inline-link-macro-rx"></block>。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">描述</block>
-  <block id="a71f76c3256e4c206a4841d8eb0fed35" category="cell">SQL 伺服器</block>
-  <block id="35686630aa3baddc18c904374e570233" category="cell">亞馬遜 RDS</block>
-  <block id="06df33001c1d7187fdd81ea1f5b277aa" category="cell">行動</block>
-  <block id="d779bee8155408e2ad4426f42de462a9" category="cell">建立已儲存的查詢</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
-  <block id="c101058e7ea21bbbf2a5ac893088e90b" category="cell">標籤</block>
-  <block id="773ecc684d98231f8f23773727622446" category="cell">分配給</block>
-  <block id="cd6ae20e52d83f601c5fa12b66f0f6d0" category="cell">重新掃描</block>
-  <block id="9dd4e461268c8034f5c8564e155c67a6" category="cell">x</block>
-  <block id="f2a6c498fb90ee345d997f888fce3b18" category="cell">刪除</block>
-  <block id="6bc362dbf494c61ea117fe3c71ca48a5" category="cell">移動</block>
-  <block id="5fb63579fc981698f97d55bfecb213ea" category="cell">複製</block>
-  <block id="b021df6aac4654c454f46c77646e745f" category="cell">標籤</block>
-  <block id="f3f43e30c8c7d78c6ac0173515e57a00" category="cell">過濾器</block>
   <block id="59f5223754fb9750ccf313de64e06099" category="cell">已儲存的查詢</block>
-  <block id="e80df5ee03a17fe47c471debd1cb6a7b" category="cell">掃描分析狀態</block>
   <block id="f5cd54184b354671d5c99cf48104cc07" category="cell">系統類型</block>
   <block id="a45da96d0bf6575970f2d27af22be28a" category="cell">系統</block>
   <block id="8e1608d6951087912c426bcb53d12280" category="cell">儲存庫</block>
@@ -621,8 +602,6 @@
   <block id="eed7cc7f64269eb19a98b58ae0d79b6f" category="cell">發現時間</block>
   <block id="189f63f277cd73395561651753563065" category="cell">標籤</block>
   <block id="3e9f09095e53d4aa46d296b9c32b7be4" category="cell">掃描分析事件</block>
-  <block id="7c2647ff45382a42029e7a109ef1b4c5" category="cell">檔案/目錄路徑</block>
-  <block id="c24fd35c406c9694e3bee288f8825b5c" category="cell">權限過濾器</block>
   <block id="26ec7ebe8b7297e79affc05b3e89352b" category="cell">識別符數量</block>
   <block id="c24fc9c3402e7cb47c72d71cf6d864be" category="cell">目錄類型</block>
   <block id="2fb58660fd44cbdef76a54519a9a9737" category="cell">創建時間</block>
@@ -2044,10 +2023,6 @@
   <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">狀態始終為“見解有限”</block>
   <block id="29344a3c58cf84dcf0144a3627f021d1" category="cell">文件哈希</block>
   <block id="4df26807127a67f2d98166e4384eea07" category="cell">使用者/群組權限</block>
-  <block id="ba3e4178a9b73e03e42aae6548738221" category="section-title">資料分類掃描資料的速度有多快</block>
-  <block id="9ece336caf3d2b843dafc984e27b323e" category="paragraph">掃描速度受網路延遲、磁碟延遲、網路頻寬、環境大小、檔案分佈大小等影響。</block>
-  <block id="fd09538b9e640fbf352f46c0fa44b064" category="list-text">執行僅映射掃描時，資料分類每天可以掃描 100 到 150 TiB 的資料。</block>
-  <block id="7df1c51c08a7ab21455acfcdd0b1cfe4" category="list-text">執行地圖和分類掃描時，資料分類每天可以掃描 15 到 40 TiB 的資料。</block>
   <block id="fa9ebe7c0c0614d0f74c794a58db2fad" category="summary">完成幾個步驟即可直接使用NetApp Data Classification開始掃描StorageGRID內的資料。</block>
   <block id="6638c5bc122a9b4e0222774a95a04fd5" category="doc">使用NetApp Data Classification掃描StorageGRID數據</block>
   <block id="dc3fd4fe9b1bb66db60a59be3884a90c" category="section-title">查看StorageGRID要求</block>
@@ -2688,7 +2663,6 @@
   <block id="dc6d46e682032130076140b1c6b9f422" category="list-text">選擇“載入檔案”進行資料分類，以執行檔案檢查。您可以查看文件摘要，其中列出了文件名稱、大小、類型和備註（如果該文件被認為適合用於培訓）。</block>
   <block id="60d2aee5a316a80a131d402c7cfaa44a" category="inline-image-macro">螢幕截圖顯示了上傳用於訓練的文件摘要。</block>
   <block id="6ca27c96af59179d21a409d88cb4139c" category="paragraph"><block ref="6ca27c96af59179d21a409d88cb4139c" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="839860ecb593c72a6c18f98bd45565b0" category="list-text">若要變更檔案路徑或重新上傳文件，請選擇**變更路徑**，然後輸入資料並再次載入檔案。</block>
   <block id="78edc8efdc4ac520c8f06ac58e069eac" category="list-text">當您對上傳的文件滿意後，請選擇**下一步**。</block>
   <block id="baacdea09c8bef5361744801ca025b67" category="list-text">選擇**儲存**以建立自訂類別。</block>
   <block id="d2edcb6e893e23e45a9b667d3d7f0c9e" category="paragraph">建立自訂類別後，其結果將在下次計畫掃描中擷取。為了更快地取得結果，請手動啟動掃描。</block>
@@ -2722,4 +2696,17 @@
   <block id="872eaae7deb6035c20f9bfe6deefd03d" category="list-text">如果您需要刷新登入憑證令牌，還有一個*更新憑證*選項<block ref="5444f6f0c3983523c8933a1864b2b390" category="inline-image-macro-rx" type="image"></block>菜單。</block>
   <block id="4a0d328244ebc11cdcdafe7537ab73a0" category="section-title">2026年1月14日</block>
   <block id="0683badfe3a5feea962602495f98c990" category="paragraph">請確保您的環境能夠符合先決條件。這包括該實例的對外網際網路存取、Console agent 與 Data Classification 之間透過 443 埠的連線，以及其他要求。<block ref="c513c1ef65e57d26fcca4062f05d2f7b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="9f8adb7ebffc39f306c40ef2d6a377b1" category="paragraph-title">直接從 NetApp Console 畫布啟動 Amazon FSxN for ONTAP 的資料分類</block>
+  <block id="880dc0b44905babcfa6685da86ba8117" category="paragraph">現在您可以直接從 NetApp Console 畫布啟用適用於 ONTAP 系統的 Amazon FSxN，從而更快地啟動 FSxN 系統的資料分類。</block>
+  <block id="dd8a2d3b3415c2980790a672dff3757f" category="inline-link-macro">掃描 Amazon FSxN for ONTAP 磁碟區</block>
+  <block id="db8b5cff328cee1f4914855b931bae02" category="paragraph">有關將資料分類與 Amazon FSxN for ONTAP 搭配使用的詳細資訊，請參閱<block ref="48a47292b9e31aff1079bbdaa3cd4739" category="inline-link-macro-rx"></block>。</block>
+  <block id="3ee3e594e3bac0471e4cda35acc3588a" category="paragraph-title">提高了調查目錄的匯出限制</block>
+  <block id="45f99b8f539f37cc0379b65d3ddafbbf" category="paragraph">現在，從 Investigation 儀表板匯出目錄調查報告時，您可以包含 10,000 行資料。與先前的 5,000 行限制相比，這項提升支援更大規模的資料治理和合規性調查。</block>
+  <block id="e733aab9ce2fc5320fbdd563cba5e12b" category="paragraph">如需更多資訊、請參閱 <block ref="d8b3109a5818cc0f43ade4650ffede11" category="inline-link-macro-rx"></block>。</block>
+  <block id="80f498ef50d7bad5da9acf441b502c0f" category="paragraph-title">提高了複製和移動的限制</block>
+  <block id="401f234e1c84943381dd951c39f2ce3c" category="paragraph">現在複製或移動檔案時，您可以移動最大 250 MB 的檔案，比之前的 50 MB 限制有所增加。</block>
+  <block id="244d30ed7d7da13b1f80f1fa008af700" category="paragraph-title">改善低解析度螢幕的顯示效果</block>
+  <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。</block>
+  <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">資料分類會顯示資料訓練的預計完成時間。..若要變更檔案路徑或重新上傳檔案，請選取 **Change path** ，然後輸入資料並再次載入檔案。</block>
+  <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
 </blocks>
