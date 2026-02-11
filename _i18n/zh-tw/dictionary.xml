@@ -2709,4 +2709,5 @@
   <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。</block>
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">資料分類會顯示資料訓練的預計完成時間。..若要變更檔案路徑或重新上傳檔案，請選取 **Change path** ，然後輸入資料並再次載入檔案。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
+  <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">版本 1.51</block>
 </blocks>
