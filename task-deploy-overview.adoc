@@ -23,9 +23,6 @@ summary: 規劃哪種NetApp Data Classification部署可以滿足您的需求。
 * link:task-deploy-compliance-dark-site.html["在沒有網際網路存取的本機站點的 Linux 主機上安裝"]，也稱為_私人模式_。這種安裝類型使用安裝腳本，與控制台 SaaS 層沒有連接。
 
 
-
-IMPORTANT: BlueXP私有模式（傳統BlueXP介面）通常用於沒有網路連線的本機環境和安全雲端區域，其中包括 AWS Secret Cloud、AWS Top Secret Cloud 和 Azure IL6。NetApp繼續透過傳統的BlueXP介面支援這些環境。有關舊版BlueXP介面中的私有模式文檔，請參閱link:https://docs.netapp.com/us-en/console-setup-admin/media/BlueXP-Private-Mode-legacy-interface.pdf["BlueXP私人模式的 PDF 文檔"^]。
-
 無論是在有網路存取的 Linux 主機上安裝，或是在沒有網路存取的 Linux 主機上進行本機安裝，都會使用安裝腳本。腳本首先檢查系統和環境是否符合先決條件。如果滿足先決條件，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。
 
 請參閱link:task-test-linux-system.html["檢查您的 Linux 主機是否已準備好安裝資料分類"] 。

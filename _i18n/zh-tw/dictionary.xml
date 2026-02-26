@@ -54,8 +54,6 @@
   <block id="1d7787fe4a7264402153a51d8513414f" category="list-text">Python 版本 3.6 或更高版本。<block ref="f67fc9f0c7d8aa701884bad21356a242" category="inline-link-rx"></block> 。</block>
   <block id="af6e943c488994655555d1536c5ae303" category="list-text">*NTP 注意事項*： NetApp建議設定資料分類系統以使用網路時間協定 (NTP) 服務。資料分類系統和控制台代理系統之間的時間必須同步。</block>
   <block id="408fd119f07cf5e6a0967b9f94eb5f93" category="admonition">此資訊僅與舊版本 1.30 及更早版本相關。</block>
-  <block id="42e7ba7061f6a314504fc5939b6ee874" category="inline-link-macro">BlueXP私人模式的 PDF 文檔</block>
-  <block id="e8c16b093f75565bedc28ce42c18387b" category="admonition">BlueXP私有模式（傳統BlueXP介面）通常用於沒有網路連線的本機環境和安全雲端區域，其中包括 AWS Secret Cloud、AWS Top Secret Cloud 和 Azure IL6。NetApp繼續透過傳統的BlueXP介面支援這些環境。有關舊版BlueXP介面中的私有模式文檔，請參閱<block ref="ff61a6d02866e89b5c3ca85de9a7ba21" category="inline-link-macro-rx"></block>。</block>
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">在調查頁面中過濾數據</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">在調查標籤中，透過選擇要使用的篩選器來定義搜尋。看<block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block>了解詳情。</block>
@@ -2710,4 +2708,80 @@
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">資料分類會顯示資料訓練的預計完成時間。..若要變更檔案路徑或重新上傳檔案，請選取 **Change path** ，然後輸入資料並再次載入檔案。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
   <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">版本 1.51</block>
+  <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">了解 Console 代理程式和 Data Classification 的不同部署模式</block>
+  <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>。</block>
+  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">在具有網際網路存取權限的內部部署站點部署 Data Classification</block>
+  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">您也可以 <block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>。</block>
+  <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">在私有模式（有時稱為「離線」或「暗站點」）下安裝時，Data Classification 只能掃描位於本地站點的資料來源中的資料。目前，Data Classification 可以掃描以下 *本地* 資料來源：</block>
+  <block id="318a375199576f5d44d9caad0d810341" category="paragraph">目前，當 Data Classification 以私有模式部署時，不支援掃描 Cloud Volumes ONTAP、Azure NetApp Files 或 FSx for ONTAP 帳戶。</block>
+  <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">大多數資料分類功能在部署於無網際網路存取的站台時也能正常運作。但是，某些需要網際網路存取的功能不受支援，例如：</block>
+  <block id="0a960471aa53e0935822c357979bce1b" category="list-text">為不同使用者設定 Console 角色（例如、Account Admin 或 Compliance Viewer）</block>
+  <block id="75a75ad5f9d6f3eada3bc2d376a1af49" category="list-text">使用 NetApp Copy and Sync 複製及同步來源檔案</block>
+  <block id="f73f7a9ba36beea1c62f635c6b80bf33" category="list-text">透過 Console 自動進行軟體升級</block>
+  <block id="5d985fa2e25b1e5f64c61d3b949a0115" category="inline-link-macro">資料分類發布說明</block>
+  <block id="1a243a611907b55cac593a5bf6f0a9ec" category="inline-link">升級 Console 代理程式</block>
+  <block id="fdb6099e006d1e34e0980a93da741897" category="inline-xref">升級您的 Data Classification 軟體</block>
+  <block id="3e4fd25a05e07b0252f31d30edcacd17" category="paragraph">Console 代理程式和 Data Classification 都需要定期手動升級才能啟用新功能。您可以在 Data Classification 使用者介面頁面底部查看 Data Classification 版本。查看<block ref="579336e4b6257d4241fed022ac54ce8d" category="inline-link-macro-rx"></block>以了解每個版本中的新功能以及您是否需要這些功能。然後，您可以按照步驟進行<block ref="e2b645201e21346aaf6e5246ac969b73" category="inline-link-rx"></block>和<block ref="c988b03c9911268b8d73909a35d7a951" category="inline-xref-macro-rx"></block>。</block>
+  <block id="1650bbddb7d8507c1c48c3366a8f1877" category="paragraph-title"><block ref="58f667aaf05f87159670e12bd9bc076b" category="inline-image-macro-rx" type="image"></block> 安裝 Console 代理程式</block>
+  <block id="391fba57e5d1e9f418e7be128128ea0a" category="inline-link">部署 Console 代理</block>
+  <block id="0a096664cfec97158e212b2370589415" category="paragraph">如果您尚未在 Linux 主機上以私有模式安裝 Console 代理<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>，請立即安裝。</block>
+  <block id="d865ed11a69cb30e8cfd495464fbf2af" category="paragraph-title"><block ref="54f425ce8d89f4ed6b8a546561af5d60" category="inline-image-macro-rx" type="image"></block> 審查資料分類先決條件</block>
+  <block id="c809d3c5d7781a451f25cc2cfea66167" category="paragraph">確保您的 Linux 系統符合<block ref="2d54aecca24274aa47c2fb620cd7d497" category="inline-xref-macro-rx"></block>、已安裝所有必需的軟體，且您的離線環境符合所需的<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a036c0c3c25c9be40fc8f6846935a644" category="paragraph">從 NetApp Support Site 下載 Data Classification 軟體，並將安裝程式檔案複製到您計劃使用的 Linux 主機。然後啟動安裝精靈，並依照提示部署 Data Classification 執行個體。</block>
+  <block id="0306d61e47aa894322ab0c0132696cc8" category="section-title">安裝 Console 代理程式</block>
+  <block id="3a55e7058305278fe68706cba0a3bcf2" category="paragraph">如果您尚未在離線站點的 Linux 主機上以私有模式安裝 Console 代理，<block ref="df3c65bd07ffd8c7904c50b763efcb23" category="inline-link-rx"></block>。</block>
+  <block id="5a35c7694b8f3829307dcde4ac0f06a9" category="paragraph">Data Classification 軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上執行。</block>
+  <block id="277cf494e8db0b6717cad837b1ae46e3" category="section-title">驗證 Console 和 Data Classification 的先決條件</block>
+  <block id="7ea1d38180704ea0da1ac54272bbf3cd" category="paragraph">在部署 Data Classification 之前，請檢閱下列先決條件，以確保您擁有受支援的組態。</block>
+  <block id="9edd86f763fc6d21418429b5c63134af" category="inline-link">由 NetApp 提供的政策</block>
+  <block id="984960560a67fda46a9e523e19133979" category="list-text">請確保 Console 代理程式擁有為 Data Classification 執行個體部署資源和建立安全性群組的權限。您可以在<block ref="4a2a6e11988d010a6d440ccfbc05a8f0" category="inline-link-rx"></block>中找到最新的 Console 權限。</block>
+  <block id="424a3327e4edb51b035f659615bb187a" category="list-text">請確保 Data Classification 持續運作。Data Classification 執行個體需要保持運作狀態，才能持續掃描您的資料。</block>
+  <block id="aa820f4f486defc502ac08744211a752" category="list-text">確保 Web 瀏覽器已連線至 Data Classification。啟用 Data Classification 後，請確保使用者透過已連線到 Data Classification 執行個體的主機存取 Console 介面。</block>
+  <block id="8bb88fba13168905c7855c431cd09c9f" category="paragraph">Data Classification 執行個體使用私有 IP 位址，以確保索引資料無法被他人存取。因此，您用於存取 Console 的 Web 瀏覽器必須連線到該私有 IP 位址。此連線可以來自與 Data Classification 執行個體位於同一網路中的主機。</block>
+  <block id="d2f4e7f4455a3bda8ed865e3c82c3eb1" category="cell">8080 (TCP)、6000 (TCP)、443 (TCP) 和 80。9000</block>
+  <block id="4e1dc023343a2a554657f8105534c56b" category="paragraph">Console 代理程式的安全性群組必須允許透過連接埠 6000 和 443 與 Data Classification 執行個體進行入站和出站流量。</block>
+  <block id="c27c7c9e13ebf822684f5bfbf5405964" category="list-text">需要使用連接埠 6000 、以便 Data Classification BYOL 授權在暗網中正常運作。</block>
+  <block id="4d6eacf6dc1b83a9aab9191bb6c9f622" category="list-text">連接埠 8080 應開啟，以便您可以在 Console 中查看安裝進度。</block>
+  <block id="87669b3f9ce07d9d9a218ff72c43f046" category="list-text">如果在 Linux 主機上使用防火牆，則 Ubuntu 伺服器內部程序需要連接埠 9000。</block>
+  <block id="ad57c3c7748d514ebd8d5bfa23591db0" category="list-text">Console 代理主機必須允許透過連接埠 443 進行出站 HTTPS 存取。如果 Console 代理程式位於雲端，則所有出站通訊均由預先定義的安全群組允許。</block>
+  <block id="aac02b39ecdb82865aa9de6a6ad6795a" category="paragraph">資料分類需要與每個 Cloud Volumes ONTAP 子網路或內部部署 ONTAP 系統建立網路連線。Cloud Volumes ONTAP 的安全群組必須允許來自資料分類執行個體的傳入連線。</block>
+  <block id="c29fe88a82cdd613769957d60ae7e623" category="cell">如果在 Linux 主機上使用防火牆</block>
+  <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
+  <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 伺服器內部程序所需。</block>
+  <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">在內部部署 Linux 主機上安裝 Data Classification</block>
+  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">對於典型的配置，您會將軟體安裝在單一主機系統上。</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">在離線環境中於單一內部部署主機上安裝 Data Classification 軟體時，請遵循下列步驟。</block>
+  <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">請確認您已安裝兩個必備軟體套件（Docker Engine 或 Podman 以及 Python 3）。</block>
+  <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">請確認您的離線環境符合所需的<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>。</block>
+  <block id="528e2987caf60ebcefa62783e2e3b8d0" category="list-text">在已設定網路的系統上，從<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>下載 Data Classification 軟體。您應該選擇的檔案名稱為 *DataSense-offline-bundle-&lt;version&gt;.tar.gz*。</block>
+  <block id="e441d0b06845e470533ecf90d990663b" category="list-text">將安裝程式套件複製到您計劃以私有模式使用的 Linux 主機。</block>
+  <block id="1eecc2fcccd4fcb3cadd8bec3044d3bb" category="list-text">在主機上解壓縮安裝程式套件，例如：</block>
+  <block id="8b3b2b670034ec0279cb937c145f257a" category="paragraph">此操作會擷取所需的軟體和實際安裝檔案 *cc_onprem_installer.tar.gz* 。</block>
+  <block id="6b0f70e5c18db6f7f252ec60af1fdda0" category="list-text">在主機上解壓縮安裝檔案，例如：</block>
+  <block id="83c94a9afb163137cc4dc79b7e321458" category="list-text">從 Data Classification 中選擇 *Deploy Classification On-Premises or Cloud*。</block>
+  <block id="e220ba16e07da8175a8f22c929583d56" category="list-text">選擇 *Deploy* 以開始本機安裝。</block>
+  <block id="2f556d8d5b92bf21939b1165b4292afa" category="list-text">此時將顯示「在本機部署資料分類」對話方塊。複製提供的命令（例如：<block ref="4041549bf21d4c7bed0bfcbf52842063" prefix=" " category="inline-code"></block>），並將其貼上到文字檔案中以便稍後使用。然後選擇 *Close* 以關閉對話方塊。</block>
+  <block id="3c73fb515a637be4a1083e3e061099f9" category="paragraph">請注意，安裝程式會執行預先檢查，以確保您的系統和網路需求已就緒，以便成功安裝。</block>
+  <block id="04b2719843afa330fd4278f18f551cc0" category="list-text">貼上您從步驟 8 複製的資訊：<block ref="f2d89fd6adc07cc741bd63dae759c280" prefix=" " category="inline-code"></block></block>
+  <block id="6b0aea6c68ef96dbcfc3127ea709758f" category="cell">或者，您可以預先建立整個命令，並提供必要的主機參數：<block ref="30e6510f8ccbe93aadbdbce29e25b293" prefix=" " category="inline-code"></block></block>
+  <block id="18a676ba121b0c5c7d029a5de11e6384" category="list-text">_ds_host_ = Data Classification 系統的 IP 位址或主機名稱。</block>
+  <block id="352f10906200e3b1eb42fca6da3bfc6b" category="paragraph">如果主機和 Console 代理執行個體之間透過連接埠 8080 有連接，您將在「資料分類」標籤中看到安裝進度。</block>
+  <block id="5d0d87e9be98aaab11076c1b64d38cc3" category="inline-link-macro">內部部署 ONTAP 叢集</block>
+  <block id="e61ce3062cb76770658896b778ad06cd" category="inline-link-macro">資料庫</block>
+  <block id="c3cea28bb90c637f494d5021dcebdf2d" category="paragraph">在設定頁面中、您可以選擇要掃描的本機 <block ref="c23a74d01fbf5deb3a784c3ec1da6439" category="inline-link-macro-rx"></block> 和 <block ref="6d4571a63bcf6d226319383d2911863e" category="inline-link-macro-rx"></block>。</block>
+  <block id="6adc855444e112822971d3dccee13c7b" category="section-title">升級 Data Classification 軟體</block>
+  <block id="2ef1c095f065f6ed9362c577ebcb41cb" category="paragraph">由於 Data Classification 軟體會定期更新新功能，您應該養成定期檢查新版本的習慣，以確保使用最新的軟體和功能。您需要手動升級 Data Classification 軟體，因為沒有網際網路連線可自動執行升級。</block>
+  <block id="973193922b08bb6c1c48f6d2010a3301" category="inline-link">請參閱 Console 代理程式升級步驟</block>
+  <block id="88dab43991705d2e0e32366a7843e5f2" category="list-text">我們建議您將 Console 代理軟體升級到最新版本<block ref="2c60b4905c63d330707c3e9f7f760258" category="inline-link-rx"></block>。</block>
+  <block id="5ead123fde96a881f3ea4402d8f3c081" category="list-text">從 Data Classification 版本 1.24 開始，您可以升級到任何未來的軟體版本。</block>
+  <block id="a8574915570cec928037dd09f4725d64" category="paragraph">如果您的 Data Classification 軟體版本低於 1.24，則一次只能升級一個主版本。例如，如果您安裝的是 1.21.x 版本，則只能升級到 1.22.x 版本。如果您落後多個主版本，則需要多次升級軟體。</block>
+  <block id="47e841a0bdc25a397d4ba68d0a98f168" category="list-text">將軟體套件複製到安裝了 Data Classification 的 Linux 主機（位於暗站點中）。</block>
+  <block id="58ac2a8543e710f81085aa9e92e7cd0c" category="list-text">在主機上解壓縮軟體套件，例如：</block>
+  <block id="7b8f90ccd6fc9dda39797ae84ca7f14d" category="paragraph">這將提取安裝檔案 *cc_onprem_installer.tar.gz* 。</block>
+  <block id="cdc2b03f6ffa90a892ff07e03233975d" category="paragraph">這會提取升級指令碼 *start_darksite_upgrade.sh* 和任何所需的協力廠商軟體。</block>
+  <block id="85455891651214d50e704a4b3e9dde66" category="list-text">例如，在主機上執行升級腳本：</block>
+  <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">您的主機上的 Data Classification 軟體已升級。更新過程可能需要 5 到 10 分鐘。</block>
+  <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">您可以透過查看 Data Classification UI 頁面底部的版本號碼來驗證軟體是否已更新。</block>
 </blocks>
