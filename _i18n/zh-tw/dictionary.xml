@@ -2563,7 +2563,6 @@
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">在健康監測儀表板中監控指標和效能</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">資料分類現在提供了一個健康監控儀表板，可以即時監控您的資源，並提供有關記憶體使用情況、磁碟使用情況、磁碟使用率等方面的見解。借助健康監控儀表板提供的信息，您可以查看部署的基礎架構，並獲得優化儲存和效能的見解。</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">監控資料分類的運作狀況</block>
-  <block id="699330677c1a0f32d795bf5b4ef62c06" category="paragraph">有關詳細信息，請參閱 <block ref="47a26f0a929ccc455d276fcbc1329665" category="inline-link-macro-rx"></block>。</block>
   <block id="bf17c0b6bb3350440ee2a9bb4f2c9d89" category="paragraph-title">提升了裝載性能</block>
   <block id="b6a3c9ea2c8f586e05010be520e7c46c" category="paragraph">資料分類中所有頁面的載入效能均已提升，從而創造了更有效率的使用者體驗。</block>
   <block id="c7a647b1e9f70e39870907a0d37fc861" category="summary">資料分類能夠提供關於使用情況和利用情況的洞察，從而幫助優化效能和解決問題。</block>
@@ -2746,8 +2745,6 @@
   <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 伺服器內部程序所需。</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">在內部部署 Linux 主機上安裝 Data Classification</block>
   <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">對於典型的配置，您會將軟體安裝在單一主機系統上。</block>
-  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。</block>
-  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">在離線環境中於單一內部部署主機上安裝 Data Classification 軟體時，請遵循下列步驟。</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">請確認您已安裝兩個必備軟體套件（Docker Engine 或 Podman 以及 Python 3）。</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">請確認您的離線環境符合所需的<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>。</block>
@@ -2784,4 +2781,19 @@
   <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">要存取 Swagger，您需要 Data Classification 執行個體的 IP 位址。如果是雲端部署，則需要使用公有 IP 位址。然後，您需要存取以下端點：</block>
   <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">在 Governance 儀表板的每個 Savings Opportunities 圖塊中，選擇 *Optimize Storage* 以在 Investigation 頁面中查看篩選後的結果。若要了解您應該刪除哪些資料或將其分層儲存到成本較低的儲存空間，請調查 _Saving Opportunities_。</block>
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification 會掃描您所選擇的儲存庫（包括磁碟區、資料庫結構或其他使用者資料）中的資料，以識別個人和敏感資料。Data Classification 接著會對您的組織資料進行對應、分類每個檔案，並識別資料中的預定義模式。掃描的結果是一份包含個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
+  <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">如需詳細資訊，請參閱 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>。</block>
+  <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">提高了複製和移動的限制</block>
+  <block id="5db4431afc8c4647c29360449ee80225" category="doc">版本 1.52</block>
+  <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">資源驗證</block>
+  <block id="19458db6dfda018080434d803401d712" category="paragraph">為確保可靠性，Data Classification 現在會在掃描、報告產生和執行操作過程中驗證可用記憶體和磁碟資源。當記憶體使用率超過 95% 或磁碟空間低於 6 GB 時，Data Classification 會自動暫停操作。資源充足後，操作將恢復。</block>
+  <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">若要監控您的系統資源、請參閱 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>。</block>
+  <block id="427468160760189964c9cf7fcaa52709" category="paragraph">現在支援對 CIFS 目標進行複製和移動操作。這兩個操作的單一檔案大小限制已從先前的 50 MB 提高到 1 GB。這兩個操作的操作限制也已提高到 1 TB 或 500 萬個檔案。</block>
+  <block id="6d965e454a055e436e41408f02aad8e1" category="paragraph-title">Active Directory 整合設定權限</block>
+  <block id="a14fc25490ab294bb8fb754cd29f6486" category="paragraph">現在，資料分類中對 Active Directory（AD）整合設定的變更僅限於管理員。檢視者不再能夠修改 AD 設定。</block>
+  <block id="40abfc355f5aea2697c05cedc7637005" category="inline-link-macro">資料服務角色</block>
+  <block id="86b37aec2cfdfa690aeb8de2465ae8f4" category="paragraph">有關 Classification 檢視器角色的更多資訊，請參閱 <block ref="152b8a96499e0e41ff478a993b579623" category="inline-link-macro-rx"></block>。</block>
+  <block id="262af560e91bb5d3ce2340e565954dbf" category="paragraph-title">透明 Proxy 支援</block>
+  <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">Data Classification 現在支援透明 Proxy 配置，從而能夠在 Proxy 或受限網路環境中更順利地部署。</block>
+  <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">如需在受限環境中部署的詳細資訊，請參閱 <block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>。</block>
+  <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
 </blocks>

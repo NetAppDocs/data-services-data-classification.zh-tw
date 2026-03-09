@@ -1,0 +1,27 @@
+= 版本 1.52
+:allow-uri-read: 
+
+
+
+
+=== 版本 1.52
+
+.資源驗證
+為確保可靠性，Data Classification 現在會在掃描、報告產生和執行操作過程中驗證可用記憶體和磁碟資源。當記憶體使用率超過 95% 或磁碟空間低於 6 GB 時，Data Classification 會自動暫停操作。資源充足後，操作將恢復。
+
+若要監控您的系統資源、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-health-monitor.html["監控資料分類的運作狀況"^]。
+
+.提高了複製和移動的限制
+現在支援對 CIFS 目標進行複製和移動操作。這兩個操作的單一檔案大小限制已從先前的 50 MB 提高到 1 GB。這兩個操作的操作限制也已提高到 1 TB 或 500 萬個檔案。
+
+如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查數據"^]。
+
+.Active Directory 整合設定權限
+現在，資料分類中對 Active Directory（AD）整合設定的變更僅限於管理員。檢視者不再能夠修改 AD 設定。
+
+有關 Classification 檢視器角色的更多資訊，請參閱 link:https://docs.netapp.com/us-en/console-setup-admin/reference-iam-predefined-roles.html#data-service-roles["資料服務角色"^]。
+
+.透明 Proxy 支援
+Data Classification 現在支援透明 Proxy 配置，從而能夠在 Proxy 或受限網路環境中更順利地部署。
+
+如需在受限環境中部署的詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-compliance-dark-site.html["在沒有網路存取的 Linux 主機上安裝NetApp Data Classification"^]。

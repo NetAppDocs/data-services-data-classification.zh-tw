@@ -266,8 +266,6 @@ NFS 磁碟區匯出策略必須允許從資料分類實例進行存取。
 
 對於典型的配置，您會將軟體安裝在單一主機系統上。
 
-image:diagram_deploy_onprem_single_host_no_internet.png["一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。"]
-
 在離線環境中於單一內部部署主機上安裝 Data Classification 軟體時，請遵循下列步驟。
 
 請注意，安裝資料分類時會記錄所有安裝活動。如果您在安裝過程中遇到任何問題，您可以查看安裝審計日誌的內容。它被寫給 `/opt/netapp/install_logs/`。
