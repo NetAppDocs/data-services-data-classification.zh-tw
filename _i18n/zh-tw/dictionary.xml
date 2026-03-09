@@ -2796,4 +2796,6 @@
   <block id="9478b45dce4de73855a8e0b13720f895" category="paragraph">Data Classification 現在支援透明 Proxy 配置，從而能夠在 Proxy 或受限網路環境中更順利地部署。</block>
   <block id="89f7afc8a9b178d4b4346f224d8bffc7" category="paragraph">如需在受限環境中部署的詳細資訊，請參閱 <block ref="6804ab8e5e77245509e3dc550ef5b67d" category="inline-link-macro-rx"></block>。</block>
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
+  <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。</block>
+  <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>
