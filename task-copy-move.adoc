@@ -1,0 +1,83 @@
+---
+sidebar: sidebar 
+permalink: task-copy-move.html 
+keywords: investigation, filter, delete, copy, move, flexclone, sync 
+summary: 在調查儀表板中篩選資料後、您可以複製、移動和刪除非結構化資料。 
+---
+= 使用 NetApp Data Classification 複製、移動和刪除檔案
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+除了提供有關治理和節省機會的見解之外，NetApp Data Classification 也能讓你從其調查儀表板上對檔案執行操作。在調查儀表板中篩選資料後，你可以複製、移動和刪除非結構化資料。執行這些操作可以提升合規性，例如將檔案移動到更安全的位置，或透過刪除舊檔案或重複檔案來創造節省機會。
+
+
+
+== 複製檔案
+
+Data Classification 支援複製最大 1 GB 的檔案。您總共可以複製 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案複製到 CIFS 或 NFS 目標位置。複製過程不會對來源檔案造成任何影響。
+
+.步驟
+. 在調查控制面板中，選擇要複製的檔案。
+. 在檔案清單上方，選擇 **Copy** 。
++
+image:screenshot-copy-move-delete.png["調查頁面中動作的螢幕擷取畫面"]
+
+. 選擇副本目標的傳輸協定：**NFS** 或 **CIFS**。
+. 如果您選擇了 NFS ，請使用正斜線輸入目標路徑，例如 `hostname:/path/to/destination`。
++
+如果您選擇了 CIFS，請使用反斜線輸入目標路徑，例如 `\\server\share\path`。同時，請輸入 CIFS 共享的**使用者名稱**和**密碼**憑證。
+
++
+image:screenshot-copy-nfs.png["NFS 檔案複製功能的螢幕截圖"]
+
+. 選擇 **Submit** 。
+
+
+
+
+== 移動檔案
+
+Data Classification 支援移動最大 1 GB 的檔案。您總共可以移動 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案移至 CIFS 或 NFS 目標位置。
+
+.步驟
+. 在 Investigation 儀表板中，選取您要移動的檔案。
++
+image:screenshot-copy-move-delete.png["調查頁面中動作的螢幕擷取畫面"]
+
+. 在檔案清單上方，選擇 **Move** 。
+. 選擇目標協定：**NFS** 或 **CIFS**。
+. 如果您選擇了 NFS ，請使用正斜線輸入目標路徑，例如 `hostname:/path/to/destination`。
++
+如果您選擇了 CIFS，請使用反斜線輸入目標路徑，例如 `\\server\share\path`。同時，請輸入 CIFS 共享的**使用者名稱**和**密碼**憑證。
+
+. （可選）選擇 **Leave breadcrumb** 以在來源卷中留下一個麵包屑文件，解釋文件被移動的位置和原因。
++
+.. 如果您選擇了 **Leave breadcrumb**，請輸入描述性文字，說明移動檔案的理由，並在必要時說明新位置。
++
+image:screenshot-move-nfs.png["NFS 檔案移動功能的螢幕截圖"]
+
+
+
+. 選擇 **Move items** 。
+
+
+
+
+== 刪除檔案
+
+在「調查」儀表板上篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。刪除檔案僅支援非結構化檔案。
+
+.步驟
+. 在調查控制面板中，選擇要刪除的檔案。
+. 在確認對話方塊中、輸入「permanently delete」。
+. 選擇 **Delete File** 以確認操作。
++
+image:screenshot-delete.png["刪除對話方塊的螢幕擷取畫面"]
+
+

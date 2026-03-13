@@ -664,7 +664,6 @@
   <block id="5215d51f00cbd59bd4f5379564dd2607" category="section-title">上次訪問的時間戳</block>
   <block id="766aa8e7cd2a6b2b085c6107a7da9b88" category="paragraph">當資料分類對目錄進行掃描時，掃描會影響目錄的**上次存取**欄位。當您查看**上次造訪**欄位時，該元資料反映掃描的日期和時間或使用者上次存取目錄的時間。</block>
   <block id="e96a6a2be46b8b1357ec2a787a1d1300" category="summary">有時您可能需要登入NetApp Data Classification系統，以便存取日誌檔案或編輯設定檔。</block>
-  <block id="3bdd1ff20ed6998a7cc8219fdca4e271" category="doc">登入NetApp Data Classification系統</block>
   <block id="3ce6ca22e847cbd536ba7c715301377a" category="paragraph">您需要登入NetApp Data Classification系統，以便存取日誌檔案或編輯設定檔。</block>
   <block id="2b5271618e7493a8c77e7b4639d819b8" category="paragraph">當資料分類安裝在您本地的 Linux 機器上或在雲端部署的 Linux 機器上時，您可以直接存取設定檔和腳本。</block>
   <block id="b432bef38adffbc05fc1ceb150787a02" category="paragraph">當資料分類部署在雲端時，您需要透過 SSH 連線到資料分類實例。您可以透過輸入使用者和密碼，或使用控制台代理安裝期間提供的 SSH 金鑰，透過 SSH 連線到系統。  SSH 指令是：</block>
@@ -1569,7 +1568,6 @@
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">在設定頁面上，選擇*設定*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">您可以透過查看資料調查頁面中的詳細資訊來調查來自您組織的資料。查看治理儀表板後，您可以在這裡繼續您的研究。</block>
   <block id="4c257f0482d661d1986f92f057e1c581" category="doc">使用NetApp Data Classification調查組織中儲存的數據</block>
-  <block id="7ce237dbe0011dccdc7c96c7be17d6ec" category="paragraph">資料調查儀表板顯示文件和目錄層級的資料洞察，使您能夠對結果進行排序和過濾。數據調查頁面提供有關文件和目錄元數據和權限的見解以及識別重複文件。透過文件、目錄和資料庫層級的洞察，您可以採取措施來提高組織的合規性並節省儲存空間。資料調查頁面還支援移動、複製和刪除檔案。</block>
   <block id="8d6bb2090f1e71e8cabff59cd97a6f5f" category="admonition">要從調查頁面獲得見解，您必須對資料來源執行完整的分類掃描。僅進行過映射掃描的資料來源不會顯示檔案層級的詳細資訊。</block>
   <block id="adbc89b69fed239a539f916b53592ab9" category="section-title">資料調查結構</block>
   <block id="7fc46b0c25bc13694774a84c4a0f5b4b" category="paragraph">數據調查頁面將數據分類到三個選項卡：</block>
@@ -2429,7 +2427,6 @@
   <block id="a1b1318193a35f78be2416bedbe04261" category="sidebar">查看有關您的數據的治理詳細信息</block>
   <block id="056f094fced7be2185f9f1e21b455e6b" category="sidebar">查看有關您的數據的合規性詳細信息</block>
   <block id="93f515959ce6187b986c42fa6959168b" category="sidebar">私人資料類別</block>
-  <block id="d208d030068b6bbb840e4e251deaf193" category="sidebar">建立自訂掃描</block>
   <block id="bd3668f2876c07e4375041fda913dc31" category="sidebar">管理已儲存的查詢</block>
   <block id="91cace02ed792be8683fda1544dfb32c" category="sidebar">修改掃描設定</block>
   <block id="2a79af6160ec8fbec237f8058c6c9de3" category="sidebar">管理資料分類</block>
@@ -2797,5 +2794,49 @@
   <block id="df4bdd45174b09881add6730bdfaf045" category="section-title">2026 年 3 月 09 日</block>
   <block id="c929bf2a4cebf50fb64dab464b664919" category="inline-image-macro">一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。</block>
   <block id="416689a150e5347df135e4852392a307" category="paragraph"><block ref="416689a150e5347df135e4852392a307" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="e70d49c282a7c52a8996f7a8357c7524" category="doc">NetApp Data Classification 常見問題</block>
+  <block id="4ccc6bc65ccfbf776471461699df7790" category="inline-link-macro">複製、移動和刪除資料</block>
+  <block id="26f19c45862fe8f967db0b3b7d289ad3" category="paragraph">如需詳細資訊，請參閱 <block ref="151ab796904ad3ebe669fb675d8fec0a" category="inline-link-macro-rx"></block>。</block>
+  <block id="ad5b3224be1d6831dcf88a793785b1f1" category="doc">NetApp Data Classification 常見問題</block>
+  <block id="621a6cff40fed66e7b90194843eb20fb" category="doc">NetApp Data Classification 的法律通知</block>
+  <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">登入 NetApp Data Classification</block>
+  <block id="f214292b356953b67175bbd37992066d" category="summary">在調查儀表板中篩選資料後、您可以複製、移動和刪除非結構化資料。</block>
+  <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">使用 NetApp Data Classification 複製、移動和刪除檔案</block>
+  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">除了提供有關治理和節省機會的見解之外，NetApp Data Classification 也能讓你從其調查儀表板上對檔案執行操作。在調查儀表板中篩選資料後，你可以複製、移動和刪除非結構化資料。執行這些操作可以提升合規性，例如將檔案移動到更安全的位置，或透過刪除舊檔案或重複檔案來創造節省機會。</block>
+  <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">複製檔案</block>
+  <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classification 支援複製最大 1 GB 的檔案。您總共可以複製 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案複製到 CIFS 或 NFS 目標位置。複製過程不會對來源檔案造成任何影響。</block>
+  <block id="37214830ec688e601a722f40084e9795" category="list-text">在調查控制面板中，選擇要複製的檔案。</block>
+  <block id="2d2f00419a0dd0229c58522ea98e71ae" category="list-text">在檔案清單上方，選擇 **Copy** 。</block>
+  <block id="b9e9b1bb4d8b072a482f32c6e7d7ff72" category="inline-image-macro">調查頁面中動作的螢幕擷取畫面</block>
+  <block id="cca60a4ec6a536a71654abbbd1c54e3a" category="paragraph"><block ref="cca60a4ec6a536a71654abbbd1c54e3a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="07f527a3198ae416b045c995367ab422" category="list-text">選擇副本目標的傳輸協定：**NFS** 或 **CIFS**。</block>
+  <block id="4885cff36928d8614fad0e3d21b27679" category="list-text">如果您選擇了 NFS ，請使用正斜線輸入目標路徑，例如<block ref="8ed050b486343bdef7b6adadf5b986b8" prefix=" " category="inline-code"></block>。</block>
+  <block id="6a3331936dcbbbfa4db946e4d0f00e9b" category="paragraph">如果您選擇了 CIFS，請使用反斜線輸入目標路徑，例如<block ref="52938cbc0a420230679e4ae98bb4a89a" prefix=" " category="inline-code"></block>。同時，請輸入 CIFS 共享的**使用者名稱**和**密碼**憑證。</block>
+  <block id="c64976420b21ffb4d1ba97533079e81c" category="inline-image-macro">NFS 檔案複製功能的螢幕截圖</block>
+  <block id="12ceb039500c1e7536d6a926d04beed0" category="paragraph"><block ref="12ceb039500c1e7536d6a926d04beed0" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="005315d0bf05e5d249f46e46e20423d3" category="list-text">選擇 **Submit** 。</block>
+  <block id="ed86a97d5bcbda5898269baae37b79f7" category="section-title">移動檔案</block>
+  <block id="0ac97eb58eed3141f29d93b87eb4d0b7" category="paragraph">Data Classification 支援移動最大 1 GB 的檔案。您總共可以移動 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案移至 CIFS 或 NFS 目標位置。</block>
+  <block id="fbb338a6c6a711b7c940515c513f15de" category="list-text">在 Investigation 儀表板中，選取您要移動的檔案。</block>
+  <block id="2066527d248d6275b0ce325ff50ec8fb" category="list-text">在檔案清單上方，選擇 **Move** 。</block>
+  <block id="2a993e09d9313401f99dcee0ed7245f9" category="list-text">選擇目標協定：**NFS** 或 **CIFS**。</block>
+  <block id="1ab5ecdad0b7cf47d71967b3f0e1f51b" category="list-text">（可選）選擇 **Leave breadcrumb** 以在來源卷中留下一個麵包屑文件，解釋文件被移動的位置和原因。</block>
+  <block id="465b61ed91de19635de96ea746fcd8dd" category="list-text">如果您選擇了 **Leave breadcrumb**，請輸入描述性文字，說明移動檔案的理由，並在必要時說明新位置。</block>
+  <block id="f7e4b92188f5354ca61e9869df6224cc" category="inline-image-macro">NFS 檔案移動功能的螢幕截圖</block>
+  <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="7afd3db29a42496704a6705958fec121" category="list-text">選擇 **Move items** 。</block>
+  <block id="19e43848563797a6f937c7895b604754" category="section-title">刪除檔案</block>
+  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">在「調查」儀表板上篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。刪除檔案僅支援非結構化檔案。</block>
+  <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">在調查控制面板中，選擇要刪除的檔案。</block>
+  <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">在確認對話方塊中、輸入「permanently delete」。</block>
+  <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">選擇 **Delete File** 以確認操作。</block>
+  <block id="9c213e0d48408ad93cdfc881eb4f22dd" category="inline-image-macro">刪除對話方塊的螢幕擷取畫面</block>
+  <block id="d5c79828ec7e224f24ce0c5c7bdfd94a" category="paragraph"><block ref="d5c79828ec7e224f24ce0c5c7bdfd94a" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b1e91143d215d79313744660e8a25c51" category="inline-link-macro">移動、複製和刪除檔案</block>
+  <block id="5f346df67220a8ad49f8534209369421" category="paragraph">Data Investigation 儀表板顯示文件和目錄層級的資料洞察，使您能夠對結果進行排序和篩選。Data Investigation 頁面提供文件和目錄元資料及權限的洞察，並識別重複文件。借助文件、目錄和資料庫層級的洞察，您可以採取措施來提高組織的合規性並節省儲存空間。Data Investigation 頁面也支持 <block ref="53552aaf1401627b381eb7f88c3339dc" category="inline-link-macro-rx"></block>。</block>
+  <block id="f394fbb29081ecb4ff4624bf5701d2c0" category="inline-link-macro">複製、移動和刪除非結構化檔案</block>
+  <block id="380916f8eca732c161f7d63bc771658e" category="admonition">資料過濾後，您可以 <block ref="80925d04faafa25188db966788d6cf44" category="inline-link-macro-rx"></block> 提高合規性或優化儲存。</block>
+  <block id="a05935ba37500bcaabc75b8fac4a4d69" category="inline-link-macro">從調查儀表板複製、移動和刪除資料</block>
+  <block id="dccdd7229b11ad459b3b6fd7edf24186" category="list-text"><block ref="dccdd7229b11ad459b3b6fd7edf24186" category="inline-link-macro-rx"></block></block>
+  <block id="5b077e4667590c350e8809dec7c16b8f" category="sidebar">檢查您的 Linux 主機是否已準備就緒</block>
+  <block id="44c26efa4311ed85b7e12474f8bd2eaf" category="sidebar">移除資料來源</block>
 </blocks>

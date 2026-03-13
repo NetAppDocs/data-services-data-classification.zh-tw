@@ -38,7 +38,7 @@ sidebar:
         url: "/task-deploy-compliance-onprem.html"
       - title: 在沒有網際網路存取的本機 Linux 主機上安裝
         url: "/task-deploy-compliance-dark-site.html"
-      - title: 檢查您的 Linux 主機是否已準備好安裝資料分類
+      - title: 檢查您的 Linux 主機是否已準備就緒
         url: "/task-test-linux-system.html"
     - title: 啟動資料來源掃描
       entries:
@@ -68,18 +68,18 @@ sidebar:
       url: "/task-controlling-private-data.html"
     - title: 私人資料類別
       url: "/reference-private-data-categories.html"
-    - title: 建立自訂掃描
-      url: "/task-custom-classification.html"
     - title: 調查數據
       url: "/task-investigate-data.html"
+    - title: 複製、移動和刪除資料
+      url: "/task-copy-move.html"
+    - title: 建立自訂分類
+      url: "/task-custom-classification.html"
     - title: 管理已儲存的查詢
       url: "/task-using-policies.html"
     - title: 修改掃描設定
       url: "/task-managing-repo-scanning.html"
     - title: 產生合規性報告
       url: "/task-generating-compliance-reports.html"
-    - title: 監控系統健康狀況
-      url: "/task-health-monitor.html"
   - title: 管理資料分類
     entries:
     - title: 從掃描中排除目錄
@@ -88,7 +88,9 @@ sidebar:
       url: "/task-add-group-id-as-open.html"
     - title: 定義過期數據
       url: "/task-stale-data.html"
-    - title: 從資料分類中刪除資料來源
+    - title: 監控系統健康狀況
+      url: "/task-health-monitor.html"
+    - title: 移除資料來源
       url: "/task-managing-compliance.html"
     - title: 卸載資料分類
       url: "/task-uninstall.html"

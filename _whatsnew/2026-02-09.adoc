@@ -21,7 +21,7 @@
 .提高了複製和移動的限制
 現在複製或移動檔案時，您可以移動最大 250 MB 的檔案，比之前的 50 MB 限制有所增加。
 
-如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查數據"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-copy-move.html["複製、移動和刪除資料"^]。
 
 .改善低解析度螢幕的顯示效果
 Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。

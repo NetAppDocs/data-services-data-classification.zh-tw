@@ -14,7 +14,7 @@
 .提高了複製和移動的限制
 現在支援對 CIFS 目標進行複製和移動操作。這兩個操作的單一檔案大小限制已從先前的 50 MB 提高到 1 GB。這兩個操作的操作限制也已提高到 1 TB 或 500 萬個檔案。
 
-如需更多資訊、請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-investigate-data.html["調查數據"^]。
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-copy-move.html["複製、移動和刪除資料"^]。
 
 .Active Directory 整合設定權限
 現在，資料分類中對 Active Directory（AD）整合設定的變更僅限於管理員。檢視者不再能夠修改 AD 設定。
