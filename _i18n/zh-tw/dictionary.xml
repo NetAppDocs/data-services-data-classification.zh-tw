@@ -44,7 +44,6 @@
   <block id="f65e89bbcbf76ca815a817bb7948efac" category="list-text">Ubuntu 22.04（需要資料分類版本 1.23 或更高版本）</block>
   <block id="462a3ff626aa57006db763d5cc9f2a9b" category="list-text">Ubuntu 24.04（需要資料分類版本 1.23 或更高版本）</block>
   <block id="8118250de488638095b55cd46b5772ef" category="list-text">以下作業系統需要使用 Podman 容器引擎，並且需要資料分類版本 1.30 或更高版本：</block>
-  <block id="d9e521087da6e40e92c4e4b4c7c7bfde" category="list-text">Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5 和 9.6。</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">必須在主機系統上啟用進階向量擴充 (AVX2)。</block>
   <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。</block>
   <block id="c925667b183375955ce7e62c22a4acdf" category="list-text">*附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：</block>
@@ -2839,4 +2838,8 @@
   <block id="dccdd7229b11ad459b3b6fd7edf24186" category="list-text"><block ref="dccdd7229b11ad459b3b6fd7edf24186" category="inline-link-macro-rx"></block></block>
   <block id="5b077e4667590c350e8809dec7c16b8f" category="sidebar">檢查您的 Linux 主機是否已準備就緒</block>
   <block id="44c26efa4311ed85b7e12474f8bd2eaf" category="sidebar">移除資料來源</block>
+  <block id="509dd4f67d4710103d9acf30795bb41e" category="list-text">Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6 和 9.7。</block>
+  <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">支援 RHEL 9.7</block>
+  <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">資料分類功能新增了 Red Hat Enterprise Linux v9.7，可用於手動內部部署安裝，包括 dark site 部署。</block>
+  <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要 Data Classification 版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6 和 9.7。</block>
 </blocks>
