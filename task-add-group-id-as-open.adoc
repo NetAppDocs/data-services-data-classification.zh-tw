@@ -2,7 +2,7 @@
 sidebar: sidebar 
 permalink: task-add-group-id-as-open.html 
 keywords: permissions, open to organization, file access 
-summary: '當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時，它們定義了檔案或資料夾的權限；例如它們是否「對組織開放」。如果某些群組 ID (GID) 最初未設定「開放給組織」權限級別，則可以將該權限新增至 GID，以便附加該 GID 的任何檔案和資料夾都將被視為「開放給組織」。' 
+summary: 在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時，它們定義了檔案或資料夾的權限。如果群組 ID 未設定為「對組織開放」權限級別，您可以將該權限新增至 GID，以便任何附加了該 GID 的檔案和資料夾都被視為「對組織開放」。 
 ---
 = 在NetApp Data Classification其他群組 ID 定義為對組織開放
 :hardbreaks:

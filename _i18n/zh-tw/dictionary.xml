@@ -965,7 +965,6 @@
   <block id="ca3e2e8380ad6cedd810ec4fc49fa9e7" category="paragraph">如果您需要修改 Active Directory 整合中的任何值，請按一下「*編輯*」按鈕並進行變更。</block>
   <block id="024205acf9405311336c02bbd2193b70" category="inline-image-macro">更多按鈕</block>
   <block id="59cb665cd7462a904eefb54d13262d58" category="paragraph">您也可以選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>按鈕，然後*刪除 Active Directory*。</block>
-  <block id="0ee0dd7645f9fd01a3094af2719826bf" category="summary">當群組 ID 附加到 NFS 檔案共用中的檔案或資料夾時，它們定義了檔案或資料夾的權限；例如它們是否「對組織開放」。如果某些群組 ID (GID) 最初未設定「開放給組織」權限級別，則可以將該權限新增至 GID，以便附加該 GID 的任何檔案和資料夾都將被視為「開放給組織」。</block>
   <block id="fdb7ec2123850e91ea909a1c5335e442" category="doc">在NetApp Data Classification其他群組 ID 定義為對組織開放</block>
   <block id="b838209e951016249a0803fc3f2aabb9" category="paragraph">當群組 ID (GID) 附加到 NFS 檔案共用中的檔案或資料夾時，它們定義了檔案或資料夾的權限；例如它們是否「對組織開放」。如果某些 GID 最初未設定「開放給組織」權限級別，您可以向 GID 新增該權限，以便任何附加了該 GID 的檔案和資料夾都將被視為「開放給組織」。</block>
   <block id="bd4a9628c6b0a95d8b9d51e8beb243af" category="paragraph">在您進行此變更並且NetApp Data Classification重新掃描您的檔案和資料夾後，任何附加了這些群組 ID 的檔案和資料夾都將在「調查詳細資料」頁面中顯示此權限，並且它們也會出現在您顯示檔案權限的報表中。</block>
@@ -2842,4 +2841,7 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">支援 RHEL 9.7</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">資料分類功能新增了 Red Hat Enterprise Linux v9.7，可用於手動內部部署安裝，包括 dark site 部署。</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要 Data Classification 版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6 和 9.7。</block>
+  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">版本 1.53</block>
+  <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時，它們定義了檔案或資料夾的權限。如果群組 ID 未設定為「對組織開放」權限級別，您可以將該權限新增至 GID，以便任何附加了該 GID 的檔案和資料夾都被視為「對組織開放」。</block>
+  <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
 </blocks>
