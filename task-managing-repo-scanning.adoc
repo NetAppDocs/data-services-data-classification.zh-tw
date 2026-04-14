@@ -4,7 +4,7 @@ permalink: task-managing-repo-scanning.html
 keywords: compliance, stop scan, start scan, map scan, classify scan, data sense, pause scan, resume scan, cloud data sense, bluexp classification 
 summary: 了解如何在NetApp Data Classification中修改系統的掃描設定。 
 ---
-= 更改儲存庫的NetApp Data Classification掃描設置
+= 變更 NetApp Data Classification 中的掃描設定
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

@@ -4,7 +4,7 @@ permalink: task-investigate-data.html
 keywords: personal files, personal data, sensitive personal files, sensitive personal data, health data, ethnic origin, political opinions, gdpr, email address, credit card, ip address, iban, national ID, identifier, password, sex, criminal, compliance, privacy, filter data, permissions, csv file, json file, highlights, policies,json, csv, data investigation, data investigation report, download report, file metadata, file permissions, duplicate files, saved search 
 summary: 您可以透過查看資料調查頁面中的詳細資訊來調查來自您組織的資料。查看治理儀表板後，您可以在這裡繼續您的研究。 
 ---
-= 使用NetApp Data Classification調查組織中儲存的數據
+= 使用 NetApp Data Classification 調查您組織內的資料
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

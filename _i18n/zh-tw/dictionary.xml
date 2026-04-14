@@ -908,7 +908,6 @@
   <block id="76fdfaf2f24a544d14351d9e3f513ce8" category="paragraph"><block ref="76fdfaf2f24a544d14351d9e3f513ce8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0e5c71558fb629c5bcc9a51a00d666c8" category="paragraph">否則，將出現資料分類儀表板。</block>
   <block id="63308d65618f78bd567e4db91f7b0875" category="summary">您可以將全域 Active Directory 與NetApp Data Classification集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。</block>
-  <block id="3a94b7d5b6c172f80060b4c8452b3d1f" category="doc">將您的 Active Directory 與NetApp Data Classification集成</block>
   <block id="cc02bc8306c11f1cb21d44a3cd32b1db" category="paragraph">當您設定某些資料來源（如下所列）時，您需要輸入 Active Directory 憑證以便資料分類掃描 CIFS 磁碟區。此集成為資料分類提供了駐留在這些資料來源中的資料的檔案擁有者和權限詳細資訊。為這些資料來源輸入的 Active Directory 可能與您在此輸入的全域 Active Directory 憑證不同。資料分類將在所有整合的活動目錄中尋找使用者和權限詳細資訊。</block>
   <block id="1dcdfbbbed598a48e07e26254080d7ab" category="paragraph">此整合在資料分類的以下位置提供了附加資訊：</block>
   <block id="b2c97ae425dd751b0e48a3acae79cf4a" category="inline-link-macro">篩選</block>
@@ -983,8 +982,6 @@
   <block id="3ef472518560fb1d514f802f7b78520c" category="paragraph">您可以使用相同的步驟編輯群組 ID 清單並刪除過去新增的任何群組 ID。執行腳本提交變更後，修改後的群組 ID 清單將會更新。</block>
   <block id="14262b7b54453519cfa73f76b2652616" category="section-title">查看目前群組ID列表</block>
   <block id="02ac41518d424e55f9414e9bf1cb65eb" category="paragraph">內容可能<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>設定檔與運行後實際提交的內容不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block>腳本。若要查看已新增至資料分類的目前群組 ID 列表，請從「/opt/netapp/Datasense/tools/customer_configuration/data_providers」執行下列命令：</block>
-  <block id="7dccc66b259341d2970d5edbeeb8d5e2" category="summary">控制與組織儲存資源上的資料相關的成本。  NetApp Data Classification可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。</block>
-  <block id="a2d436ef8874297802b0056c55fd357e" category="doc">使用NetApp Data Classification查看組織中儲存的資料的治理詳細信息</block>
   <block id="f5ad955edde14220da150f74a97560e1" category="paragraph">控制與組織儲存資源上的資料相關的成本。  NetApp Data Classification可識別系統中陳舊資料、重複檔案和超大檔案的數量，以便您可以決定是否要刪除某些檔案或將某些檔案分層到成本較低的物件儲存中。</block>
   <block id="47f5b0791caa2598c4559bb5afa675a9" category="paragraph">您應該從這裡開始您的研究。從治理儀表板中，您可以選擇一個區域進行進一步調查。</block>
   <block id="b01528e1880fb637601a6af0e12e237f" category="paragraph">此外，如果您打算將資料從本地位置遷移到雲端，則可以在移動資料之前查看資料的大小以及其中是否有任何資料包含敏感資訊。</block>
@@ -1055,7 +1052,6 @@
   <block id="1c7e3b4981e1a369ab27fd559df0e974" category="list-text">*資料大小圖* - 根據大小將資料分類。</block>
   <block id="0d1f53f7df2c46c047e4cf95fc8bb8d7" category="admonition">如果您的任何資料來源實現了資料分層，則已駐留在物件儲存中的舊資料可能會在「資料年齡」圖中被識別。</block>
   <block id="6faa7316e918356238e87a35180d5a8c" category="summary">透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您還可以透過查看資料分類在您的資料中發現的類別和文件類型來獲得可見性。</block>
-  <block id="bedf3c3b5f85b6881b51c82e987aacb6" category="doc">使用NetApp Data Classification查看組織中儲存的私人資料的合規性詳細信息</block>
   <block id="b150bdb391d0c1a200595690e12ccafc" category="paragraph">透過查看組織中的個人資料 (PII) 和敏感個人資料 (SPII) 的詳細資訊來控制您的私人資料。您也可以透過查看NetApp Data Classification在您的資料中找到的類別和檔案類型來獲得可見性。</block>
   <block id="df3a98c599157e875757f5737769d82a" category="paragraph">預設情況下，資料分類儀表板顯示所有系統和資料庫的合規性資料。若要僅查看部分系統的數據，請選擇它們。</block>
   <block id="77c3a6438f91ef76936e32e87dfaf3e0" category="inline-image-macro">資料分類儀表板的螢幕截圖</block>
@@ -1191,8 +1187,6 @@
   <block id="0af1d9f272de63befefd69f441dc7fab" category="summary">完成幾個步驟即可在沒有網路存取的本機網站的 Linux 主機上安裝NetApp Data Classification- 也稱為「私有模式」。這種類型的安裝非常適合您的安全網站。</block>
   <block id="365a447377f6e5c0e423f1aee2b9e99f" category="doc">在沒有網路存取的 Linux 主機上安裝NetApp Data Classification</block>
   <block id="f02ba335dcb9bba391d04f5b63ec3ba5" category="paragraph">在沒有網路存取權限的本機站點的 Linux 主機上安裝NetApp Data Classification稱為_私有模式_。這種安裝類型使用安裝腳本，與NetApp Console SaaS 層沒有連線。</block>
-  <block id="3b006f168913328a437d3c0753b36568" category="summary">要在您的網路中的 Linux 主機或具有 Internet 存取權限的雲端中的 Linux 主機上部署NetApp Data Classification，您需要在您的網路或雲端中手動部署 Linux 主機。</block>
-  <block id="7ba5242ab2a6cd2ccc28d2e99cbcf3a3" category="doc">在可存取網際網路的主機上安裝NetApp Data Classification</block>
   <block id="04c9a5a89561cb946041a3696037c669" category="paragraph">如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則本機安裝是個不錯的選擇。這不是必需的。無論選擇哪一種安裝方法，軟體的功能都是相同的。</block>
   <block id="e8562561fd690a579bf484d92c56900a" category="inline-link-macro">了解如何檢查您的 Linux 主機是否已準備好安裝資料分類</block>
   <block id="d80ccf73602d462b3c75179b8666d350" category="paragraph">資料分類安裝腳本首先檢查系統和環境是否滿足所需的先決條件。如果所有先決條件都滿足，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。<block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block> 。</block>
@@ -1211,7 +1205,6 @@
   <block id="0c2ece8552f22362671f28b71520f912" category="paragraph">您還需要一個符合以下條件的 Linux 系統<block ref="a2ec304d11350e1ba44149ab8f817c68" category="inline-xref-macro-rx"></block>。</block>
   <block id="5d293a2c666c5eead9a1aa1764a54149" category="paragraph-title"><block ref="05b2444faffd66d76e88602ea7dd353f" category="inline-image-macro-rx" type="image"></block>下載並部署資料分類</block>
   <block id="3f9b883796ce93e6532e3eaa51a72a1e" category="paragraph">從NetApp支援網站下載雲端資料分類軟體，並將安裝程式檔案複製到您打算使用的 Linux 主機。然後啟動安裝精靈並依照指示部署資料分類實例。</block>
-  <block id="4cafc02a81b4bd1b606dfca8df731420" category="paragraph">您需要先安裝控制台代理，然後才能安裝和使用資料分類。在大多數情況下，您可能會在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="a15e4a30c99c44d85395e2a410c9f061" category="inline-link-rx"></block>，但有些情況下您需要立即設定一個。</block>
   <block id="4e19f66e9518a806557a0e193973e8f0" category="paragraph">若要在您的雲端提供者環境中建立一個，請參閱<block ref="063a55799f8d644bc7ac566504e81809" category="inline-link-rx"></block>，<block ref="d06e67507fcb22c356889f00d5b444fe" category="inline-link-rx"></block> ， 或者<block ref="6805b3d46343d30ae27cc1503d8e2a50" category="inline-link-rx"></block>。</block>
   <block id="8fce3267a5255029e8b05cea0527894e" category="list-text">在 AWS 或Amazon FSx for ONTAP中的Cloud Volumes ONTAP中掃描資料時，您可以使用 AWS 中的控制台代理程式。</block>
   <block id="2244c8c0cb4961ee8fd3125b10b3182b" category="paragraph">可以使用任何這些雲端控制台代理程式來掃描本機ONTAP系統、 NetApp檔案共用和資料庫帳戶。</block>
@@ -1314,7 +1307,6 @@
   <block id="d4c51b5a828be356e15e6075078acbf3" category="paragraph">資料分類安裝程式安裝套件、註冊安裝並安裝資料分類。安裝可能需要 10 到 20 分鐘。</block>
   <block id="055e0d252fbbc82a23ab2191fb431592" category="paragraph">如果主機和控制台代理執行個體之間透過連接埠 8080 建立連接，您將在控制台的「資料分類」標籤中看到安裝進度。</block>
   <block id="0f6783da8066ed936cd9826db896cc6b" category="summary">規劃哪種NetApp Data Classification部署可以滿足您的需求。</block>
-  <block id="63424af77f3b27b0fb6e512608ff0069" category="doc">您應該使用哪種NetApp Data Classification部署？</block>
   <block id="8a627e808de2c30fa43886f0bdb6620c" category="paragraph">您可以透過不同的方式部署NetApp Data Classification。了解哪種方法可以滿足您的需求。</block>
   <block id="6598d8c3ced0847c96a82744bde57ec0" category="paragraph">資料分類可以透過以下方式部署：</block>
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">使用控制台在雲端部署</block>
@@ -1381,7 +1373,6 @@
   <block id="3d704d8a7dea04055fa8e435fb3ba4a4" category="section-title">查看目前排除列表</block>
   <block id="c7d8f30ac3731683a0f78fa59c0ec2f4" category="paragraph">內容可能<block ref="4a7b66d4befa0d10315241d623b44528" prefix=" " category="inline-code"></block>設定檔與運行後實際提交的內容不同<block ref="cb4115d511c44acda4b130ad06cd4322" prefix=" " category="inline-code"></block>腳本。若要查看已從資料分類掃描中排除的目前目錄列表，請從「/opt/netapp/Datasense/tools/customer_configuration/data_providers」執行下列命令：</block>
   <block id="f3a4a4108d04138afd67742e52521508" category="summary">NetApp Data Classification提供報告，您可以使用這些報告來更好地了解組織的資料隱私計畫的狀態。</block>
-  <block id="8cb9377eacae5c255741ade732bd7b9b" category="doc">查看NetApp Data Classification合規性報告</block>
   <block id="19a8e5adcfcf0495d2dd399bfdc8bb49" category="paragraph">預設情況下，資料分類儀表板顯示所有系統、資料庫和資料來源的合規性和治理資料。如果您想要查看僅包含部分系統資料的報告，您可以進行篩選以僅查看這些系統的資料。</block>
   <block id="2ffbb4d4b106c6402d19dceecdbdd3ac" category="list-text">只有當您對資料來源執行完整分類掃描時，才可取得合規性報告。已進行僅映射掃描的資料來源只能產生資料映射報告。</block>
   <block id="49e4565ecb975105c89d40403267b6a2" category="list-text">NetApp無法保證資料分類識別的個人資料和敏感個人資料 100% 的準確性。您應該始終透過查看數據來驗證資訊。</block>
@@ -1565,7 +1556,6 @@
   <block id="cb95847988547647f53dba4f37025693" category="list-text">確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。</block>
   <block id="0079344bb0661607100d432cde92e6a5" category="list-text">在設定頁面上，選擇*設定*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。</block>
   <block id="e90444baa59788bd6471cf703b12a16e" category="summary">您可以透過查看資料調查頁面中的詳細資訊來調查來自您組織的資料。查看治理儀表板後，您可以在這裡繼續您的研究。</block>
-  <block id="4c257f0482d661d1986f92f057e1c581" category="doc">使用NetApp Data Classification調查組織中儲存的數據</block>
   <block id="8d6bb2090f1e71e8cabff59cd97a6f5f" category="admonition">要從調查頁面獲得見解，您必須對資料來源執行完整的分類掃描。僅進行過映射掃描的資料來源不會顯示檔案層級的詳細資訊。</block>
   <block id="adbc89b69fed239a539f916b53592ab9" category="section-title">資料調查結構</block>
   <block id="7fc46b0c25bc13694774a84c4a0f5b4b" category="paragraph">數據調查頁面將數據分類到三個選項卡：</block>
@@ -2844,4 +2834,16 @@
   <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">版本 1.53</block>
   <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時，它們定義了檔案或資料夾的權限。如果群組 ID 未設定為「對組織開放」權限級別，您可以將該權限新增至 GID，以便任何附加了該 GID 的檔案和資料夾都被視為「對組織開放」。</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
+  <block id="4282eab95027b5795f33f16206ffbe95" category="doc">將 Active Directory 與 NetApp Data Classification 整合</block>
+  <block id="13d159291ae0f432f0031d28f8ed0586" category="summary">透過 Data Classification ，您可以識別過時資料、重複檔案和大型檔案，然後將其移除或分層至成本較低的物件儲存，藉此降低儲存成本</block>
+  <block id="6cd67c7d882f38bf52a99bdb4815ddc3" category="doc">使用 NetApp Data Classification 檢視有關組織資料的治理詳細資訊</block>
+  <block id="740130010cdf32a556c978b36ce6beea" category="doc">使用 NetApp Data Classification 檢視有關組織私人資料的合規性詳細資訊</block>
+  <block id="edeec72b34b3e27ee041395026bae83e" category="summary">若要在您的網路中的 Linux 主機或具有網際網路存取權的雲端 Linux 主機上安裝 NetApp Data Classification，您需要在您的網路或雲端中手動部署該 Linux 主機。</block>
+  <block id="2bd444b4fd657b2b6e6cad3cc0ac0a80" category="doc">在具有網際網路存取的主機上安裝 NetApp Data Classification</block>
+  <block id="68e669f4da53f4693708a3699bcf0534" category="paragraph">若要在您的網路中的 Linux 主機或具有網際網路存取權的雲端 Linux 主機上部署 NetApp Data Classification，您需要在您的網路或雲端中手動部署該 Linux 主機。</block>
+  <block id="9436d99a3557748cc8540f514bc0f9ff" category="paragraph">在安裝和使用 Data Classification 之前，需要先安裝 Console 代理程式。大多數情況下，在嘗試啟動 Data Classification 之前，您應該已經設定好了 Console 代理程式。</block>
+  <block id="27e351ceaea88bb8b92ed4c0302d28fd" category="doc">選擇您的 NetApp Data Classification 部署方式</block>
+  <block id="f15acb0d4fe22bbfd7a457efbbb0c466" category="doc">在 NetApp Data Classification 中檢視合規報告</block>
+  <block id="d8a9eef33f1bf33c7498d8f206f3d120" category="doc">使用 NetApp Data Classification 調查您組織內的資料</block>
+  <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">變更 NetApp Data Classification 中的掃描設定</block>
 </blocks>

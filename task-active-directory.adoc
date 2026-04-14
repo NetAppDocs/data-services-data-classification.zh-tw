@@ -4,7 +4,7 @@ permalink: task-active-directory.html
 keywords: active directory, ad, data sense, cloud data sense 
 summary: 您可以將全域 Active Directory 與NetApp Data Classification集成，以增強資料分類報告有關文件擁有者以及哪些使用者和群組有權存取您的文件的結果。 
 ---
-= 將您的 Active Directory 與NetApp Data Classification集成
+= 將 Active Directory 與 NetApp Data Classification 整合
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
