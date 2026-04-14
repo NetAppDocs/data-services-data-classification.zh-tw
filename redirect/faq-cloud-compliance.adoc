@@ -1,5 +1,5 @@
 ---
-permalink: faq-cloud-compliance.adoc 
+permalink: faq-cloud-compliance.html 
 redirect: data-services-data-classification/faq-data-classification.html 
 ---
 = 
