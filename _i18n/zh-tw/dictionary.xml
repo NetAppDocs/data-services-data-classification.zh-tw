@@ -350,7 +350,6 @@
   <block id="e3039a8cdad0a73851473ddb07dde2db" category="paragraph"><block ref="e3039a8cdad0a73851473ddb07dde2db" category="inline-image-macro-rx" type="image"></block></block>
   <block id="0fcbb838b28fe6620124c2e3523d9aec" category="paragraph">請注意預設實例的以下幾點：</block>
   <block id="51289cc570c497db655052573fd52ce4" category="inline-link">m6i.4xlarge 實例</block>
-  <block id="cd58258f239a8600b9d2702d8474b7ba" category="list-text">在 AWS 中，資料分類在<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block>帶有 500 GiB GP2 磁碟。作業系統映像是 Amazon Linux 2。在 AWS 中部署時，如果您要掃描少量數據，則可以選擇較小的執行個體大小。</block>
   <block id="d4167e5918d44a2511d9c29b74d9811f" category="inline-link-macro">Standard_D16s_v3 VM</block>
   <block id="ba9e8ffa00e4ec6e8fd6ad39395b0771" category="list-text">在 Azure 中，資料分類在<block ref="258fa0e906df18ccf945022280cc0721" category="inline-link-macro-rx"></block>帶有 500 GiB 磁碟。作業系統映像是 Ubuntu 22.04。</block>
   <block id="f62345014eb3b94916730d5fa4eb623f" category="inline-link-macro">n2-standard-16 虛擬機</block>
@@ -371,7 +370,6 @@
   <block id="1a7c4f8acb1e42cdd7c2f34894fc2a2a" category="cell">大（預設）</block>
   <block id="f1fec8e9e1c0fb72e2b217fcc55b8ae5" category="cell">16 個 CPU、64 GB RAM、500 GiB SSD</block>
   <block id="ea1a46649fa6479f8f6b7adefbb4450a" category="cell">最多可掃描 2.5 億個文件。</block>
-  <block id="804b3eb7f21fe46f64e94599ec406b5d" category="paragraph">在 Azure 或 GCP 中部署資料分類時，如果您想使用較小的實例類型，請發送電子郵件至 ng-contact-data-sense@netapp.com 尋求協助。</block>
   <block id="210aaa57065cbe07de752e162872e005" category="section-title">資料分類掃描的工作原理</block>
   <block id="86e78fffe44861a160c4cf918a51d508" category="paragraph">從高層次來看，資料分類掃描的工作原理如下：</block>
   <block id="68b79e824b76880b5977d460b5a6cf96" category="list-text">您在控制台中部署資料分類實例。</block>
@@ -516,7 +514,6 @@
   <block id="dde19a0f40a28ec93e840744c9acff6b" category="section-title">資料分類需要什麼類型的實例或虛擬機器？</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署在雲端</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">什麼時候<block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
-  <block id="7c27816a1e01fb6a59e4cfb7c34a2547" category="list-text">在 AWS 中，資料分類在具有 500 GiB GP2 磁碟的 m6i.4xlarge 執行個體上執行。您可以在部署期間選擇較小的實例類型。</block>
   <block id="41009856b6a3ebfc92ee460b5d8cd587" category="list-text">在 Azure 中，資料分類在具有 500 GiB 磁碟的 Standard_D16s_v3 VM 上執行。</block>
   <block id="934ed7b265f7f163e5eda8f780809fa6" category="list-text">在 GCP 中，資料分類在具有 500 GiB 標準持久磁碟的 n2-standard-16 VM 上運作。</block>
   <block id="cac4c6c3e3aab4c73ea23379444f4211" category="section-title">我可以在自己的主機上部署資料分類嗎？</block>
@@ -605,8 +602,6 @@
   <block id="b30d2f4e379d4d1d15b42fb01207e52c" category="summary">資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，建議您使用具有「大型」特性的系統以實現全部功能。</block>
   <block id="abf286473c09b28744e63e974cf9988b" category="doc">支援的NetApp Data Classification實例類型</block>
   <block id="6daeedd88ba8cb7688391f66dd283257" category="paragraph">NetApp Data Classification軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，我們建議您使用具有「大型」特性的系統以實現全部功能。</block>
-  <block id="e3d9501cf5bf97e937eec87d87b8575b" category="inline-link-macro">了解這些限制</block>
-  <block id="a5ed42633f6328596e09b85b7f23e651" category="paragraph">您可以在較少 CPU 和較少 RAM 的系統上部署資料分類，但在使用這些功能較弱的系統時會受到一些限制。<block ref="6a2df54a359e7ff07fa6fb48e3814fc6" category="inline-link-macro-rx"></block> 。</block>
   <block id="31bcdb40fe40bdf5535d17bbb6b1231c" category="paragraph">在下表中，如果標記為「預設」的系統在您安裝資料分類的區域中不可用，則將部署表中的下一個系統。</block>
   <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">AWS 執行個體類型</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">實例類型</block>
@@ -616,14 +611,6 @@
   <block id="3a69b34ce86dacb205936a8094f6c743" category="cell">大的</block>
   <block id="eec0d212c1750829ae380457eae9d24d" category="inline-link">m6i.4xlarge</block>
   <block id="a0663cb1844f1b3415ad47f3e1336565" category="cell"><block ref="4a1901a74409198712b3543e7da252d5" category="inline-link-rx"></block>（預設）m6a.4xlarge m5a.4xlarge m5.4xlarge m4.4xlarge</block>
-  <block id="87f8a6ab85c9ced3702b4ea641ad4bb5" category="cell">中等的</block>
-  <block id="ae0bb774c8ff14b3dcc932f311aaacb7" category="cell">8 個 CPU、32 GB RAM、200 GiB SSD</block>
-  <block id="74b1ff02462cd25206c932a6e717f618" category="inline-link">m6i.2xlarge</block>
-  <block id="c6f3d0ce2f348118098491bd4e596968" category="cell"><block ref="d3d71aa1fb316d99a8a4d2c1c360ebef" category="inline-link-rx"></block>（預設）m6a.2xlarge m5a.2xlarge m5.2xlarge m4.2xlarge</block>
-  <block id="2660064e68655415da2628c2ae2f7592" category="cell">小的</block>
-  <block id="4d4d090716714e5940e9220554e56673" category="cell">8 個 CPU、16 GB RAM、100 GiB SSD</block>
-  <block id="31f5c89df71ec769af1bb972a418e35d" category="inline-link">c6a.2xlarge</block>
-  <block id="fdf22b4a55e52f224df3e72ab9eb5ca8" category="cell"><block ref="fa55dc5c8a0289d3eee586f1fb616e44" category="inline-link-rx"></block>（預設）c5a.2xlarge c5.2xlarge c4.2xlarge</block>
   <block id="254c926efe222a9cced66b6753a3b70c" category="section-title">Azure 執行個體類型</block>
   <block id="7c6b159592aa05d7d8934685f5b0c4c8" category="cell">32 個 CPU、128 GB RAM、OS 磁碟（2,048 GiB，最小吞吐量 250 MB/s）和資料磁碟（1 TiB SSD，最小吞吐量 750 MB/s）</block>
   <block id="02201d429f7390acabd29e5c0c6e22e2" category="inline-link">Standard_D32_v3</block>
@@ -2846,4 +2833,6 @@
   <block id="f15acb0d4fe22bbfd7a457efbbb0c466" category="doc">在 NetApp Data Classification 中檢視合規報告</block>
   <block id="d8a9eef33f1bf33c7498d8f206f3d120" category="doc">使用 NetApp Data Classification 調查您組織內的資料</block>
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">變更 NetApp Data Classification 中的掃描設定</block>
+  <block id="d45f223b29c54a03c611d6faaae58cf9" category="list-text">在 AWS 中，Data Classification 運行在<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block>上，配備 500 GiB GP2 磁碟。作業系統映像為 Amazon Linux 2。</block>
+  <block id="5d8b6e341fd15d744bee3c27b7ca8a68" category="list-text">在 AWS 中，Data Classification 運行在配備 500 GiB GP2 磁碟的 m6i.4xlarge 執行個體上。</block>
 </blocks>

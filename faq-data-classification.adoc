@@ -276,7 +276,7 @@ NetApp Console允許使用者在幾乎任何地方掃描和報告系統，包括
 
 什麼時候link:task-deploy-cloud-compliance.html["部署在雲端"]：
 
-* 在 AWS 中，資料分類在具有 500 GiB GP2 磁碟的 m6i.4xlarge 執行個體上執行。您可以在部署期間選擇較小的實例類型。
+* 在 AWS 中，Data Classification 運行在配備 500 GiB GP2 磁碟的 m6i.4xlarge 執行個體上。
 * 在 Azure 中，資料分類在具有 500 GiB 磁碟的 Standard_D16s_v3 VM 上執行。
 * 在 GCP 中，資料分類在具有 500 GiB 標準持久磁碟的 n2-standard-16 VM 上運作。
 
