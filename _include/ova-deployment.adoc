@@ -1,0 +1,6 @@
+= 
+:allow-uri-read: 
+
+
+
+TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化的link:task-deploy-ova.html["使用 OVA 進行部署"]。

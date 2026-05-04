@@ -67,11 +67,9 @@
   <block id="672224b23e2b17f35b0d4bf8aa4f1c43" category="inline-image-macro">顯示如何配置已儲存的查詢並儲存它的螢幕截圖。</block>
   <block id="47a922638f32c230008676e9ffb143c9" category="paragraph"><block ref="47a922638f32c230008676e9ffb143c9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="02d6fe4579b4d035f1741bff636a2bf4" category="paragraph">建立搜尋或策略後，您可以在**已儲存的查詢**標籤中查看它。</block>
-  <block id="2808185c0a48de3cd5dcc0d92f453531" category="doc">版本 1.35</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">掃描StorageGRID數據</block>
   <block id="3c857514c210414567713ffec9077aff" category="paragraph">BlueXP classification支援掃描StorageGRID中的資料。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">有關詳細信息，請參閱<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
-  <block id="5413a43995a4a97a249b7b24fbf3e785" category="doc">版本 1.36</block>
   <block id="44b53ed30a4c420b95b8adba575b84a6" category="paragraph-title">支援 RHEL 9.4</block>
   <block id="409886e91bb1c98ce7537a6ea025aa8e" category="paragraph">此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。</block>
   <block id="a851e95484895c6e743c9be7755facd2" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2、9.3 和 9.4。</block>
@@ -79,7 +77,6 @@
   <block id="ff7cd37eefd2efb9fa7f8feccf820e44" category="paragraph">詳細了解<block ref="7abbc5be80bdd5f0d4a0233853932b40" category="inline-link-rx"></block>。</block>
   <block id="7062dd46798946172bc9078744756dfc" category="paragraph-title">改進的掃描性能</block>
   <block id="8455b67ff73ad2f75c922d81e0449780" category="paragraph">此版本提供了改進的掃描效能。</block>
-  <block id="c1922490c576eff789b323f98c667589" category="doc">版本 1.37</block>
   <block id="e5450ac8535429efc574bc7d9388dd9a" category="paragraph">此BlueXP classification版本包括以下更新。</block>
   <block id="415b27bc5d78b639dc8c74a6e8f93e19" category="paragraph-title">支援 RHEL 8.10</block>
   <block id="52ff638e6cd24bd3aebc0578d753181c" category="paragraph">此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v8.10 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。</block>
@@ -88,9 +85,7 @@
   <block id="ed86b5b4b59dfed3be7d90507a982e16" category="paragraph">詳細了解<block ref="8a553bdd7b5187af06654af7127bede8" category="inline-link-rx"></block>。</block>
   <block id="a7e418c0221e06b9bb3fa8ebc082ece2" category="paragraph-title">支持 NFS v4.1</block>
   <block id="f1a9c2f106d86fe27271e4f8f0c0bd59" category="paragraph">此版本除了支援先前支援的版本外，還提供對 NFS v4.1 的支援。</block>
-  <block id="5ae300808387123005a76abbd5a99f46" category="doc">版本 1.38</block>
   <block id="074f06822cc9864b1be34066c52ec21d" category="paragraph">此BlueXP classification版本包括一般改進和錯誤修復。</block>
-  <block id="0a401367ec8a2cd84bb197e6d12c99af" category="doc">版本 1.39</block>
   <block id="1a58f9988f87b599ed71b9c7430034c2" category="paragraph">此BlueXP classification版本更新了資料調查報告的匯出流程。此匯出更新對於對您的資料執行額外分析、對資料建立額外視覺化或與他人分享資料調查結果很有用。</block>
   <block id="a4a7057d917e03803441c79badd6d519" category="paragraph">以前，數據調查報告匯出限制為 10,000 行。在此版本中，限制已被取消，以便您可以匯出所有資料。此變更使您能夠從數據調查報告中匯出更多數據，從而為您的數據分析提供更大的靈活性。</block>
   <block id="72fa9e7ff6f311a170ad8d720dff3f2f" category="paragraph">您可以選擇工作環境、磁碟區、目標資料夾以及 JSON 或 CSV 格式。匯出的檔案名稱包含時間戳，以協助您識別資料的匯出時間。</block>
@@ -141,19 +136,15 @@
   <block id="70c351474b2828e2c0dff97793686bc4" category="paragraph-title">提高分類模型的準確性</block>
   <block id="19c8ed5c1b936813e368bc7d83dbccf2" category="inline-link-macro">預定義類別</block>
   <block id="3c83d9ffa8db579e805de307f057c519" category="paragraph">機器學習模型的準確率<block ref="4258f204d4b8f149538aa226ed3589d3" category="inline-link-macro-rx"></block>提高了11%。</block>
-  <block id="4fce1192bdd8d2ff506dd6d380e85fdd" category="doc">版本 1.41</block>
   <block id="3bc103100363af5c774f4610f1cd7eec" category="paragraph">此BlueXP classification版本包括一般改進和錯誤修復。它還包括：</block>
   <block id="52c386a5357f2ccbc556ebac8ae2b5f2" category="paragraph-title">掃描狀態</block>
   <block id="6a5c0bfd72f9b6c51f4f17f0d32a0bf5" category="paragraph">BlueXP classification追蹤磁碟區上的初始映射和分類掃描的即時進度。單獨的進度條追蹤映射和分類掃描，顯示掃描文件總數的百分比。您也可以將滑鼠停留在進度條上以查看已掃描的檔案數和檔案總數。追蹤掃描狀態可以更深入地了解掃描進度，使您能夠更好地規劃掃描並了解資源分配。</block>
   <block id="dea24de819351c63f66685576d21ee25" category="paragraph">若要查看掃描狀態，請導覽至BlueXP classification中的**配置**，然後選擇**工作環境配置**。每卷的進度均以行顯示。</block>
-  <block id="33fc2a8f6921fec02571495993aa2c6c" category="doc">版本 1.42</block>
-  <block id="83962582dc3c189ba60063fe7990755c" category="paragraph">此次BlueXP classification發布包括：</block>
   <block id="2dcf334efa4f886393cac0e44ff5a917" category="paragraph-title">工作環境批次掃描</block>
   <block id="7c021042892d25e3e5d4271749e03344" category="paragraph-title">本地下載調查報告</block>
   <block id="5914525550e0efce454828b3fc5f9313" category="paragraph">BlueXP classification支援將資料調查報告下載到本地以便在瀏覽器中查看。如果選擇本機選項，資料調查僅以 CSV 格式提供，並且僅顯示前 10,000 行資料。</block>
   <block id="6b41c846432704bbeebdc71cd92e0ac2" category="inline-link-macro">使用BlueXP classification調查組織中儲存的數據</block>
   <block id="e5ec12d2090a6862ed376344a123c006" category="paragraph">有關更多信息，請參閱<block ref="fceb47647e62ca77cd0675b07a84c97b" category="inline-link-macro-rx"></block> 。</block>
-  <block id="67840d2b3ccd99d7c6db2904273f95ef" category="doc">版本 1.43</block>
   <block id="3e05db4c28329af069ba30406ce8330c" category="paragraph-title">優先進行分類掃描</block>
   <block id="4aff63c206df7556bccc48f3a5f50de4" category="paragraph">資料分類除了支援僅映射掃描之外，還支援對映射和分類掃描進行優先排序的功能，可讓您選擇先完成哪些掃描。在掃描開始期間和開始之前，支援對地圖和分類掃描進行優先排序。如果您選擇在掃描過程中確定掃描優先級，則映射掃描和分類掃描都會優先處理。</block>
   <block id="f5d1ea19c8b9424efdf2f986ffd4074f" category="paragraph">有關更多信息，請參閱<block ref="b9518738dcb31100f52b6bb549f809dc" category="inline-link-macro-rx"></block> 。</block>
@@ -169,8 +160,6 @@
   <block id="1005b3a447fe9caf1ce373cf96b4dc01" category="inline-link-macro">**已儲存的搜尋**</block>
   <block id="7d05e5a22d1961e95b7be92d35164378" category="paragraph">**政策** 選項卡已重新命名<block ref="8d1bca00b0b16766f87fd78ec3ac185e" category="inline-link-macro-rx"></block>。功能沒有改變。</block>
   <block id="2e2e722b53fe801ed6bcd1713f8325ac" category="paragraph-title">將掃描事件傳送至審核頁面</block>
-  <block id="0d01ca23121427aff206ecc678cb7af3" category="inline-link-macro">NetApp Console 稽核頁面</block>
-  <block id="0fddd3e20389e20ca1c63de5412406ae" category="paragraph">資料分類支援發送分類事件（掃描啟動時和掃描結束時）到<block ref="3dcf10816a01bda1b4320932f26d59f3" category="inline-link-macro-rx"></block>。</block>
   <block id="ddba4621d4e9a4c39c38ef2131834760" category="list-title">安全性更新</block>
   <block id="0a39c7bc14a0f00de22f1ead79c18b0c" category="list-text">Keras 套件已更新，緩解了漏洞（BDSA-2025-0107 和 BDSA-2025-1984）。</block>
   <block id="408f8b982d641a307784a27c0fb6d9c9" category="list-text">Docker 容器配置已更新。容器不再有權利存取主機的網路介面來製作原始網路封包。透過減少不必要的訪問，此更新可減輕潛在的安全風險。</block>
@@ -178,7 +167,6 @@
   <block id="38942def5d8bae857c7eab12e7216c36" category="paragraph">已經實施了程式碼增強，以減少 RAM 使用率並提高資料分類的整體效能。</block>
   <block id="2a81eb3b4a7f22fb1fdb159561b71f3f" category="paragraph-title">錯誤修復</block>
   <block id="223594359ca2e5c0c959aa756dea2d50" category="paragraph">導致StorageGRID掃描失敗、調查頁面過濾選項無法載入以及無法下載大容量評估的資料發現評估的錯誤已修復。</block>
-  <block id="1c4322a2b157ac1326426ebdbd680c74" category="doc">版本 1.44</block>
   <block id="c7ea7ba68a180dd7fffb65d260820bdf" category="paragraph-title">改進了治理儀表板的更新時間</block>
   <block id="4a225b50559fc3e5c91e7a224bca4f82" category="paragraph">治理儀表板各個組件的更新時間已改善。下表顯示了每個組件的更新頻率。</block>
   <block id="2cb05e4bb7830be982f0922fed86b4cd" category="cell">成分</block>
@@ -203,8 +191,6 @@
   <block id="98b92205e576b5e6498a01750fffbf6b" category="paragraph-title">性能和安全性改進</block>
   <block id="890d5712449921f1a6ffa08636045ac2" category="paragraph">已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。</block>
   <block id="cb000a9ed4aba8f6a1db1f518019d44e" category="paragraph">Redis 已升級，以提高BlueXP classification的可靠性。BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。</block>
-  <block id="d0169e5c24cd4c5e05dcb7edb4ca10d7" category="doc">版本 1.45</block>
-  <block id="8321b9867214f5caa9d5a37197549cfb" category="paragraph">此BlueXP classification版本包括優化資源利用率的程式碼變更以及：</block>
   <block id="8f993d1847870bf5334f9e8a709029c8" category="paragraph-title">改進了新增文件共用進行掃描的工作流程</block>
   <block id="7363f98210e80281886d9b88b644899c" category="paragraph">將文件共享新增至文件共享組的工作流程已經簡化。該流程現在還根據身份驗證類型（Kerberos 或 NTLM）區分 CIFS 協定支援。</block>
   <block id="628bc6ea752b2d2bd10bc4f22b8cfcca" category="inline-link-macro">掃描檔案共享</block>
@@ -213,15 +199,12 @@
   <block id="4c59149345d32f10d4c1edb221d77028" category="paragraph">現在您可以在「調查」標籤中查看有關捕獲的文件的文件所有者的更多資訊。在「調查」標籤中查看文件的元資料時，找到文件擁有者，然後選擇「查看詳細資料」以查看使用者名稱、電子郵件和 SAM 帳戶名稱。您也可以查看該用戶擁有的其他物品。此功能僅適用於具有 Active Directory 的工作環境。</block>
   <block id="499dd7659f4fa7b600ca3796c449e41b" category="inline-link-macro">調查組織中儲存的數據</block>
   <block id="726bb63ef50725c7e3c4766906388acd" category="paragraph">有關更多信息，請參閱<block ref="26029df2267a3a60cd67c1340e62ae48" category="inline-link-macro-rx"></block> 。</block>
-  <block id="7a4e65e1bd3f1685ea059c893a13cb58" category="doc">版本 1.46</block>
-  <block id="98f52421b10c8b076970cd9d4bc2932c" category="paragraph">此資料分類版本包括錯誤修復和以下更新：</block>
   <block id="2c3661dfa2b24a2bf7320699cd536d69" category="paragraph-title">審計頁面中增強的掃描事件洞察</block>
   <block id="56693a88c5f83646349fbcd49bc5c045" category="paragraph">審計頁面現在支援對BlueXP classification的掃描事件的增強洞察。審計頁面現在顯示系統掃描的開始時間、系統狀態以及任何問題。共享和系統的狀態僅適用於映射掃描。</block>
   <block id="00b752fcc4ff0f02c4a53ddfe7ca85f1" category="inline-link-macro">監控NetApp Console操作</block>
   <block id="2602ef05ceb5e5b51fe554db44e59c2c" category="paragraph">有關審計頁面的更多信息，請參閱<block ref="33e0fa7818f83bbe32f6e9c2e830952c" category="inline-link-macro-rx"></block>。</block>
   <block id="e5d2f68147d287044a7fffa2d0926eae" category="paragraph-title">支援 RHEL 9.6</block>
   <block id="f1513d7b9b8ef1acb75bb450ddd12a6c" category="paragraph">此版本增加了對 Red Hat Enterprise Linux v9.6 的支持，用於手動本地安裝BlueXP classification，包括暗站部署。</block>
-  <block id="ffc4cf2b04c0381567893ed4b4045ccf" category="doc">版本 1.47</block>
   <block id="6f36bf9a9811b172de79706eb4020697" category="paragraph-title">BlueXP classification現為NetApp Data Classification</block>
   <block id="5aac44f6ff056f1c6c2f526f52fa4c03" category="paragraph">BlueXP classification已重新命名為NetApp Data Classification。除了重命名之外，使用者介面也得到了增強。</block>
   <block id="bc2fe31b1e2682a9a79513d792e9c721" category="paragraph-title">BlueXP現在是NetApp Console</block>
@@ -601,8 +584,6 @@
   <block id="763275034b3bde5ad4f0fb074a35e741" category="cell">重複項</block>
   <block id="b30d2f4e379d4d1d15b42fb01207e52c" category="summary">資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，建議您使用具有「大型」特性的系統以實現全部功能。</block>
   <block id="abf286473c09b28744e63e974cf9988b" category="doc">支援的NetApp Data Classification實例類型</block>
-  <block id="6daeedd88ba8cb7688391f66dd283257" category="paragraph">NetApp Data Classification軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上運作。在雲端部署資料分類時，我們建議您使用具有「大型」特性的系統以實現全部功能。</block>
-  <block id="31bcdb40fe40bdf5535d17bbb6b1231c" category="paragraph">在下表中，如果標記為「預設」的系統在您安裝資料分類的區域中不可用，則將部署表中的下一個系統。</block>
   <block id="c050baa4e510e3ce3e02b5da38a1c517" category="section-title">AWS 執行個體類型</block>
   <block id="1e4f0991fe8c17eeb30a08a567b6faeb" category="cell">實例類型</block>
   <block id="9b751021fe03877034959f96cd4215c8" category="cell">32 個 CPU、128 GB RAM、1 TiB gp3 SSD</block>
@@ -1263,7 +1244,6 @@
   <block id="532b2291afa0585aed0b7f83e343086f" category="inline-xref">權限和連線性</block>
   <block id="6bbd76aed7b9a40fed8eed718cd10a57" category="list-text">驗證您的離線環境是否符合要求<block ref="95ceef71f2a9d15ceaa6dd17e75c1dd0" category="inline-xref-macro-rx"></block>。</block>
   <block id="9d2169c1c2855b78a7aeaa4f42d27dc7" category="inline-link">NetApp支援站點</block>
-  <block id="c9a87a7f951d4e7d4680cb07a4c60b9f" category="list-text">從下載資料分類軟體<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>。您應該選擇的檔案名稱為 *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz*。</block>
   <block id="bbdb5f5f026c712f36de4a68700316f5" category="list-text">將安裝程式檔案複製到您打算使用的 Linux 主機（使用<block ref="8a444a43bdf534c0c6338bb7809659b3" prefix=" " category="inline-code"></block>或其他方法）。</block>
   <block id="65a0409250bc34ad7aed301586de5abc" category="list-text">在主機上解壓縮安裝程式文件，例如：</block>
   <block id="f74ff5e319b8679db4cb8aab068461b0" category="list-text">在控制台中，選擇*治理&gt;分類*。</block>
@@ -1294,17 +1274,12 @@
   <block id="d4c51b5a828be356e15e6075078acbf3" category="paragraph">資料分類安裝程式安裝套件、註冊安裝並安裝資料分類。安裝可能需要 10 到 20 分鐘。</block>
   <block id="055e0d252fbbc82a23ab2191fb431592" category="paragraph">如果主機和控制台代理執行個體之間透過連接埠 8080 建立連接，您將在控制台的「資料分類」標籤中看到安裝進度。</block>
   <block id="0f6783da8066ed936cd9826db896cc6b" category="summary">規劃哪種NetApp Data Classification部署可以滿足您的需求。</block>
-  <block id="8a627e808de2c30fa43886f0bdb6620c" category="paragraph">您可以透過不同的方式部署NetApp Data Classification。了解哪種方法可以滿足您的需求。</block>
-  <block id="6598d8c3ced0847c96a82744bde57ec0" category="paragraph">資料分類可以透過以下方式部署：</block>
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">使用控制台在雲端部署</block>
   <block id="61e7b2134b2bd5446d16fd5d98582544" category="list-text"><block ref="718e5bf832b7dc2d474175d5c8eba439" category="inline-link-macro-rx"></block> 。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link-macro">在可以存取網際網路的 Linux 主機上安裝</block>
   <block id="08858c16551aba16c4305089845b505e" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block> 。在您的網路中的 Linux 主機上或雲端中的 Linux 主機上安裝資料分類，前提是該主機可以存取網際網路。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇，儘管這不是必需的。</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">在沒有網際網路存取的本機站點的 Linux 主機上安裝</block>
   <block id="53732c49c909038650b435483c435d88" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>，也稱為_私人模式_。這種安裝類型使用安裝腳本，與控制台 SaaS 層沒有連接。</block>
-  <block id="967c2f231d9eedd4e80f0b4308527637" category="paragraph">無論是在有網路存取的 Linux 主機上安裝，或是在沒有網路存取的 Linux 主機上進行本機安裝，都會使用安裝腳本。腳本首先檢查系統和環境是否符合先決條件。如果滿足先決條件，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。</block>
-  <block id="5163ac50e7f6c9b31163f15317256ad2" category="inline-link-macro">檢查您的 Linux 主機是否已準備好安裝資料分類</block>
-  <block id="0864d0b8a39fc12ae74c4773b2a77ebb" category="paragraph">請參閱<block ref="52b086fa7b78412e3e0a859256e795c9" category="inline-link-macro-rx"></block> 。</block>
   <block id="e1e216bf40960616935ca16f6eb23050" category="summary">如果您希望NetApp Data Classification排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將排除這些目錄中的掃描資料。</block>
   <block id="24559753da5c8b45ef15b1ad5d8f01de" category="doc">從NetApp Data Classification掃描排除特定目錄</block>
   <block id="7d9aed9048d0f40617358d6c89d937c2" category="paragraph">如果您希望NetApp Data Classification從掃描中排除特定目錄，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將從掃描中排除這些目錄。</block>
@@ -2192,14 +2167,12 @@
   <block id="a1fe52ea216874a5214f41ae7e5bbd63" category="section-title">2024年10月10日</block>
   <block id="28dc8814bfe656bc8e29052d1508b999" category="section-title">2024年9月2日</block>
   <block id="d7cf77b2e56bc33512915804de4711b6" category="section-title">2024年8月5日</block>
-  <block id="3b506912c9fbc6e924c90fcd67f9e81d" category="section-title">版本 1.34</block>
   <block id="70d1ac1a529ac546d3e60b81ee464a1d" category="paragraph">此BlueXP classification版本包括以下更新。</block>
   <block id="44a73383773bebac3194e73bd06397a8" category="paragraph-title">從 CentOS 改為 Ubuntu</block>
   <block id="6a1611bc2c4a6c8c16154f81c0323dc2" category="paragraph">BlueXP classification已將其針對 Microsoft Azure 和 Google Cloud Platform (GCP) 的 Linux 作業系統從 CentOS 7.9 更新為 Ubuntu 22.04。</block>
   <block id="d70ebaa1f93a5c2b07653dd485593661" category="inline-link">在具有網際網路存取權限的Linux主機上安裝並準備Linux主機系統</block>
   <block id="6a69f78db41581cfd7a75502f076641e" category="paragraph">有關部署詳細信息，請參閱<block ref="bff73d8b740f372e10ebba82fd5cc0db" category="inline-link-rx"></block>。</block>
   <block id="65f1f74c15350fb3342360320ff8c717" category="section-title">2024年7月1日</block>
-  <block id="29ca6f4adc7aee37872328bb347b7543" category="section-title">版本 1.33</block>
   <block id="d61892207457d808cffbfc18b9dcd8ad" category="paragraph-title">支援 Ubuntu</block>
   <block id="0db04e76c6afbdb79f128758ee937013" category="paragraph">此版本支援 Ubuntu 24.04 Linux 平台。</block>
   <block id="b83927d03444ee961e834ea1c3b0581b" category="paragraph-title">地圖掃描收集元數據</block>
@@ -2211,17 +2184,14 @@
   <block id="9b28a6e87457a6a3bfb03009dcd0b84a" category="inline-link-macro">映射和分類掃描之間有什麼區別</block>
   <block id="5ea8b091093d54a8d17a734f5a2613d1" category="paragraph">有關詳細信息，請參閱<block ref="1f8ed6e5fe2de61322f9de0ebb8b7505" category="inline-link-macro-rx"></block> 。</block>
   <block id="e4aecca06323b10cc72f8605553dacea" category="section-title">2024年6月5日</block>
-  <block id="decdab3311a7d521fe764d5d580ddd35" category="section-title">版本 1.32</block>
   <block id="7910c8307cac3d62eca8ac0d42301b38" category="paragraph-title">配置頁面中的新映射狀態列</block>
   <block id="cfbaa8108dcd3c438f032a03ea5c380b" category="paragraph">此版本現在在設定頁面中顯示一個新的對應狀態列。新列可協助您識別映射是否正在運行、排隊、暫停或更多。</block>
   <block id="6195c7a1534de8abb0c4706e15d24a3c" category="inline-link">更改掃描設定</block>
   <block id="1f206e2cb955d5e4de5225f30ab20ee9" category="paragraph">有關狀態的解釋，請參閱<block ref="d5d0647f1bb783c2ee28e91247e20822" category="inline-link-rx"></block>。</block>
   <block id="93716955add4f66b2af685a33bac4789" category="section-title">2024年5月15日</block>
-  <block id="362a66c8caf141f86c11be1e2f936c77" category="section-title">版本 1.31</block>
   <block id="d1e72f4d21bb915d180e5f6d1e9d4264" category="paragraph-title">分類是BlueXP中的一項核心服務</block>
   <block id="e8c9a8c8c457fc72bf3b116575089845" category="paragraph">BlueXP classification現在作為BlueXP中的一項核心功能提供，每個連接器最多可免費掃描 500 TiB 的資料。無需分類許可或付費訂閱。由於我們將BlueXP classification功能的重點放在新版本掃描NetApp儲存系統上，因此某些舊功能將僅對先前已支付授權費用的客戶可用。當付費合約到期時，這些舊功能的使用將失效。</block>
   <block id="9c0269454c5c35ffc377aed6baf6d638" category="section-title">2024年4月1日</block>
-  <block id="e6a70634d4a42783e6d5918eff0a0ab6" category="section-title">版本 1.30</block>
   <block id="1f2986b833ebc6f322deb045aeee0ad8" category="paragraph-title">增加了對 RHEL v8.8 和 v9.3 BlueXP classification的支持</block>
   <block id="bed0a63060826a7b1ed8cba91cb12ba6" category="paragraph">此版本除了先前支援的 9.x 之外，還支援 Red Hat Enterprise Linux v8.8 和 v9.3，它需要 Podman，而不是 Docker 引擎。這適用於BlueXP classification的任何手動本機安裝。</block>
   <block id="2c435ff16ae089dc2d457e7776588268" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要BlueXP classification版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、9.0、9.1、9.2 和 9.3。</block>
@@ -2235,7 +2205,6 @@
   <block id="f943db85a7c2edd799890ddb18f29cab" category="inline-link">在沒有網路存取的 Linux 主機上安裝BlueXP classification</block>
   <block id="51113453f591a14d5c9aa29ed4c673ee" category="paragraph">如果您在沒有網路存取的情況下部署了BlueXP classification，則需要手動升級。有關詳細信息，請參閱<block ref="99892e361f57f56d51a62e67f9505dc2" category="inline-link-rx"></block>。</block>
   <block id="b8a98fcc40c83e855fb31eabe2a4360d" category="section-title">2024年3月4日</block>
-  <block id="512d4a337ec357edd106a616e83b1a1f" category="section-title">版本 1.29</block>
   <block id="2155776a968fa3c23d5147a57832435f" category="paragraph-title">現在您可以排除駐留在特定資料來源目錄中的掃描數據</block>
   <block id="81e333e3a0fd82b01c14e8eb52437152" category="paragraph">如果您希望BlueXP classification排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至BlueXP classification的設定檔。此功能可讓您避免掃描不必要的目錄，或避免傳回錯誤的個人資料結果。</block>
   <block id="4f7f682e1cf9bdb2a99803b608a4cba1" category="paragraph"><block ref="e9b412144eab992a1669232ef41dc93d" category="inline-link-rx"></block> 。</block>
@@ -2243,29 +2212,20 @@
   <block id="1647534ed4603d68f73fd3f261af9b65" category="paragraph">如果您需要BlueXP classification來掃描超過 2.5 億個文件，您可以在雲端部署或本地安裝中使用超大實例。這種系統最多可以掃描 5 億個檔案。</block>
   <block id="21945ea03234b0d3124095ee6fd8427b" category="paragraph"><block ref="6ace692244f983096552c0b273619a12" category="inline-link-rx"></block> 。</block>
   <block id="c630754f942c555264fff115d6b5e9b2" category="section-title">2024年1月10日</block>
-  <block id="536149161458a7a77ae5b72258f34e48" category="section-title">版本 1.27</block>
   <block id="fe2063e5676e0308022c99eb2466140c" category="paragraph-title">調查頁面結果顯示總大小以及項目總數</block>
   <block id="6cff48344cb111c0fcdb424ba18c6bcf" category="paragraph">調查頁面中的過濾結果除了顯示文件總數外，還顯示項目的總大小。這在移動檔案、刪除檔案等操作時很有幫助。</block>
   <block id="bb5b2f81c2aa7d8df9263c590efda3e6" category="paragraph-title">將其他群組 ID 配置為“向組織開放”</block>
   <block id="617de59f0823cef046ababc40408cb92" category="inline-link-macro">添加其他群組 ID 作為“對組織開放”</block>
   <block id="73b91e38353381a5358557fef0936ca8" category="paragraph">現在，如果群組最初沒有設定該權限，您可以直接從BlueXP classification將 NFS 中的群組 ID 配置為「向組織開放」。任何附加了這些群組 ID 的文件和資料夾都將在調查詳情頁面中顯示為「向組織開放」。了解如何<block ref="3412c0c43e6acc979ac67717176325f7" category="inline-link-macro-rx"></block>。</block>
   <block id="3500d4b863ccad6f25298c3ab1519e74" category="section-title">2023年12月14日</block>
-  <block id="552c9ad11d5dffc1189fa270ca015445" category="section-title">版本 1.26.6</block>
-  <block id="5cc6a6599bfa6671ce515940a0badce7" category="paragraph">此版本包含一些小的改進。</block>
   <block id="e2175eca7cd7227e608f98540d53af5e" category="paragraph">該版本還刪除了以下選項：</block>
-  <block id="cfb92709c6d193fc86ee41b349cbe288" category="list-text">在目錄調查期間，無法使用目錄計算個人識別資訊 (PII) 資料數量的選項。請參閱<block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block> 。</block>
   <block id="544cac1ecf4d7d5eb4b8b563c0d90c5a" category="section-title">2023年11月6日</block>
-  <block id="0778a32085af8830c408efb93cb7239f" category="section-title">版本 1.26.3</block>
   <block id="e25bae53fb1951841531279fa78ee63a" category="paragraph">此版本已修復以下問題</block>
   <block id="299ea648aaf9c598beed6ef12a6ef415" category="list-text">修正了儀表板中顯示系統掃描的檔案數量不一致的問題。</block>
   <block id="c6e9efb915fb85dd556a71294988c99a" category="list-text">透過處理和報告名稱和元資料中帶有特殊字元的檔案和目錄來改善掃描行為。</block>
   <block id="d36a1ccbf2d01a1ff61c0e50416882e9" category="section-title">2023年10月4日</block>
-  <block id="a7dfa38887a337aec315ca23d79dc622" category="section-title">版本 1.26</block>
   <block id="74246010013353726bd9ff99866fa7d4" category="paragraph-title">支援在 RHEL 版本 9 上本機安裝BlueXP classification</block>
-  <block id="efbacc885d0798efa8b4d06d61cb578e" category="paragraph">Red Hat Enterprise Linux 8 和 9 版本不支援 Docker 引擎；而BlueXP classification安裝則需要引擎。我們現在支援在 RHEL 9.0、9.1 和 9.2 上使用 Podman 版本 4 或更高版本作為容器基礎架構進行BlueXP classification安裝。如果您的環境需要使用最新版本的 RHEL，現在您可以在使用 Podman 時安裝BlueXP classification（版本 1.26 或更高版本）。</block>
-  <block id="efe06748da92e661d7225cc7ec109b32" category="paragraph">目前，在使用 RHEL 9.x 時，我們不支援暗站安裝或分散式掃描環境（使用主節點和遠端掃描器節點）。</block>
   <block id="b9d5019337501d72be4adcf007f7d84c" category="section-title">2023年9月5日</block>
-  <block id="3f1982a78707e6a0e0433cad5b5a037d" category="section-title">版本 1.25</block>
   <block id="6ce2a7f72f88b0710fcd4fd7c8040621" category="paragraph-title">中小型部署暫時無法使用</block>
   <block id="6c7040f055c36964a640c88c62785b1b" category="paragraph">當您在 AWS 中部署BlueXP classification實例時，此時無法選擇 *部署 &gt; 配置* 並選擇小型或中型實例。您仍然可以透過選擇*部署&gt;部署*來使用大實例大小部署實例。</block>
   <block id="a4338ca25ea7436675e99fe5320a9d8a" category="paragraph-title">在調查結果頁面中為最多 100,000 個項目新增標籤</block>
@@ -2273,7 +2233,6 @@
   <block id="d0b71ca8d45c425a9eafb601e1eb4c3c" category="paragraph-title">識別最小檔案大小為 1 MB 的重複文件</block>
   <block id="40733cb3233c3b83d0f3ecc4ee6fed65" category="paragraph">BlueXP classification僅用於在檔案大小為 50 MB 或更大時識別重複檔案。現在可以識別以 1 MB 開頭的重複檔案。您可以使用調查頁面過濾器「檔案大小」和「重複」來查看您的環境中哪些特定大小的檔案是重複的。</block>
   <block id="deac043b98b13aa9a1a0d041a820ee2c" category="section-title">2023年7月17日</block>
-  <block id="314ecd7c1da8864532628a8aa4a6c85b" category="section-title">版本 1.24</block>
   <block id="025b17159c4d2dd28926bdc5b13436e2" category="paragraph-title">BlueXP classification識別出兩種新的德國個人數據</block>
   <block id="9fee27139efd09e005728f7dbfa349f2" category="paragraph">BlueXP classification可以識別和分類包含以下類型資料的檔案：</block>
   <block id="22b67d0a50677e01d48389e716223457" category="inline-link-macro">查看BlueXP classification可以在您的資料中識別的所有類型的個人數據</block>
@@ -2288,7 +2247,6 @@
   <block id="d80e88cc1f3abb9239aa87a019057d8b" category="inline-link-macro">了解有關BlueXP classificationAPI 的更多信息</block>
   <block id="31fcc22988d07002d58b5a25a50056c4" category="paragraph"><block ref="ad3b8a781fb3bfe4825e830a10bd8f59" category="inline-link-macro-rx"></block> 。</block>
   <block id="40d3210136139f5fa0cdf31aed565820" category="section-title">2023年6月6日</block>
-  <block id="5a78709b3e68f78b25a72a31cfcaa8f0" category="section-title">版本 1.23</block>
   <block id="04e04c61cd37ca8f12b83c892c2c46ea" category="paragraph-title">搜尋資料主體名稱時現在支援日語</block>
   <block id="3a3337f232548d40f54052862077499b" category="inline-link-macro">資料主體存取請求報告</block>
   <block id="931c126009c96d8f8ce9770df003478d" category="inline-link-macro">資料調查頁面中的「資料主體」過濾器</block>
@@ -2303,7 +2261,6 @@
   <block id="e1161f065b10936afc930fd3d9d0c76f" category="paragraph-title">暗網現已支援 Data Sense BYOL 許可證</block>
   <block id="164199ecac7ab88714ff0c68b5fb98f0" category="paragraph">現在，您可以將 Data Sense BYOL 授權上傳到暗站中的BlueXP digital wallet中，以便在許可證不足時收到通知。</block>
   <block id="70c95406986fbb3626df1a393daf99ce" category="section-title">2023年4月3日</block>
-  <block id="288d139ea0d21561e65bec74c2f7c646" category="section-title">版本 1.22</block>
   <block id="e4279e9f497576fcde3caeb67ed0f96d" category="paragraph-title">新數據發現評估報告</block>
   <block id="5b9233dec22bab321ca47a360d9950b6" category="inline-link">了解如何產生和使用數據發現評估報告</block>
   <block id="9669b178481453beb0e2edf206fb5692" category="paragraph">數據發現評估報告對掃描環境進行了高級分析，以突出顯示系統的發現並顯示關注區域和潛在的補救步驟。本報告的目標是提高人們對資料治理問題、資料安全漏洞以及資料集的資料合規性差距的認識。<block ref="9aee3318dd7918d722246357cd8063ac" category="inline-link-rx"></block> 。</block>
@@ -2314,10 +2271,8 @@
   <block id="e75f898f4dbad5388881095e9582c693" category="inline-link">了解如何檢查您的 Linux 主機是否已準備好安裝BlueXP classification</block>
   <block id="4ea787a4759c0904647bf00934108410" category="paragraph">如果您想獨立於執行BlueXP classification安裝來驗證您的 Linux 系統是否符合所有先決條件，您可以下載一個單獨的腳本，該腳本僅測試先決條件。<block ref="5e1d943ca6af2f5a9cb8f87395f318ef" category="inline-link-rx"></block> 。</block>
   <block id="d673bedebce5131101d3c3583efe3e40" category="section-title">2023年3月7日</block>
-  <block id="321553493f3e3f76105c5f5c5633b4c1" category="section-title">版本 1.21</block>
   <block id="b4602fb47c1d6ee0427e2682d3a0ca06" category="paragraph-title">從BlueXP classificationUI 新增您自己的自訂類別的新功能</block>
   <block id="3e55ef3a5ecc1c61843dac319870a00a" category="paragraph">BlueXP classification現在可讓您新增自己的自訂類別，以便BlueXP classification能夠識別適合這些類別的檔案。  BlueXP classification有很多<block ref="5836292d8632cade998e14bbf16972f4" category="inline-link-rx"></block>，因此此功能可讓您新增自訂類別，以識別在資料中找到組織獨有的資訊的位置。</block>
-  <block id="bca8069b731ea966c03da0cea318f9d1" category="paragraph-title">現在您可以從BlueXP classificationUI 新增自訂關鍵字</block>
   <block id="c9383e3b8d4c0ef8e217c6982644630b" category="paragraph">BlueXP classification已經能夠添加自訂關鍵字， BlueXP classification將在未來的掃描中識別這些關鍵字。但是，您需要登入BlueXP classificationLinux 主機並使用命令列介面新增關鍵字。在此版本中，新增自訂關鍵字的功能位於BlueXP classificationUI 中，這使得新增和編輯這些關鍵字變得非常容易。</block>
   <block id="7e5ec3b51659d16db2e72438a8ca680a" category="paragraph-title">當「上次訪問時間」發生變化時， BlueXP classification不會掃描文件</block>
   <block id="f9bee7a7e545f0d95664d3ccaa7b7151" category="paragraph">預設情況下，如果BlueXP classification沒有足夠的「寫入」權限，系統將不會掃描磁碟區中的文件，因為BlueXP classification無法將「上次存取時間」恢復為原始時間戳記。但是，如果您不介意將上次訪問時間重置為文件中的原始時間，則可以在配置頁面中覆蓋此行為，以便BlueXP classification可以掃描卷，而不管權限如何。</block>
@@ -2333,7 +2288,6 @@
   <block id="27bfd524829d2f58c611b9380403face" category="list-text">對於沒有網路存取的網站（暗站）， BlueXP classification安裝程式現在會執行預檢查，以確保您的系統和網路要求符合成功安裝的要求。</block>
   <block id="64abb83963bf9db8126f2ee52cdc0390" category="list-text">安裝審計日誌檔案現在已儲存；它們被寫入<block ref="2f5e01665193c4e95e37ac69411567bb" prefix=" " category="inline-code"></block>。</block>
   <block id="7d04cce0092e695d038c8ac0c2c6c212" category="section-title">2023年2月5日</block>
-  <block id="4d892f9a0cb70711d12ffb41d4d77d8b" category="section-title">版本 1.20</block>
   <block id="f0da8cded20db5ee6dce9c1c4da7bcd8" category="paragraph-title">能夠向任何電子郵件地址發送基於策略的通知電子郵件</block>
   <block id="af415967f6e10a35f69e4fdddc729da2" category="paragraph">在BlueXP classification的早期版本中，當某些關鍵策略傳回結果時，您可以向您帳戶中的BlueXP使用者發送電子郵件警報。此功能使您能夠在不在線時收到通知以保護您的資料。現在，您也可以從策略向不在您的BlueXP帳戶中的任何其他使用者（最多 20 個電子郵件地址）發送電子郵件警報。</block>
   <block id="01111213f34b03537871696a29c018fa" category="inline-link">詳細了解如何根據策略結果發送電子郵件提醒</block>
@@ -2343,12 +2297,10 @@
   <block id="7a726788f7018e2e33cf2248365cb342" category="paragraph-title">使用BlueXP classification可以移動 1500 萬個文件</block>
   <block id="21aa7ff00797b2159931293ba0196475" category="paragraph">過去，您可以透過BlueXP classification將最多 100,000 個來源檔案移至任何 NFS 共用。現在您一次最多可以移動 1500 萬個檔案。</block>
   <block id="e25a297a27416e76c1a8e01af56d07ed" category="paragraph-title">能夠查看有權存取 SharePoint Online 檔案的使用者數量</block>
-  <block id="6e0f24b07c077e6e557a1d0fac76b6c1" category="paragraph">過濾器「具有存取權限的使用者數量」現在支援儲存在 SharePoint Online 儲存庫中的檔案。過去僅支援 CIFS 共享上的檔案。請注意，此時不基於活動目錄的 SharePoint 群組將不會計入此篩選器。</block>
   <block id="cab6c5a0928827eecbe652fb21944075" category="paragraph-title">操作狀態面板中新增了新的「部分成功」狀態</block>
   <block id="d889002fb629aff0cd2d82543e5f378b" category="inline-link">了解如何查看操作狀態面板</block>
   <block id="f936ab7640aaf50ac88f9f70993bd303" category="paragraph">新的「部分成功」狀態表示BlueXP classification作業已完成，有些專案失敗，有些專案成功，例如，當您移動或刪除 100 個檔案時。此外，「完成」狀態已重新命名為「成功」。過去，「完成」狀態可能會列出成功和失敗的操作。現在「成功」狀態意味著所有項目上的所有操作都成功。<block ref="75a8438a4d837357264f215af439f18c" category="inline-link-rx"></block> 。</block>
   <block id="98dafe2aa2310496897ef8155a1d9413" category="section-title">2023年1月9日</block>
-  <block id="58080b77f4121259ffde5ce32650fff6" category="section-title">版本 1.19</block>
   <block id="5e6d4a84337eb1e0ff5a019edf3a15d6" category="paragraph-title">能夠查看包含敏感資料和過於寬鬆的文件圖表</block>
   <block id="fbe297fe9bdb2184be0e67e56d41549d" category="paragraph">治理儀表板新增了一個新的「敏感資料和廣泛權限」區域，該區域提供了包含敏感資料（包括敏感資料和敏感個人資料）且過於寬鬆的文件的熱圖。這可以幫助您了解敏感資料可能的風險。<block ref="b6419b51c73e0c028146cb926b306794" category="inline-link-rx"></block> 。</block>
   <block id="738f7059231d5fe5c1e22879f52682fd" category="paragraph-title">資料調查頁面新增三個過濾器</block>
@@ -2501,8 +2453,6 @@
   <block id="3eb0c5821ef609291db2736478cac268" category="section-title">啟用並停用StorageGRID桶上的掃描</block>
   <block id="00b3ff2a0f57c13aa4ca3a4252659456" category="cell">\ https://support.compliance.api.bluexp.netapp.com/ \ https://hub.docker.com \ https://auth.docker.io \ https://registry-1.docker.io \ https://index.docker.io/ \ https://dseasb33srnrn.cloudfront.net/ \https://production.cloudflare.docker.com/.</block>
   <block id="a326c778205842f816c52ca7e63cae5d" category="cell">https://support.compliance.api.bluexp.netapp.com/</block>
-  <block id="649b850f0bca668f5279a8b29028973a" category="paragraph">本次BlueXP分類版本包含：</block>
-  <block id="73bb8d1c85014ba6981a002bd9fc9364" category="doc">版本 1.48</block>
   <block id="d34f29080dba1970a613ab39b7166d0c" category="paragraph">本次資料分類版本更新包括錯誤修復、安全性改進和效能提升。</block>
   <block id="8905ad2fb9f028e6bd28666015b4b50a" category="paragraph-title">增強掃描進度清晰度</block>
   <block id="206c07a2ed5644be711186a00b2c6ae2" category="paragraph">掃描配置現在包含對掃描完成情況的更深入洞察。以前，進度條只在掃描進行時顯示。現在，掃描完成後進度條仍然可見，以確認掃描已成功完成。您也可以查看已對應和已掃描的檔案數量。</block>
@@ -2529,8 +2479,6 @@
   <block id="f918c4aee73951e03ee5c0a40ad23d9e" category="list-text"><block ref="f918c4aee73951e03ee5c0a40ad23d9e" category="inline-link-macro-rx"></block></block>
   <block id="d642b544681a16a1135a35722647009f" category="list-text"><block ref="d642b544681a16a1135a35722647009f" category="inline-link-macro-rx"></block></block>
   <block id="7a1e3b83c1962dc960f34e0a588fe7c6" category="list-text"><block ref="7a1e3b83c1962dc960f34e0a588fe7c6" category="inline-link-macro-rx"></block></block>
-  <block id="6a6493990827c82055e808631b52c236" category="doc">版本 1.49</block>
-  <block id="640602402999fbf572de482a35f449bc" category="paragraph">本次資料分類版本更新包含錯誤修復和以下更新：</block>
   <block id="c257ad0ab1dd1ba68f40f6d92155f5dd" category="paragraph-title">在健康監測儀表板中監控指標和效能</block>
   <block id="d62744b30354624c6087760cfd47ae58" category="paragraph">資料分類現在提供了一個健康監控儀表板，可以即時監控您的資源，並提供有關記憶體使用情況、磁碟使用情況、磁碟使用率等方面的見解。借助健康監控儀表板提供的信息，您可以查看部署的基礎架構，並獲得優化儲存和效能的見解。</block>
   <block id="3b3cf1105e8b8d40f3cb14b9f956e666" category="inline-link-macro">監控資料分類的運作狀況</block>
@@ -2573,7 +2521,6 @@
   <block id="baf6246d7a1f90583599825a4d8818c0" category="cell">最低權限</block>
   <block id="cd3fbf7c4da6e490eec17762a02afcb8" category="list-text">根據您使用的作業系統，您需要安裝其中一個容器引擎：</block>
   <block id="9f4066a8aad2a422e68c5b69dd9472f8" category="paragraph">有關掃描設定的更多信息，請參閱 <block ref="26da27bca2c7e859f7f769768b8a4285" category="inline-link-macro-rx"></block>。</block>
-  <block id="a4abecdc1a189db5254898cad3b99a7e" category="doc">版本 1.50</block>
   <block id="0bbdca5358fc47c779aaa8d26a52510f" category="paragraph-title">自訂分類改進</block>
   <block id="3d1c64f6b833049963a84f1722911079" category="paragraph">資料分類功能現在支援建立自訂資料類別。您可以上傳檔案來微調資料分類所使用的 AI 模型，以便將類別標記套用至資料。所有自訂分類的介面都得到了改進。</block>
   <block id="1ea7cf77170c31be18fc52c7e9649923" category="paragraph">有關詳細信息，請參閱 <block ref="c45381d223df5e8e5c4b98a60b8b65d3" category="inline-link-macro-rx"></block>。</block>
@@ -2673,11 +2620,8 @@
   <block id="80bb2719fe9feeb03d5cc88bd71e8a81" category="paragraph">Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。</block>
   <block id="ce4f285e19831c82557359b34d7010e8" category="paragraph">資料分類會顯示資料訓練的預計完成時間。..若要變更檔案路徑或重新上傳檔案，請選取 **Change path** ，然後輸入資料並再次載入檔案。</block>
   <block id="c9d872b23d54864ab58551a55106a3db" category="section-title">2026 年 2 月 09 日</block>
-  <block id="0cd5c5ab4d8a458ece2a760f674c681e" category="doc">版本 1.51</block>
   <block id="58c2f245ba9fee2040b80ea19d9ccd7c" category="inline-link-macro">了解 Console 代理程式和 Data Classification 的不同部署模式</block>
   <block id="9da1ffd588a2b7dde94c64757653a38a" category="paragraph"><block ref="cb90c21a9c44c9ac5d86b04e8dfb0fb3" category="inline-link-macro-rx"></block>。</block>
-  <block id="3883c68756cb61eec195bb6e108336ba" category="inline-link-macro">在具有網際網路存取權限的內部部署站點部署 Data Classification</block>
-  <block id="aff289904c75641e7044ceeb9e922006" category="paragraph">您也可以 <block ref="9d4e9d68c29b6863b7c77f4a02e40d14" category="inline-link-macro-rx"></block>。</block>
   <block id="eb7c0a54a684e3bfabc7abd5ff6851ad" category="paragraph">在私有模式（有時稱為「離線」或「暗站點」）下安裝時，Data Classification 只能掃描位於本地站點的資料來源中的資料。目前，Data Classification 可以掃描以下 *本地* 資料來源：</block>
   <block id="318a375199576f5d44d9caad0d810341" category="paragraph">目前，當 Data Classification 以私有模式部署時，不支援掃描 Cloud Volumes ONTAP、Azure NetApp Files 或 FSx for ONTAP 帳戶。</block>
   <block id="15626ba7e1a3568f27f269f3c7356d0d" category="paragraph">大多數資料分類功能在部署於無網際網路存取的站台時也能正常運作。但是，某些需要網際網路存取的功能不受支援，例如：</block>
@@ -2754,7 +2698,6 @@
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification 會掃描您所選擇的儲存庫（包括磁碟區、資料庫結構或其他使用者資料）中的資料，以識別個人和敏感資料。Data Classification 接著會對您的組織資料進行對應、分類每個檔案，並識別資料中的預定義模式。掃描的結果是一份包含個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
   <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">如需詳細資訊，請參閱 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>。</block>
   <block id="59ff8a6991a0f51816a1d27ab0590821" category="paragraph-title">提高了複製和移動的限制</block>
-  <block id="5db4431afc8c4647c29360449ee80225" category="doc">版本 1.52</block>
   <block id="1cc9fa7904bbb11e4569869878e58bbb" category="paragraph-title">資源驗證</block>
   <block id="19458db6dfda018080434d803401d712" category="paragraph">為確保可靠性，Data Classification 現在會在掃描、報告產生和執行操作過程中驗證可用記憶體和磁碟資源。當記憶體使用率超過 95% 或磁碟空間低於 6 GB 時，Data Classification 會自動暫停操作。資源充足後，操作將恢復。</block>
   <block id="0c246fa8aa5b9bb6f56169910551448c" category="paragraph">若要監控您的系統資源、請參閱 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>。</block>
@@ -2818,7 +2761,6 @@
   <block id="05ae2f7ed42f24ad34227986da264aae" category="paragraph-title">支援 RHEL 9.7</block>
   <block id="3864a6ab3937a10a6f13bfa0f593150c" category="paragraph">資料分類功能新增了 Red Hat Enterprise Linux v9.7，可用於手動內部部署安裝，包括 dark site 部署。</block>
   <block id="900e4148b2c0433fc2c6d0435cf489cd" category="paragraph">以下作業系統需要使用 Podman 容器引擎，並且需要 Data Classification 版本 1.30 或更高版本：Red Hat Enterprise Linux 版本 8.8、8.10、9.0、9.1、9.2、9.3、9.4、9.5、9.6 和 9.7。</block>
-  <block id="9011586cd2cbb8095aa94a58c4af72fd" category="doc">版本 1.53</block>
   <block id="0afc92b0bdc2ed57893a82b6cc2587d3" category="summary">在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時，它們定義了檔案或資料夾的權限。如果群組 ID 未設定為「對組織開放」權限級別，您可以將該權限新增至 GID，以便任何附加了該 GID 的檔案和資料夾都被視為「對組織開放」。</block>
   <block id="403f4a170e2d1c03d329e0f0dd8d1b84" category="section-title">2026 年 4 月 13 日</block>
   <block id="4282eab95027b5795f33f16206ffbe95" category="doc">將 Active Directory 與 NetApp Data Classification 整合</block>
@@ -2835,4 +2777,110 @@
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">變更 NetApp Data Classification 中的掃描設定</block>
   <block id="d45f223b29c54a03c611d6faaae58cf9" category="list-text">在 AWS 中，Data Classification 運行在<block ref="8b5561a11e73285eb1f0d9f437aa0677" category="inline-link-rx"></block>上，配備 500 GiB GP2 磁碟。作業系統映像為 Amazon Linux 2。</block>
   <block id="5d8b6e341fd15d744bee3c27b7ca8a68" category="list-text">在 AWS 中，Data Classification 運行在配備 500 GiB GP2 磁碟的 m6i.4xlarge 執行個體上。</block>
+  <block id="1c009e201a68e95941fe981e5fdfa016" category="inline-link-macro">使用 OVA 進行部署</block>
+  <block id="697a620593a003d9900b7aa00be1acc6" category="admonition">對於內部部署 VMware vSphere 部署、Data Classification 支援簡化的<block ref="3d59e70993d210c9da20a35410c0aa19" category="inline-link-macro-rx"></block>。</block>
+  <block id="e4c84482ee4555ae482d96b91322224c" category="doc">一般改善</block>
+  <block id="3f468d12d8f20d8c9b0af0175d719e8d" category="inline-link-macro">NetApp Console 稽核頁面</block>
+  <block id="67e15c1e2a08f0a8a8953cf75a2f512f" category="paragraph">Data Classification 支援將分類事件（掃描開始時和結束時）傳送至 <block ref="6d2f9072000bb7a11bdbf2bb5389f581" category="inline-link-macro-rx"></block>。</block>
+  <block id="e51a6de645bb52eeb7e8ef9b3c883b16" category="doc">資源使用率最佳化</block>
+  <block id="220726f631dfe5a4dfdc0d65472b98dc" category="paragraph">此 BlueXP 分類版本包含可最佳化資源使用率的程式碼變更。</block>
+  <block id="d939a4c3efbccb14bb6a8b8ec450f62d" category="doc">使用 OVA 部署 Data Classification</block>
+  <block id="c58a3e421744f0b78f692f20d074d1f6" category="paragraph">NetApp Data Classification 現在支援使用 VMware Open Virtual Appliance（OVA）部署，為內部部署的 VMware vSphere 環境提供更簡化的部署策略。</block>
+  <block id="1a4ea23de9d17b2e28a82a012795f402" category="paragraph">有關更多資訊，請參閱<block ref="671ddfd34f6defdc139134bff6f63dc9" category="inline-link-macro-rx"></block>。</block>
+  <block id="8744e3889336c440e17e4a85c0573d80" category="paragraph">NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM 需求和軟體需求的主機上執行。在雲端部署 Data Classification 時,我們建議您使用具有「大型」特性的系統以獲得完整功能。</block>
+  <block id="da49eae2f2697eebbdfcb923e399ee06" category="paragraph">在下表中，如果標記為「default」的系統在您安裝 Data Classification 的區域不可用，則會部署表中列出的下一個執行個體類型。</block>
+  <block id="6b9707300ae2253b20a1508cdef29b86" category="inline-link-macro">在資料來源上設定掃描</block>
+  <block id="32c268474be77292e0a04f91871ff5ae" category="list-text"><block ref="32c268474be77292e0a04f91871ff5ae" category="inline-link-macro-rx"></block></block>
+  <block id="37bdabd730f5e2aa9c95ca046c4a528d" category="list-text">從<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>下載 Data Classification 軟體。選擇名為 *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* 的檔案。</block>
+  <block id="3990c3483164e3d71f7feb035dcc5d2e" category="summary">NetApp Data Classification 支援在內部部署 vSphere 環境中使用 Open Virtual Appliance（OVA）進行部署。OVA 部署方法提供經過預先驗證、由 NetApp 管理的環境，以簡化部署。</block>
+  <block id="d9a33ab3030c9b5fd7a102e28aba7be3" category="doc">使用 VMware Open Virtual Appliance 部署 NetApp Data Classification</block>
+  <block id="a130e61bd4b704e7fe34c433d0d11621" category="paragraph">NetApp Data Classification 支援使用 VMware Open Virtual Appliance（OVA）部署，提供一個受管理的套件，以便在本地 VMware vSphere 環境中安裝及執行 Data Classification。OVA 部署方法提供一個經過預先驗證、由 NetApp 管理的環境，以簡化部署。</block>
+  <block id="3aa8474d5b875cbd9fa36a9b295450c1" category="paragraph">建議將此方法用於新的 VMware 型部署。</block>
+  <block id="86b7d468352815e2bd2fcebcf1707ed0" category="paragraph">使用 OVA 檔案安裝 Data Classification 之前，您必須具備以下條件：</block>
+  <block id="e6c02e5ccba91b0f8a2da6080936e5f5" category="list-text">VMware vSphere 環境</block>
+  <block id="afe34e38b29b496b8d140d1b05f7639b" category="list-text">分配給該應用裝置的靜態 IPv4 位址</block>
+  <block id="c2536178d417593ff00b31c3acd23ffa" category="list-text">可從目標網路存取的 DNS 伺服器</block>
+  <block id="784e3265e48a6bd157680a38d46c8c55" category="list-text">已啟用對設備的 SSH 存取</block>
+  <block id="5d0a8cdc6b9b55fd93ed84e6766e7b28" category="inline-link-macro">NetApp 支援網站認證資料</block>
+  <block id="91ea08e1aa2323f4b4da558f043fb414" category="list-text"><block ref="b753d64a45d12e5e34df2907367d09a4" category="inline-link-macro-rx"></block> 下載安裝程式</block>
+  <block id="8cbae09146721faac95bceac9bf5fca3" category="section-title">在 VMware vSphere 中部署 OVA</block>
+  <block id="bd7ce254f37b2c00eb5eb9946bcf0759" category="list-text">從 <block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block> 下載 OVA 檔案。選擇適合您環境的 OVA 應用裝置：</block>
+  <block id="ddde1efaada34040cfccceaa34f9b3bb" category="cell">OVA 設備</block>
+  <block id="df623f3b0eca686aa70011889478c1b4" category="cell">正式作業規模</block>
+  <block id="638fea7f650cbb9f4eddd66ce254fdd1" category="cell">檔案掃描限制</block>
+  <block id="bccd9f0f398a2a4a23d2ef929e4a1645" category="cell"><block ref="c634ef6b6a6b888ef1b1a2d326622ee7" prefix="" category="inline-code"></block></block>
+  <block id="0e836ac8fea63f0e7d0ea76786c3a146" category="cell">標準正式作業工作負載：16 個 CPU、64 GB RAM、500 GB 磁碟</block>
+  <block id="6977457ec4d43a18ebcc0cc12a5b4785" category="cell">2.5 億個檔案</block>
+  <block id="8958a7a71bfe0f4a5a40d760f7e3c2f6" category="cell"><block ref="8cd39dc4f7544e158d7ef1dfbc5c4070" prefix="" category="inline-code"></block></block>
+  <block id="c758b0781d6f7df6c0ae256696eddbf2" category="cell">大型正式作業工作負載：32 個 CPU、128 GB RAM、1 TB 磁碟</block>
+  <block id="d5f0912c122421def604836efc37e147" category="cell">5 億個檔案</block>
+  <block id="39da8715f80fcb97588e0413c8d421b1" category="list-text">進入 vSphere 客戶端。右鍵點選目標叢集或主機，然後選擇 *Deploy OVF Template* &gt; *Create VM from OVA*。</block>
+  <block id="a86160c84f70e41fb0b3c1ec91660a92" category="list-text">上傳您在第一步中下載的 OVA 檔案。</block>
+  <block id="ea42daee36ca14f2930377ea9c60593a" category="list-text">指定 *VM name* 、目標資料中心、主機或叢集以及資料儲存區。</block>
+  <block id="0a9aa37d2e353e096772c5f826a07f7f" category="list-text">接受 NetApp 終端使用者授權合約。</block>
+  <block id="78eef3c0aadecdde92b4cfc4c1ddf5e4" category="list-text">自訂範本。您必須提供下列資訊：</block>
+  <block id="d472e2787bc8d836e087cb5b10e9f80d" category="list-text">**主機名稱** - 應用裝置的名稱</block>
+  <block id="cfec9ea037ba23cf959f507a91a6497f" category="list-text">**IPv4 位址** - 管理介面的靜態 IPv4 位址</block>
+  <block id="cfc470d8c64abd61f35d1cc9e9831f55" category="list-text">**IPv4 子網路遮罩** - 例如 255.255.255.0</block>
+  <block id="dae24545ba4e62bae20bcbcedf0477c0" category="list-text">**IPv4 閘道位址** - 預設閘道</block>
+  <block id="55545e079a19ab0aaa2eb447088557fa" category="list-text">**主要 DNS** - 必要的 DNS 解析器</block>
+  <block id="398fb85648fe3bf7b1c3132bc43c8da7" category="paragraph">（選用）新增 **Secondary DNS**，並以逗號分隔的清單形式新增 **Search domains**（例如，<block ref="edddc6841b263ff64dd234136625ea9e" prefix=" " category="inline-code"></block>）和 **NTP servers**。</block>
+  <block id="3971f79ba20dd9eea1c77eb7bcab0566" category="list-text">設定預設 Linux 使用者的 *Admin password*。</block>
+  <block id="4f46c0ee9f477b4fe1294d2fa8dcdd5b" category="admonition">此密碼用於 root 權限存取、SSH 存取和系統管理。請妥善保管密碼。</block>
+  <block id="e70561faa323b2a08c3f90b258d6f1c6" category="list-text">檢閱摘要。選取 *Finish* 進行部署。</block>
+  <block id="2c6b86d7e99472d3dc260c2363c69efa" category="list-text">部署完成後，請開啟 VM。</block>
+  <block id="7020b99b4452945edfa566eb18678316" category="section-title">安裝 Data Classification</block>
+  <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text">從 <block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block> 下載 Data Classification 軟體。</block>
+  <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">選擇名為 *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* 的檔案。</block>
+  <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">選擇 *Deploy Classification* 。</block>
+  <block id="d9f71f47f93d634da4ff095ee023a20e" category="list-text">使用管理員使用者透過 SSH 連線至 OVA 應用裝置。</block>
+  <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">執行您產生的安裝命令以完成安裝，並將系統註冊到您的組織。</block>
+  <block id="2e64cc6066537ce6e812349f63c7e206" category="paragraph">您可以採用不同的方式部署 NetApp Data Classification。請查看可用的方法，選擇最適合您需求的方法。</block>
+  <block id="30dabb33051152f55606045c5b5163f8" category="section-title">內部部署安裝指令碼</block>
+  <block id="c0dd91183d065fa262aad92cd66f17bf" category="paragraph">無論是在存取網際網路的 Linux 主機上進行安裝，或是在無法存取網際網路的 Linux 主機上進行本機安裝，都使用安裝腳本。該腳本首先檢查系統和環境是否滿足先決條件。如果滿足先決條件，則開始安裝。</block>
+  <block id="4fabfbf691d67364aed0fc8d0476cd38" category="inline-link-macro">請確認您的 Linux 主機已準備好安裝 Data Classification</block>
+  <block id="4ad6bc72849add23a7cdca295638a87d" category="paragraph">另有一個軟體套件可用於驗證您的 Linux 系統是否已準備就緒。若要執行驗證套件，請參閱 <block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>。</block>
+  <block id="e0b0747cd573746d9f139faffc729dd5" category="section-title">2026 年 5 月 4 日</block>
+  <block id="c4bc4e2f20f342faa62434be75cb6ee5" category="paragraph">*版本 1.53*</block>
+  <block id="8411d6925cd29126d060394c08a4b4ca" category="paragraph">*版本 1.52*</block>
+  <block id="65a0258fc15834bf0f84ceaa52ada501" category="paragraph">*版本 1.51*</block>
+  <block id="e4b498cddaa444d57c01009b2102f55f" category="paragraph">*版本 1.50*</block>
+  <block id="52aa7e45dc7f5ea8286631265ac1d36a" category="paragraph">*版本 1.49*</block>
+  <block id="26baa7b8a763c4e09d054abaf87bb6d0" category="paragraph">*版本 1.48*</block>
+  <block id="595d74539f06331485866d3131f447e8" category="paragraph">*版本 1.47*</block>
+  <block id="63baf28a815c716ed6e2c417cb4153b2" category="paragraph">*版本 1.46*</block>
+  <block id="1964d7d03dd19e55e353230a6f62b06e" category="paragraph">*版本 1.45*</block>
+  <block id="465901fde75bcfcdda96ed356aeeeb4f" category="paragraph">*版本 1.44*</block>
+  <block id="cb92087f3524d242231728663d9503b5" category="paragraph">*版本 1.43*</block>
+  <block id="58a9fe63f3060056d06ba740aca954b8" category="paragraph">*版本 1.42*</block>
+  <block id="0a2f2aba3f1b44682b1d94613a92546b" category="paragraph">*版本 1.41*</block>
+  <block id="cf478480279bce16082112f00be7df7f" category="paragraph">*版本 1.40*</block>
+  <block id="a624a704a460cabdb133c0962d0885ed" category="paragraph">*版本 1.37*</block>
+  <block id="f469240780f7eff6330e02b5675d0a08" category="paragraph">*版本 1.38*</block>
+  <block id="a2db02c48e35b7dca1db16acecb190ff" category="paragraph">*版本 1.36*</block>
+  <block id="ea2391a5ddbbca135950f9d480a5981a" category="paragraph">*版本 1.35*</block>
+  <block id="0e6051493f71317da4f2c7bba8dcfc97" category="paragraph">*版本 1.34*</block>
+  <block id="9a3351da91753729c142405fec71d541" category="paragraph">*版本 1.33*</block>
+  <block id="d8caf3d67521b52888bb50b0449d77f4" category="paragraph">*版本 1.32*</block>
+  <block id="413b3a9cddb127f6a98a38a39992639c" category="paragraph">*版本 1.31*</block>
+  <block id="3362688f791418f4ba8e7d0c8a358d74" category="paragraph">*版本 1.30*</block>
+  <block id="731530c0d12c82e27cfc130ae6c93804" category="paragraph">*版本 1.29*</block>
+  <block id="f67d7fa2a44e36da02cec0e1e856d491" category="paragraph">* 版本 1.27*</block>
+  <block id="2c5b015f9b8d6e1cf0b8425cd79ccef1" category="paragraph">*版本 1.26.6*</block>
+  <block id="663fe31afd754e14edf62c0eeb43e3be" category="paragraph">此版本包含小幅增強功能。</block>
+  <block id="cbb4d57c029ce27c745cadc11326ef01" category="list-text">在目錄調查期間，無法計算目錄中個人識別資訊 (PII) 資料的數量。請參閱 <block ref="0b922dd9827c419654172323345089b8" category="inline-link-macro-rx"></block>。</block>
+  <block id="a91d543e35a44a40abde8539454a3147" category="paragraph">*版本 1.26.3*</block>
+  <block id="dccefd0e401840dd90d719ff48e73421" category="paragraph">*版本 1.26*</block>
+  <block id="20a38ed7220ae3d563acc7f546d6a38c" category="paragraph">Red Hat Enterprise Linux 8 和 9 版本不支援 Docker 引擎，而 Docker 引擎之前是 BlueXP classification 安裝所必需的。現在，BlueXP classification 支援在 RHEL 9.0、9.1 和 9.2 上安裝，但需要使用 Podman 4 或更高版本作為容器基礎架構。如果您的環境需要使用最新版本的 RHEL，現在您可以使用 Podman 安裝 BlueXP classification（1.26 或更高版本）。</block>
+  <block id="d47937e1bfcfc34aadafaf94f878be50" category="paragraph">目前，在使用 RHEL 9.x 時，Data Classification 既不支援暗站安裝，也不支援分散式掃描環境（使用主掃描節點和遠端掃描節點）。</block>
+  <block id="507beb19670add8ef909c6b465d2113f" category="paragraph">*版本 1.25*</block>
+  <block id="ff9507aa8ec2a4d65e0197283a0ffb4a" category="paragraph">*版本 1.24*</block>
+  <block id="9f35e0bca6f0baf4185ddc2208bc9831" category="paragraph">*版本 1.23*</block>
+  <block id="cc6a6fa01e9d6665a252d1f7ee507f10" category="paragraph">*版本 1.22*</block>
+  <block id="fcbfa613263a39c01238f29970301729" category="paragraph">*版本 1.21*</block>
+  <block id="8dff06822fe979f3c3274cc5f8c4b91a" category="section-title">從 BlueXP 分類使用者介面新增自訂關鍵字</block>
+  <block id="5dd86e37bb688c2bd8d740a853836c5b" category="paragraph">*版本 1.20*</block>
+  <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">「存取的使用者數」篩選器現在支援儲存在 SharePoint Online 儲存庫中的檔案。此前，僅支援 CIFS 共用上的檔案。目前，此篩選器暫不統計非 Active Directory 類別的 SharePoint 使用者群組。</block>
+  <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*版本 1.19*</block>
+  <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">使用 OVA 在內部部署環境中安裝</block>
 </blocks>

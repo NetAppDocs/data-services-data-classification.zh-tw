@@ -36,6 +36,8 @@ sidebar:
         url: "/task-deploy-cloud-compliance.html"
       - title: 在可以存取網際網路的 Linux 主機上安裝
         url: "/task-deploy-compliance-onprem.html"
+      - title: 使用 OVA 在內部部署環境中安裝
+        url: "/task-deploy-ova.html"
       - title: 在沒有網際網路存取的本機 Linux 主機上安裝
         url: "/task-deploy-compliance-dark-site.html"
       - title: 檢查您的 Linux 主機是否已準備就緒

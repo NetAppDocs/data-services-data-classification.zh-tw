@@ -1,0 +1,98 @@
+---
+sidebar: sidebar 
+permalink: task-deploy-ova.html 
+keywords: deploy, install, vmware, ova, open virtual appliance 
+summary: NetApp Data Classification 支援在內部部署 vSphere 環境中使用 Open Virtual Appliance（OVA）進行部署。OVA 部署方法提供經過預先驗證、由 NetApp 管理的環境，以簡化部署。 
+---
+= 使用 VMware Open Virtual Appliance 部署 NetApp Data Classification
+:allow-uri-read: 
+:no-hardbreaks: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+NetApp Data Classification 支援使用 VMware Open Virtual Appliance（OVA）部署，提供一個受管理的套件，以便在本地 VMware vSphere 環境中安裝及執行 Data Classification。OVA 部署方法提供一個經過預先驗證、由 NetApp 管理的環境，以簡化部署。
+
+建議將此方法用於新的 VMware 型部署。
+
+
+
+== 先決條件
+
+使用 OVA 檔案安裝 Data Classification 之前，您必須具備以下條件：
+
+* VMware vSphere 環境
+* 分配給該應用裝置的靜態 IPv4 位址
+* 可從目標網路存取的 DNS 伺服器
+* 已啟用對設備的 SSH 存取
+* link:https://mysupport.netapp.com/site/user/registration["NetApp 支援網站認證資料"] 下載安裝程式
+
+
+
+
+== 在 VMware vSphere 中部署 OVA
+
+. 從 link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp支援站點"^] 下載 OVA 檔案。選擇適合您環境的 OVA 應用裝置：
++
+|===
+| OVA 設備 | 正式作業規模 | 檔案掃描限制 
+
+
+| `DataClassification-<version>-L.ova` | 標準正式作業工作負載：16 個 CPU、64 GB RAM、500 GB 磁碟 | 2.5 億個檔案 
+
+
+| `DataClassification-<version>-XL.ova` | 大型正式作業工作負載：32 個 CPU、128 GB RAM、1 TB 磁碟 | 5 億個檔案 
+|===
+. 進入 vSphere 客戶端。右鍵點選目標叢集或主機，然後選擇 *Deploy OVF Template* > *Create VM from OVA*。
+. 上傳您在第一步中下載的 OVA 檔案。
+. 指定 *VM name* 、目標資料中心、主機或叢集以及資料儲存區。
+. 接受 NetApp 終端使用者授權合約。
+. 自訂範本。您必須提供下列資訊：
++
+** **主機名稱** - 應用裝置的名稱
+** **IPv4 位址** - 管理介面的靜態 IPv4 位址
+** **IPv4 子網路遮罩** - 例如 255.255.255.0
+** **IPv4 閘道位址** - 預設閘道
+** **主要 DNS** - 必要的 DNS 解析器
++
+（選用）新增 **Secondary DNS**，並以逗號分隔的清單形式新增 **Search domains**（例如， `corp.local,lab.local`）和 **NTP servers**。
+
+
+
+. 設定預設 Linux 使用者的 *Admin password*。
++
+
+NOTE: 此密碼用於 root 權限存取、SSH 存取和系統管理。請妥善保管密碼。
+
+. 檢閱摘要。選取 *Finish* 進行部署。
+. 部署完成後，請開啟 VM。
+
+
+
+
+== 安裝 Data Classification
+
+. 從 link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp支援站點"^] 下載 Data Classification 軟體。
++
+選擇名為 *DATASENSE-INSTALLER-<version>.tar.gz* 的檔案。
+
+. 在控制台中，選擇*治理>分類*。
+. 選擇 *Deploy Classification* 。
++
+image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
+
+. 根據您是在雲端中準備的實例上還是在本機準備的實例上安裝資料分類，選擇適當的*部署*選項來啟動資料分類安裝。
+. 將顯示「在本機部署資料分類」對話方塊。複製提供的命令（例如： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) 並將其貼到文字檔案中，以便稍後使用。然後選擇*關閉*以關閉對話框。
+. 使用管理員使用者透過 SSH 連線至 OVA 應用裝置。
+. 執行您產生的安裝命令以完成安裝，並將系統註冊到您的組織。
+
+
+
+
+== 下一步
+
+* link:task-scanning-overview.html["在資料來源上設定掃描"]
+
