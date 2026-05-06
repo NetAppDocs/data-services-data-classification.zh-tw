@@ -478,7 +478,6 @@
   <block id="705900ff5dfc71b7fab21e0a2b91555c" category="section-title">什麼是控制台代理？</block>
   <block id="cec155912a2ab722f7c2cf854b71ac8c" category="paragraph">控制台代理程式是在您的雲端帳戶或本機的運算實例上執行的軟體，它使NetApp Console能夠安全地管理雲端資源。您必須部署控制台代理程式才能使用資料分類。</block>
   <block id="315a4734119ef2ab25e03ee01718971d" category="section-title">控制台代理需要安裝在哪裡？</block>
-  <block id="e843321c8bae82c4d6f4061b3f93bf39" category="paragraph">掃描資料時，需要在以下位置安裝NetApp Console代理程式：</block>
   <block id="07bffd39dd72da3f20260b9a6907adc1" category="list-text">對於 AWS 中的Cloud Volumes ONTAP或Amazon FSx for ONTAP：控制台代理程式位於 AWS 中。</block>
   <block id="288ed4c5031b1ff115f43b30ece3261f" category="list-text">對於 Azure 或Azure NetApp Files中的Cloud Volumes ONTAP ：控制台代理程式位於 Azure 中。</block>
   <block id="bcdb2f393c3c29bc329a8b2e81ff4d7b" category="list-text">對於 GCP 中的Cloud Volumes ONTAP ：控制台代理程式位於 GCP 中。</block>
@@ -891,7 +890,6 @@
   <block id="04e7e9631c93eec889b2ab99b5143465" category="section-title">連接到您的 Active Directory 伺服器</block>
   <block id="2870ffcb03b7e55be580adce9e49dedc" category="paragraph">部署資料分類並啟動資料來源掃描後，您可以將資料分類與 Active Directory 整合。可以使用 DNS 伺服器 IP 位址或 LDAP 伺服器 IP 位址存取 Active Directory。</block>
   <block id="9d553dac60477ef9e0919509b66ec352" category="paragraph">Active Directory 憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。</block>
-  <block id="1b27da1c6c8ab8d350478de2c14a8b2a" category="paragraph">對於 CIFS 磁碟區/檔案共用，如果您想確保檔案的「上次存取時間」不會因資料分類掃描而改變，則使用者應該具有寫入屬性權限。如果可能的話，我們建議將 Active Directory 設定的使用者作為組織中對所有檔案具有權限的父群組的一部分。</block>
   <block id="5a2ebfb8baa378cfcfcba58bbb1380c2" category="list-title">要求</block>
   <block id="f116dfc235147909ef3b37492dd58497" category="list-text">您必須已經為公司使用者設定了 Active Directory。</block>
   <block id="6fcd963bedffc4e92b9378afcac66a5a" category="list-text">您必須具有 Active Directory 的資訊：</block>
@@ -2312,7 +2310,6 @@
   <block id="303c6c3b9289ea073f455b6be5394610" category="paragraph"><block ref="a4a7f22b048c40ec69122e1f7c39cfdb" category="inline-link-rx"></block> 。</block>
   <block id="4b273eb22f0e890dce8d8a73dba2425e" category="paragraph-title">BlueXP classification可以辨識日本個人編號</block>
   <block id="b614eb1e8ba4ff347cc77ea1b9148636" category="paragraph">BlueXP classification可以識別和分類包含日本個人編號（也稱為 My Number）的檔案。這包括個人和企業我的號碼。<block ref="c29cfbce54672755b7557a8e95ef0ae4" category="inline-link-rx"></block> 。</block>
-  <block id="7acae0ba2f29c1b7556d813227ddd12d" category="sidebar">NetApp資料分類可讓您掃描和分類組織混合多雲中的資料。資料分類利用人工智慧驅動的自然語言處理 (NLP) 進行情境資料分析和分類，為您提供對資料的可操作洞察，以滿足合規性要求、檢測安全漏洞、優化成本並加速遷移。</block>
   <block id="e6d9434fa5832019fb3968212fe539d4" category="sidebar">NetApp Data Classification文檔</block>
   <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">開始</block>
   <block id="06e283ee316863d38f0fea16ba5785cc" category="sidebar">了解資料分類</block>
@@ -2509,7 +2506,6 @@
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">監控系統健康狀況</block>
   <block id="199728aa05786f9f41b3140d025353e2" category="list-text">資料分類必須運行在專用主機上。主機不能與其他應用程式或第三方軟體（例如防毒軟體）共用。</block>
-  <block id="cc2f809338aeb90513fd5d335abc18b2" category="paragraph">資料分類安裝腳本包含一個測試腳本，以確保您的環境符合要求。您可以單獨執行此腳本來驗證 Linux 主機是否已準備就緒，然後再執行安裝腳本。</block>
   <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">你可以 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。如果控制台代理程式安裝在本機，您也可以在本機安裝資料分類。</block>
   <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱：</block>
   <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
@@ -2883,4 +2879,8 @@
   <block id="ea618accf4845a405569f1ffa72274f5" category="paragraph">「存取的使用者數」篩選器現在支援儲存在 SharePoint Online 儲存庫中的檔案。此前，僅支援 CIFS 共用上的檔案。目前，此篩選器暫不統計非 Active Directory 類別的 SharePoint 使用者群組。</block>
   <block id="fd472c68167f5fc3fdb653a650f9fd55" category="paragraph">*版本 1.19*</block>
   <block id="2c6be179dba321b242cbe88c550f1815" category="sidebar">使用 OVA 在內部部署環境中安裝</block>
+  <block id="2ec24b538cd35ccc98148dea4e4a3985" category="paragraph">掃描資料時，需要將 NetApp Console 代理程式安裝在以下位置：</block>
+  <block id="ef6714f5aeceef76c2ac34e1adaeefa3" category="paragraph">對於 CIFS 磁碟區/檔案共用，如果您希望確保檔案的「最後存取時間」不受 Data Classification 掃描的影響，則使用者應具有寫入屬性權限。如果可能，我們建議將 Active Directory 設定的使用者新增至組織中具有所有檔案存取權限的父群組。</block>
+  <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">Data Classification 安裝腳本包含一個測試腳本，用於確保您的環境符合要求。您可以單獨執行此測試腳本，以在執行安裝腳本之前驗證 Linux 主機是否已準備就緒。</block>
+  <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification 可讓你在組織的混合多雲環境中掃描並分類資料。Data Classification 利用 AI 驅動的自然語言處理（NLP）進行情境資料分析與分類，為你的資料提供可行的洞察，以因應合規需求、偵測安全漏洞、優化成本並加速遷移。</block>
 </blocks>
