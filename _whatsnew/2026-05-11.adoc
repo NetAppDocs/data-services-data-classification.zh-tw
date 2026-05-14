@@ -1,0 +1,19 @@
+= 改善的組態頁面
+:allow-uri-read: 
+
+
+
+
+=== 改善的組態頁面
+
+Data Classification 已更新並改善了組態頁面，從而提升了使用者管理設定、系統、啟用掃描和監控系統運作狀況的體驗。新的組態頁面以更易於使用的格式保留了現有功能，並新增了按類型、錯誤狀態和掃描狀態篩選系統的功能。此外，新頁面還提供了已連接系統的摘要以及活動和已配置掃描的概覽。
+
+檢閱 link:https://youtu.be/_8YJ3KyZ7nI["影片示範"^]。如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-scanning-overview.html["使用資料分類掃描資料來源"^]。
+
+
+
+=== 使用 OVA 部署 Data Classification
+
+NetApp Data Classification 現在支援使用 VMware Open Virtual Appliance（OVA）部署，為內部部署的 VMware vSphere 環境提供更簡化的部署策略。
+
+有關更多資訊，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-deploy-ova.html["使用 OVA 部署 Data Classification"^]。

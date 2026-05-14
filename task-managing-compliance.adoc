@@ -45,8 +45,5 @@ TIP: 您也可以在選擇系統時從「服務」面板停用系統掃描。
 
 .步驟
 . 從「配置」頁面中，選擇image:button-gallery-options.gif["更多按鈕"]檔案共用群組行中的按鈕，然後按一下*刪除檔案共用群組*。
-+
-image:screenshot_compliance_remove_db.png["掃描配置頁面中「刪除資料庫伺服器」按鈕的螢幕截圖。"]
-
 . 從確認對話方塊中選擇*刪除共享群組*。
 

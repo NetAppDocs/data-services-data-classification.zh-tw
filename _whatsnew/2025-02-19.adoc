@@ -12,15 +12,15 @@
 
 
 
-=== 優先進行僅映射掃描
+=== 優先處理僅對應掃描
 
-當進行僅映射掃描時，您可以優先考慮最重要的掃描。當您擁有多個工作環境並希望確保首先完成高優先掃描時，此功能會有所幫助。
+在執行僅對應掃描時、您可以優先執行最重要的掃描。當您有許多工作環境、並想要確保優先完成高優先順序掃描時、此功能會很有幫助。
 
 預設情況下，掃描會按照啟動的順序排隊。透過設定掃描優先權，您可以將掃描移至佇列的最前面。可以對多個掃描進行優先排序。優先權會依照先進先出的順序指定，這表示您優先考慮的第一個掃描將移至佇列的最前面；您優先考慮的第二個掃描將成為佇列中的第二個掃描，依此類推。
 
 優先權是一次性授予的。映射資料的自動重新掃描按照預設順序進行。
 
-優先權僅限於link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["僅映射掃描"^]；它不適用於地圖和分類掃描。
+優先排序僅限於 link:https://docs.netapp.com/us-en/data-services-data-classification/concept-classification.html["僅對應掃描"^]；不適用於對應和分類掃描。
 
 有關更多信息，請參閱link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html#prioritize-scans["優先掃描"^] 。
 
