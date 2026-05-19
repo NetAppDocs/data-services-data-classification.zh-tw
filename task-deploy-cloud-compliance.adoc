@@ -43,7 +43,7 @@ summary: 完成幾個步驟即可在雲端部署NetApp Data Classification。  N
 
 == 建立控制台代理
 
-如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["在 AWS 中建立控制台代理"^]或者 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["在 Azure 中建立控制台代理"^]， 或者 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["在 GCP 中建立控制台代理"^]。大多數情況下，您可能需要在嘗試啟動資料分類之前設定控制台代理，因為大多數 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["控制台功能需要控制台代理"]但有些情況下，你需要現在就設定一個。
+如果您還沒有 Console 代理程式，請在雲端供應商中建立 Console 代理程式。請參閱 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-aws.html["在 AWS 中建立控制台代理"^]或 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-azure.html["在 Azure 中建立控制台代理"^]，或 https://docs.netapp.com/us-en/console-setup-admin/concept-install-options-google.html["在 GCP 中建立控制台代理"^]。在大多數情況下，您可能在嘗試啟動 Data Classification 之前就已經設定好 Console 代理程式，因為大多數 https://docs.netapp.com/us-en/console-setup-admin/task-install-connector-on-prem.html["控制台功能需要控制台代理"]，但在某些情況下，您需要立即設定一個。
 
 在某些情況下，您必須使用部署在特定雲端提供者中的控制台代理：
 

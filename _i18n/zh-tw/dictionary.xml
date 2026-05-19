@@ -436,7 +436,6 @@
   <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*資料映射掃描（僅映射掃描）*：資料分類僅掃描元資料。這對於整體資料管理和治理、快速專案範圍界定、大型地產和優先排序很有用。數據映射基於元數據，被認為是一種*快速*掃描。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速掃描後，您可以產生資料映射報告。此報告概述了您公司資料來源中儲存的數據，以幫助您做出有關資源利用率、遷移、備份、安全性和合規性流程的決策。</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完整掃描後，您可以將許多附加資料分類功能套用至數據，例如在資料調查頁面中查看和最佳化資料、在檔案中搜尋名稱、複製、移動和刪除來源檔案等。</block>
-  <block id="8f6adf4dbf6fab8e9a0fa95709bc6780" category="paragraph">資料分類擷取元數據，例如：檔案名稱、權限、建立時間、上次存取和上次修改。這包括資料調查詳情頁面和資料調查報告中顯示的所有元資料。</block>
   <block id="b8ede2d0f0baf0dbbcd6b1caa3c24a82" category="inline-xref-macro">資料分類掃描的私人資料類別</block>
   <block id="0a2a2726fa4f033804e23ae8e734f53d" category="paragraph">資料分類可以識別多種類型的私人數據，例如個人資訊（PII）和敏感個人資訊（SPII）。有關私人數據的詳細信息，請參閱<block ref="99786247576d4194bfb6afa2ffe45770" category="inline-xref-macro-rx"></block>。</block>
   <block id="cc6c818a7ff4844f95f831b7fea5d028" category="section-title">我可以將資料分類資訊限制給特定使用者嗎？</block>
@@ -958,7 +957,6 @@
   <block id="5cb140d3eff23c8e0c3f2d43f10a7dbb" category="cell">對於所有系統：列出每個系統的檔案數量和已使用容量。對於單一系統：列出使用最多容量的檔案。</block>
   <block id="6a0fd0952390e8ad81d681946aa5dcab" category="cell">提供三個圖表和圖形，分別表示檔案的建立時間、上次修改時間或上次造訪時間。根據特定日期範圍列出文件數量及其已使用容量。</block>
   <block id="02d0f0696835f69cefa2384249b76fd7" category="cell">列出系統中存在於特定大小範圍內的檔案數。</block>
-  <block id="43bdc51d30bd77ef382a419cb3655312" category="list-text">在報告圖塊中，選擇*完整資料映射概覽報告*。</block>
   <block id="fb5cbffc5e8f979523247654de6b0102" category="inline-image-macro">治理儀表板的螢幕截圖顯示如何啟動資料映射報告。</block>
   <block id="a1fe048fbf4d3c352f8807ca8e61a815" category="paragraph"><block ref="a1fe048fbf4d3c352f8807ca8e61a815" category="inline-image-macro-rx" type="image"></block></block>
   <block id="6406cf838275117ab30c7dd6e659bb2b" category="paragraph">資料分類會產生一份 PDF 報告，您可以根據需要查看並傳送給其他群組。</block>
@@ -1659,7 +1657,6 @@
   <block id="ea7971f9c02e5fa9234d7af5cd0b34c7" category="list-text">*已排隊*（橘色圓點）：任務已成功新增至掃描佇列。當佇列中的捲輪到達時，系統將開始映射或分類該磁碟區。</block>
   <block id="478002532c0e9d87506035f8afb96c61" category="list-text">*正在運行*（綠點）：佇列中的掃描任務正在選定的儲存庫上積極進行。</block>
   <block id="1110cfca2e7c6a5f3e560597c03abeab" category="list-text">*完成*（綠點）：儲存庫掃描已完成。</block>
-  <block id="7eac8ad7bb67a204924dcc6a4113f103" category="list-text">*錯誤*（紅點）：掃描無法完成，因為遇到了問題。如果您需要完成某項操作，錯誤將出現在「所需操作」列下的工具提示中。否則，系統將顯示“錯誤”狀態並嘗試恢復。完成後，狀態就會改變。</block>
   <block id="4c5b4656410d347cf852f162490f2e15" category="list-text">*未掃描*：選擇了「關閉」磁碟區配置，系統未掃描該磁碟區。</block>
   <block id="ae3859b6bf604c1664d2e6f3cb311c7f" category="inline-image-macro">顯示如何選擇系統配置按鈕的螢幕截圖。</block>
   <block id="4e66daf871fdc1f576f2af568e8fb4c4" category="paragraph"><block ref="4e66daf871fdc1f576f2af568e8fb4c4" category="inline-image-macro-rx" type="image"></block></block>
@@ -2343,7 +2340,6 @@
   <block id="77750efa6f5ff153acdc42067058017f" category="section-title">2025年11月10日</block>
   <block id="71a65ebb3dc98cbee7a35c227b17a9d2" category="paragraph">如果您還沒有控制台代理，請建立一個。看<block ref="d5bd3e4518f2136cfa2b600a07183cdd" category="inline-link-macro-rx"></block>，<block ref="8ebe3bab1eaa1107c63d6c8e11f3037a" category="inline-link-macro-rx"></block> ， 或者<block ref="289d689c55d02ef047cce8b209e7a21e" category="inline-link-macro-rx"></block>。</block>
   <block id="546e9d6a80a7f338dcca2f303d981d2a" category="paragraph">你也可以<block ref="9335525199017a57f50f3ba5f9c0cf66" category="inline-link-macro-rx"></block>在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。</block>
-  <block id="3235c8cdd5c8a3cd602a2a8decbafa9f" category="paragraph">如果您還沒有控制台代理，請在您的雲端提供者中建立控制台代理。看<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>或者<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>， 或者<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。大多數情況下，您可能需要在嘗試啟動資料分類之前設定控制台代理，因為大多數<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>但有些情況下，你需要現在就設定一個。</block>
   <block id="b9b4d509fe9e3e77716d45d551ade64d" category="paragraph">請注意，您也可以<block ref="66fb3c1341fae0e6f8743c669eb701a1" category="inline-link-rx"></block>在網路或雲端的 Linux 主機上。一些計劃在本機安裝資料分類的使用者可能也會選擇在本機安裝控制台代理程式。</block>
   <block id="639d50c4b484797455c51239e20b934e" category="paragraph">可能有些情況下你需要使用<block ref="b343c1bfd082abc4974fc8258a47d6f6" category="inline-link-rx"></block>。</block>
   <block id="b5a65ac63c30d18f443b0320e2b34254" category="inline-link-macro">了解如何在政府區域部署控制台代理</block>
@@ -2465,7 +2461,6 @@
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">預設情況下，如果資料上次修改時間距今已有三年，則該資料視為過期資料。</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">定義過期數據</block>
   <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">在勒索軟體復原能力中，選擇**配置**。</block>
-  <block id="de1a225a67ee04f4d574bda78a6c7680" category="list-text">在「檔案屬性」下拉式功能表中，選擇是否要根據檔案的「上次存取時間」或「上次修改時間」來定義過期資料。</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">選擇過期資料定義的時間段。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">選擇**儲存**。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2755,9 +2750,6 @@
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification 可讓你在組織的混合多雲環境中掃描並分類資料。Data Classification 利用 AI 驅動的自然語言處理（NLP）進行情境資料分析與分類，為你的資料提供可行的洞察，以因應合規需求、偵測安全漏洞、優化成本並加速遷移。</block>
   <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。</block>
   <block id="b9f4fbd6355c3f44311a98b062b34192" category="paragraph">頁面頂部的 *Scan without write permissions* 開關預設為停用。這表示如果 Data Classification 在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間被重設，請將開關設為 ON，無論權限為何，都會掃描所有檔案。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
-  <block id="fb3614a6e0ed7682cf436cfe7c5fae5d" category="admonition">只有當您在標題區域中設定了 *Map* 或 *Full scan* 設定時，系統才會自動掃描新增的磁碟區。如果所有磁碟區的設定均為 *Custom* 或 *Off*，則需要為新增的每個新磁碟區手動啟用掃描功能。</block>
-  <block id="d9db1fafb114dbc932e2b11cb164a604" category="list-text">識別您要掃描的系統。選取 **Activate scan**。在下拉式選單中，選擇 **Full scan**、**Map only** 或 **Manage scans** 以開啟系統選單並在特定磁碟區或共用區上設定掃描。</block>
-  <block id="b9302979813572e59ebecefdfa33f678" category="paragraph">若要啟用或停用個別磁碟區的掃描，請在清單中找到磁碟區或共用區，然後在磁碟區名稱旁選取 **Map**、**Full scan** 或 **Off**。</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*僅對應掃描* 僅提供資料的高階概覽。由於無需存取檔案即可查看內部資料，因此可以非常快速地對資料來源進行對應。</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">您可以利用僅 Map 掃描快速掃描資料，以識別需要更多研究的資料來源，然後再僅對這些所需的資料來源或磁碟區啟用 Map 和 classify 掃描。</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">優先順序僅分配給僅進行 Map 掃描，不分配給同時進行 Map 和 classify 的掃描。</block>
@@ -2853,4 +2845,21 @@
   <block id="c5efbb0c5c86f10e09723fd321118168" category="list-text">在對話方塊中、輸入「uninstall」以中斷 Data Classification 執行個體與 Console 代理程式的連線。選取 **Uninstall** 以確認。</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026 年 5 月 11 日</block>
   <block id="bbb6c300cb8841042895c9d8861857a2" category="paragraph">*版本 1.54*</block>
+  <block id="4c6fc95f3cbd5ec1525e1e6fc454b0a0" category="admonition">只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。</block>
+  <block id="d8ec5f9e43a5c50ccad1744ea2a31c6e" category="list-text">識別您要掃描的系統。選取 **Activate scan**。在下拉式選單中，選擇 **Scan all volumes: full scan**、**Scan all volumes: mapping only** 或 **Manage scans**，以開啟系統選單並在特定磁碟區上設定掃描。</block>
+  <block id="a8349eec03103165ecc719d7e32b3318" category="paragraph">若要啟用或停用單一磁碟區的掃描，請在清單中找到對應的磁碟區。在掃描類型欄位中，選擇 **Map only** 或 **Full scan**。</block>
+  <block id="cf975b28ba57e8d6ba85ec36d74a06c3" category="section-title">Compliance 管理員 IAM 角色</block>
+  <block id="7cd2bb6be419d190aa59909bb89ac3d8" category="paragraph">資料分類功能現已支援合規性管理員角色，用於管理資料分類中的權限。合規性管理員角色無權存取包括 Console 代理和工作區在內的資源。擁有合規性管理員角色的使用者必須至少關聯一個其他角色。</block>
+  <block id="dc778a1e9a5cca347a8492c869a90dc5" category="paragraph">安裝 Data Classification 時，您應該擁有 Console 平台管理員角色或 Compliance 管理員角色。</block>
+  <block id="0d1a008033e3d9d27f9dd95b4127ec91" category="paragraph">如果您是現有使用者，存取應照常進行。例如，擁有資料夾或專案管理員角色的平台角色擁有現有存取權。</block>
+  <block id="eeeb9dcaeb66c431b51b12eff19105f3" category="inline-link-macro">Data Classification 角色</block>
+  <block id="c105c16486992d9ad71af50fd3100019" category="paragraph">如需詳細資訊，請參閱 <block ref="96736731356e89817dd51fb3ef396df7" category="inline-link-macro-rx"></block>。</block>
+  <block id="3b25e99cf35d3d075098a86e0854063e" category="paragraph">資料分類會擷取諸如檔案名稱、權限、建立時間、上次存取時間和上次修改時間等中繼資料。這包括「資料調查詳細資料」頁面和「資料調查報告」中顯示的所有中繼資料。</block>
+  <block id="9dda8f9b32e4530c6a33ed3ca126bddd" category="list-text">在報表圖塊中，選擇完整資料映射概覽報表標題中的 **Download** 按鈕。</block>
+  <block id="e963c800edae5dd04e2ad17bb722cbf6" category="paragraph">如果您還沒有 Console 代理程式，請在雲端供應商中建立 Console 代理程式。請參閱<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>或<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>，或<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。在大多數情況下，您可能在嘗試啟動 Data Classification 之前就已經設定好 Console 代理程式，因為大多數<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>，但在某些情況下，您需要立即設定一個。</block>
+  <block id="e4ba5595b199379fdf62976ff9dafe7a" category="list-text">*錯誤*（紅點）：掃描遇到問題，無法完成。如果您需要執行某個操作，錯誤訊息將顯示在「所需操作」列下方的工具提示中。否則，系統將顯示「錯誤」狀態並嘗試恢復。恢復完成後，狀態將會變更。</block>
+  <block id="b9ea20ef9eb4c32abc0e2419fb5f8e92" category="paragraph">詳情請參閱 <block ref="5a1aa5110d4426eba46219fc7de6d695" category="inline-xref-macro-rx"></block>。</block>
+  <block id="2b038039f3ef8f9ce689f8c48df69b42" category="list-text">在 **File property** 下拉式功能表中，選擇是否要根據檔案的 *Last accessed* 或 *Last modified* 來定義過期資料。</block>
+  <block id="b868c7529304443a7b5d84b6c738cde0" category="inline-image-macro">過時資料定義視窗的螢幕擷取畫面</block>
+  <block id="da2b03a9c6f1e52ca9a910698a9351e1" category="paragraph"><block ref="da2b03a9c6f1e52ca9a910698a9351e1" category="inline-image-macro-rx" type="image"></block></block>
 </blocks>

@@ -46,7 +46,7 @@ link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署�
 若要僅管理特定磁碟區的掃描、請選取 *Activate scan* 、然後選取 *Manage* 。在系統總覽中、識別您要掃描的資源。為每個磁碟區選取掃描類型、然後將其設定為所需的掃描類型：完整或僅對應。
 
 +
-看<<啟用和停用磁碟區上的掃描,啟用和停用磁碟區上的掃描>>了解詳情。
+詳情請參閱 <<啟用或停用磁碟區掃描>>。
 
 
 
@@ -104,15 +104,15 @@ NOTE: 對於Azure NetApp Files，資料分類只能掃描與控制台位於同�
 頁面頂部的 *Scan without write permissions* 開關預設為停用。這表示如果 Data Classification 在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間被重設，請將開關設為 ON，無論權限為何，都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["了解更多"^].
 
 
-NOTE: 只有當您在標題區域中設定了 *Map* 或 *Full scan* 設定時，系統才會自動掃描新增的磁碟區。如果所有磁碟區的設定均為 *Custom* 或 *Off*，則需要為新增的每個新磁碟區手動啟用掃描功能。
+NOTE: 只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。
 
 image:screenshot_volume_compliance_selection.png["配置頁面的螢幕截圖，您可以在其中啟用或停用對單一磁碟區的掃描。"]
 
 .步驟
 . 從資料分類選單中，選擇*配置*。
-. 識別您要掃描的系統。選取 **Activate scan**。在下拉式選單中，選擇 **Full scan**、**Map only** 或 **Manage scans** 以開啟系統選單並在特定磁碟區或共用區上設定掃描。
+. 識別您要掃描的系統。選取 **Activate scan**。在下拉式選單中，選擇 **Scan all volumes: full scan**、**Scan all volumes: mapping only** 或 **Manage scans**，以開啟系統選單並在特定磁碟區上設定掃描。
 +
-若要啟用或停用個別磁碟區的掃描，請在清單中找到磁碟區或共用區，然後在磁碟區名稱旁選取 **Map**、**Full scan** 或 **Off**。
+若要啟用或停用單一磁碟區的掃描，請在清單中找到對應的磁碟區。在掃描類型欄位中，選擇 **Map only** 或 **Full scan**。
 
 
 

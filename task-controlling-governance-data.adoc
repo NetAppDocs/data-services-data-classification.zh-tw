@@ -115,7 +115,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 |===
 .步驟
 . 從資料分類中，選擇*治理*。
-. 在報告圖塊中，選擇*完整資料映射概覽報告*。
+. 在報表圖塊中，選擇完整資料映射概覽報表標題中的 **Download** 按鈕。
 +
 image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖顯示如何啟動資料映射報告。"]
 
