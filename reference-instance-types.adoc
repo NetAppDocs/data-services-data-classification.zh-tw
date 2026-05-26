@@ -41,10 +41,10 @@ NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM �
 | 系統大小 | 規格 | 實例類型 
 
 
-| 特大號 | 32 個 CPU、128 GB RAM、OS 磁碟（2,048 GiB，最小吞吐量 250 MB/s）和資料磁碟（1 TiB SSD，最小吞吐量 750 MB/s） | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dv3-series["Standard_D32_v3"^](預設) 
+| 特大號 | 16 個 CPU、64 GB RAM、OS Disk（2,048 GiB，最低 250 MB/s 吞吐量）和 Data Disk（1 TiB SSD，最低 750 MB/s 吞吐量） | https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dv5-series["Standard_D32s_v5 或 Standard_D32_v5"^] 
 
 
-| 大的 | 16 個 CPU、64 GB RAM、500 GiB SSD | https://learn.microsoft.com/en-us/azure/virtual-machines/dv3-dsv3-series#dsv3-series["Standard_D16s_v3"^](預設) 
+| 大的 | 16 個 CPU、64 GB RAM、500 GiB SSD | link:https://learn.microsoft.com/en-us/azure/virtual-machines/sizes/general-purpose/dsv5-series?tabs=sizebasic["Standard_D16_v5 或 Standard_D16s_v5"^] (預設) 
 |===
 
 

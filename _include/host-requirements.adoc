@@ -30,7 +30,7 @@
 * 在雲端為資料分類安裝部署運算執行個體時，建議您使用符合上述「大型」系統需求的系統：
 +
 ** *Amazon Elastic Compute Cloud (Amazon EC2) 執行個體類型*：「m6i.4xlarge」。link:reference-instance-types.html#aws-instance-types["查看其他 AWS 執行個體類型"^] 。
-** *Azure VM 大小*：「Standard_D16s_v3」。link:reference-instance-types.html#azure-instance-types["查看其他 Azure 執行個體類型"^] 。
+** *Azure VM 大小*："Standard_D16_v5"。link:reference-instance-types.html#azure-instance-types["查看其他 Azure 執行個體類型"^]。
 ** *GCP 機器類型*：「n2-standard-16」。link:reference-instance-types.html#gcp-instance-types["查看其他 GCP 實例類型"^] 。
 
 
