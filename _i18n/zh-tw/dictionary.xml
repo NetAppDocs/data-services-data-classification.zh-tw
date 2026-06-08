@@ -2862,4 +2862,7 @@
   <block id="04642b3e738d43806ecec9fa472d1d45" category="cell"><block ref="04642b3e738d43806ecec9fa472d1d45" category="inline-link-rx"></block></block>
   <block id="57b872af439ab61190055dee6469a0be" category="inline-link-macro">Standard_D16_v5 或 Standard_D16s_v5</block>
   <block id="e69245882572c9873effe3c11f071ff9" category="cell"><block ref="090ec61e5794e3c2b337f1ad8d7e781f" category="inline-link-macro-rx"></block> (預設)</block>
+  <block id="2c230f06afd3e4f3ed09632a70041ab6" category="paragraph">此版本的 Data Classification 包含安全性改進和效能增強。</block>
+  <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
+  <block id="1dc91751896208f145bedd2bec6c3c49" category="paragraph">*版本 1.55*</block>
 </blocks>
