@@ -62,7 +62,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
 
-頁面頂部的 *Scan without write permissions* 開關預設為停用。這表示如果 Data Classification 在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間被重設，請將開關設為 ON，無論權限為何，都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["了解更多"^].
+*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
 
 
 NOTE: 只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。

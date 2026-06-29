@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-collected-metadata.html 
-keywords: compliance, metadata, permissions, time stamps, privacy, last access time 
+keywords: compliance, metadata, permissions, time stamps, privacy, last accessed time 
 summary: 資料分類在對來自資料來源和系統的資料執行分類掃描時收集某些元資料。資料分類可以存取我們對資料進行分類所需的大部分元數據，但有些來源我們無法存取所需的資料。 
 ---
 = 從NetApp Data Classification中的資料來源收集的元數據
@@ -14,7 +14,7 @@ summary: 資料分類在對來自資料來源和系統的資料執行分類掃�
 
 
 [role="lead"]
-NetApp Data Classification在對來自資料來源和系統的資料執行分類掃描時收集某些元資料。資料分類可以存取我們對您的資料進行分類所需的大部分元數據，但有些來源我們無法存取我們需要的資料。
+NetApp Data Classification 會在掃描資料來源和系統時收集元資料。大多數元資料都可用，但某些屬性並非所有協定都支援。
 
 [cols="15,25,25,25"]
 |===
@@ -24,10 +24,10 @@ NetApp Data Classification在對來自資料來源和系統的資料執行分類
 .3+| *時間戳* | _建立時間_ | 可用的 | 不可用（Linux 不支援） 
 
 
-| _上次造訪時間_ | 可用的 | 可用的 
+| 上次存取時間 | 可用的 | 可用的 
 
 
-| _上次修改時間_ | 可用的 | 可用的 
+| 最後修改時間 | 可用的 | 可用的 
 
 
 .2+| *權限* | _開放權限_ | 如果“EVERYONE”群組有權存取該文件，則視為“對組織開放” | 如果“其他人”有權存取該文件，則視為“對組織開放” 
@@ -38,30 +38,37 @@ NetApp Data Classification在對來自資料來源和系統的資料執行分類
 [NOTE]
 ====
 * 資料分類不會從資料庫資料來源提取「上次存取時間」。
-* 舊版的 Windows 作業系統（例如 Windows 7 和 Windows 8）預設為停用「上次存取時間」屬性的收集，因為它會影響系統效能。當未收集此屬性時，基於「上次造訪時間」的資料分類分析將受到影響。如果需要，您可以在這些較舊的 Windows 系統上啟用上次存取時間的收集。
+* 舊版的 Windows 作業系統（例如 Windows 7 和 Windows 8）預設會停用「上次存取時間」屬性的收集，因為這可能會影響系統效能。如果未收集此屬性，則基於「上次存取時間」的 Data Classification 分析將受到影響。如有需要，您可以在這些舊版 Windows 系統上啟用「上次存取時間」屬性的收集。
 
 
 ====
 
 
-== 上次訪問時間時間戳
+== 最後存取時間
 
-當資料分類從檔案共用中提取資料時，作業系統會將其視為存取數據，並相應地變更「上次存取時間」。掃描後，資料分類會嘗試將上次存取時間還原為原始時間戳記。如果資料分類在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則係統無法將上次存取時間還原為原始時間戳記。配置了SnapLock的ONTAP磁碟區具有唯讀權限，並且無法將上次存取時間還原為原始時間戳記。
+當 Data Classification 從檔案共用中提取資料時，作業系統會將其視為存取事件，並相應地更新「上次存取時間」。掃描完成後，Data Classification 會嘗試將上次存取時間還原為原始時間戳記。如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則系統無法將上次存取時間還原為原始時間戳記。
 
-預設情況下，如果資料分類沒有這些權限，系統將不會掃描磁碟區中的這些文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。但是，如果您不介意文件中的最後訪問時間是否重置為原始時間，則可以選擇配置頁面底部的*缺少“寫入屬性”權限時掃描*開關，以便資料分類無論權限如何都會掃描卷。
+預設情況下，Data Classification 在沒有寫入權限來還原原始時間戳記時不會掃描檔案。如果您的資料可以容忍最後存取時間不重設為原始時間戳記，請在系統設定頁面中啟用 *Scan without write permissions*。
 
-image:screenshot_scan_missing_permissions.png["螢幕截圖顯示了您可以使用的開關，即使資料分類沒有正確的權限將上次存取時間恢復為原始時間戳，也可以掃描您的檔案。"]
+image:screenshot_scan_missing_permissions.png["螢幕截圖顯示您可以使用的開關，即使 Data Classification 沒有正確的權限將上次存取時間還原為原始時間戳記，也可以掃描您的檔案。"]
 
 此功能適用於本機ONTAP系統、 Cloud Volumes ONTAP、 Azure NetApp Files、 Amazon FSx for NetApp ONTAP管理和第三方檔案共用。
 
-調查頁面中有一個名為「掃描分析事件」的過濾器，它使您能夠顯示未分類的文件（因為資料分類無法恢復上次訪問時間），或者即使資料分類無法恢復上次訪問時間也已分類的文件。
+
+NOTE: 配置了 SnapLock 的 ONTAP 磁碟區具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。
+
+
+
+=== 掃描分析事件
+
+「調查」頁面中有一個名為「掃描分析事件」的篩選器，可讓您顯示因 Data Classification 無法還原上次存取時間而未分類的檔案，或顯示即使 Data Classification 無法還原上次存取時間也已完成分類的檔案。
 
 image:screenshot_scan_analysis_event_filter.png["過濾器的螢幕截圖，用於查看根據是否具有寫入權限掃描了哪些文件，以及未掃描哪些文件。"]
 
 過濾器選擇包括：
 
-* 「未分類 - 無法恢復上次存取時間」 - 這顯示由於缺少寫入權限而未分類的檔案。
-* 「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次存取時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。
+* 「未分類 -- 無法恢復上次存取時間」 - 這會顯示因缺少寫入權限而未分類的檔案。
+* 「已分類並更新上次存取時間」 - 此清單顯示已分類但 NetApp Data Classification 無法將上次存取時間重設為原始日期的檔案。此篩選器僅適用於啟用了 *Scan without write permissions* 的環境。
 
 
-如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。link:task-investigate-data.html#download-your-report["了解有關數據調查報告的更多信息"^]。
+如有需要，您可以將這些結果匯出為報告，以便查看哪些檔案因權限問題而被掃描或未被掃描。link:task-investigate-data.html#download-your-report["了解有關數據調查報告的更多信息"^].

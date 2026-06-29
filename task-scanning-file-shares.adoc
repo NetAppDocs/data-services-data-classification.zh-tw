@@ -27,7 +27,7 @@ NOTE: 資料分類核心版本不支援掃描非NetApp檔案共享的資料。
 
 * 共享可以託管在任何地方，包括雲端或本地端。可以將舊版NetApp 7-模式儲存系統中的 CIFS 共用掃描為檔案共用。
 +
-** 資料分類無法從 7 模式系統中提取權限或「上次存取時間」。
+** Data Classification 無法從 7-Mode 系統擷取權限或「上次存取時間」。
 ** 由於某些 Linux 版本和 7-模式系統上的 CIFS 共用之間存在已知問題，因此您必須將共用配置為僅使用啟用了 NTLM 驗證的 SMBv1。
 
 
@@ -79,7 +79,7 @@ image:add-shares.png["新增共享模式的螢幕截圖，顯示了選擇協定�
 
 
 
-NOTE: 系統概覽頁面有一個 *無寫入權限掃描* 選項，預設為停用。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。+ 如果選取 *無寫入權限掃描* 選項，掃描將重設上次存取時間，並掃描所有檔案，無論其權限為何。+ 要了解有關上次存取時間戳記的更多資訊，請參閱 link:reference-collected-metadata.html#last-access-time-timestamp["從資料分類中的資料來源收集的元資料"]。
+NOTE: 系統概覽頁面有一個「無寫入權限掃描」選項，預設為停用。如果 Data Classification 沒有相應的權限，則不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。+ 您可以使用「無寫入權限掃描」選項覆寫此設定。若要深入瞭解此選項，請參閱 link:reference-collected-metadata.html#last-accessed-time-timestamp["從資料分類中的資料來源收集的元資料"]。
 
 .結果
 資料分類開始掃描您新增的檔案共用中的檔案。你可以xref:#track-the-scanning-progress[追蹤掃描進度]並在**儀表板**中查看掃描結果。
@@ -147,7 +147,7 @@ image:add-shares.png["新增共享模式的螢幕截圖，顯示了選擇協定�
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
 
-頁面頂部的 *Scan without write permissions* 開關預設為停用。這表示如果 Data Classification 在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間被重設，請將開關設為 ON，無論權限為何，都會掃描所有檔案。link:reference-collected-metadata.html#last-access-time-timestamp["了解更多"^].
+*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
 
 
 NOTE: 只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。

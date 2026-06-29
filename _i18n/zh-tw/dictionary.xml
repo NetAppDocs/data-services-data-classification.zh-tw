@@ -508,7 +508,6 @@
   <block id="ac504804f226f1152fbc41d9f7d275a8" category="list-text"><block ref="ac504804f226f1152fbc41d9f7d275a8" category="inline-link-macro-rx"></block></block>
   <block id="7d8a62fbff7754d15c3345a4a5a2a42c" category="summary">資料分類在對來自資料來源和系統的資料執行分類掃描時收集某些元資料。資料分類可以存取我們對資料進行分類所需的大部分元數據，但有些來源我們無法存取所需的資料。</block>
   <block id="1a1e0d143649a0ce6e5ef90ccb76c8f6" category="doc">從NetApp Data Classification中的資料來源收集的元數據</block>
-  <block id="3d8ee8eca2b65adc6d121edf7d865b83" category="paragraph">NetApp Data Classification在對來自資料來源和系統的資料執行分類掃描時收集某些元資料。資料分類可以存取我們對您的資料進行分類所需的大部分元數據，但有些來源我們無法存取我們需要的資料。</block>
   <block id="f22df8f0b5591e83e42546cc1ff8a3d7" category="cell">*元資料*</block>
   <block id="4e7da840816931928beff62cd45584f2" category="cell">*CIFS*</block>
   <block id="b4ccd4984cce17a35c772737cf9415b1" category="cell">*NFS*</block>
@@ -516,8 +515,6 @@
   <block id="7e06380ecab9614af588d8a05ba6d6b0" category="cell">_建立時間_</block>
   <block id="78945de8de090e90045d299651a68a9b" category="cell">可用的</block>
   <block id="f9b9ab70f8d1cbd522aba5cea3dbb026" category="cell">不可用（Linux 不支援）</block>
-  <block id="32e6470f56de0e5ebf534668812bd960" category="cell">_上次造訪時間_</block>
-  <block id="c843b01ef48f3bd79d5d3521fbfa6125" category="cell">_上次修改時間_</block>
   <block id="06d8b12cf1272ab914790a8734a08c8e" category="cell">*權限*</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_開放權限_</block>
   <block id="fbd9c4028bea4c13eb992144e5923bc4" category="cell">如果“EVERYONE”群組有權存取該文件，則視為“對組織開放”</block>
@@ -526,19 +523,10 @@
   <block id="63f19f489bdf8010eb6fc8ee363b3569" category="cell">使用者和群組資訊取自 LDAP</block>
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">不可用（NFS 使用者通常在伺服器本地進行管理，因此同一個人在每個伺服器上可以有不同的 UID）</block>
   <block id="97804fec1fa581f14632ae2006d395c1" category="list-text">資料分類不會從資料庫資料來源提取「上次存取時間」。</block>
-  <block id="2a70f378d1c671653b665ce9f215b15b" category="list-text">舊版的 Windows 作業系統（例如 Windows 7 和 Windows 8）預設為停用「上次存取時間」屬性的收集，因為它會影響系統效能。當未收集此屬性時，基於「上次造訪時間」的資料分類分析將受到影響。如果需要，您可以在這些較舊的 Windows 系統上啟用上次存取時間的收集。</block>
-  <block id="99d97930418935683e2b318283d0dfe1" category="section-title">上次訪問時間時間戳</block>
-  <block id="b01aa3e2f261b8dedf818225ee6c05e4" category="paragraph">當資料分類從檔案共用中提取資料時，作業系統會將其視為存取數據，並相應地變更「上次存取時間」。掃描後，資料分類會嘗試將上次存取時間還原為原始時間戳記。如果資料分類在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則係統無法將上次存取時間還原為原始時間戳記。配置了SnapLock的ONTAP磁碟區具有唯讀權限，並且無法將上次存取時間還原為原始時間戳記。</block>
-  <block id="8def4976ff143e6a920052542f197505" category="paragraph">預設情況下，如果資料分類沒有這些權限，系統將不會掃描磁碟區中的這些文件，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。但是，如果您不介意文件中的最後訪問時間是否重置為原始時間，則可以選擇配置頁面底部的*缺少“寫入屬性”權限時掃描*開關，以便資料分類無論權限如何都會掃描卷。</block>
-  <block id="beeec568ede723c6cb0a6b3260fb9b8e" category="inline-image-macro">螢幕截圖顯示了您可以使用的開關，即使資料分類沒有正確的權限將上次存取時間恢復為原始時間戳，也可以掃描您的檔案。</block>
-  <block id="8484ff18eb18f2927a7a9d7e7eb54cc0" category="paragraph"><block ref="8484ff18eb18f2927a7a9d7e7eb54cc0" category="inline-image-macro-rx" type="image"></block></block>
   <block id="41adaaf0716718eecf1f4d48b84b258e" category="paragraph">此功能適用於本機ONTAP系統、 Cloud Volumes ONTAP、 Azure NetApp Files、 Amazon FSx for NetApp ONTAP管理和第三方檔案共用。</block>
-  <block id="4de6f989e1e0dd2a243309a397602c7b" category="paragraph">調查頁面中有一個名為「掃描分析事件」的過濾器，它使您能夠顯示未分類的文件（因為資料分類無法恢復上次訪問時間），或者即使資料分類無法恢復上次訪問時間也已分類的文件。</block>
   <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">過濾器的螢幕截圖，用於查看根據是否具有寫入權限掃描了哪些文件，以及未掃描哪些文件。</block>
   <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">過濾器選擇包括：</block>
-  <block id="a66a4b74b70237f4c0cbce83303f74d2" category="list-text">「未分類 - 無法恢復上次存取時間」 - 這顯示由於缺少寫入權限而未分類的檔案。</block>
-  <block id="3856c8caab06eda61e5fe3e07996939a" category="list-text">「已分類並更新的上次存取時間」 - 這顯示已分類的文件，且資料分類無法將上次存取時間重設為原始日期。此篩選器僅與您開啟*缺少「寫入屬性」權限時掃描*的環境相關。</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">描述</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
@@ -1671,7 +1659,6 @@
   <block id="244dfe89822bd7a0557bf1e5e9251080" category="paragraph">*注意：*掃描Azure NetApp Files區時，目前不支援在本機位置部署資料分類。</block>
   <block id="6ff7a146d1b3d9e61301aa10f8f9c71b" category="section-title">在您的系統中啟用資料分類</block>
   <block id="9826224877bd2bc3d70f083a50fff930" category="paragraph">您可以在Azure NetApp Files區上啟用資料分類。</block>
-  <block id="4a4bd4695f7ed79b6d5b23795d88275f" category="list-text">預設情況下，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的文件，因為資料分類無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次造訪時間是否重設，請選擇*或為每個磁碟區選擇掃描類型*。結果頁面有一個您可以啟用的設置，以便資料分類可以掃描卷，而不管權限如何。</block>
   <block id="2c0b9fc0f9659fa0f71a4337b2fc2043" category="inline-link-macro">了解此資料分類限制</block>
   <block id="fcc492b009ae46bdb956c856d82562f9" category="list-text">資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。<block ref="951289bfacd7a4614d2fd45503ad30db" category="inline-link-macro-rx"></block> 。</block>
   <block id="a1472fc5022c73ad637eab4b03c664d6" category="paragraph">透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要為資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。</block>
@@ -1727,7 +1714,6 @@
   <block id="0e2e5c53c255da0bcabea3a89da75f8c" category="paragraph">若要掃描檔案共用，您必須先在NetApp Data Classification中建立檔案共用群組。檔案共用群組適用於本機或雲端中託管的 NFS 或 CIFS (SMB) 共用。</block>
   <block id="1edfcfd103906c3f301404b4a52918e7" category="admonition">資料分類核心版本不支援掃描非NetApp檔案共享的資料。</block>
   <block id="d809bb142c0a96aef201dfc891e977e3" category="list-text">共享可以託管在任何地方，包括雲端或本地端。可以將舊版NetApp 7-模式儲存系統中的 CIFS 共用掃描為檔案共用。</block>
-  <block id="b134bb9bee5846297eaa45f9c959cd4f" category="list-text">資料分類無法從 7 模式系統中提取權限或「上次存取時間」。</block>
   <block id="f167fbb6464f189d72ddba5508d2a1a2" category="list-text">由於某些 Linux 版本和 7-模式系統上的 CIFS 共用之間存在已知問題，因此您必須將共用配置為僅使用啟用了 NTLM 驗證的 SMBv1。</block>
   <block id="29166e51c9a2f11d6903f8af7b9cec82" category="list-text">資料分類實例和共用之間需要有網路連線。</block>
   <block id="977302dc7d05ad33d9edd0c0bbe5ec07" category="list-text">您可以將 DFS（分散式檔案系統）共用新增為常規 CIFS 共用。由於資料分類不知道共用是基於組合為單一 CIFS 共用的多個伺服器/磁碟區所建構的，因此當訊息實際上僅適用於位於不同伺服器/磁碟區上的一個資料夾/共用時，您可能會收到有關共用的權限或連線錯誤。</block>
@@ -1848,7 +1834,6 @@
   <block id="0fbc5c9a0ab1eecf4064d4ae4ef04fe5" category="cell">HIPAA 報告</block>
   <block id="14167b2f4f95b7ebdb671b9dc719f2b4" category="cell">PCI DSS 報告</block>
   <block id="a8489c9a413df737ca55e133eea56820" category="example-title">調查過濾器差異：</block>
-  <block id="f1be55e10a484bdeb7e4eae576688474" category="cell">上次訪問</block>
   <block id="4797f8fb709b9cdf801351bca3181105" category="cell">檔案目錄路徑</block>
   <block id="76596c862fd4cd497cf2a3ea36b26c43" category="cell">分類狀態</block>
   <block id="fb8a04662bc42d13ae8a2d1bddbc05b3" category="cell">狀態始終為“見解有限”</block>
@@ -2256,7 +2241,6 @@
   <block id="78fec667589f53471f473945289b1df5" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> 。</block>
   <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。<block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>。</block>
   <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">了解有關數據調查報告的更多信息</block>
-  <block id="802848fafcfe67f4f3f9ecf3f0a85b90" category="paragraph">如果需要，您可以將這些結果匯出到報告中，以便查看哪些文件因權限原因而掃描，哪些文件未被掃描。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>。</block>
   <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">建立數據發現評估報告</block>
   <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">數據發現評估報告對掃描環境進行了高級分析，以顯示關注區域和潛在的補救步驟。結果基於數據的映射和分類。本報告的目標是提高您對資料集三個重要面向的認識：</block>
   <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">根據您是在雲端中準備的實例上還是在本機準備的實例上安裝資料分類，選擇適當的*部署*選項來啟動資料分類安裝。</block>
@@ -2743,7 +2727,6 @@
   <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">Data Classification 安裝腳本包含一個測試腳本，用於確保您的環境符合要求。您可以單獨執行此測試腳本，以在執行安裝腳本之前驗證 Linux 主機是否已準備就緒。</block>
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification 可讓你在組織的混合多雲環境中掃描並分類資料。Data Classification 利用 AI 驅動的自然語言處理（NLP）進行情境資料分析與分類，為你的資料提供可行的洞察，以因應合規需求、偵測安全漏洞、優化成本並加速遷移。</block>
   <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。</block>
-  <block id="b9f4fbd6355c3f44311a98b062b34192" category="paragraph">頁面頂部的 *Scan without write permissions* 開關預設為停用。這表示如果 Data Classification 在 CIFS 中沒有寫入屬性權限或在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不在意上次存取時間被重設，請將開關設為 ON，無論權限為何，都會掃描所有檔案。<block ref="62855d79cc7b1c143d998d83fe5addab" category="inline-link-macro-rx"></block>.</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*僅對應掃描* 僅提供資料的高階概覽。由於無需存取檔案即可查看內部資料，因此可以非常快速地對資料來源進行對應。</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">您可以利用僅 Map 掃描快速掃描資料，以識別需要更多研究的資料來源，然後再僅對這些所需的資料來源或磁碟區啟用 Map 和 classify 掃描。</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">優先順序僅分配給僅進行 Map 掃描，不分配給同時進行 Map 和 classify 的掃描。</block>
@@ -2810,7 +2793,6 @@
   <block id="2d3302176c76aec3fe98cab8969a0c0e" category="list-text">從「組態」頁面中、選取您要設定之資料庫的 *Manage* 按鈕。</block>
   <block id="80e0de11f47a35b7ed8a03d17a2fb153" category="list-text">對於要啟用掃描的每個架構，請選取 *Scan type* 欄，然後將掃描設定為關閉或 **Full scan** 。</block>
   <block id="8d32c8792fe62b20190091ba24adbda5" category="paragraph"><block ref="8d32c8792fe62b20190091ba24adbda5" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="83529dca19d84fa3c8393d751d1499ce" category="admonition">系統概覽頁面有一個 *無寫入權限掃描* 選項，預設為停用。這意味著，如果資料分類在 CIFS 中沒有寫入屬性權限，或者在 NFS 中沒有寫入權限，系統將不會掃描檔案，因為資料分類無法將「上次存取時間」恢復為原始時間戳記。+ 如果選取 *無寫入權限掃描* 選項，掃描將重設上次存取時間，並掃描所有檔案，無論其權限為何。+ 要了解有關上次存取時間戳記的更多資訊，請參閱 <block ref="efbe79d0ae711b4cfcab53d208f81146" category="inline-link-macro-rx"></block>。</block>
   <block id="2717183da69efedd6362c78212b10c1a" category="list-text">在「設定」頁面中，找到要修改的檔案共用群組系統，然後選取 **Manage**。</block>
   <block id="bb558c437c7399f74ddbfc29cfe6d4b0" category="list-text">在「設定」頁面中，找到要修改的檔案共用群組。選擇 **管理**。</block>
   <block id="91e1b5438eb65d42406ab3c0b884b005" category="list-text">選擇 **儲存** 以完成檔案共用的新增。</block>
@@ -2865,4 +2847,23 @@
   <block id="2c230f06afd3e4f3ed09632a70041ab6" category="paragraph">此版本的 Data Classification 包含安全性改進和效能增強。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
   <block id="1dc91751896208f145bedd2bec6c3c49" category="paragraph">*版本 1.55*</block>
+  <block id="400d643b71c3364f054f36d1a364b010" category="paragraph">*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。<block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>。</block>
+  <block id="08d690ae4b804cef391f5252bd5c8790" category="paragraph">NetApp Data Classification 會在掃描資料來源和系統時收集元資料。大多數元資料都可用，但某些屬性並非所有協定都支援。</block>
+  <block id="248175bb24e6c3f827fdcf2829459c43" category="cell">上次存取時間</block>
+  <block id="8bf7825b2500bcd9e4136974d34b441d" category="cell">最後修改時間</block>
+  <block id="f0561a3763aafb48cd008a051f3c7fc9" category="list-text">舊版的 Windows 作業系統（例如 Windows 7 和 Windows 8）預設會停用「上次存取時間」屬性的收集，因為這可能會影響系統效能。如果未收集此屬性，則基於「上次存取時間」的 Data Classification 分析將受到影響。如有需要，您可以在這些舊版 Windows 系統上啟用「上次存取時間」屬性的收集。</block>
+  <block id="85d5603a6e68c4c44680e10abf168fa3" category="section-title">最後存取時間</block>
+  <block id="6d08aea005b1d5d4f7acfd946936e69f" category="paragraph">當 Data Classification 從檔案共用中提取資料時，作業系統會將其視為存取事件，並相應地更新「上次存取時間」。掃描完成後，Data Classification 會嘗試將上次存取時間還原為原始時間戳記。如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則系統無法將上次存取時間還原為原始時間戳記。</block>
+  <block id="fc6dae26cc8f14598d77a643ee9241e1" category="paragraph">預設情況下，Data Classification 在沒有寫入權限來還原原始時間戳記時不會掃描檔案。如果您的資料可以容忍最後存取時間不重設為原始時間戳記，請在系統設定頁面中啟用 *Scan without write permissions*。</block>
+  <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">螢幕截圖顯示您可以使用的開關，即使 Data Classification 沒有正確的權限將上次存取時間還原為原始時間戳記，也可以掃描您的檔案。</block>
+  <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">配置了 SnapLock 的 ONTAP 磁碟區具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。</block>
+  <block id="fb9e57bde1ebc255f8112f03d368ba3d" category="section-title">掃描分析事件</block>
+  <block id="2d7467e91b9232ed23a46789156fd0df" category="paragraph">「調查」頁面中有一個名為「掃描分析事件」的篩選器，可讓您顯示因 Data Classification 無法還原上次存取時間而未分類的檔案，或顯示即使 Data Classification 無法還原上次存取時間也已完成分類的檔案。</block>
+  <block id="36e3fa5a59068e8d4e581c88a91ade4e" category="list-text">「未分類 -- 無法恢復上次存取時間」 - 這會顯示因缺少寫入權限而未分類的檔案。</block>
+  <block id="c08d4ba8dd4b618c703259c0efe64f7f" category="list-text">「已分類並更新上次存取時間」 - 此清單顯示已分類但 NetApp Data Classification 無法將上次存取時間重設為原始日期的檔案。此篩選器僅適用於啟用了 *Scan without write permissions* 的環境。</block>
+  <block id="cd76351b9e3a96611e6478f208d2a089" category="paragraph">如有需要，您可以將這些結果匯出為報告，以便查看哪些檔案因權限問題而被掃描或未被掃描。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>.</block>
+  <block id="8cdefa787a746da6737b670208407756" category="list-text">預設情況下，如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次存取時間是否重設，請選取 *Or select scanning type for each volume*。在產生的頁面中，有一個可啟用的設定，讓 Data Classification 無論權限如何都會掃描磁碟區。</block>
+  <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classification 無法從 7-Mode 系統擷取權限或「上次存取時間」。</block>
+  <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">系統概覽頁面有一個「無寫入權限掃描」選項，預設為停用。如果 Data Classification 沒有相應的權限，則不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。+ 您可以使用「無寫入權限掃描」選項覆寫此設定。若要深入瞭解此選項，請參閱 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>。</block>
 </blocks>
