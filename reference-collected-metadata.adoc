@@ -56,19 +56,3 @@ image:screenshot_scan_missing_permissions.png["螢幕截圖顯示您可以使用
 
 
 NOTE: 配置了 SnapLock 的 ONTAP 磁碟區具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。
-
-
-
-=== 掃描分析事件
-
-「調查」頁面中有一個名為「掃描分析事件」的篩選器，可讓您顯示因 Data Classification 無法還原上次存取時間而未分類的檔案，或顯示即使 Data Classification 無法還原上次存取時間也已完成分類的檔案。
-
-image:screenshot_scan_analysis_event_filter.png["過濾器的螢幕截圖，用於查看根據是否具有寫入權限掃描了哪些文件，以及未掃描哪些文件。"]
-
-過濾器選擇包括：
-
-* 「未分類 -- 無法恢復上次存取時間」 - 這會顯示因缺少寫入權限而未分類的檔案。
-* 「已分類並更新上次存取時間」 - 此清單顯示已分類但 NetApp Data Classification 無法將上次存取時間重設為原始日期的檔案。此篩選器僅適用於啟用了 *Scan without write permissions* 的環境。
-
-
-如有需要，您可以將這些結果匯出為報告，以便查看哪些檔案因權限問題而被掃描或未被掃描。link:task-investigate-data.html#download-your-report["了解有關數據調查報告的更多信息"^].
