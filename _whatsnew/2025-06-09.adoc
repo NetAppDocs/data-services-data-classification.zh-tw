@@ -4,6 +4,7 @@
 
 
 
+[[improved-update-times-for-the-governance-dashboard]]
 === 改進了治理儀表板的更新時間
 
 治理儀表板各個組件的更新時間已改善。下表顯示了每個組件的更新頻率。
@@ -52,12 +53,14 @@
 
 
 
+[[performance-and-security-improvements]]
 === 性能和安全性改進
 
 已做出改進以提高BlueXP分類的效能、記憶體消耗和安全性。
 
 
 
+[[bug-fixes]]
 === 錯誤修復
 
 Redis 已升級，以提高BlueXP classification的可靠性。BlueXP classification現在使用 Elasticsearch 來提高掃描期間文件計數報告的準確性。

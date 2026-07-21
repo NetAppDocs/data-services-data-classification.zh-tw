@@ -4,6 +4,7 @@
 
 
 
+[[resource-validation]]
 === 資源驗證
 
 為確保可靠性，Data Classification 現在會在掃描、報告產生和執行操作過程中驗證可用記憶體和磁碟資源。當記憶體使用率超過 95% 或磁碟空間低於 6 GB 時，Data Classification 會自動暫停操作。資源充足後，操作將恢復。
@@ -12,6 +13,7 @@
 
 
 
+[[increased-limit-for-copy-and-move]]
 === 提高了複製和移動的限制
 
 現在支援對 CIFS 目標進行複製和移動操作。這兩個操作的單一檔案大小限制已從先前的 50 MB 提高到 1 GB。這兩個操作的操作限制也已提高到 1 TB 或 500 萬個檔案。
@@ -20,6 +22,7 @@
 
 
 
+[[active-directory-integration-configuration-permissions]]
 === Active Directory 整合設定權限
 
 現在，資料分類中對 Active Directory（AD）整合設定的變更僅限於管理員。檢視者不再能夠修改 AD 設定。
@@ -28,6 +31,7 @@
 
 
 
+[[support-for-rhel-9-7]]
 === 支援 RHEL 9.7
 
 資料分類功能新增了 Red Hat Enterprise Linux v9.7，可用於手動內部部署安裝，包括 dark site 部署。
@@ -36,6 +40,7 @@
 
 
 
+[[transparent-proxy-support]]
 === 透明 Proxy 支援
 
 Data Classification 現在支援透明 Proxy 配置，從而能夠在 Proxy 或受限網路環境中更順利地部署。

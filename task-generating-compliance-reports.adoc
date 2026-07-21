@@ -38,6 +38,7 @@ NetApp Data Classification提供報告，您可以使用這些報告來更好地
 
 
 
+[[select-the-systems-for-reports]]
 == 選擇報告系統
 
 您可以過濾資料分類合規性儀表板的內容，以查看所有系統和資料庫的合規性數據，或僅查看特定係統的合規性數據。
@@ -55,6 +56,7 @@ image:screenshot-report-filter.png["螢幕顯示系統過濾。"]
 
 
 
+[[data-subject-access-request-report]]
 == 資料主體存取請求報告
 
 歐洲 GDPR 等隱私法規賦予資料主體（例如客戶或員工）存取其個人資料的權利。當資料主體請求此資訊時，這稱為 DSAR（資料主體存取請求）。各組織必須「毫不拖延」地回應這些請求，最晚不得超過收到請求後的一個月。
@@ -104,6 +106,7 @@ NOTE: 搜尋資料主體的姓名時支援英語、德語、日語和西班牙�
 
 
 
+[[health-insurance-portability-and-accountability-act-hipaa-report]]
 == 健康保險流通與責任法案（HIPAA）報告
 
 健康保險流通與責任法案 (HIPAA) 報告可以幫助您識別包含健康資訊的文件。它旨在幫助您的組織遵守 HIPAA 資料隱私法的要求。資料分類尋找的資訊包括：
@@ -141,6 +144,7 @@ image:screenshot-report-options.png["合規性頁面中的報告選項的螢幕�
 
 
 
+[[payment-card-industry-data-security-standard-pci-dss-report]]
 == 支付卡產業資料安全標準 (PCI DSS) 報告
 
 支付卡產業資料安全標準 (PCI DSS) 報告可以幫助您識別文件中信用卡資訊的分佈。
@@ -171,6 +175,7 @@ image:screenshot-report-options.png["合規性頁面中的報告選項的螢幕�
 
 
 
+[[privacy-risk-assessment-report]]
 == 隱私風險評估報告
 
 隱私權風險評估報告概述了您組織的隱私權風險狀況，這是 GDPR 和 CCPA 等隱私權法規所要求的。

@@ -20,6 +20,7 @@ NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM �
 
 
 
+[[aws-instance-types]]
 == AWS 執行個體類型
 
 [cols="20,30,25"]
@@ -34,6 +35,7 @@ NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM �
 |===
 
 
+[[azure-instance-types]]
 == Azure 執行個體類型
 
 [cols="20,30,25"]
@@ -48,6 +50,7 @@ NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM �
 |===
 
 
+[[gcp-instance-types]]
 == GCP 實例類型
 
 [cols="20,30,25"]

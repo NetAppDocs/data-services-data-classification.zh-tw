@@ -25,6 +25,7 @@ TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化
 
 
 
+[[supported-data-sources]]
 == 支援的資料來源
 
 在私有模式（有時稱為「離線」或「暗站點」）下安裝時，Data Classification 只能掃描位於本地站點的資料來源中的資料。目前，Data Classification 可以掃描以下 *本地* 資料來源：
@@ -37,6 +38,7 @@ TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化
 
 
 
+[[limitations]]
 == 限制
 
 大多數資料分類功能在部署於無網際網路存取的站台時也能正常運作。但是，某些需要網際網路存取的功能不受支援，例如：
@@ -51,6 +53,7 @@ Console 代理程式和 Data Classification 都需要定期手動升級才能啟
 
 
 
+[[quick-start]]
 == 快速啟動
 
 按照以下步驟快速開始，或向下捲動到其餘部分以獲取完整詳細資訊。
@@ -69,12 +72,14 @@ Console 代理程式和 Data Classification 都需要定期手動升級才能啟
 
 
 
+[[install-the-console-agent]]
 == 安裝 Console 代理程式
 
 如果您尚未在離線站點的 Linux 主機上以私有模式安裝 Console 代理， https://docs.netapp.com/us-en/console-setup-admin/task-quick-start-private-mode.html["部署 Console 代理"^]。
 
 
 
+[[prepare-the-linux-host-system]]
 == 準備 Linux 主機系統
 
 Data Classification 軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上執行。
@@ -185,7 +190,11 @@ firewall-cmd --reload
 TIP: 安裝後，資料分類主機系統的 IP 位址無法變更。
 
 
+NOTE: 資料分類安裝程式會預留 UID 4321 和 GID 4321。在開始安裝之前，請確保主機上未使用 UID 4321 和 GID 4321。如果已使用，安裝將失敗並顯示「invalid user」錯誤訊息。
 
+
+
+[[verify-console-and-data-classification-prerequisites]]
 == 驗證 Console 和 Data Classification 的先決條件
 
 在部署 Data Classification 之前，請檢閱下列先決條件，以確保您擁有受支援的組態。
@@ -200,6 +209,7 @@ Data Classification 執行個體使用私有 IP 位址，以確保索引資料�
 
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 驗證所有必要的連接埠均已啟用
 
 您必須確保所有必要的連接埠都已打開，以便在控制台代理程式、資料分類、Active Directory 和資料來源之間進行通訊。
@@ -263,6 +273,7 @@ NFS 磁碟區匯出策略必須允許從資料分類實例進行存取。
 |===
 
 
+[[install-data-classification-on-the-on-premises-linux-host]]
 == 在內部部署 Linux 主機上安裝 Data Classification
 
 對於典型的配置，您會將軟體安裝在單一主機系統上。
@@ -346,6 +357,7 @@ image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的
 
 
 
+[[upgrade-data-classification-software]]
 == 升級 Data Classification 軟體
 
 由於 Data Classification 軟體會定期更新新功能，您應該養成定期檢查新版本的習慣，以確保使用最新的軟體和功能。您需要手動升級 Data Classification 軟體，因為沒有網際網路連線可自動執行升級。
@@ -394,6 +406,7 @@ start_darksite_upgrade.sh
 
 
 
+[[next-steps]]
 == 下一步
 
 * link:task-scanning-overview.html["在資料來源上設定掃描"]

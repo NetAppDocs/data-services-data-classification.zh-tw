@@ -21,6 +21,7 @@ NetApp Data Classification健康監視器儀表板提供即時監控和效能洞
 
 
 
+[[health-monitor-insights]]
 == 健康監測洞察
 
 健康監測儀錶板以四類資訊呈現資訊。
@@ -45,6 +46,7 @@ NetApp Data Classification健康監視器儀表板提供即時監控和效能洞
 
 
 
+[[access-the-health-monitor-dashboard]]
 == 訪問健康監測儀表板
 
 . 在資料分類中，選擇**配置**。

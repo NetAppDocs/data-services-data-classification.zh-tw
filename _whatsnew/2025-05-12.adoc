@@ -4,6 +4,7 @@
 
 
 
+[[prioritize-classification-scans]]
 === 優先進行分類掃描
 
 Data Classification 支援對 Map & Classify 掃描以及 Map-only 掃描進行優先排序的功能，讓您可以選擇優先完成哪些掃描。Map & Classify 掃描的優先排序在掃描開始前和進行中均受支援。如果您選擇在掃描進行過程中設定優先順序，則對應和分類掃描都會被優先處理。
@@ -12,6 +13,7 @@ Data Classification 支援對 Map & Classify 掃描以及 Map-only 掃描進行�
 
 
 
+[[support-for-canadian-personally-identifiable-information-pii-data-categories]]
 === 支援加拿大個人識別資訊 (PII) 資料類別
 
 資料分類掃描識別加拿大 PII 資料類別。這些類別包括加拿大所有省份和地區的銀行資訊、護照號碼、社會保險號碼、駕駛執照號碼和健康卡號碼。
@@ -20,6 +22,7 @@ Data Classification 支援對 Map & Classify 掃描以及 Map-only 掃描進行�
 
 
 
+[[custom-classification-preview]]
 === 自訂分類（預覽）
 
 資料分類支援地圖和分類掃描的自訂分類。透過自訂分類，您可以自訂資料分類掃描，以使用正規表示式擷取特定於您的組織的資料。此功能目前處於預覽狀態。
@@ -28,18 +31,21 @@ Data Classification 支援對 Map & Classify 掃描以及 Map-only 掃描進行�
 
 
 
+[[saved-searches-tab]]
 === 已儲存的搜尋標籤
 
 **政策** 選項卡已重新命名link:https://docs.netapp.com/us-en/data-services-data-classification/task-using-policies.html["**已儲存的搜尋**"]。功能沒有改變。
 
 
 
+[[send-scan-events-to-the-audit-page]]
 === 將掃描事件傳送至審核頁面
 
 Data Classification 支援將分類事件（掃描開始時和結束時）傳送至 link:https://docs.netapp.com/us-en/console-setup-admin/task-monitor-cm-operations.html#audit-user-activity-from-the-bluexp-timeline["NetApp Console 稽核頁面"^]。
 
 
 
+[[security-updates]]
 === 安全性更新
 
 * Keras 套件已更新，緩解了漏洞（BDSA-2025-0107 和 BDSA-2025-1984）。
@@ -48,12 +54,14 @@ Data Classification 支援將分類事件（掃描開始時和結束時）傳送
 
 
 
+[[performance-enhancements]]
 === 效能增強
 
 已經實施了程式碼增強，以減少 RAM 使用率並提高資料分類的整體效能。
 
 
 
+[[bug-fixes]]
 === 錯誤修復
 
 導致StorageGRID掃描失敗、調查頁面過濾選項無法載入以及無法下載大容量評估的資料發現評估的錯誤已修復。

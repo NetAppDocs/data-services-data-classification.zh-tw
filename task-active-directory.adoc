@@ -33,6 +33,7 @@ NOTE: 本機使用者 SID 和來自未知網域的 SID 不會轉換為實際使�
 
 
 
+[[supported-data-sources]]
 == 支援的資料來源
 
 Active Directory 與資料分類的整合可以識別來自下列資料來源的資料：
@@ -45,6 +46,7 @@ Active Directory 與資料分類的整合可以識別來自下列資料來源的
 
 
 
+[[connect-to-your-active-directory-server]]
 == 連接到您的 Active Directory 伺服器
 
 部署資料分類並啟動資料來源掃描後，您可以將資料分類與 Active Directory 整合。可以使用 DNS 伺服器 IP 位址或 LDAP 伺服器 IP 位址存取 Active Directory。
@@ -105,6 +107,7 @@ LDAP 伺服器 IP 位址，或多個 IP 位址
 
 
 
+[[manage-your-active-directory-integration]]
 == 管理您的 Active Directory 集成
 
 如果您需要修改 Active Directory 整合中的任何值，則必須在資料分類中更新 Active Directory 組態。返回資料分類中的 **Configuration** 功能表，然後切換到設定標籤進行變更。

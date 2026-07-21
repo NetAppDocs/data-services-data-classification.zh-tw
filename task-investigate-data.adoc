@@ -21,6 +21,7 @@ NOTE: 若要從「調查」頁面獲取深入見解，您必須對資料來源�
 
 
 
+[[data-investigation-structure]]
 == 資料調查結構
 
 數據調查頁面將數據分類到三個選項卡：
@@ -32,6 +33,7 @@ NOTE: 若要從「調查」頁面獲取深入見解，您必須對資料來源�
 
 
 
+[[data-filters]]
 == 數據過濾器
 
 資料調查頁面提供了許多過濾器來對您的資料進行分類，以便您可以找到所需的資料。您可以同時使用多個過濾器。
@@ -196,6 +198,7 @@ TIP: 資料過濾後，您可以 link:task-copy-move.html["複製、移動和刪
 
 
 
+[[view-file-metadata]]
 == 查看檔案元數據
 
 除了顯示文件所在的系統和磁碟區之外，元資料還顯示更多信息，包括文件權限、文件擁有者以及該文件是否有重複。如果您打算link:task-using-policies.html["建立已儲存的查詢"]因為您可以看到可用於過濾資料的所有資訊。
@@ -213,6 +216,7 @@ image:screenshot_compliance_file_details.png["顯示資料調查頁面中文件�
 
 
 
+[[view-user-permissions-for-files-and-directories]]
 == 查看檔案和目錄的使用者權限
 
 若要查看有權存取檔案或目錄的所有使用者或群組的清單以及他們擁有的權限類型，請選擇「查看所有權限」。此選項僅適用於 CIFS 共享中的資料。
@@ -237,6 +241,7 @@ TIP: 您可以展開該群組的某個層級來查看屬於該群組的使用者
 
 
 
+[[check-for-duplicate-files-in-your-storage-systems]]
 == 檢查儲存系統中的重複文件
 
 您可以檢查儲存系統中是否儲存了重複的檔案。如果您想確定可以節省儲存空間的區域，這將非常有用。確保具有特定權限或敏感資訊的某些檔案不會在儲存系統中不必要地重複也是很好的。
@@ -276,6 +281,7 @@ TIP: 您可以使用此頁面提供的「檔案雜湊」值並將其直接輸入
 
 
 
+[[download-your-report]]
 == 下載您的報告
 
 您可以以 CSV 或 JSON 格式下載過濾結果。
@@ -293,6 +299,7 @@ NOTE: 您可以下載 CSV 檔案的版本以在此瀏覽器中查看。此版本
 
 
 
+[[whats-included-in-the-downloadable-report]]
 === 可下載報告所包含的內容
 
 *非結構化文件資料報告*包含有關您的文件的以下資訊：
@@ -370,6 +377,7 @@ image:screenshot_compliance_investigation_report2.png["下載調查報告頁面�
 
 
 
+[[create-a-saved-query-based-on-selected-filters]]
 == 根據選定的篩選器建立已儲存的查詢
 
 .步驟
@@ -398,6 +406,7 @@ TIP: 結果可能需要最多 15 分鐘才會顯示在「已儲存的查詢」�
 
 
 
+[[next-steps]]
 == 下一步
 
 * link:task-copy-move.html["從調查儀表板複製、移動和刪除資料"]

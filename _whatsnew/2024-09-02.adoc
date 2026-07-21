@@ -4,6 +4,7 @@
 
 
 
+[[scan-storagegrid-data]]
 === 掃描StorageGRID數據
 
 BlueXP classification支援掃描StorageGRID中的資料。

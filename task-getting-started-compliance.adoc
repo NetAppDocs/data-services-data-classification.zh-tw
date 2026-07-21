@@ -18,6 +18,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 
 
 
+[[prerequisites]]
 == 先決條件
 
 在啟用資料分類之前，請確保您具有支援的配置。
@@ -28,6 +29,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == 驗證資料分類是否有權存取卷
 
 透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要向資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
@@ -58,6 +60,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 
 
 
+[[enable-or-disable-scans-on-volumes]]
 == 啟用或停用磁碟區掃描
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。

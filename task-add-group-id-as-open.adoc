@@ -22,6 +22,7 @@ summary: 在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時�
 
 
 
+[[add-the-open-to-organization-permission-to-group-ids]]
 == 為群組 ID 新增「向組織開放」權限
 
 在開始此任務之前，您需要有群組 ID 號碼 (GID)。
@@ -50,6 +51,7 @@ summary: 在 NFS 檔案共用中，當群組 ID 附加到檔案或資料夾時�
 
 
 
+[[view-the-current-list-of-group-ids]]
 == 查看目前群組ID列表
 
 內容可能 `data_provider.yaml`設定檔與運行後實際提交的內容不同 `update_data_providers_from_config_file.sh`腳本。若要查看已新增至資料分類的目前群組 ID 列表，請從「/opt/netapp/Datasense/tools/customer_configuration/data_providers」執行下列命令：

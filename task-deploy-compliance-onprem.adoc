@@ -33,6 +33,7 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 
 
+[[quick-start]]
 == 快速啟動
 
 按照以下步驟快速開始，或向下捲動到其餘部分以獲取完整詳細資訊。
@@ -57,6 +58,7 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 
 
+[[create-a-console-agent]]
 == 建立控制台代理
 
 在安裝和使用 Data Classification 之前，需要先安裝 Console 代理程式。大多數情況下，在嘗試啟動 Data Classification 之前，您應該已經設定好了 Console 代理程式。
@@ -81,6 +83,7 @@ image:diagram_deploy_onprem_cloud_instance.png["所需控制台和網路組件�
 
 
 
+[[prepare-the-linux-host-system]]
 == 準備 Linux 主機系統
 
 資料分類軟體必須在滿足特定作業系統需求、RAM 需求、軟體需求等的主機上運作。  Linux 主機可以在您的網路中，也可以在雲端。
@@ -204,6 +207,7 @@ NOTE: 安裝後，資料分類主機系統的 IP 位址無法變更。
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == 啟用資料分類的出站互聯網訪問
 
 資料分類需要出站網路存取。如果您的虛擬或實體網路使用代理伺服器進行網際網路訪問，請確保資料分類執行個體具有出站網際網路存取權限以聯絡下列端點。
@@ -232,6 +236,7 @@ NOTE: 安裝後，資料分類主機系統的 IP 位址無法變更。
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 驗證所有必要的連接埠均已啟用
 
 您必須確保所有必要的連接埠都已打開，以便在控制台代理程式、資料分類、Active Directory 和資料來源之間進行通訊。
@@ -285,6 +290,7 @@ NFS 磁碟區匯出策略必須允許從資料分類實例進行存取。
 |===
 
 
+[[install-data-classification-on-the-linux-host]]
 == 在 Linux 主機上安裝資料分類
 
 對於典型配置，您將在單一主機系統上安裝該軟體。<<典型配置的單主機安裝,請參閱此處的步驟>> 。
@@ -300,6 +306,7 @@ NOTE: 當軟體安裝在本機時，資料分類目前無法掃描 S3 儲存桶�
 
 
 
+[[single-host-installation-for-typical-configurations]]
 === 典型配置的單主機安裝
 
 在單一本機上安裝資料分類軟體時，請查看要求並遵循下列步驟。
@@ -389,6 +396,7 @@ image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的
 
 
 
+[[next-steps]]
 == 下一步
 
 * link:task-scanning-overview.html["在資料來源上設定掃描"]

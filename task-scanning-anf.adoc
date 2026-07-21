@@ -18,12 +18,14 @@ summary: 完成幾個步驟即可開始使用Azure NetApp Files的資料分類�
 
 
 
+[[discover-the-azure-netapp-files-system-that-you-want-to-scan]]
 == 發現要掃描的Azure NetApp 檔案系統Discover the Azure NetApp Files system that you want to scan
 
 如果要掃描的Azure NetApp Files系統尚未作為系統出現在NetApp Console中，link:https://docs.netapp.com/us-en/storage-management-azure-netapp-files/task-quick-start.html["將其新增至系統頁面"^] 。
 
 
 
+[[deploy-the-data-classification-instance]]
 == 部署資料分類實例
 
 link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署實例。
@@ -34,6 +36,7 @@ link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署�
 
 
 
+[[enable-data-classification-in-your-systems]]
 == 在您的系統中啟用資料分類
 
 您可以在Azure NetApp Files區上啟用資料分類。
@@ -59,6 +62,7 @@ link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署�
 
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == 驗證資料分類是否有權存取卷
 
 透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要為資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
@@ -97,6 +101,7 @@ NOTE: 對於Azure NetApp Files，資料分類只能掃描與控制台位於同�
 
 
 
+[[enable-or-disable-scans-on-volumes]]
 == 啟用或停用磁碟區掃描
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。

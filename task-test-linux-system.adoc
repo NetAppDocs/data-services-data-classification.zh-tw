@@ -20,6 +20,7 @@ Data Classification 安裝腳本包含一個測試腳本，用於確保您的環
 
 
 
+[[getting-started]]
 == 入門
 
 您將執行以下任務。
@@ -33,6 +34,7 @@ Data Classification 安裝腳本包含一個測試腳本，用於確保您的環
 
 
 
+[[create-a-console-agent]]
 == 建立控制台代理
 
 您需要先安裝控制台代理，然後才能安裝和使用資料分類。但是，您可以在沒有控制台代理的情況下執行先決條件腳本。
@@ -50,6 +52,7 @@ Data Classification 安裝腳本包含一個測試腳本，用於確保您的環
 
 
 
+[[verify-host-requirements]]
 == 驗證主機需求
 
 資料分類軟體必須運行在滿足特定作業系統要求、記憶體需求和軟體要求的主機上。
@@ -168,6 +171,7 @@ firewall-cmd --permanent --add-port=4789/udp
 
 
 
+[[enable-outbound-internet-access-from-data-classification]]
 == 啟用資料分類的出站互聯網訪問
 
 資料分類需要出站網路存取。如果您的虛擬或實體網路使用代理伺服器進行網際網路訪問，請確保資料分類執行個體具有出站網際網路存取權限以聯絡下列端點。
@@ -199,6 +203,7 @@ TIP: 對於安裝在沒有網路連線的站點的主機系統，則不需要本
 |===
 
 
+[[verify-that-all-required-ports-are-enabled]]
 == 驗證所有必要的連接埠均已啟用
 
 您必須確保所有必要的連接埠都已打開，以便在控制台代理程式、資料分類、Active Directory 和資料來源之間進行通訊。
@@ -217,6 +222,7 @@ TIP: 對於安裝在沒有網路連線的站點的主機系統，則不需要本
 |===
 
 
+[[run-the-data-classification-prerequisites-script]]
 == 執行資料分類先決條件腳本
 
 請依照以下步驟執行資料分類先決條件腳本。

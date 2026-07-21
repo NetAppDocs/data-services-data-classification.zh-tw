@@ -22,6 +22,7 @@ summary: 透過 Data Classification ，您可以識別過時資料、重複檔�
 
 
 
+[[review-the-governance-dashboard]]
 == 查看治理儀表板
 
 治理儀表板提供信息，以便您可以提高效率並控制與儲存在儲存資源上的資料相關的成本。
@@ -38,6 +39,7 @@ image:screenshot_compliance_governance_dashboard.png["資料分類治理儀表�
 
 
 
+[[review-savings-opportunities]]
 === 檢討節省機會
 
 _節省機會_元件顯示您可以刪除或分層到較便宜的物件儲存的資料。 《節省機會》中的數據每 2 小時更新一次。您也可以手動更新資料。
@@ -57,6 +59,7 @@ NOTE: 如果您的任何資料來源實現了資料分層，則可以在「陳�
 
 
 
+[[create-the-data-discovery-assessment-report]]
 == 建立數據發現評估報告
 
 數據發現評估報告對掃描環境進行了高級分析，以顯示關注區域和潛在的補救步驟。結果基於數據的映射和分類。本報告的目標是提高您對資料集三個重要面向的認識：
@@ -94,6 +97,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 
 
 
+[[create-the-data-mapping-overview-report]]
 == 建立資料映射概覽報告
 
 資料映射概覽報告提供了儲存在公司資料來源中的資料的概覽，以協助您做出遷移、備份、安全性和合規性流程的決策。該報告總結了所有系統和資料來源。它還為每個系統提供了分析。
@@ -128,6 +132,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 
 
 
+[[review-the-top-data-repositories-listed-by-data-sensitivity]]
 === 查看按資料敏感度列出的頂級資料儲存庫
 
 資料映射概覽報告中的「按敏感度等級排列的頂級資料儲存庫」區域列出了包含最敏感項目的前四個資料儲存庫（系統和資料來源）。每個系統的長條圖分為：
@@ -146,6 +151,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 
 
 
+[[review-sensitive-data-and-wide-permissions]]
 === 審查敏感數據和廣泛的權限
 
 治理儀表板的「敏感資料和廣泛權限」區域顯示包含敏感資料和具有廣泛權限的檔案的數量。此表顯示以下類型的權限：
@@ -161,6 +167,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 
 
 
+[[review-data-listed-by-types-of-open-permissions]]
 === 查看按開放權限類型列出的數據
 
 資料映射概覽報表的「開啟權限」區域顯示正在掃描的所有檔案中每種權限的百分比。此圖表顯示以下類型的權限：
@@ -178,6 +185,7 @@ image:screenshot-compliance-report-buttons.png["治理儀表板的螢幕截圖�
 
 
 
+[[review-the-age-and-size-of-data]]
 === 審查資料的年齡和大小
 
 您可以調查資料對應概覽報表的「_Age_」和「_Size_」圖表中的項目，看看是否有任何資料應該刪除或分層到較便宜的物件儲存。

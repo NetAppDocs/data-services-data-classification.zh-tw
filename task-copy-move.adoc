@@ -18,6 +18,7 @@ summary: 在調查儀表板中篩選資料後、您可以複製、移動和刪�
 
 
 
+[[copy-files]]
 == 複製檔案
 
 Data Classification 支援複製最大 1 GB 的檔案。您總共可以複製 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案複製到 CIFS 或 NFS 目標位置。複製過程不會對來源檔案造成任何影響。
@@ -41,6 +42,7 @@ image:screenshot-copy-nfs.png["NFS 檔案複製功能的螢幕截圖"]
 
 
 
+[[move-files]]
 == 移動檔案
 
 Data Classification 支援移動最大 1 GB 的檔案。您總共可以移動 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案移至 CIFS 或 NFS 目標位置。
@@ -69,6 +71,7 @@ image:screenshot-move-nfs.png["NFS 檔案移動功能的螢幕截圖"]
 
 
 
+[[delete-files]]
 == 刪除檔案
 
 在「調查」儀表板上篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。刪除檔案僅支援非結構化檔案。

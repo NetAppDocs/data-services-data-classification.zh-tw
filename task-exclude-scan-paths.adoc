@@ -21,6 +21,7 @@ NOTE: 預設情況下，資料分類掃描排除與磁碟區中的來源相同�
 
 
 
+[[supported-data-sources]]
 == 支援的資料來源
 
 以下資料來源中的 NFS 和 CIFS 共用支援從資料分類掃描中排除特定目錄：
@@ -34,6 +35,7 @@ NOTE: 預設情況下，資料分類掃描排除與磁碟區中的來源相同�
 
 
 
+[[define-the-directories-to-exclude-from-scanning]]
 == 定義要排除在掃描之外的目錄
 
 在將目錄排除在分類掃描之外之前，您需要登入資料分類系統，以便可以編輯設定檔並執行腳本。了解如何link:reference-log-in-to-instance.html["登入資料分類系統"]取決於您是否在 Linux 機器上手動安裝了該軟體，或者是否在雲端部署了該實例。
@@ -70,6 +72,7 @@ exclude:
 
 
 
+[[examples]]
 == 範例
 
 .配置1：
@@ -140,6 +143,7 @@ data_providers:
 
 
 
+[[escaping-special-characters-in-folder-names]]
 == 轉義資料夾名稱中的特殊字符
 
 如果您的資料夾名稱包含以下特殊字元之一，並且您想要排除該資料夾中的資料進行掃描，則需要在資料夾名稱前使用轉義序列 \\。
@@ -153,6 +157,7 @@ data_providers:
 
 
 
+[[view-the-current-exclusion-list]]
 == 查看目前排除列表
 
 內容可能 `data_provider.yaml`設定檔與運行後實際提交的內容不同 `update_data_providers_from_config_file.sh`腳本。若要查看已從資料分類掃描中排除的目前目錄列表，請從「/opt/netapp/Datasense/tools/customer_configuration/data_providers」執行下列命令：

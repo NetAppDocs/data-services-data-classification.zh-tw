@@ -18,12 +18,14 @@ summary: 如果您只是想快速找到問題的答案，此常見問題解答�
 
 
 
+[[netapp-data-classification]]
 == NetApp Data Classification
 
 以下問題提供了對資料分類的一般了解。
 
 
 
+[[how-does-data-classification-work]]
 === 資料分類如何運作？
 
 資料分類在NetApp Console系統和儲存系統旁邊部署了另一層 AI。然後，它會掃描磁碟區、儲存桶、資料庫和其他儲存帳戶上的數據，並對找到的數據洞察進行索引。資料分類利用人工智慧和自然語言處理，而不是通常圍繞正規表示式和模式匹配構建的替代解決方案。
@@ -34,24 +36,28 @@ link:concept-classification.html["詳細了解資料分類的工作原理"] 。
 
 
 
+[[does-data-classification-have-a-rest-api-and-does-it-work-with-third-party-tools]]
 === 資料分類是否有 REST API，它是否可以與第三方工具一起使用？
 
 是的，資料分類有一個 REST API，用於支援控制台核心平台一部分的資料分類版本中的功能。看link:api-classification.html["API 文檔"] 。
 
 
 
+[[is-data-classification-available-through-the-cloud-marketplaces]]
 === 資料分類是否可以透過雲端市場取得？
 
 資料分類是NetApp Console核心功能的一部分，因此您不需要使用此服務的市場。
 
 
 
+[[data-classification-scanning-and-analytics]]
 == 資料分類掃描與分析
 
 以下問題與資料分類掃描效能和分析有關。
 
 
 
+[[how-often-does-data-classification-scan-my-data]]
 === 資料分類多久掃描一次我的資料？
 
 雖然初始資料掃描可能需要一點時間，但後續掃描僅檢查增量變化，從而減少系統掃描時間。資料分類以循環方式連續掃描您的數據，每次掃描六個儲存庫，以便所有更改的資料都能快速分類。
@@ -64,6 +70,7 @@ link:task-scanning-overview.html["了解掃描的工作原理"] 。
 
 
 
+[[does-scan-performance-vary]]
 === 掃描性能是否有所不同？
 
 掃描效能可能會因網路頻寬和環境中的平均檔案大小而異。它還取決於主機系統（在雲端或本地）的大小特徵。請參閱link:concept-classification.html["資料分類實例"]和link:task-deploy-overview.html["部署資料分類"]了解更多。
@@ -72,6 +79,7 @@ link:task-scanning-overview.html["了解掃描的工作原理"] 。
 
 
 
+[[can-i-search-my-data-using-data-classification]]
 === 我可以使用資料分類來搜尋我的資料嗎？
 
 資料分類提供了廣泛的搜尋功能，可以輕鬆地在所有連接的來源中搜尋特定檔案或資料。資料分類使用戶能夠進行比元資料所反映的更深入的搜尋。它是一種與語言無關的服務，還可以讀取檔案並分析多種敏感資料類型，例如名稱和 ID。例如，使用者可以在結構化和非結構化資料儲存中進行搜索，以查找可能從資料庫洩漏到使用者文件的數據，從而違反公司政策。可以儲存搜尋結果以供日後使用，並且可以建立策略以設定的頻率搜尋並對結果採取行動。
@@ -82,12 +90,14 @@ link:task-scanning-overview.html["了解掃描的工作原理"] 。
 
 
 
+[[data-classification-management-and-privacy]]
 == 資料分類管理和隱私
 
 以下問題提供了有關如何管理資料分類和隱私設定的資訊。
 
 
 
+[[how-do-i-enable-or-disable-data-classification]]
 === 如何啟用或停用資料分類？
 
 首先，您需要在控制台或本機系統中部署資料分類實例。執行個體執行後，您可以從「配置」標籤或透過選擇特定係統在現有系統、資料庫和其他資料來源上啟用服務。link:task-getting-started-compliance.html["了解如何開始"] 。
@@ -101,18 +111,21 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[can-the-service-exclude-scanning-data-in-certain-directories]]
 === 該服務可以排除某些目錄中的掃描資料嗎？
 
 是的。如果您希望資料分類排除駐留在特定資料來源目錄中的掃描數據，則可以將該清單提供給分類引擎。套用變更後，資料分類將排除指定目錄中的掃描資料。link:task-exclude-scan-paths.html["了解更多"] 。
 
 
 
+[[are-snapshots-that-reside-on-ontap-volumes-scanned]]
 === 是否掃描了位於ONTAP磁碟區上的快照？
 
 否。資料分類不會掃描快照，因為其內容與磁碟區中的內容相同。
 
 
 
+[[what-happens-if-data-tiering-is-enabled-on-your-ontap-volumes]]
 === 如果在ONTAP磁碟區上啟用了資料分層，會發生什麼情況？
 
 當 Data Classification 使用僅映射掃描方式掃描已將冷資料分層儲存到物件儲存的磁碟區時，它會掃描所有資料—包括本機磁碟上的資料和分層儲存到物件儲存的冷資料。對於非 NetApp 產品實現分層儲存的產品，情況也是如此。
@@ -121,18 +134,21 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[types-of-source-systems-and-data-types]]
 == 來源系統和資料類型的類型
 
 以下問題涉及可掃描的儲存類型以及掃描的資料類型。
 
 
 
+[[are-there-any-restrictions-when-deployed-in-a-government-region]]
 === 在政府區域部署時有限制嗎？
 
 當控制台代理部署在政府區域（AWS GovCloud、Azure Gov 或 Azure DoD）時，支援資料分類 - 也稱為「受限模式」。
 
 
 
+[[what-data-sources-can-i-scan-if-i-install-data-classification-in-a-site-without-internet-access]]
 === 如果我在沒有網路存取的網站安裝資料分類，我可以掃描哪些資料來源？
 
 資料分類只能掃描來自本地站點的資料來源的資料。目前，資料分類可以以「私人模式」掃描以下本地資料來源 - 也稱為「暗」網站：
@@ -144,6 +160,7 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[which-file-types-are-supported]]
 === 支援哪些文件類型？
 
 資料分類掃描所有文件的類別和元資料洞察，並在儀表板的文件類型部分顯示所有文件類型。
@@ -154,6 +171,7 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[what-kinds-of-data-and-metadata-does-data-classification-capture]]
 === 資料分類擷取哪些類型的資料和元資料？
 
 資料分類可讓您對資料來源執行常規「映射」掃描或完整「分類」掃描。映射僅提供資料的高級概述，而分類提供資料的深層掃描。由於它不需要存取檔案來查看其中的數據，因此可以非常快速地在資料來源上完成映射。
@@ -174,6 +192,7 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[can-i-limit-data-classification-information-to-specific-users]]
 === 我可以將資料分類資訊限制給特定使用者嗎？
 
 是的，資料分類與NetApp Console完全整合。  NetApp Console使用者只能查看根據其權限有資格查看的系統的資訊。
@@ -182,6 +201,7 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[can-anyone-access-the-private-data-sent-between-my-browser-and-data-classification]]
 === 任何人都可以存取我的瀏覽器和資料分類之間發送的私人資料嗎？
 
 不可以。您的瀏覽器和資料分類實例之間發送的私人資料使用 TLS 1.2 進行端對端加密保護，這表示NetApp和非NetApp方都無法讀取它。除非您要求並批准訪問，否則資料分類不會與NetApp共用任何資料或結果。
@@ -190,48 +210,56 @@ NOTE: 在資料來源上啟動資料分類將立即導致初始掃描。掃描�
 
 
 
+[[how-is-sensitive-data-handled]]
 === 敏感資料如何處理？
 
 NetApp無法存取敏感數據，也不會在 UI 中顯示它。敏感資料被封鎖，例如，顯示信用卡資訊的最後四位數字。
 
 
 
+[[where-is-the-data-stored]]
 === 資料儲存在哪裡？
 
 掃描結果儲存在資料分類實例內的 Elasticsearch 中。
 
 
 
+[[how-is-the-data-accessed]]
 === 如何存取資料？
 
 資料分類透過 API 呼叫存取儲存在 Elasticsearch 中的數據，這些呼叫需要身份驗證並使用 AES-128 加密。直接存取 Elasticsearch 需要 root 存取權限。
 
 
 
+[[licenses-and-costs]]
 == 許可證和費用
 
 以下問題涉及使用資料分類的許可和成本。
 
 
 
+[[how-much-does-data-classification-cost]]
 === 資料分類的費用是多少？
 
 資料分類是NetApp Console的核心功能。沒有充電。
 
 
 
+[[console-agent-deployment]]
 == 控制台代理部署
 
 以下問題與控制台代理有關。
 
 
 
+[[what-is-the-console-agent]]
 === 什麼是控制台代理？
 
 控制台代理程式是在您的雲端帳戶或本機的運算實例上執行的軟體，它使NetApp Console能夠安全地管理雲端資源。您必須部署控制台代理程式才能使用資料分類。
 
 
 
+[[where-does-the-console-agent-need-to-be-installed]]
 === 控制台代理需要安裝在哪裡？
 
 掃描資料時，需要將 NetApp Console 代理程式安裝在以下位置：
@@ -246,6 +274,7 @@ NetApp無法存取敏感數據，也不會在 UI 中顯示它。敏感資料被�
 
 
 
+[[does-data-classification-require-access-to-credentials]]
 === 資料分類是否需要存取憑證？
 
 資料分類本身不會檢索儲存憑證。相反，它們存儲在控制台代理中。
@@ -254,24 +283,28 @@ NetApp無法存取敏感數據，也不會在 UI 中顯示它。敏感資料被�
 
 
 
+[[does-communication-between-the-service-and-the-console-agent-use-http]]
 === 服務和控制台代理之間的通訊是否使用 HTTP？
 
 是的，資料分類使用 HTTP 與控制台代理進行通訊。
 
 
 
+[[data-classification-deployment]]
 == 資料分類部署
 
 以下問題與單獨的資料分類實例有關。
 
 
 
+[[what-deployment-models-does-data-classification-support]]
 === 資料分類支援哪些部署模型？
 
 NetApp Console允許使用者在幾乎任何地方掃描和報告系統，包括本機、雲端和混合環境。資料分類通常使用 SaaS 模型部署，其中服務透過控制台介面啟用，不需要安裝硬體或軟體。即使在這種點擊即運行的部署模式下，無論資料儲存是在本地還是在公有雲中，都可以進行資料管理。
 
 
 
+[[what-type-of-instance-or-vm-is-required-for-data-classification]]
 === 資料分類需要什麼類型的實例或虛擬機器？
 
 什麼時候link:task-deploy-cloud-compliance.html["部署在雲端"]：
@@ -285,12 +318,14 @@ link:concept-classification.html["詳細了解資料分類的工作原理"] 。
 
 
 
+[[can-i-deploy-the-data-classification-on-my-own-host]]
 === 我可以在自己的主機上部署資料分類嗎？
 
 是的。您可以在網路或雲端中具有網際網路存取權限的 Linux 主機上安裝資料分類軟體。一切工作正常，您可以繼續透過控制台管理掃描配置和結果。看link:task-deploy-compliance-onprem.html["在本地部署資料分類"]了解系統需求和安裝詳情。
 
 
 
+[[what-about-secure-sites-without-internet-access]]
 === 沒有網路連線的安全站點怎麼樣？
 
 是的，也支持。你可以link:task-deploy-compliance-dark-site.html["在沒有網路存取權限的本機站點中部署資料分類"]以獲得完全安全的網站。

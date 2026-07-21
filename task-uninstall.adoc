@@ -20,6 +20,7 @@ summary: 您可以卸載資料分類軟體來解決問題或從主機永久刪�
 
 
 
+[[uninstall-data-classification-from-a-cloud-provider]]
 == 從雲端提供者卸載資料分類
 
 . 從資料分類中，選擇**配置**。
@@ -32,6 +33,7 @@ summary: 您可以卸載資料分類軟體來解決問題或從主機永久刪�
 
 
 
+[[uninstall-data-classification-from-an-on-premises-deployment]]
 == 從本地部署卸載資料分類
 
 . 從資料分類中，選擇**配置**。

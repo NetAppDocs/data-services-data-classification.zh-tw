@@ -21,6 +21,7 @@ NOTE: 資料分類核心版本不支援掃描非NetApp檔案共享的資料。
 
 
 
+[[prerequisites]]
 == 先決條件
 
 在啟用資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。
@@ -48,6 +49,7 @@ NOTE: 資料分類核心版本不支援掃描非NetApp檔案共享的資料。
 
 
 
+[[create-a-file-shares-group]]
 == 建立文件共享組
 
 將檔案共用新增至群組時，必須使用格式 `<host_name>:/<share_path>`。
@@ -89,6 +91,7 @@ NOTE: 如果對於使用 Kerberos 驗證的 CIFS 配置的掃描未成功完成�
 
 
 
+[[edit-a-file-shares-group]]
 == 編輯檔案共享群組
 
 建立檔案共用群組後，您可以編輯 CIFS 協定或新增和刪除檔案共用。
@@ -132,6 +135,7 @@ image:add-shares.png["新增共享模式的螢幕截圖，顯示了選擇協定�
 
 
 
+[[track-the-scanning-progress]]
 == 追蹤掃描進度
 
 您可以追蹤初始掃描的進度。
@@ -143,6 +147,7 @@ image:add-shares.png["新增共享模式的螢幕截圖，顯示了選擇協定�
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == 啟用和停用磁碟區上的掃描
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。

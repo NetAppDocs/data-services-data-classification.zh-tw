@@ -44,6 +44,7 @@ NetApp Data Classification 會在掃描資料來源和系統時收集元資料�
 ====
 
 
+[[last-accessed-time]]
 == 最後存取時間
 
 當 Data Classification 從檔案共用中提取資料時，作業系統會將其視為存取事件，並相應地更新「上次存取時間」。掃描完成後，Data Classification 會嘗試將上次存取時間還原為原始時間戳記。如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則系統無法將上次存取時間還原為原始時間戳記。

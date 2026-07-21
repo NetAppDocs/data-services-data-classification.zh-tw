@@ -524,9 +524,6 @@
   <block id="bcead494d002e9572dc3500b60795eec" category="cell">不可用（NFS 使用者通常在伺服器本地進行管理，因此同一個人在每個伺服器上可以有不同的 UID）</block>
   <block id="97804fec1fa581f14632ae2006d395c1" category="list-text">資料分類不會從資料庫資料來源提取「上次存取時間」。</block>
   <block id="41adaaf0716718eecf1f4d48b84b258e" category="paragraph">此功能適用於本機ONTAP系統、 Cloud Volumes ONTAP、 Azure NetApp Files、 Amazon FSx for NetApp ONTAP管理和第三方檔案共用。</block>
-  <block id="2e9bf0fba1b77a1da35499a6b728c5e6" category="inline-image-macro">過濾器的螢幕截圖，用於查看根據是否具有寫入權限掃描了哪些文件，以及未掃描哪些文件。</block>
-  <block id="ee9a6cd4eeadce3c62fa7db3af1981ac" category="paragraph"><block ref="ee9a6cd4eeadce3c62fa7db3af1981ac" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="7d72055dc8f09beeb77f4fa9d71f6382" category="paragraph">過濾器選擇包括：</block>
   <block id="a1fa27779242b4902f7ae3bdd5c6d508" category="cell">類型</block>
   <block id="b5a7adde1af5c87d7fd797b6245c2a39" category="cell">描述</block>
   <block id="900eba0c97923d74bd8d9e6190e07264" category="cell">✓</block>
@@ -2240,7 +2237,6 @@
   <block id="0613f78859d4c1ee40ebf4902778200d" category="paragraph">資料分類現在支援在Google Cloud NetApp Volumes上進行掃描。從NetApp Console輕鬆新增Google Cloud NetApp Volumes，實現無縫資料掃描與分類。有關詳細信息，請參閱 <block ref="ebe8ee8c7142d7ba7fe5b46fcd6a51db" category="inline-link-macro-rx"></block>。</block>
   <block id="78fec667589f53471f473945289b1df5" category="list-text">透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。<block ref="a40f0fdd4afe274f77ca519732617a55" category="inline-link-rx"></block> 。<block ref="f128c1ddd39d7ff58f7de848fcd36c2d" category="inline-link-rx"></block> 。</block>
   <block id="ead4fb59aecd6e825b2032029bb14d83" category="list-text">*類別*：資料分類將掃描的資料分為不同類型的類別。類別是基於 AI 對每個文件的內容和元資料的分析的主題。<block ref="47725b7d77a9ed7fa3f732d2d0956fde" category="inline-link-macro-rx"></block>。</block>
-  <block id="3c17f47784918dfcb6d4bc5ed771d8e0" category="inline-link-macro">了解有關數據調查報告的更多信息</block>
   <block id="33b4c33e0d5c61070467f208c8da0e6c" category="section-title">建立數據發現評估報告</block>
   <block id="78fcc8f2d90c3a80b48d02edc4a150f6" category="paragraph">數據發現評估報告對掃描環境進行了高級分析，以顯示關注區域和潛在的補救步驟。結果基於數據的映射和分類。本報告的目標是提高您對資料集三個重要面向的認識：</block>
   <block id="4a32c4b09fba1c841da1e2c6f4a5096e" category="list-text">根據您是在雲端中準備的實例上還是在本機準備的實例上安裝資料分類，選擇適當的*部署*選項來啟動資料分類安裝。</block>
@@ -2858,12 +2854,8 @@
   <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">螢幕截圖顯示您可以使用的開關，即使 Data Classification 沒有正確的權限將上次存取時間還原為原始時間戳記，也可以掃描您的檔案。</block>
   <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
   <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">配置了 SnapLock 的 ONTAP 磁碟區具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。</block>
-  <block id="fb9e57bde1ebc255f8112f03d368ba3d" category="section-title">掃描分析事件</block>
-  <block id="2d7467e91b9232ed23a46789156fd0df" category="paragraph">「調查」頁面中有一個名為「掃描分析事件」的篩選器，可讓您顯示因 Data Classification 無法還原上次存取時間而未分類的檔案，或顯示即使 Data Classification 無法還原上次存取時間也已完成分類的檔案。</block>
-  <block id="36e3fa5a59068e8d4e581c88a91ade4e" category="list-text">「未分類 -- 無法恢復上次存取時間」 - 這會顯示因缺少寫入權限而未分類的檔案。</block>
-  <block id="c08d4ba8dd4b618c703259c0efe64f7f" category="list-text">「已分類並更新上次存取時間」 - 此清單顯示已分類但 NetApp Data Classification 無法將上次存取時間重設為原始日期的檔案。此篩選器僅適用於啟用了 *Scan without write permissions* 的環境。</block>
-  <block id="cd76351b9e3a96611e6478f208d2a089" category="paragraph">如有需要，您可以將這些結果匯出為報告，以便查看哪些檔案因權限問題而被掃描或未被掃描。<block ref="33ef7f32333657211456cfb75a487331" category="inline-link-macro-rx"></block>.</block>
   <block id="8cdefa787a746da6737b670208407756" category="list-text">預設情況下，如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次存取時間是否重設，請選取 *Or select scanning type for each volume*。在產生的頁面中，有一個可啟用的設定，讓 Data Classification 無論權限如何都會掃描磁碟區。</block>
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classification 無法從 7-Mode 系統擷取權限或「上次存取時間」。</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">系統概覽頁面有一個「無寫入權限掃描」選項，預設為停用。如果 Data Classification 沒有相應的權限，則不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。+ 您可以使用「無寫入權限掃描」選項覆寫此設定。若要深入瞭解此選項，請參閱 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>。</block>
+  <block id="308857218552b597ea9cae644ef5a86a" category="admonition">資料分類安裝程式會預留 UID 4321 和 GID 4321。在開始安裝之前，請確保主機上未使用 UID 4321 和 GID 4321。如果已使用，安裝將失敗並顯示「invalid user」錯誤訊息。</block>
 </blocks>

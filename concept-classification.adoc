@@ -21,6 +21,7 @@ IMPORTANT: 從 1.31 版開始，資料分類作為NetApp Console中的一項核�
 
 
 
+[[netapp-console]]
 == NetApp Console
 
 可以透過NetApp Console存取資料分類。
@@ -33,6 +34,7 @@ NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服
 
 
 
+[[features]]
 == 特徵
 
 資料分類使用人工智慧 (AI)、自然語言處理 (NLP) 和機器學習 (ML) 來理解其掃描的內容，以便提取實體並對內容進行相應的分類。這使得資料分類能夠提供以下功能領域。
@@ -65,6 +67,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 
 
 
+[[supported-systems-and-data-sources]]
 == 支援的系統和資料來源
 
 資料分類可以掃描和分析來自以下類型的系統和資料來源的結構化和非結構化資料：
@@ -99,12 +102,14 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 
 
 
+[[cost]]
 == 成本
 
 資料分類可以免費使用。無需分類許可或付費訂閱。
 
 
 
+[[infrastructure-costs]]
 === 基礎設施成本
 
 * 在雲端安裝資料分類需要部署雲端實例，這會導致部署雲端的雲端供應商收取費用。看<<資料分類實例,為每個雲端提供者部署的執行個體類型>> 。如果您在本機系統上安裝資料分類，則無需付費。
@@ -113,6 +118,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 
 
 
+[[data-transfer-costs]]
 === 資料傳輸成本
 
 資料傳輸成本取決於您的設定。如果資料分類實例和資料來源位於相同可用區和區域，則沒有資料傳輸成本。但是，如果資料來源（例如Cloud Volumes ONTAP系統）位於不同的可用區或區域，那麼您的雲端供應商將向您收取資料傳輸費用。請參閱以下連結以了解更多詳細資訊：
@@ -124,6 +130,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 
 
 
+[[the-data-classification-instance]]
 == 資料分類實例
 
 當您在雲端部署資料分類時，控制台會將執行個體部署在與控制台代理相同的子網路中。 https://docs.netapp.com/us-en/console-setup-admin/concept-connectors.html["了解有關控制台代理的更多資訊。"^]
@@ -161,6 +168,7 @@ TIP: 實例應始終保持運行，因為資料分類會持續掃描資料。
 |===
 
 
+[[how-data-classification-scanning-works]]
 == 資料分類掃描的工作原理
 
 從高層次來看，資料分類掃描的工作原理如下：
@@ -186,6 +194,7 @@ NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控�
 
 
 
+[[mapping-and-full-scans]]
 == 對應和完整掃描
 
 您可以在資料分類中進行兩種類型的掃描：
@@ -198,6 +207,7 @@ NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控�
 
 
 
+[[information-that-data-classification-categorizes]]
 == 資料分類所分類的信息
 
 資料分類收集、索引並分配以下資料的類別：
@@ -213,6 +223,7 @@ NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控�
 
 
 
+[[networking-overview]]
 == 網路概述
 
 資料分類可以在您選擇的任何地方部署單一伺服器或叢集：在雲端或本地端。伺服器透過標準協定連接到資料來源，並在 Elasticsearch 叢集中對結果進行索引，該叢集也部署在同一台伺服器上。這使得能夠支援多雲、跨雲端、私有雲和本地環境。

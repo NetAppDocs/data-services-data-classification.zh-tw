@@ -18,6 +18,7 @@ summary: 已知限制標識了此版本產品不支援的功能或無法與其�
 
 
 
+[[netapp-data-classification-disabled-options]]
 == NetApp Data Classification停用選項
 
 2023 年 12 月（版本 1.26.6）版本刪除了以下選項：
@@ -29,12 +30,14 @@ summary: 已知限制標識了此版本產品不支援的功能或無法與其�
 
 
 
+[[data-classification-scanning]]
 == 資料分類掃描
 
 資料分類掃描存在以下限制。
 
 
 
+[[data-classification-scans-only-one-share-under-a-volume]]
 === 資料分類僅掃描卷下的一個共享
 
 如果單一磁碟區下有多個檔案共用，資料分類將掃描具有最高層次的共用。例如，如果您有以下共享：
@@ -70,6 +73,7 @@ summary: 已知限制標識了此版本產品不支援的功能或無法與其�
 
 
 
+[[last-accessed-timestamp]]
 === 上次訪問的時間戳
 
 當資料分類對目錄進行掃描時，掃描會影響目錄的**上次存取**欄位。當您查看**上次造訪**欄位時，該元資料反映掃描的日期和時間或使用者上次存取目錄的時間。

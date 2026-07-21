@@ -18,6 +18,7 @@ summary: 完成幾個步驟即可直接使用NetApp Data Classification開始掃
 
 
 
+[[review-storagegrid-requirements]]
 == 查看StorageGRID要求
 
 在啟用資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。
@@ -28,6 +29,7 @@ summary: 完成幾個步驟即可直接使用NetApp Data Classification開始掃
 
 
 
+[[deploy-the-data-classification-instance]]
 == 部署資料分類實例
 
 如果尚未部署實例，則部署資料分類。
@@ -38,6 +40,7 @@ summary: 完成幾個步驟即可直接使用NetApp Data Classification開始掃
 
 
 
+[[add-the-storagegrid-service-to-data-classification]]
 == 將StorageGRID服務新增至資料分類
 
 新增StorageGRID服務。
@@ -62,6 +65,7 @@ StorageGRID已新增至系統清單。
 
 
 
+[[enable-and-disable-scans-on-storagegrid-buckets]]
 == 啟用並停用StorageGRID桶上的掃描
 
 在StorageGRID上啟用資料分類後，下一步是設定要掃描的儲存桶。資料分類發現這些儲存桶並將它們顯示在您建立的系統中。

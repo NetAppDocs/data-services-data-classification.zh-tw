@@ -27,6 +27,7 @@ image:screenshot_compliance_dashboard.png["資料分類儀表板的螢幕截圖"
 
 
 
+[[view-files-that-contain-personal-data]]
 == 查看包含個人資料的文件
 
 資料分類會自動識別資料中的特定單字、字串和模式（正規表示式）。link:reference-private-data-categories.html["例如，信用卡號、社會安全號碼、銀行帳號、密碼等等。"]資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。
@@ -59,6 +60,7 @@ image:screenshot_compliance_investigation_page_directory.png["選取「調查結
 
 
 
+[[view-files-that-contain-sensitive-personal-data]]
 == 查看包含敏感個人資料的文件
 
 資料分類會自動識別隱私法規所定義的特殊類型的敏感個人資訊，例如 https://eur-lex.europa.eu/legal-content/EN/TXT/HTML/?uri=CELEX:32016R0679&from=EN#d1e2051-1-1["GDPR 第 9 條和第 10 條"^]。例如，有關一個人的健康、種族或性取向的資訊。link:reference-private-data-categories.html["查看完整列表"] 。資料分類可在單一檔案、目錄（共用和資料夾）內的檔案以及資料庫表中識別此類資訊。

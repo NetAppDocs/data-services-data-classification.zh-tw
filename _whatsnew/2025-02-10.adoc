@@ -4,6 +4,7 @@
 
 
 
+[[version-1-40]]
 === 版本 1.40
 
 此BlueXP classification版本包括以下更新。

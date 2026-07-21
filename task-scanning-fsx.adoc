@@ -18,6 +18,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描Ama
 
 
 
+[[before-you-begin]]
 == 開始之前
 
 * 您需要 AWS 中一個活動的控制台代理來部署和管理資料分類。
@@ -41,6 +42,7 @@ https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/using-eni.html["AWS 彈性�
 
 
 
+[[deploy-the-data-classification-instance]]
 == 部署資料分類實例
 
 link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署實例。
@@ -53,6 +55,7 @@ link:task-deploy-cloud-compliance.html["部署資料分類"^]如果尚未部署�
 
 
 
+[[enable-data-classification-in-your-systems]]
 == 在您的系統中啟用資料分類
 
 您可以為 FSx for ONTAP磁碟區啟用資料分類。
@@ -82,6 +85,7 @@ Data Classification 開始掃描您在系統中選擇的磁碟區。Data Classif
 ====
 
 
+[[verify-that-data-classification-has-access-to-volumes]]
 == 驗證資料分類是否有權存取卷
 
 透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。
@@ -116,6 +120,7 @@ NOTE: 對於 FSx for ONTAP，資料分類只能掃描與控制台位於相同區
 
 
 
+[[enable-and-disable-scans-on-volumes]]
 == 啟用和停用磁碟區上的掃描
 
 您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
@@ -140,6 +145,7 @@ image:screenshot_volume_compliance_selection.png["配置頁面的螢幕截圖，
 
 
 
+[[scan-data-protection-volumes]]
 == 掃描資料保護卷
 
 預設情況下，不會掃描資料保護 (DP) 卷，因為它們未暴露在外部，且資料分類無法存取它們。這些是來自 FSx for ONTAP檔案系統的SnapMirror操作的目標磁碟區。

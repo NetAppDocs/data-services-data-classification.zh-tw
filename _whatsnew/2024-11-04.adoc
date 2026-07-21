@@ -4,6 +4,7 @@
 
 
 
+[[support-for-rhel-8-10]]
 === 支援 RHEL 8.10
 
 此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v8.10 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
@@ -14,6 +15,7 @@
 
 
 
+[[support-for-nfs-v4-1]]
 === 支持 NFS v4.1
 
 此版本除了支援先前支援的版本外，還提供對 NFS v4.1 的支援。

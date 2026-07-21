@@ -4,6 +4,7 @@
 
 
 
+[[support-for-rhel-9-4]]
 === 支援 RHEL 9.4
 
 此版本除了支援先前支援的版本外，還提供對 Red Hat Enterprise Linux v9.4 的支援。這適用於任何手動本機安裝的BlueXP classification，包括暗站部署。
@@ -14,6 +15,7 @@
 
 
 
+[[improved-scan-performance]]
 === 改進的掃描性能
 
 此版本提供了改進的掃描效能。

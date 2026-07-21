@@ -21,6 +21,7 @@ NetApp Data Classification可讓您建立自訂類別或個人識別符，以識
 
 
 
+[[create-a-custom-personal-identifier]]
 == 建立自訂個人標識符
 
 資料分類功能可讓您使用上下文關鍵字或正規表示式建立自訂個人識別符，以識別貴組織特有的資料。
@@ -63,6 +64,7 @@ image:screenshot-create-logic-regex.png["建立正規表示式對話框的螢幕
 
 
 
+[[create-a-custom-category]]
 == 建立自訂類別
 
 透過自訂類別，您可以對特定於您組織的資料進行分類。自訂類別是根據您上傳的文字檔案建立的，資料分類功能會根據這些檔案建立一個人工智慧模型，以識別其他檔案中的類似資訊。
@@ -99,6 +101,7 @@ image:custom-category-file-summary.png["螢幕截圖顯示了上傳用於訓練�
 
 
 
+[[edit-a-custom-classifier]]
 == 編輯自訂分類器
 
 建立個人識別碼後，您可以修改其邏輯。您無法變更個人識別碼的類型或邏輯類型；例如，您無法將自訂類別變更為自訂個人識別碼。您也不能將基於關鍵字的自訂識別碼變更為基於正規表示式的自訂識別碼。
@@ -113,6 +116,7 @@ image:custom-category-file-summary.png["螢幕截圖顯示了上傳用於訓練�
 
 
 
+[[delete-a-custom-classifier]]
 == 刪除自訂分類器
 
 . 在NetApp Data Classification中，選擇「自訂分類」。
@@ -122,6 +126,7 @@ image:custom-category-file-summary.png["螢幕截圖顯示了上傳用於訓練�
 
 
 
+[[next-steps]]
 == 下一步
 
 * xref:task-generating-compliance-reports.html[產生合規性報告]

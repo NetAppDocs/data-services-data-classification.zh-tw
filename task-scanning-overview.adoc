@@ -22,6 +22,7 @@ NetApp Data Classification 會掃描您所選擇的儲存庫（包括磁碟區�
 
 
 
+[[understand-scan-types]]
 == 了解掃描類型
 
 您可以在資料分類中進行兩種類型的掃描：

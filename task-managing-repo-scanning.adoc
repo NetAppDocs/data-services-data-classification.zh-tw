@@ -20,6 +20,7 @@ summary: 了解如何在NetApp Data Classification中修改系統的掃描設定
 
 
 
+[[view-the-scan-status-for-your-repositories]]
 == 查看儲存庫的掃描狀態
 
 您可以查看NetApp Data Classification正在為每個系統和資料來源掃描的各個儲存庫（磁碟區、儲存桶等）。您還可以看到有多少已被“映射”，有多少已被“分類”。分類需要更長的時間，因為所有資料都進行了完整的 AI 識別。
@@ -51,6 +52,7 @@ image:screenshot_compliance_repo_scan_settings.png["螢幕截圖顯示您的儲�
 
 
 
+[[change-the-scan-type]]
 == 變更掃描類型
 
 您可以隨時在「設定」頁面啟動或停止系統中的掃描。您也可以將掃描模式從僅對應掃描變更為完整掃描，反之亦然。
@@ -74,6 +76,7 @@ image:screenshot_compliance_config_button.png["顯示如何選擇系統配置按
 
 
 
+[[prioritize-scans]]
 == 優先掃描
 
 您可以優先執行最重要的僅對應掃描或完整掃描，以確保優先完成高優先順序掃描。
@@ -90,6 +93,7 @@ image:screenshot_compliance_config_button.png["顯示如何選擇系統配置按
 
 
 
+[[stop-scanning-for-a-repository]]
 == 停止掃描儲存庫
 
 如果您不再需要監控儲存庫（例如磁碟區）的合規性，則可以停止掃描它。您可以透過關閉掃描來實現此目的。當掃描關閉時，有關該磁碟區的所有索引和資訊將從系統中刪除，並且掃描資料的收費也將停止。
@@ -105,6 +109,7 @@ image:screenshot_compliance_config_button.png["顯示如何選擇系統配置按
 
 
 
+[[pause-and-resume-scanning-for-a-repository]]
 == 暫停並恢復儲存庫掃描
 
 您可以暫停掃描，這樣 Data Classification 就不會再對儲存庫中的變更或新增內容執行任何掃描。所有目前的掃描結果仍然可以在 Data Classification 中存取。

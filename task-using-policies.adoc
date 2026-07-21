@@ -26,6 +26,7 @@ image:screenshot_compliance_highlights_tab.png["資料分類儀表板中「已�
 
 
 
+[[view-saved-queries-results-in-the-investigation-page]]
 == 在調查頁面中查看已儲存的查詢結果
 
 若要在調查頁面中顯示已儲存查詢的結果，請選擇image:button-gallery-options.gif["更多按鈕"]按鈕進行特定搜索，然後選擇*調查結果*。
@@ -34,6 +35,7 @@ image:screenshot_compliance_highlights_investigate.png["從「已儲存的查詢
 
 
 
+[[create-saved-queries-and-policies]]
 == 建立已儲存的查詢和策略
 
 您可以建立自己的自訂已儲存查詢，以提供特定於您組織的查詢結果。傳回符合搜尋條件的所有檔案和目錄（共用和資料夾）的結果。
@@ -61,6 +63,7 @@ image:../media/screenshot_compliance_save_highlight2.png["顯示如何配置已�
 
 
 
+[[edit-saved-queries-or-policies]]
 == 編輯已儲存的查詢或策略
 
 您可以修改已儲存查詢的名稱和描述。您也可以將查詢轉換為策略，反之亦然。
@@ -81,6 +84,7 @@ image:screenshot-edit-search.png["顯示編輯已儲存查詢的螢幕截圖。"
 
 
 
+[[delete-saved-queries]]
 == 刪除已儲存的查詢
 
 如果您不再需要任何自訂已儲存的查詢或策略，可以將其刪除。您無法刪除預設儲存的查詢。
@@ -89,6 +93,7 @@ image:screenshot-edit-search.png["顯示編輯已儲存查詢的螢幕截圖。"
 
 
 
+[[default-queries]]
 == 預設查詢
 
 資料分類提供以下系統定義的搜尋查詢：

@@ -18,12 +18,14 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描資
 
 
 
+[[review-prerequisites]]
 == 審查先決條件
 
 在啟用資料分類之前，請查看以下先決條件，以確保您具有受支援的配置。
 
 
 
+[[supported-databases]]
 === 支援的資料庫
 
 資料分類可以掃描以下資料庫中的模式：
@@ -42,6 +44,7 @@ CAUTION: 資料庫中必須啟用統計資訊收集功能。
 
 
 
+[[database-requirements]]
 === 資料庫要求
 
 任何與資料分類實例連接的資料庫都可以掃描，無論它託管在何處。您只需要以下資訊即可連接到資料庫：
@@ -60,6 +63,7 @@ NOTE: 對於 MongoDB，需要只讀管理員角色。
 
 
 
+[[deploy-the-data-classification-instance]]
 == 部署資料分類實例
 
 如果尚未部署實例，則部署資料分類。
@@ -70,6 +74,7 @@ NOTE: 對於 MongoDB，需要只讀管理員角色。
 
 
 
+[[add-the-database-server]]
 == 新增資料庫伺服器
 
 新增架構所在的資料庫伺服器。
@@ -94,6 +99,7 @@ image:screenshot_compliance_add_db_server_dialog.png["新增資料庫伺服器�
 
 
 
+[[enable-and-disable-scans-on-database-schemas]]
 == 啟用和停用資料庫模式掃描
 
 您可以隨時停止或開始對您的模式進行全面掃描。

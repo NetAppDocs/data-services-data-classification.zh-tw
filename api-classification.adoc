@@ -28,6 +28,7 @@ Swagger 文件中的 API 可讓您搜尋、聚合資料、追蹤掃描以及執�
 
 
 
+[[overview]]
 == 概況
 
 該 API 使您能夠執行以下功能：
@@ -56,6 +57,7 @@ API 是安全的，它使用與 UI 相同的身份驗證方法。您可以在lin
 
 
 
+[[accessing-the-swagger-api-reference]]
 == 存取 Swagger API 參考
 
 要存取 Swagger，您需要 Data Classification 執行個體的 IP 位址。如果是雲端部署，則需要使用公有 IP 位址。然後，您需要存取以下端點：
@@ -64,6 +66,7 @@ API 是安全的，它使用與 UI 相同的身份驗證方法。您可以在lin
 
 
 
+[[example-using-the-apis]]
 == 使用 API 的範例
 
 以下範例顯示了複製檔案的 API 呼叫。

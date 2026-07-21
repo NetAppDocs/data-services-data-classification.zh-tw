@@ -26,6 +26,7 @@ TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化
 
 
 
+[[on-premises-installation-script]]
 == 內部部署安裝指令碼
 
 無論是在存取網際網路的 Linux 主機上進行安裝，或是在無法存取網際網路的 Linux 主機上進行本機安裝，都使用安裝腳本。該腳本首先檢查系統和環境是否滿足先決條件。如果滿足先決條件，則開始安裝。

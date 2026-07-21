@@ -4,6 +4,7 @@
 
 
 
+[[general-improvements]]
 === 一般改善
 
 此版本的 Data Classification 包含安全性改進和效能增強。

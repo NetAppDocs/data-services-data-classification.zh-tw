@@ -4,6 +4,7 @@
 
 
 
+[[activate-data-classification-with-amazon-fsxn-for-ontap-directly-from-the-netapp-console-canvas]]
 === 直接從 NetApp Console 畫布啟動 Amazon FSxN for ONTAP 的資料分類
 
 現在您可以直接從 NetApp Console 畫布啟用適用於 ONTAP 系統的 Amazon FSxN，從而更快地啟動 FSxN 系統的資料分類。
@@ -12,6 +13,7 @@
 
 
 
+[[increased-export-limit-for-investigating-directories]]
 === 提高了調查目錄的匯出限制
 
 現在，從 Investigation 儀表板匯出目錄調查報告時，您可以包含 10,000 行資料。與先前的 5,000 行限制相比，這項提升支援更大規模的資料治理和合規性調查。
@@ -20,6 +22,7 @@
 
 
 
+[[increased-limits-for-copy-and-move]]
 === 提高了複製和移動的限制
 
 現在複製或移動檔案時，您可以移動最大 250 MB 的檔案，比之前的 50 MB 限制有所增加。
@@ -28,6 +31,7 @@
 
 
 
+[[improved-display-for-low-resolution-screens]]
 === 改善低解析度螢幕的顯示效果
 
 Data Classification 已改善低解析度螢幕的顯示效能，提升使用者體驗。
