@@ -386,7 +386,6 @@
   <block id="7495d9f71402d3b1d20f08bd19ac6562" category="inline-link-macro">API 文檔</block>
   <block id="c60d8912991913ddd6b9f743a592511c" category="paragraph">是的，資料分類有一個 REST API，用於支援控制台核心平台一部分的資料分類版本中的功能。看<block ref="66d6eeee3cdd1145e7194200ace05e36" category="inline-link-macro-rx"></block> 。</block>
   <block id="ca3545f9022d57ae33eb493cb41afd19" category="section-title">資料分類是否可以透過雲端市場取得？</block>
-  <block id="0692a00bf8c746154454f1ab43fbb4c8" category="paragraph">資料分類是NetApp Console核心功能的一部分，因此您不需要使用此服務的市場。</block>
   <block id="25534560556ecfce50508e26175329db" category="section-title">資料分類掃描與分析</block>
   <block id="24a4132768e6098eec85404390afef8c" category="paragraph">以下問題與資料分類掃描效能和分析有關。</block>
   <block id="5f92862e4bdeced1587c5a6862cbfac3" category="section-title">資料分類多久掃描一次我的資料？</block>
@@ -2858,4 +2857,7 @@
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classification 無法從 7-Mode 系統擷取權限或「上次存取時間」。</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">系統概覽頁面有一個「無寫入權限掃描」選項，預設為停用。如果 Data Classification 沒有相應的權限，則不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。+ 您可以使用「無寫入權限掃描」選項覆寫此設定。若要深入瞭解此選項，請參閱 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>。</block>
   <block id="308857218552b597ea9cae644ef5a86a" category="admonition">資料分類安裝程式會預留 UID 4321 和 GID 4321。在開始安裝之前，請確保主機上未使用 UID 4321 和 GID 4321。如果已使用，安裝將失敗並顯示「invalid user」錯誤訊息。</block>
+  <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">資料分類是 NetApp Console 核心功能的一部分。您無需從雲端市場部署資料分類。</block>
+  <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">如果在掃描過程中重新啟動 VM，會對掃描產生什麼影響？</block>
+  <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">掃描會持續進行。如果在掃描運作時重新啟動 VM，掃描會在 VM 成功重新啟動後從中斷處繼續進行。</block>
 </blocks>
