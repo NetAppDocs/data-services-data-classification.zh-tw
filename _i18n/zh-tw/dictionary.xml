@@ -1160,7 +1160,6 @@
   <block id="196004c131c20b6770256be1148132f8" category="list-text">伺服器的使用者名稱和密碼</block>
   <block id="c5a32a433a4a6a349b1c917b51959e47" category="section-title">在 Linux 主機上安裝資料分類</block>
   <block id="92aadc02d249003db0a3c659eb74f06b" category="inline-xref">請參閱此處的步驟</block>
-  <block id="cdcaeff13fccb06b7b310f6f966ada4f" category="paragraph">對於典型配置，您將在單一主機系統上安裝該軟體。<block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block> 。</block>
   <block id="31e7f243ce8de6b2655624e7d7969f44" category="inline-image-macro">此圖表顯示了使用本地部署且可存取網際網路的單一資料分類實例時可以掃描的資料來源的位置。</block>
   <block id="ab0e7b32181d9f9a6ee2bf396f53d64b" category="paragraph"><block ref="ab0e7b32181d9f9a6ee2bf396f53d64b" category="inline-image-macro-rx" type="image"></block></block>
   <block id="ab6f827b404fc74a3d59a176e44dce54" category="inline-xref">準備 Linux 主機系統</block>
@@ -2494,7 +2493,6 @@
   <block id="d5ab8dc7ef67ca92e41d730982c5c602" category="cell">9000</block>
   <block id="2c68446a47623409683fed996b7df333" category="cell">Ubuntu 伺服器內部程序所需。</block>
   <block id="ab911b02f3c83f7b8747e04d52424221" category="section-title">在內部部署 Linux 主機上安裝 Data Classification</block>
-  <block id="ce9b3c0997395cdac24ac84544289f19" category="paragraph">對於典型的配置，您會將軟體安裝在單一主機系統上。</block>
   <block id="946fda64b6781af330daa1fb854c8c52" category="paragraph">在離線環境中於單一內部部署主機上安裝 Data Classification 軟體時，請遵循下列步驟。</block>
   <block id="fc33df80766251e78dbe2beb48ec9528" category="list-text">請確認您已安裝兩個必備軟體套件（Docker Engine 或 Podman 以及 Python 3）。</block>
   <block id="0986e42aa866cf4296d7c23872a54555" category="list-text">請確認您的離線環境符合所需的<block ref="f3782c1c0d192695b13bd06d4ac05496" category="inline-xref-macro-rx"></block>。</block>
@@ -2862,4 +2860,6 @@
   <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">手動設定優先權</block>
   <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">初步掃描後，資料分類會以循環方式持續掃描您的資料，以偵測遞增變化。掃描每天自動進行。資料分類以六組資料為一批進行掃描；您可以暫停掃描或 <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>。</block>
   <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">僅進行地圖掃描有助於您了解資料總覽。透過此高階總覽，您就可以決定要對哪些資料來源進行全面掃描。</block>
+  <block id="054d46968a7383743285f7a0e8b6508c" category="paragraph">大多數情況下，資料分類功能安裝在單主機系統上。這與 Console 代理程式所在的虛擬機器主機不同。</block>
+  <block id="ad54f23b3db54b6c128eb84641ffe234" category="paragraph">大多數情況下，資料分類功能安裝在單主機系統上。這與 Console 代理程式所在的虛擬機器主機不同。<block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
 </blocks>

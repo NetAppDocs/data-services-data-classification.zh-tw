@@ -276,7 +276,7 @@ NFS 磁碟區匯出策略必須允許從資料分類實例進行存取。
 [[install-data-classification-on-the-on-premises-linux-host]]
 == 在內部部署 Linux 主機上安裝 Data Classification
 
-對於典型的配置，您會將軟體安裝在單一主機系統上。
+大多數情況下，資料分類功能安裝在單主機系統上。這與 Console 代理程式所在的虛擬機器主機不同。
 
 image:diagram_deploy_onprem_single_host_no_internet.png["一張圖表顯示了當使用部署在本機且無法存取網際網路的單一 Data Classification 實例時，您可以掃描的資料來源的位置。"]
 
