@@ -2802,7 +2802,6 @@
   <block id="5b727e9ed04fc43b0f4e0f294915a248" category="section-title">了解掃描類型</block>
   <block id="486c832e76fd0638886898fc9c62ff69" category="list-text">**僅對應掃描** 僅提供資料的高階概觀，並且僅針對選定的資料來源執行。由於僅對應掃描無需存取檔案來查看其中的資料，因此比完整掃描耗時更短。</block>
   <block id="71ebf849818df3526b1f19c48d22ee23" category="list-text">**完整掃描** 可對您的資料進行深度掃描。完整掃描包括映射掃描和檔案內部資料分類。</block>
-  <block id="81f9f5fbbc14757a16be8eb963cfb5bb" category="admonition">執行僅對應掃描有助於取得資料概觀，並找出要執行完整掃描的特定區域。</block>
   <block id="8666915a830702ebb197dde305a34dc5" category="paragraph">檢閱表格，以瞭解僅對應掃描和完整掃描中顯示的資訊。</block>
   <block id="4cc971a27d1b8959788abcd1eab8e72b" category="cell">完整掃描</block>
   <block id="7f138c4c12db7bfc5e7b57acbcffe2d2" category="cell">僅對應掃描</block>
@@ -2860,4 +2859,7 @@
   <block id="7a6e24dc300a73a85d44ed828d28c3db" category="paragraph">資料分類是 NetApp Console 核心功能的一部分。您無需從雲端市場部署資料分類。</block>
   <block id="e99dacbe5fb8f13a88a038ccac0ae040" category="section-title">如果在掃描過程中重新啟動 VM，會對掃描產生什麼影響？</block>
   <block id="c11dddbf642df4798f94fb3c97c30774" category="paragraph">掃描會持續進行。如果在掃描運作時重新啟動 VM，掃描會在 VM 成功重新啟動後從中斷處繼續進行。</block>
+  <block id="4c9398ce1129f1601e4d55b176ae4cd8" category="inline-link-macro">手動設定優先權</block>
+  <block id="b053d0df91aae10a4ef1dd644b52ec10" category="paragraph">初步掃描後，資料分類會以循環方式持續掃描您的資料，以偵測遞增變化。掃描每天自動進行。資料分類以六組資料為一批進行掃描；您可以暫停掃描或 <block ref="eb2a9ee088a42a6c145bd3fba80d3402" category="inline-link-macro-rx"></block>。</block>
+  <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">僅進行地圖掃描有助於您了解資料總覽。透過此高階總覽，您就可以決定要對哪些資料來源進行全面掃描。</block>
 </blocks>
