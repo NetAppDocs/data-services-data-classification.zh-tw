@@ -82,6 +82,8 @@ NOTE: 此密碼用於 root 權限存取、SSH 存取和系統管理。請妥善�
 +
 選擇名為 *DATASENSE-INSTALLER-<version>.tar.gz* 的檔案。
 
+. 將安裝程式檔案複製到虛擬機器主機： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
+. 在主機上解壓縮安裝程式檔案。
 . 在控制台中，選擇*治理>分類*。
 . 選擇 *Deploy Classification* 。
 +

@@ -2765,15 +2765,10 @@
   <block id="940bf53ea930a1f49efdf8612450ae71" category="paragraph">您可以隨時在「設定」頁面啟動或停止系統中的掃描。您也可以將掃描模式從僅對應掃描變更為完整掃描，反之亦然。</block>
   <block id="5bc17c894fad3cdf1bb9e5fac8a05180" category="admonition">僅對應掃描不適用於資料庫。啟用資料庫掃描時，必須執行完整掃描。</block>
   <block id="037776b181a112abfd49de7a866dc805" category="list-text">若要變更系統中所有資產的掃描類型，請選擇該系統的操作選單，然後變更為所需的掃描類型。例如，要將檔案共用群組的掃描類型從僅對應變更為完整掃描，請選擇 *Scan all shares: full scan*。</block>
-  <block id="46064a9877da6bfa4380744d6db1acce" category="paragraph">若要變更個別儲存桶、共用或磁碟區的掃描類型，請選取系統的 **Manage** 按鈕。</block>
-  <block id="dba31310f2f7258e817e0d9fd2e721b0" category="paragraph">在單一系統配置中，選擇要修改的資產。選擇 *Scan type* ，然後變更為所需的掃描類型。</block>
   <block id="f02b5e4f3032639c619ae6781449a3a3" category="paragraph">您可以優先執行最重要的僅對應掃描或完整掃描，以確保優先完成高優先順序掃描。</block>
-  <block id="c8c6bb7cba8332ae7fc5445397cef54e" category="list-text">找到要修改掃描的系統，然後選取 *Manage* 。</block>
-  <block id="7a6865f1d84cffa710d26db8ec40939a" category="list-text">找到您想要優先處理的資源。選擇操作選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>選項,然後選擇 *Prioritize scan*。</block>
   <block id="8af77770cd7de8b2ede4039a459ba79b" category="list-text">選擇系統的 *Manage* 按鈕。</block>
   <block id="700c3fc14a06a93f4a0f4fd3e14e778c" category="list-text">在系統概覽中，選擇掃描類型欄位。將掃描類型設定為 *Off* 。</block>
   <block id="5180d0324f8e278f28f5cb5f57d73022" category="paragraph">您可以暫停掃描，這樣 Data Classification 就不會再對儲存庫中的變更或新增內容執行任何掃描。所有目前的掃描結果仍然可以在 Data Classification 中存取。</block>
-  <block id="1da19acf6a744b5b114c182f4f38a0fe" category="list-text">識別您要暫停的資源。對於每個資源，選擇動作功能表 <block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block> 選項，然後選擇 *暫停掃描*。</block>
   <block id="4b3336b6ea1c6732cab4f187bbd9a727" category="paragraph">如果要繼續掃描，請重複該步驟，然後選擇 *Resume scan*。</block>
   <block id="e5cfb76a40ac59186a4df3570a25b9f9" category="list-text">在設定頁面中找到 Google Cloud NetApp Volumes 系統。</block>
   <block id="334ddcf38a7f7b340edbbfc0330759a9" category="list-text">決定您要如何掃描這些磁碟區。<block ref="323939a2597e9b17834689d82c0946fb" category="inline-link-macro-rx"></block>。</block>
@@ -2862,4 +2857,17 @@
   <block id="65f7cd44708007c7eaad8b5c146ed3dc" category="admonition">僅進行地圖掃描有助於您了解資料總覽。透過此高階總覽，您就可以決定要對哪些資料來源進行全面掃描。</block>
   <block id="054d46968a7383743285f7a0e8b6508c" category="paragraph">大多數情況下，資料分類功能安裝在單主機系統上。這與 Console 代理程式所在的虛擬機器主機不同。</block>
   <block id="ad54f23b3db54b6c128eb84641ffe234" category="paragraph">大多數情況下，資料分類功能安裝在單主機系統上。這與 Console 代理程式所在的虛擬機器主機不同。<block ref="b071f364f4daf7049825f5b1c726d17b" category="inline-xref-macro-rx"></block>。</block>
+  <block id="a03ddc03cf03c3c53151794c95579535" category="doc">「活動掃描」索引標籤，以增強掃描管理</block>
+  <block id="a0cea6bf19dc575d443135e2757e9433" category="paragraph">資料分類功能現在在「配置」選單中新增了「活動掃描」選項卡，從而提升了掃描管理體驗。「活動掃描」標籤提供所有已啟動掃描的磁碟區總覽，並提供熟悉的篩選器方便您整理資源。此選項卡還提供了一個中央位置，用於設定掃描優先順序、暫停掃描和審查錯誤。</block>
+  <block id="3a5a93243a84be3819139aaa12091950" category="inline-link-macro">管理掃描</block>
+  <block id="4654bf4010ded28801b1ead2622546bd" category="paragraph">如需詳細資訊，請參閱 <block ref="baaf78fc7ed88d18ef7a900963d01435" category="inline-link-macro-rx"></block>。</block>
+  <block id="05db99f9bf3fa30a45391861bf68ea89" category="list-text">將安裝程式檔案複製到虛擬機器主機：<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>。</block>
+  <block id="113d759ea479c7065aec91bafa8eea6a" category="list-text">在主機上解壓縮安裝程式檔案。</block>
+  <block id="a7ddf9b71123a47ee9a5c6dbd14045c6" category="list-text">若要變更單一儲存桶、共用或磁碟區的掃描類型，請選擇 **Active scans** 索引標籤。套用適當的篩選器以識別您要修改的資源。</block>
+  <block id="32ac8127b347019da93e705c38cb8c41" category="paragraph">在「掃描類型」欄位中，選擇指定的資源，並將其變更為「僅對應」或「完整掃描」。</block>
+  <block id="26a9735f63e866a3d0de3e4e266e7af8" category="list-text">選擇 **Active scans** 索引標籤。</block>
+  <block id="ac4eb5f5328036e2cd4e3dbfa971e175" category="list-text">您也可以選擇套用對應的篩選條件來辨識要修改的資源。找到要優先處理的資源。選擇行動選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>選項，然後選擇 *優先掃描*。</block>
+  <block id="687c102bfd5cd4e0df7368ee54670aa2" category="list-text">您也可以選擇套用對應的篩選條件來辨識要修改的資源。識別要暫停的資源。對於每個資源，選擇行動選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>選項，然後選擇「暫停掃描」。</block>
+  <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026年8月10日</block>
+  <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*版本 1.56*</block>
 </blocks>

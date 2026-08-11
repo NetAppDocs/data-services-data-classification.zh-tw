@@ -1,0 +1,12 @@
+= 「活動掃描」索引標籤，以增強掃描管理
+:allow-uri-read: 
+
+
+
+
+[[active-scans-tab-to-enhance-scan-management]]
+=== 「活動掃描」索引標籤，以增強掃描管理
+
+資料分類功能現在在「配置」選單中新增了「活動掃描」選項卡，從而提升了掃描管理體驗。「活動掃描」標籤提供所有已啟動掃描的磁碟區總覽，並提供熟悉的篩選器方便您整理資源。此選項卡還提供了一個中央位置，用於設定掃描優先順序、暫停掃描和審查錯誤。
+
+如需詳細資訊，請參閱 link:https://docs.netapp.com/us-en/data-services-data-classification/task-managing-repo-scanning.html["管理掃描"^]。
