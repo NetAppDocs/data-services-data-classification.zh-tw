@@ -18,7 +18,7 @@ NetApp Data Classification可識別過時數據，協助您發現節省成本的
 預設情況下，如果資料上次修改時間距今已有三年，則該資料視為過期資料。
 
 .定義過期數據
-. 在勒索軟體復原能力中，選擇**配置**。
+. 在資料分類中，選擇**配置**。
 . 在 Configuration 頁面中，選取 **Settings** 標籤。
 . 在過期資料定義標題下，選取 *Edit* 。
 . 在 **File property** 下拉式功能表中，選擇是否要根據檔案的 *Last accessed* 或 *Last modified* 來定義過期資料。

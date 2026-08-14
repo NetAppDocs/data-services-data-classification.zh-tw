@@ -2432,7 +2432,6 @@
   <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">過期資料可以根據其上次造訪時間或上次修改時間來定義。時段選擇範圍從 6 個月前到 10 年前。</block>
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">預設情況下，如果資料上次修改時間距今已有三年，則該資料視為過期資料。</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">定義過期數據</block>
-  <block id="41c8212e8259ff083fe9cdf357f8a4a6" category="list-text">在勒索軟體復原能力中，選擇**配置**。</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">選擇過期資料定義的時間段。</block>
   <block id="8d5311b8775f8a9ea8945d76095bb698" category="list-text">選擇**儲存**。</block>
   <block id="38fc1b337c0ea26463916fc2913205c1" category="paragraph"><block ref="38fc1b337c0ea26463916fc2913205c1" category="inline-image-macro-rx" type="image"></block></block>
@@ -2552,7 +2551,6 @@
   <block id="b231d70c2e9c026262bda45de2cf8e61" category="doc">登入 NetApp Data Classification</block>
   <block id="f214292b356953b67175bbd37992066d" category="summary">在調查儀表板中篩選資料後、您可以複製、移動和刪除非結構化資料。</block>
   <block id="645af234aa1818d98e8bb6c780fb0e42" category="doc">使用 NetApp Data Classification 複製、移動和刪除檔案</block>
-  <block id="4c6b11e5b29f298bdccac50248f21007" category="paragraph">除了提供有關治理和節省機會的見解之外，NetApp Data Classification 也能讓你從其調查儀表板上對檔案執行操作。在調查儀表板中篩選資料後，你可以複製、移動和刪除非結構化資料。執行這些操作可以提升合規性，例如將檔案移動到更安全的位置，或透過刪除舊檔案或重複檔案來創造節省機會。</block>
   <block id="558f28628ba8ab4cb8420949524832d3" category="section-title">複製檔案</block>
   <block id="e54a222aee96b176f405c4031ff80909" category="paragraph">Data Classification 支援複製最大 1 GB 的檔案。您總共可以複製 1 TB 的資料或 500 萬個檔案，以先達到的上限為準。您可以將檔案複製到 CIFS 或 NFS 目標位置。複製過程不會對來源檔案造成任何影響。</block>
   <block id="37214830ec688e601a722f40084e9795" category="list-text">在調查控制面板中，選擇要複製的檔案。</block>
@@ -2576,7 +2574,6 @@
   <block id="9b1a8f320a2c08a8370e356510090979" category="paragraph"><block ref="9b1a8f320a2c08a8370e356510090979" category="inline-image-macro-rx" type="image"></block></block>
   <block id="7afd3db29a42496704a6705958fec121" category="list-text">選擇 **Move items** 。</block>
   <block id="19e43848563797a6f937c7895b604754" category="section-title">刪除檔案</block>
-  <block id="bf7a8fa340e92f5931d748d2f4929afb" category="paragraph">在「調查」儀表板上篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。刪除檔案僅支援非結構化檔案。</block>
   <block id="fe3f40b2ceb6ec005d118e22ab125813" category="list-text">在調查控制面板中，選擇要刪除的檔案。</block>
   <block id="9f9603fa59f6dd606ff86c8b621cae42" category="list-text">在確認對話方塊中、輸入「permanently delete」。</block>
   <block id="de44f74c0cf208f9b074a847f28871e1" category="list-text">選擇 **Delete File** 以確認操作。</block>
@@ -2870,4 +2867,6 @@
   <block id="687c102bfd5cd4e0df7368ee54670aa2" category="list-text">您也可以選擇套用對應的篩選條件來辨識要修改的資源。識別要暫停的資源。對於每個資源，選擇行動選單<block ref="2f43b42fd833d1e77420a8dae7419000" prefix=" " category="inline-code"></block>選項，然後選擇「暫停掃描」。</block>
   <block id="6ffc226d668d783acc3c710ae22bd61d" category="section-title">2026年8月10日</block>
   <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*版本 1.56*</block>
+  <block id="2a6207bf09c73302b5baadda003d21a2" category="paragraph">NetApp Data Classification 可讓您對在調查儀表板中發現的檔案執行操作。篩選資料後，您可以複製、移動和刪除非結構化資料，以提高法規遵循（例如，將敏感檔案移至更安全的位置），或透過刪除舊檔案或重複檔案來節省成本。</block>
+  <block id="f011267af7448f5cee47e71e75b30301" category="paragraph">在「調查」儀表板篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。您只能刪除非結構化檔案。</block>
 </blocks>
