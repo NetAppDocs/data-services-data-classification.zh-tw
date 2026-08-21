@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <blocks>
   <block id="d41d8cd98f00b204e9800998ecf8427e" category="doc"></block>
-  <block id="c808b9abfcd411d8df508cf84c03df5b" category="paragraph">+ 如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。</block>
   <block id="610f7d5f79f384f359db6b6e03367472" category="inline-link-macro">安裝另一個控制台代理</block>
   <block id="9c2e66c7cc7479b8b57b9b1aa0225853" category="inline-link-macro">部署另一個資料分類實例</block>
   <block id="322805244d3cfbc06b20be41ebf54d36" category="inline-link-macro">使用多個控制台代理</block>
@@ -44,7 +43,6 @@
   <block id="462a3ff626aa57006db763d5cc9f2a9b" category="list-text">Ubuntu 24.04（需要資料分類版本 1.23 或更高版本）</block>
   <block id="8118250de488638095b55cd46b5772ef" category="list-text">以下作業系統需要使用 Podman 容器引擎，並且需要資料分類版本 1.30 或更高版本：</block>
   <block id="d4113e36e86a18cdd4a4813e9e66b30e" category="list-text">必須在主機系統上啟用進階向量擴充 (AVX2)。</block>
-  <block id="f2183b09e54e4aa491c008ea8ca08bbc" category="list-text">*Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。</block>
   <block id="c925667b183375955ce7e62c22a4acdf" category="list-text">*附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：</block>
   <block id="117c0c98e2a5cb3503de68c655378d13" category="inline-link">查看安裝說明</block>
   <block id="42b04f3730744d602d0c4b812384dce9" category="list-text">Docker Engine 版本 19.3.1 或更高版本。<block ref="bbcf0e5e8b0c8687d84c2c22a5ad2ecf" category="inline-link-rx"></block> 。</block>
@@ -55,7 +53,6 @@
   <block id="f3a29486bed19a90f2da6d007818b427" category="list-title">步驟</block>
   <block id="9501674588409f4d41d4dd0d16106531" category="inline-link-macro">在調查頁面中過濾數據</block>
   <block id="5905cce43eb3cf5df34ad20687132905" category="list-text">在調查標籤中，透過選擇要使用的篩選器來定義搜尋。看<block ref="fc016879136ae59a01dc15bd1e0ae029" category="inline-link-macro-rx"></block>了解詳情。</block>
-  <block id="e90978cdcc2cff568cf451945bcc0a04" category="list-text">一旦您根據自己的喜好設定了所有過濾器特性，請選擇*儲存查詢*。</block>
   <block id="9f8e2d7fe62472b4be2487ce12321ad1" category="inline-image-macro">螢幕截圖顯示如何將篩選後的查詢儲存為已儲存的查詢。</block>
   <block id="8779001fb20068ec9239274c0aa1de8c" category="paragraph"><block ref="8779001fb20068ec9239274c0aa1de8c" category="inline-image-macro-rx" type="image"></block></block>
   <block id="b2fd0c3456cecfc91c83d3bcbdcfde88" category="list-text">為已儲存的查詢命名並新增描述。該名稱必須是唯一的。</block>
@@ -65,7 +62,6 @@
   <block id="10492389e94efdebbb66f7b0cd8a1324" category="list-text">選擇*儲存*。</block>
   <block id="672224b23e2b17f35b0d4bf8aa4f1c43" category="inline-image-macro">顯示如何配置已儲存的查詢並儲存它的螢幕截圖。</block>
   <block id="47a922638f32c230008676e9ffb143c9" category="paragraph"><block ref="47a922638f32c230008676e9ffb143c9" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="02d6fe4579b4d035f1741bff636a2bf4" category="paragraph">建立搜尋或策略後，您可以在**已儲存的查詢**標籤中查看它。</block>
   <block id="4f13d17cc7a60ec8546d7892c87e3acf" category="paragraph-title">掃描StorageGRID數據</block>
   <block id="3c857514c210414567713ffec9077aff" category="paragraph">BlueXP classification支援掃描StorageGRID中的資料。</block>
   <block id="60c09f1a3afdb367fc787929a52bce2c" category="paragraph">有關詳細信息，請參閱<block ref="01dac562b0502c43b97eebbd4bf4b35d" category="inline-link-macro-rx"></block>。</block>
@@ -220,7 +216,6 @@
   <block id="89d69ff3dca93dc4c1c160728186e722" category="paragraph-title">支援Google Cloud NetApp Volumes</block>
   <block id="5eb2a16d2fa5bf1cf608a92f8904a2ae" category="summary">透過 Web UI 提供的NetApp Data Classification功能也可透過 API 提供。</block>
   <block id="e5ae04a842e199bfb2c83e0176275a5e" category="doc">NetApp Data ClassificationAPI</block>
-  <block id="8d1948df96be05c01e7136dc702e5932" category="paragraph">透過 Web UI 提供的NetApp Data Classification功能也可透過 REST API 提供。</block>
   <block id="3b84053c0a70504d371f27a17a18d249" category="paragraph">資料分類中定義了四個類別，與 UI 中的選項卡相對應：</block>
   <block id="5cbac16d406ddfc92080f39efa7437d8" category="list-text">調查</block>
   <block id="9c0408c775a2b61052a2e700a89f396f" category="list-text">遵守</block>
@@ -231,9 +226,7 @@
   <block id="0834282da4451153933b764b7c467961" category="paragraph">該 API 使您能夠執行以下功能：</block>
   <block id="e9877434dd91b8be501cfda768f3d62d" category="list-text">匯出訊息</block>
   <block id="9a69ba3b52dc90f668cf2dab5adcc31b" category="list-text">UI 中可用的所有內容都可以透過 API 匯出（報告除外）</block>
-  <block id="0604d5a0ddef533e3d68308ba271ce3c" category="list-text">數據以 JSON 格式導出（易於解析並推送到第三方應用程序，如 Splunk）</block>
   <block id="78d5f8e107a8cbb07d42f849c3a75df8" category="list-text">使用“AND”和“OR”語句建立查詢，包括和排除資訊等等。</block>
-  <block id="108bb92a1232380b4fb0f0145732e3d0" category="paragraph">例如，您可以找到沒有特定個人識別資訊 (PII) 的檔案（UI 中不可用的功能）。您也可以排除導出操作的特定欄位。</block>
   <block id="cff5f769d885300f77250bd96cd0eba3" category="list-text">執行操作</block>
   <block id="7e5773dd5089c77c99fd8d8158864437" category="list-text">更新 CIFS 憑證</block>
   <block id="8d4462bd75d514bcb1e0545bfb9272d9" category="list-text">查看和取消操作</block>
@@ -246,20 +239,13 @@
   <block id="b62dbbecd6533f9627427d34160e7d75" category="section-title">使用 API 的範例</block>
   <block id="b7fd2e4068e2c6cc68317c7892c5290c" category="paragraph">以下範例顯示了複製檔案的 API 呼叫。</block>
   <block id="7d9faab09c1d85e60360dfca30ab77cc" category="paragraph-title">API 請求</block>
-  <block id="55563c183b715e7036f5748d32a87d86" category="paragraph">您最初需要取得系統的所有相關欄位和選項，以查看調查標籤中的所有篩選器。</block>
   <block id="d64ed3e9c10229648e069f56e32f4c8e" category="listing-title">回覆</block>
-  <block id="de47d5ffc03a894916b0d9b2eab236ab" category="paragraph">我們將在請求參數中使用該回應來過濾我們想要複製的檔案。</block>
   <block id="79182acec3ee2a0e035fadc56831073b" category="paragraph">您可以對多個項目套用一個操作。支援的操作類型包括：移動、刪除和複製。</block>
-  <block id="0ac331cece7c559ed07957dfa637e510" category="paragraph">我們將創建複製動作：</block>
-  <block id="8ad0c8a225121bfff89f847893f0d610" category="paragraph">下一個 API 是操作 API，它允許您建立多個操作。</block>
   <block id="87d1cd52d2ec66c4978b4d90f9069a04" category="paragraph">回應將傳回操作對象，因此您可以使用取得和刪除 API 來取得有關操作的狀態，或取消它。</block>
   <block id="80e0816a480abfbbb6f50d0c8a877b3f" category="summary">資料分類是NetApp Console的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。</block>
   <block id="4964a8f5f86e15358c2fc765883fe9b2" category="doc">了解NetApp Data Classification</block>
-  <block id="e209066c1623e4fbc1d1f5b2b437b0d8" category="paragraph">NetApp Data Classification是NetApp Console的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。</block>
-  <block id="d02fa6635925593eea32516c1ea6b958" category="admonition">從 1.31 版開始，資料分類作為NetApp Console中的一項核心功能提供。無需額外付費。無需分類許可或訂閱。  + 如果您一直在使用舊版本 1.30 或更早版本，則該版本在您的訂閱到期之前可用。</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="section-title">NetApp Console</block>
   <block id="6e333b6c93480f6d32d540f9875aaf58" category="paragraph">可以透過NetApp Console存取資料分類。</block>
-  <block id="0a0979a6d279475a420ea5c279943daa" category="paragraph">NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。</block>
   <block id="874065797510ef71853078d085cab4b0" category="paragraph">您不需要許可證或訂閱即可開始使用NetApp Console，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連線時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。</block>
   <block id="a139b69cf2c6a37377eea224685da3f6" category="paragraph">詳細了解<block ref="6d844886de4fe963e1e4b97f495f829d" category="inline-link-macro-rx"></block>。</block>
   <block id="98f770b0af18ca763421bac22b4b6805" category="section-title">特徵</block>
@@ -268,7 +254,6 @@
   <block id="89073ebfdec87f01ba2de97bf2838871" category="paragraph"><block ref="f4803e06203a33d5098bb13a3ce23454" category="inline-link-macro-rx"></block> 。</block>
   <block id="5e27c5cc9f66f543d963585b42d1709d" category="paragraph-title">保持合規</block>
   <block id="eefee6760c920e2f37921a16b9f4ddc6" category="paragraph">資料分類提供了多種工具，可以幫助您實現合規性。您可以使用資料分類來：</block>
-  <block id="6858b5f69ec006bf6e2de7960deffea9" category="list-text">識別個人識別資訊 (PII)。</block>
   <block id="3a1ce1b3df0ddd54818235c5f83820d9" category="list-text">根據 GDPR、CCPA、PCI 和 HIPAA 隱私法規的要求識別廣泛的敏感個人資訊。</block>
   <block id="aa1b21b925a987e64de4f7ff816313c0" category="list-text">根據姓名或電子郵件地址回應資料主體存取請求 (DSAR)。</block>
   <block id="947194b810ea64bcea87e2425aed8a89" category="paragraph-title">加強安全</block>
@@ -278,7 +263,6 @@
   <block id="29c9ae62d38a9d393cc687207b213fa5" category="list-text">遵守資料保留政策。</block>
   <block id="ca5877ce323984fac661618517ce77b9" category="list-text">使用__Policies__自動偵測新的安全性問題，以便安全人員可以立即採取行動。</block>
   <block id="c5f92f73b9ea92063c2fc24f82a835d2" category="paragraph-title">優化儲存使用情況</block>
-  <block id="bdfebfb74740453cfffe123c1ef0b934" category="paragraph">資料分類提供可協助您降低儲存總擁有成本 (TCO) 的工具。您可以使用資料分類來：</block>
   <block id="12745f1753f4a2151c5bd9d0d7cadbd9" category="list-text">透過識別重複或與業務無關的資料來提高儲存效率。</block>
   <block id="d54227dbf49473f423d5988bdb7771ff" category="inline-link">了解有關Cloud Volumes ONTAP系統分層的更多信息</block>
   <block id="aeaf9676bf6ac22ff407af9053be1238" category="inline-link">了解有關本地ONTAP系統分層的更多信息</block>
@@ -310,7 +294,6 @@
   <block id="e1229dd3741de325a7a26a00931944cd" category="inline-link">為每個雲端提供者部署的執行個體類型</block>
   <block id="1f3c3a2b9e4ca2f543ead53a3346f67f" category="list-text">資料分類要求您部署控制台代理程式。在許多情況下，由於您在控制台中使用其他儲存和服務，因此您已經擁有控制台代理程式。控制台代理執行個體會導致其部署所在的雲端提供者收取費用。查看<block ref="3226d03483e6ef310354bdd4ac85d9e3" category="inline-link-rx"></block>。如果您在本機系統上安裝控制台代理，則無需付費。</block>
   <block id="17dc12e433367516ebb888f04d0428a7" category="section-title">資料傳輸成本</block>
-  <block id="20a016b26127d34612cd81d9ef817efe" category="paragraph">資料傳輸成本取決於您的設定。如果資料分類實例和資料來源位於相同可用區和區域，則沒有資料傳輸成本。但是，如果資料來源（例如Cloud Volumes ONTAP系統）位於不同的可用區或區域，那麼您的雲端供應商將向您收取資料傳輸費用。請參閱以下連結以了解更多詳細資訊：</block>
   <block id="f3d1244221881043e7d38d834935042d" category="inline-link">AWS：Amazon Elastic Compute Cloud (Amazon EC2) 定價</block>
   <block id="8de1990a68818d4a3c6e1ae7c064bcf9" category="list-text"><block ref="8de1990a68818d4a3c6e1ae7c064bcf9" category="inline-link-rx"></block></block>
   <block id="ec41ccef0058f3bdb78fe38313b87456" category="inline-link">Microsoft Azure：頻寬定價詳情</block>
@@ -378,8 +361,6 @@
   <block id="91d5470ff0de1d64ddb0c8c3bef0b246" category="section-title">NetApp Data Classification</block>
   <block id="46e8d23cf6731fff45d8d2f8b0904245" category="paragraph">以下問題提供了對資料分類的一般了解。</block>
   <block id="5c96bb1e94b5c40e2b4c67e86da9035b" category="section-title">資料分類如何運作？</block>
-  <block id="1c3dae615edaced827205b274d60a30f" category="paragraph">資料分類在NetApp Console系統和儲存系統旁邊部署了另一層 AI。然後，它會掃描磁碟區、儲存桶、資料庫和其他儲存帳戶上的數據，並對找到的數據洞察進行索引。資料分類利用人工智慧和自然語言處理，而不是通常圍繞正規表示式和模式匹配構建的替代解決方案。</block>
-  <block id="28ae03af38397e53979f167e22dde3ec" category="paragraph">資料分類使用人工智慧來提供對資料的上下文理解，以便進行準確的檢測和分類。它由人工智慧驅動，因為它是針對現代資料類型和規模而設計的。它還了解數據背景，以便提供強大、準確的發現和分類。</block>
   <block id="69f53784345b32a25fe734a19ae13310" category="inline-link-macro">詳細了解資料分類的工作原理</block>
   <block id="2d1e0aad948d43deac89a802d5bce8f4" category="paragraph"><block ref="1bb3f55ec91d163a1822a0087bd5a3d8" category="inline-link-macro-rx"></block> 。</block>
   <block id="459799378d6e17ed64a54b616182ff05" category="section-title">資料分類是否有 REST API，它是否可以與第三方工具一起使用？</block>
@@ -396,7 +377,6 @@
   <block id="47cbe0a62499f701bd878444c5a9f55c" category="paragraph">資料掃描對您的儲存系統和資料的影響可以忽略不計。</block>
   <block id="c50a6cbc569afa1deaa247aaeb038787" category="section-title">掃描性能是否有所不同？</block>
   <block id="eb34870265447c9a7faedb940ce37cd2" category="inline-link-macro">部署資料分類</block>
-  <block id="33d2b9101587e34a9147f4e52e4cb396" category="paragraph">掃描效能可能會因網路頻寬和環境中的平均檔案大小而異。它還取決於主機系統（在雲端或本地）的大小特徵。請參閱<block ref="a3df54ddf9d7afe458352d9d936eb35c" category="inline-link-macro-rx"></block>和<block ref="a5b872c942a928a25b61050c0d988d76" category="inline-link-macro-rx"></block>了解更多。</block>
   <block id="c72ddbd3da276cbf637af7b47f849896" category="section-title">我可以使用資料分類來搜尋我的資料嗎？</block>
   <block id="9be1f335c2ef769a400d78ab0a800b8e" category="paragraph">資料分類提供了廣泛的搜尋功能，可以輕鬆地在所有連接的來源中搜尋特定檔案或資料。資料分類使用戶能夠進行比元資料所反映的更深入的搜尋。它是一種與語言無關的服務，還可以讀取檔案並分析多種敏感資料類型，例如名稱和 ID。例如，使用者可以在結構化和非結構化資料儲存中進行搜索，以查找可能從資料庫洩漏到使用者文件的數據，從而違反公司政策。可以儲存搜尋結果以供日後使用，並且可以建立策略以設定的頻率搜尋並對結果採取行動。</block>
   <block id="2d31401a32265d70cbeabb4ea0f7860c" category="paragraph">一旦找到感興趣的文件，就可以列出其特徵，包括標籤、系統帳戶、儲存桶、文件路徑、類別（來自分類）、文件大小、上次修改、權限狀態、重複、敏感度等級、個人資料、文件內的敏感資料類型、擁有者、文件類型、文件大小、建立時間、文件雜湊、資料是否分配給尋求其關注的人等等。可以使用過濾器來篩選出不相關的特徵。</block>
@@ -409,7 +389,6 @@
   <block id="e5ee2d62309d708ddc57b020b6f59148" category="admonition">在資料來源上啟動資料分類將立即導致初始掃描。掃描結果很快就會顯示。</block>
   <block id="1f331ac479f3d43568c69da751fb1d65" category="inline-link-macro">從資料分類中刪除資料來源</block>
   <block id="6fe2dbadc149d02bd55d58fc1816135f" category="paragraph">您可以從資料分類設定頁面停用資料分類掃描單一系統、資料庫或檔案共用群組。看<block ref="5b3ccef88b6a660263ccff7921c70581" category="inline-link-macro-rx"></block> 。</block>
-  <block id="c8458d5edabb5453017e8f3e5f3c27e7" category="paragraph">若要完全刪除資料分類實例，請從雲端提供者的入口網站或本機位置手動刪除資料分類實例。</block>
   <block id="8545554878488aa590058ac6eff05a2a" category="section-title">該服務可以排除某些目錄中的掃描資料嗎？</block>
   <block id="d59048f21fd887ad520398ce677be586" category="inline-link-macro">了解更多</block>
   <block id="39c9bbd3c8891c8c9670863dd31bb54c" category="paragraph">是的。如果您希望資料分類排除駐留在特定資料來源目錄中的掃描數據，則可以將該清單提供給分類引擎。套用變更後，資料分類將排除指定目錄中的掃描資料。<block ref="9eb9374bdadf51dbee6c9b223e02f7ca" category="inline-link-macro-rx"></block> 。</block>
@@ -427,10 +406,8 @@
   <block id="c6b920b524033c55e0dbc0115eae5c7e" category="list-text">使用簡單存儲服務（S3）協定的對象存儲</block>
   <block id="5f4ceba489dc56da6edff02213d6e21c" category="section-title">支援哪些文件類型？</block>
   <block id="6585b5cb472c233a6aef35c2c6fa7acc" category="paragraph">資料分類掃描所有文件的類別和元資料洞察，並在儀表板的文件類型部分顯示所有文件類型。</block>
-  <block id="faeba49f15158f3798c8ea4b18af2291" category="paragraph">當資料分類偵測到個人識別資訊 (PII) 或執行 DSAR 搜尋時，僅支援以下文件格式：</block>
   <block id="993d0cb387fd8414eea2cd1b17bc3b81" category="paragraph"><block ref="52b8cfc50608d81c1431f72921eeb174" prefix="" category="inline-code"></block></block>
   <block id="435a79cd362c0dbb62bbe01a17b51bb0" category="section-title">資料分類擷取哪些類型的資料和元資料？</block>
-  <block id="d5b42b420bbf9cde73e6b4a866e40b84" category="paragraph">資料分類可讓您對資料來源執行常規「映射」掃描或完整「分類」掃描。映射僅提供資料的高級概述，而分類提供資料的深層掃描。由於它不需要存取檔案來查看其中的數據，因此可以非常快速地在資料來源上完成映射。</block>
   <block id="7a86e1b46f8a8bc6d38b11447af57092" category="list-text">*資料映射掃描（僅映射掃描）*：資料分類僅掃描元資料。這對於整體資料管理和治理、快速專案範圍界定、大型地產和優先排序很有用。數據映射基於元數據，被認為是一種*快速*掃描。</block>
   <block id="00fb8639b6c2826bd3fceaa0d36399d8" category="paragraph">快速掃描後，您可以產生資料映射報告。此報告概述了您公司資料來源中儲存的數據，以幫助您做出有關資源利用率、遷移、備份、安全性和合規性流程的決策。</block>
   <block id="59918b13530817c9008f5a24533dcfbc" category="paragraph">完整掃描後，您可以將許多附加資料分類功能套用至數據，例如在資料調查頁面中查看和最佳化資料、在檔案中搜尋名稱、複製、移動和刪除來源檔案等。</block>
@@ -440,7 +417,6 @@
   <block id="6a1848c615c0a6fa2147d1c6a685db83" category="paragraph">是的，資料分類與NetApp Console完全整合。  NetApp Console使用者只能查看根據其權限有資格查看的系統的資訊。</block>
   <block id="bd09e325dd3fadca882741496ea0db32" category="paragraph">此外，如果您希望允許某些使用者僅查看資料分類掃描結果而無權管理資料分類設置，則可以為這些使用者指派*分類檢視器*角色（在標準模式下使用NetApp Console時）或*合規檢視器*角色（在受限模式下使用NetApp Console時）。<block ref="d17fd0889fdecbf44291c8706a754975" category="inline-link-macro-rx"></block> 。</block>
   <block id="258dd16f25d1e7c62b8709aae19d0a6d" category="section-title">任何人都可以存取我的瀏覽器和資料分類之間發送的私人資料嗎？</block>
-  <block id="0b78e60b4d8a0bae10e97bdf631170b2" category="paragraph">不可以。您的瀏覽器和資料分類實例之間發送的私人資料使用 TLS 1.2 進行端對端加密保護，這表示NetApp和非NetApp方都無法讀取它。除非您要求並批准訪問，否則資料分類不會與NetApp共用任何資料或結果。</block>
   <block id="74d4d96e624f192d4ebed96b99d9cedd" category="paragraph">掃描的資料保留在您的環境中。</block>
   <block id="b39079257432aa2e0ea1ac3e4e36cdf8" category="section-title">敏感資料如何處理？</block>
   <block id="35a8814c3eaa26f66ca3a0eea1193f70" category="paragraph">NetApp無法存取敏感數據，也不會在 UI 中顯示它。敏感資料被封鎖，例如，顯示信用卡資訊的最後四位數字。</block>
@@ -471,7 +447,6 @@
   <block id="329c759a1ec5ced846e0c58abfae36d2" category="section-title">資料分類部署</block>
   <block id="692790f3033121c9490e8a4977983d87" category="paragraph">以下問題與單獨的資料分類實例有關。</block>
   <block id="6114d1126a463011c217791fd91ae200" category="section-title">資料分類支援哪些部署模型？</block>
-  <block id="b125d1e0ae4b8f91dfe67594d9a3d4c1" category="paragraph">NetApp Console允許使用者在幾乎任何地方掃描和報告系統，包括本機、雲端和混合環境。資料分類通常使用 SaaS 模型部署，其中服務透過控制台介面啟用，不需要安裝硬體或軟體。即使在這種點擊即運行的部署模式下，無論資料儲存是在本地還是在公有雲中，都可以進行資料管理。</block>
   <block id="dde19a0f40a28ec93e840744c9acff6b" category="section-title">資料分類需要什麼類型的實例或虛擬機器？</block>
   <block id="21470a3e6a3feaf105174d0e14c5f537" category="inline-link-macro">部署在雲端</block>
   <block id="3cf31c18e1b66993cf63511a5ea327f3" category="paragraph">什麼時候<block ref="63b25124667f9a48140e6efc7dc1fd70" category="inline-link-macro-rx"></block>：</block>
@@ -513,7 +488,6 @@
   <block id="a045f318999c936720f61814bf4d2c2e" category="cell">*時間戳*</block>
   <block id="7e06380ecab9614af588d8a05ba6d6b0" category="cell">_建立時間_</block>
   <block id="78945de8de090e90045d299651a68a9b" category="cell">可用的</block>
-  <block id="f9b9ab70f8d1cbd522aba5cea3dbb026" category="cell">不可用（Linux 不支援）</block>
   <block id="06d8b12cf1272ab914790a8734a08c8e" category="cell">*權限*</block>
   <block id="e9349d6c7fc3f860e75fd091e850b861" category="cell">_開放權限_</block>
   <block id="fbd9c4028bea4c13eb992144e5923bc4" category="cell">如果“EVERYONE”群組有權存取該文件，則視為“對組織開放”</block>
@@ -565,7 +539,6 @@
   <block id="f51b3d7bd6e956de0335612c9b14e8cb" category="section-title">NetApp Data Classification停用選項</block>
   <block id="01bd3cbe95ecfc71aaa7abc34ae52e07" category="paragraph">2023 年 12 月（版本 1.26.6）版本刪除了以下選項：</block>
   <block id="bd387dbe20d15a2a0ff5e7602549388e" category="list-text">啟動審計日誌收集的選項已停用。</block>
-  <block id="26bd123fab8351108bdebb31f296711d" category="list-text">在目錄調查期間，無法使用目錄計算個人識別資訊 (PII) 資料數量的選項。</block>
   <block id="6b1b1c56d9e50ead02cb1c15240f6672" category="list-text">使用 Azure 資訊保護 (AIP) 標籤整合資料的選項已停用。</block>
   <block id="6ab120d20829955f80b50c20609655c9" category="section-title">資料分類掃描</block>
   <block id="6cde9ac59f6d751761a9df6f32d8179c" category="paragraph">資料分類掃描存在以下限制。</block>
@@ -1003,7 +976,6 @@
   <block id="e7d1c98dba976d189ba1f2507302b650" category="doc">使用NetApp Console在雲端部署NetApp Data Classification</block>
   <block id="6ce84a46ad99469863f22b588d00cd1b" category="paragraph">您可以使用NetApp Console在雲端部署NetApp Data Classification。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。</block>
   <block id="e1d68ffc673d6a1e71e75d1b732a7d25" category="inline-link-macro">在可以存取網際網路的 Linux 主機上安裝資料分類</block>
-  <block id="e72a08e02cbb4ea35529b55329c987dd" category="paragraph">請注意，您還可以<block ref="5be30f09756f4a63d11643ef4bf59d3f" category="inline-link-macro-rx"></block>。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇 - 但這不是必需的。無論您選擇哪一種安裝方法，軟體的功能都完全相同。</block>
   <block id="06ad314b340900d226b1196e1fe289e9" category="section-title">快速啟動</block>
   <block id="91e06e9a9ef97681b798e2e5e007ba97" category="paragraph">按照以下步驟快速開始，或向下捲動到其餘部分以獲取完整詳細資訊。</block>
   <block id="06c2cea18679d64399783748fa367bdd" category="inline-image-macro">一</block>
@@ -1096,7 +1068,6 @@
   <block id="9b305ee4bd352f956f4cb24478769e42" category="paragraph">您可以從設定頁面選擇要掃描的資料來源。</block>
   <block id="0af1d9f272de63befefd69f441dc7fab" category="summary">完成幾個步驟即可在沒有網路存取的本機網站的 Linux 主機上安裝NetApp Data Classification- 也稱為「私有模式」。這種類型的安裝非常適合您的安全網站。</block>
   <block id="365a447377f6e5c0e423f1aee2b9e99f" category="doc">在沒有網路存取的 Linux 主機上安裝NetApp Data Classification</block>
-  <block id="f02ba335dcb9bba391d04f5b63ec3ba5" category="paragraph">在沒有網路存取權限的本機站點的 Linux 主機上安裝NetApp Data Classification稱為_私有模式_。這種安裝類型使用安裝腳本，與NetApp Console SaaS 層沒有連線。</block>
   <block id="04c9a5a89561cb946041a3696037c669" category="paragraph">如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則本機安裝是個不錯的選擇。這不是必需的。無論選擇哪一種安裝方法，軟體的功能都是相同的。</block>
   <block id="e8562561fd690a579bf484d92c56900a" category="inline-link-macro">了解如何檢查您的 Linux 主機是否已準備好安裝資料分類</block>
   <block id="d80ccf73602d462b3c75179b8666d350" category="paragraph">資料分類安裝腳本首先檢查系統和環境是否滿足所需的先決條件。如果所有先決條件都滿足，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。<block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block> 。</block>
@@ -1218,9 +1189,7 @@
   <block id="a7955816207c66ef93518de3b208c0d2" category="inline-link-macro">使用控制台在雲端部署</block>
   <block id="61e7b2134b2bd5446d16fd5d98582544" category="list-text"><block ref="718e5bf832b7dc2d474175d5c8eba439" category="inline-link-macro-rx"></block> 。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。</block>
   <block id="7c454725651fa93e75c3603da01e3ae2" category="inline-link-macro">在可以存取網際網路的 Linux 主機上安裝</block>
-  <block id="08858c16551aba16c4305089845b505e" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block> 。在您的網路中的 Linux 主機上或雲端中的 Linux 主機上安裝資料分類，前提是該主機可以存取網際網路。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇，儘管這不是必需的。</block>
   <block id="5be81ee840734d5fff39d8fb451e87de" category="inline-link-macro">在沒有網際網路存取的本機站點的 Linux 主機上安裝</block>
-  <block id="53732c49c909038650b435483c435d88" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>，也稱為_私人模式_。這種安裝類型使用安裝腳本，與控制台 SaaS 層沒有連接。</block>
   <block id="e1e216bf40960616935ca16f6eb23050" category="summary">如果您希望NetApp Data Classification排除駐留在特定資料來源目錄中的掃描數據，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將排除這些目錄中的掃描資料。</block>
   <block id="24559753da5c8b45ef15b1ad5d8f01de" category="doc">從NetApp Data Classification掃描排除特定目錄</block>
   <block id="7d9aed9048d0f40617358d6c89d937c2" category="paragraph">如果您希望NetApp Data Classification從掃描中排除特定目錄，則可以將這些目錄名稱新增至設定檔。套用此變更後，資料分類引擎將從掃描中排除這些目錄。</block>
@@ -1445,9 +1414,7 @@
   <block id="a2bbcc880bc925fcb9628a10c1e7b25d" category="inline-link-macro">查看有關此數據分類限制的更多詳細信息</block>
   <block id="a8daee0219cefa4a18a4479f1e1157b4" category="admonition">資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。<block ref="6dfc18994c4552d1f1c67fa40d6a2418" category="inline-link-macro-rx"></block> 。</block>
   <block id="4ebb6b3e78fe363abc8cca5976bcf110" category="section-title">驗證資料分類是否有權存取卷</block>
-  <block id="344f5ea90a7553ee999fa46e4769b1b6" category="paragraph">透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要向資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。</block>
   <block id="a5d727df2ce2d168bae39c78df4b9054" category="list-title">清單</block>
-  <block id="d0a78972e571309109a272ea782a3a1b" category="list-text">確保資料分類實例與包含Cloud Volumes ONTAP或本地ONTAP叢集的磁碟區的每個網路之間存在網路連線。</block>
   <block id="1da60e205d29e073bd7fd30e4a0fdc96" category="list-text">確保Cloud Volumes ONTAP的安全群組允許來自資料分類實例的入站流量。</block>
   <block id="b70afa530c4cdfc09ac2c1e2f5493937" category="paragraph">您可以為來自資料分類實例的 IP 位址的流量開啟安全性群組，也可以為來自虛擬網路內部的所有流量開啟安全性群組。</block>
   <block id="cb95847988547647f53dba4f37025693" category="list-text">確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。</block>
@@ -1470,7 +1437,6 @@
   <block id="33399d32771439fb4356bebcb3641046" category="cell">選擇<block ref="cbf64d77e33a53f16ad429da7b163a2e" category="inline-link-macro-rx"></block>。</block>
   <block id="86171ac828a961155f1ccf4dfa1eb93f" category="cell">敏感度等級</block>
   <block id="cc8f113115a15a733dabb8452c0006ca" category="cell">選擇敏感度等級：個人、敏感個人或非敏感。</block>
-  <block id="f44ce8133d49b6c98a33b959c0b56e86" category="cell">選擇每個檔案偵測到的敏感標識符的範圍。包括個人資料和敏感個人資料。在目錄中過濾時，資料分類會將每個資料夾（和子資料夾）中所有檔案的匹配結果匯總。注意：2023 年 12 月（版本 1.26.6）版本刪除了按目錄計算個人識別資訊 (PII) 資料數量的選項。</block>
   <block id="d0902d27bce16ddeb2cb9c788db8ddcd" category="cell">個人資料</block>
   <block id="7a3dcbf3ed229470d34578d4f4f6fc43" category="inline-link-macro">個人資料的類型</block>
   <block id="65b6b7baa7e4d65af02da4a28d7e4bab" category="cell">選擇<block ref="d6673982dd91cd362c9b6d1d0d52a74d" category="inline-link-macro-rx"></block>。</block>
@@ -1665,7 +1631,6 @@
   <block id="ee082fc5e705eb74a1257da353642e29" category="list-text">確保 NFS 磁碟區匯出策略包含資料分類執行個體的 IP 位址，以便它可以存取每個磁碟區上的資料。</block>
   <block id="c6d18e8dc3105cdc3c04a6ff979086ce" category="list-text">如果您使用 CIFS（SMB），請確保 Active Directory 憑證正確。對於每個系統，選擇*編輯 CIFS 憑證*，然後輸入資料分類存取系統上的 CIFS 磁碟區所需的使用者名稱和密碼。</block>
   <block id="eae0b230e8b04a25db4f549a4075116d" category="paragraph">憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。</block>
-  <block id="843d8d723fb1f3cdc277bbb7e7cc145f" category="paragraph">如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。</block>
   <block id="b401c479fc7a1b8aa216a7173ee8782f" category="paragraph">輸入憑證後，您應該會看到一條訊息，表示所有 CIFS 磁碟區均已成功驗證。</block>
   <block id="61777805153edfb68af7738669a8fa28" category="list-text">在設定頁面上，選擇*查看詳細資訊*以查看每個 CIFS 和 NFS 磁碟區的狀態並修正任何錯誤。</block>
   <block id="7cac696e69d17c5d85711c514e2a9a5a" category="inline-image-macro">配置頁面的螢幕截圖，您可以在其中啟用或停用對單一磁碟區的掃描。</block>
@@ -1971,26 +1936,19 @@
   <block id="5329573dbeef0c22dd209dcf5e0f96da" category="paragraph">該腳本位於<block ref="ef7bc183495180bf03292b7d03184b05" prefix=" " category="inline-code"></block>目錄。了解如何<block ref="557ce6d03d4f2417a4f10931c3feef84" category="inline-link-macro-rx"></block>。</block>
   <block id="6e85f0f42746489d232cb424f56682fd" category="summary">已儲存的查詢是自訂篩選器，可在調查頁面中提供常見合規性查詢的搜尋結果。資料分類根據常見請求提供了一組預設保存的查詢，或者您可以建立自己的查詢。</block>
   <block id="5456fffd07ecd131cf8f255e4fd5b425" category="doc">使用NetApp Data Classification管理已儲存的查詢</block>
-  <block id="de706e3335fdf0fff48988fb042c655d" category="paragraph">NetaApp 資料分類支援保存您的搜尋查詢。使用已儲存的查詢，您可以建立自訂篩選器來對資料調查頁面的常見查詢進行排序。資料分類還包括基於常見請求的預先定義保存的查詢。</block>
   <block id="ffa87fca622076bb37f7692ca4ca2cfe" category="paragraph">合規性儀表板中的「已儲存的查詢」標籤列出了此資料分類實例上可用的所有預訂和自訂已儲存查詢。</block>
-  <block id="5424d7a46f39a223815bc44afb5cb47a" category="paragraph">已儲存的查詢也可以儲存為**策略**。查詢過濾數據，而策略允許您對數據採取行動。透過策略：您可以刪除發現的資料或發送有關發現的資料的電子郵件更新。</block>
   <block id="b2b8ad7bb551fae41d48f61f57e277bc" category="paragraph">已儲存的查詢也會出現在調查頁面的篩選器清單中。</block>
   <block id="3f3f5f34af97f64840ccbf80d1e5d501" category="inline-image-macro">資料分類儀表板中「已儲存的查詢」標籤的螢幕截圖。</block>
   <block id="0ea29be2684781882458fae5cdcd9df1" category="paragraph"><block ref="0ea29be2684781882458fae5cdcd9df1" category="inline-image-macro-rx" type="image"></block></block>
   <block id="477afdaca267ba76617dac71eab98efd" category="section-title">在調查頁面中查看已儲存的查詢結果</block>
-  <block id="3e8afae6cfff58ff1128b3d5bacd2a3e" category="paragraph">若要在調查頁面中顯示已儲存查詢的結果，請選擇<block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block>按鈕進行特定搜索，然後選擇*調查結果*。</block>
   <block id="98779ae64c16b24d55b8022555fed338" category="inline-image-macro">從「已儲存的查詢」標籤中選擇「調查特定搜尋的結果」的螢幕截圖。</block>
   <block id="a05850479ce9652b11b099d3381eccf9" category="paragraph"><block ref="a05850479ce9652b11b099d3381eccf9" category="inline-image-macro-rx" type="image"></block></block>
   <block id="e71b1c71ee2b0ae559296e82d0d66f0c" category="section-title">建立已儲存的查詢和策略</block>
-  <block id="334109e123bf96ec591c0e937760f5f9" category="paragraph">您可以建立自己的自訂已儲存查詢，以提供特定於您組織的查詢結果。傳回符合搜尋條件的所有檔案和目錄（共用和資料夾）的結果。</block>
   <block id="af5cac86c93cafe88408d0d886003310" category="section-title">編輯已儲存的查詢或策略</block>
   <block id="61bb12c700a3013ab7d845a67807bf00" category="paragraph">您可以修改已儲存查詢的名稱和描述。您也可以將查詢轉換為策略，反之亦然。</block>
-  <block id="8c2d6d00ba1397d433adab24e24a49a1" category="paragraph">您不能修改預設儲存的查詢。您不能修改已儲存查詢的篩選器。您可以交替查看已儲存查詢的調查結果，變更或修改篩選器，然後將其儲存為新查詢或政策。</block>
   <block id="cd6bbc18b4f554b3b39fb9f2377a83ed" category="list-text">在「已儲存的查詢」頁面中，選擇要變更的搜尋的「*編輯搜尋*」。</block>
   <block id="7579e7a131f79f9ec890953a30a59470" category="inline-image-macro">顯示編輯已儲存查詢的螢幕截圖。</block>
   <block id="bebb6139a8b90d3b4e1fc6f349fcde6a" category="paragraph"><block ref="bebb6139a8b90d3b4e1fc6f349fcde6a" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="69af940045298c888b69d5b805e01674" category="list-text">對名稱和描述欄位進行變更。僅更改名稱和描述欄位。</block>
-  <block id="26119e8c8b231f546a9a41a3d9d3dc86" category="paragraph">您可以選擇將查詢轉換為策略，或將策略轉換為已儲存的查詢。根據需要切換*作為策略運作*開關。..如果您要將查詢轉換為策略，請選擇*永久刪除*或*發送電子郵件更新*。如果您選擇電子郵件更新，您可以每天、每週或每月透過電子郵件將查詢結果傳送給所有控制台使用者。或者，您可以以相同的頻率將通知傳送到特定的電子郵件地址。</block>
   <block id="1db66b04a947f37f0aead18e462a355d" category="list-text">選擇“*儲存*”以完成變更。</block>
   <block id="d494763bcfe6eef2986d4a10d6484866" category="section-title">刪除已儲存的查詢</block>
   <block id="23b31d3b6c40462aeb2655b909be754b" category="paragraph">如果您不再需要任何自訂已儲存的查詢或策略，可以將其刪除。您無法刪除預設儲存的查詢。</block>
@@ -2004,13 +1962,10 @@
   <block id="0e7fbf33b52073f6bc8f18d55796a211" category="list-text">**個人資料 - 高風險**</block>
   <block id="5197b44c8d7d1e69dc7e95558ebe5b62" category="paragraph">包含超過 20 個個人資料標識符的文件或資料庫列中超過 50% 的行包含個人資料標識符</block>
   <block id="a89e4564535d2510e52bd6e6d1c99ac0" category="list-text">**私人資料 - 已過期 7 年以上**</block>
-  <block id="f7eca6ddef457d0fdf1335d5c4ada293" category="paragraph">包含個人或敏感個人資訊的文件，上次修改超過 7 年</block>
   <block id="967750771e3d93ad96804feaaa489729" category="list-text">**保護 - 高**</block>
   <block id="53532655a36720e6e89d0ee34a4b6bb5" category="paragraph">包含密碼、信用卡資訊、IBAN 號碼或社會安全號碼的文件或資料庫列</block>
   <block id="c5bcbe698a08e29f3a73f73b33178fe7" category="list-text">**保護 - 低**</block>
-  <block id="8942b8664e055291e5e39d816e5d46e7" category="paragraph">超過 3 年未訪問的文件</block>
   <block id="7b67d7b1e7fb500aff7c6f34e99b281b" category="list-text">**保護 - 中等**</block>
-  <block id="6c15cae74da0ae1c51b06ea41b437e7d" category="paragraph">包含具有個人資料識別碼（包括身分證號碼、稅務識別號碼、駕駛執照號碼、藥品 ID 或護照號碼）的文件或資料庫列的文件</block>
   <block id="67b38a87fd423cd16109e7aa22a63937" category="list-text">**敏感個人資料 - 高風險**</block>
   <block id="375ac9949171e44e5a3bcb3367e9d309" category="paragraph">包含超過 20 個敏感個人資料識別碼的文件或資料庫列中超過 50% 的行包含敏感個人數據</block>
   <block id="d0e6c573ecf8ac47b2b78a9239242114" category="doc">NetApp Data Classification分類的新功能</block>
@@ -2347,7 +2302,6 @@
   <block id="6ece59dbc8c65f220411ec2ce290cfd6" category="paragraph"><block ref="6ece59dbc8c65f220411ec2ce290cfd6" category="inline-image-macro-rx" type="image"></block></block>
   <block id="2727f68982ff25e8b3c57e026120561d" category="section-title">2025年12月8日</block>
   <block id="3b02682cee7334412169a53934571445" category="sidebar">監控系統健康狀況</block>
-  <block id="199728aa05786f9f41b3140d025353e2" category="list-text">資料分類必須運行在專用主機上。主機不能與其他應用程式或第三方軟體（例如防毒軟體）共用。</block>
   <block id="ac5df91391e146d13ac61a909161e5e5" category="paragraph">你可以 <block ref="b05bc1a82ba8aa93695b18917e23ffd8" category="inline-link-macro-rx"></block> 在您網路中的 Linux 主機上，或是在雲端的 Linux 主機上。如果控制台代理程式安裝在本機，您也可以在本機安裝資料分類。</block>
   <block id="6d69772abdf589ea602f8071cbf783ed" category="paragraph">若要在您的雲端提供者環境中建立控制台代理，請參閱：</block>
   <block id="57d97cf09f86f81d75b459840c0ba8eb" category="list-text"><block ref="57d97cf09f86f81d75b459840c0ba8eb" category="inline-link-rx"></block></block>
@@ -2428,8 +2382,6 @@
   <block id="9d0d45f702bd2dff4853a9920dd0f534" category="list-text"><block ref="9d0d45f702bd2dff4853a9920dd0f534" category="inline-xref-macro-rx"></block></block>
   <block id="14e54339fc3ec740d220afd6b1ee35ed" category="summary">自訂NetApp Data Classification中過期資料的定義，使報告符合您的組織需求。</block>
   <block id="b5a4424f99a791a0f222cc5ae7923d73" category="doc">在NetApp Data Classification中自訂過期資料定義</block>
-  <block id="9c7dd10cb5831cf239a4bc5dedbb332b" category="paragraph">NetApp Data Classification可識別過時數據，協助您發現節省成本的機會和治理風險。由於不同組織環境中對過時資料的定義可能有所不同，因此您可以自訂資料分類如何定義過時資料。</block>
-  <block id="a19fda4781709630dbfb543922e4d612" category="paragraph">過期資料可以根據其上次造訪時間或上次修改時間來定義。時段選擇範圍從 6 個月前到 10 年前。</block>
   <block id="24ece81002d5816b98626cc57ced872d" category="paragraph">預設情況下，如果資料上次修改時間距今已有三年，則該資料視為過期資料。</block>
   <block id="c3d635823e7267511f7a0ba59b131053" category="list-title">定義過期數據</block>
   <block id="656961d589e5ba765f1a77e91cdda2d0" category="list-text">選擇過期資料定義的時間段。</block>
@@ -2525,7 +2477,6 @@
   <block id="fe3ff1241868ed00f70bff14bc52b03f" category="paragraph">您的主機上的 Data Classification 軟體已升級。更新過程可能需要 5 到 10 分鐘。</block>
   <block id="49b552306f6783aaacb171a8b657cff7" category="paragraph">您可以透過查看 Data Classification UI 頁面底部的版本號碼來驗證軟體是否已更新。</block>
   <block id="cba92860b6fdcba3c2c5e8085cf4c2b9" category="paragraph">BlueXP classification 支援工作環境中的批次操作。您可以選擇啟用對應掃描、啟用對應和分類掃描、停用掃描，或在工作環境中的磁碟區上建立自訂設定。如果您為單一磁碟區進行選擇，則會覆寫批次選擇。若要執行批次操作，請導覽至 **Configuration** 頁面並進行選擇。</block>
-  <block id="c360e0cba3ce8612a20efd7da0fa5d7a" category="paragraph">要存取 Swagger，您需要 Data Classification 執行個體的 IP 位址。如果是雲端部署，則需要使用公有 IP 位址。然後，您需要存取以下端點：</block>
   <block id="421d31e2b03d6dcfd776134e6cc90fb8" category="list-text">在 Governance 儀表板的每個 Savings Opportunities 圖塊中，選擇 *Optimize Storage* 以在 Investigation 頁面中查看篩選後的結果。若要了解您應該刪除哪些資料或將其分層儲存到成本較低的儲存空間，請調查 _Saving Opportunities_。</block>
   <block id="18b124736f5cbc7b1873c54b1dac2d6f" category="paragraph">NetApp Data Classification 會掃描您所選擇的儲存庫（包括磁碟區、資料庫結構或其他使用者資料）中的資料，以識別個人和敏感資料。Data Classification 接著會對您的組織資料進行對應、分類每個檔案，並識別資料中的預定義模式。掃描的結果是一份包含個人資訊、敏感個人資訊、資料類別和檔案類型的索引。</block>
   <block id="115a395f1bda3cdb62e75cfe1529d431" category="paragraph">如需詳細資訊，請參閱 <block ref="a35c82bf99053365807ff01dc40bc5d1" category="inline-link-macro-rx"></block>。</block>
@@ -2601,7 +2552,6 @@
   <block id="2bd444b4fd657b2b6e6cad3cc0ac0a80" category="doc">在具有網際網路存取的主機上安裝 NetApp Data Classification</block>
   <block id="68e669f4da53f4693708a3699bcf0534" category="paragraph">若要在您的網路中的 Linux 主機或具有網際網路存取權的雲端 Linux 主機上部署 NetApp Data Classification，您需要在您的網路或雲端中手動部署該 Linux 主機。</block>
   <block id="9436d99a3557748cc8540f514bc0f9ff" category="paragraph">在安裝和使用 Data Classification 之前，需要先安裝 Console 代理程式。大多數情況下，在嘗試啟動 Data Classification 之前，您應該已經設定好了 Console 代理程式。</block>
-  <block id="27e351ceaea88bb8b92ed4c0302d28fd" category="doc">選擇您的 NetApp Data Classification 部署方式</block>
   <block id="f15acb0d4fe22bbfd7a457efbbb0c466" category="doc">在 NetApp Data Classification 中檢視合規報告</block>
   <block id="d8a9eef33f1bf33c7498d8f206f3d120" category="doc">使用 NetApp Data Classification 調查您組織內的資料</block>
   <block id="12c9b2fe1ef95f2e5943fca98c33135f" category="doc">變更 NetApp Data Classification 中的掃描設定</block>
@@ -2617,14 +2567,12 @@
   <block id="d939a4c3efbccb14bb6a8b8ec450f62d" category="doc">使用 OVA 部署 Data Classification</block>
   <block id="c58a3e421744f0b78f692f20d074d1f6" category="paragraph">NetApp Data Classification 現在支援使用 VMware Open Virtual Appliance（OVA）部署，為內部部署的 VMware vSphere 環境提供更簡化的部署策略。</block>
   <block id="1a4ea23de9d17b2e28a82a012795f402" category="paragraph">有關更多資訊，請參閱<block ref="671ddfd34f6defdc139134bff6f63dc9" category="inline-link-macro-rx"></block>。</block>
-  <block id="8744e3889336c440e17e4a85c0573d80" category="paragraph">NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM 需求和軟體需求的主機上執行。在雲端部署 Data Classification 時,我們建議您使用具有「大型」特性的系統以獲得完整功能。</block>
   <block id="da49eae2f2697eebbdfcb923e399ee06" category="paragraph">在下表中，如果標記為「default」的系統在您安裝 Data Classification 的區域不可用，則會部署表中列出的下一個執行個體類型。</block>
   <block id="6b9707300ae2253b20a1508cdef29b86" category="inline-link-macro">在資料來源上設定掃描</block>
   <block id="32c268474be77292e0a04f91871ff5ae" category="list-text"><block ref="32c268474be77292e0a04f91871ff5ae" category="inline-link-macro-rx"></block></block>
   <block id="37bdabd730f5e2aa9c95ca046c4a528d" category="list-text">從<block ref="0a75c5e2697813218978a09f1ac8297e" category="inline-link-rx"></block>下載 Data Classification 軟體。選擇名為 *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* 的檔案。</block>
   <block id="3990c3483164e3d71f7feb035dcc5d2e" category="summary">NetApp Data Classification 支援在內部部署 vSphere 環境中使用 Open Virtual Appliance（OVA）進行部署。OVA 部署方法提供經過預先驗證、由 NetApp 管理的環境，以簡化部署。</block>
   <block id="d9a33ab3030c9b5fd7a102e28aba7be3" category="doc">使用 VMware Open Virtual Appliance 部署 NetApp Data Classification</block>
-  <block id="a130e61bd4b704e7fe34c433d0d11621" category="paragraph">NetApp Data Classification 支援使用 VMware Open Virtual Appliance（OVA）部署，提供一個受管理的套件，以便在本地 VMware vSphere 環境中安裝及執行 Data Classification。OVA 部署方法提供一個經過預先驗證、由 NetApp 管理的環境，以簡化部署。</block>
   <block id="3aa8474d5b875cbd9fa36a9b295450c1" category="paragraph">建議將此方法用於新的 VMware 型部署。</block>
   <block id="86b7d468352815e2bd2fcebcf1707ed0" category="paragraph">使用 OVA 檔案安裝 Data Classification 之前，您必須具備以下條件：</block>
   <block id="e6c02e5ccba91b0f8a2da6080936e5f5" category="list-text">VMware vSphere 環境</block>
@@ -2644,7 +2592,6 @@
   <block id="8958a7a71bfe0f4a5a40d760f7e3c2f6" category="cell"><block ref="8cd39dc4f7544e158d7ef1dfbc5c4070" prefix="" category="inline-code"></block></block>
   <block id="c758b0781d6f7df6c0ae256696eddbf2" category="cell">大型正式作業工作負載：32 個 CPU、128 GB RAM、1 TB 磁碟</block>
   <block id="d5f0912c122421def604836efc37e147" category="cell">5 億個檔案</block>
-  <block id="39da8715f80fcb97588e0413c8d421b1" category="list-text">進入 vSphere 客戶端。右鍵點選目標叢集或主機，然後選擇 *Deploy OVF Template* &gt; *Create VM from OVA*。</block>
   <block id="a86160c84f70e41fb0b3c1ec91660a92" category="list-text">上傳您在第一步中下載的 OVA 檔案。</block>
   <block id="ea42daee36ca14f2930377ea9c60593a" category="list-text">指定 *VM name* 、目標資料中心、主機或叢集以及資料儲存區。</block>
   <block id="0a9aa37d2e353e096772c5f826a07f7f" category="list-text">接受 NetApp 終端使用者授權合約。</block>
@@ -2663,13 +2610,9 @@
   <block id="f1cbf08f5744cd499f0689de8053c832" category="list-text">從 <block ref="1853466d175c8da4cfe77a84a98fc767" category="inline-link-macro-rx"></block> 下載 Data Classification 軟體。</block>
   <block id="6cac65ee9c5b85cb06427233e5bdb208" category="paragraph">選擇名為 *DATASENSE-INSTALLER-&lt;version&gt;.tar.gz* 的檔案。</block>
   <block id="4d4bda9c294a00ba7df9db822f19e797" category="list-text">選擇 *Deploy Classification* 。</block>
-  <block id="d9f71f47f93d634da4ff095ee023a20e" category="list-text">使用管理員使用者透過 SSH 連線至 OVA 應用裝置。</block>
   <block id="b49d72dce505eca7dd3d8a331d97211c" category="list-text">執行您產生的安裝命令以完成安裝，並將系統註冊到您的組織。</block>
-  <block id="2e64cc6066537ce6e812349f63c7e206" category="paragraph">您可以採用不同的方式部署 NetApp Data Classification。請查看可用的方法，選擇最適合您需求的方法。</block>
   <block id="30dabb33051152f55606045c5b5163f8" category="section-title">內部部署安裝指令碼</block>
-  <block id="c0dd91183d065fa262aad92cd66f17bf" category="paragraph">無論是在存取網際網路的 Linux 主機上進行安裝，或是在無法存取網際網路的 Linux 主機上進行本機安裝，都使用安裝腳本。該腳本首先檢查系統和環境是否滿足先決條件。如果滿足先決條件，則開始安裝。</block>
   <block id="4fabfbf691d67364aed0fc8d0476cd38" category="inline-link-macro">請確認您的 Linux 主機已準備好安裝 Data Classification</block>
-  <block id="4ad6bc72849add23a7cdca295638a87d" category="paragraph">另有一個軟體套件可用於驗證您的 Linux 系統是否已準備就緒。若要執行驗證套件，請參閱 <block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>。</block>
   <block id="c4bc4e2f20f342faa62434be75cb6ee5" category="paragraph">*版本 1.53*</block>
   <block id="8411d6925cd29126d060394c08a4b4ca" category="paragraph">*版本 1.52*</block>
   <block id="65a0258fc15834bf0f84ceaa52ada501" category="paragraph">*版本 1.51*</block>
@@ -2716,7 +2659,6 @@
   <block id="ef6714f5aeceef76c2ac34e1adaeefa3" category="paragraph">對於 CIFS 磁碟區/檔案共用，如果您希望確保檔案的「最後存取時間」不受 Data Classification 掃描的影響，則使用者應具有寫入屬性權限。如果可能，我們建議將 Active Directory 設定的使用者新增至組織中具有所有檔案存取權限的父群組。</block>
   <block id="e4f6181944f0dc7535179eb25f2c38b5" category="paragraph">Data Classification 安裝腳本包含一個測試腳本，用於確保您的環境符合要求。您可以單獨執行此測試腳本，以在執行安裝腳本之前驗證 Linux 主機是否已準備就緒。</block>
   <block id="a10f0eec47f9088e070063edbfdc4194" category="sidebar">NetApp Data Classification 可讓你在組織的混合多雲環境中掃描並分類資料。Data Classification 利用 AI 驅動的自然語言處理（NLP）進行情境資料分析與分類，為你的資料提供可行的洞察，以因應合規需求、偵測安全漏洞、優化成本並加速遷移。</block>
-  <block id="0997d7248674796f4e9772751d9f8905" category="paragraph">您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。</block>
   <block id="42ce018d4794bc10a2de7729c1be000e" category="list-text">*僅對應掃描* 僅提供資料的高階概覽。由於無需存取檔案即可查看內部資料，因此可以非常快速地對資料來源進行對應。</block>
   <block id="cdd10c18a4e0061a31cb6aef6cce9d9b" category="paragraph">您可以利用僅 Map 掃描快速掃描資料，以識別需要更多研究的資料來源，然後再僅對這些所需的資料來源或磁碟區啟用 Map 和 classify 掃描。</block>
   <block id="d3f4fe41f6b9f72067ddd679470cf2f2" category="paragraph">優先順序僅分配給僅進行 Map 掃描，不分配給同時進行 Map 和 classify 的掃描。</block>
@@ -2733,12 +2675,10 @@
   <block id="965d40b67934a8f4646edf9fa0e700cc" category="list-text">您可以對一個或多個資料來源啟用掃描。</block>
   <block id="041395d90e0ff197d7658ae6f6563b58" category="section-title">對應和完整掃描</block>
   <block id="22c39fbe76aa470b7877ac4b8c269e52" category="list-text">**僅對應掃描** 僅提供資料的高階概覽，並且僅針對選定的資料來源執行。由於僅對應掃描無需存取檔案來查看內部資料，因此比完整掃描耗時更短。您可以先執行此操作以確定研究領域，然後再對這些領域執行完整掃描。</block>
-  <block id="216abd2c1f6ae4c20ff4033a97619b05" category="list-text">**完整掃描** 可對您的資料進行深度掃描。完整掃描包括僅地圖掃描和對檔案內部資料進行分類。</block>
   <block id="a0c0b27235986ec7aa7ae7bb9a9c668e" category="paragraph">如需僅對應掃描與完整掃描之間差異的詳細資訊，請參閱 <block ref="323939a2597e9b17834689d82c0946fb" category="inline-link-macro-rx"></block>。</block>
   <block id="5ab7b3af0a0e193e3b83ae51e966dbce" category="inline-link-macro">了解對應掃描與分類掃描之間的差異</block>
   <block id="02614bcf82c61a4fbe02e60329718d62" category="paragraph">首次新增資料來源時，您也可以選擇僅執行僅對應掃描或完整掃描。由於無需存取檔案即可查看其中的資料，因此可以非常快速地對資料來源進行對應。<block ref="3ab547d3f21adb58594a31c5258e2654" category="inline-link-macro-rx"></block>。</block>
   <block id="0d3599d119195f22defab144ac7686d8" category="paragraph">當 Data Classification 使用僅映射掃描方式掃描已將冷資料分層儲存到物件儲存的磁碟區時，它會掃描所有資料—包括本機磁碟上的資料和分層儲存到物件儲存的冷資料。對於非 NetApp 產品實現分層儲存的產品，情況也是如此。</block>
-  <block id="2da1890c189ef0fa38d3d53cc9cf8ee8" category="paragraph">僅對應掃描不會加熱冷資料：資料保持冷狀態並保留在物件儲存中。另一方面，如果執行完整掃描，某些組態可能會加熱冷資料。</block>
   <block id="9a359b7272907e979fce955c43bd3550" category="list-text">*Data Classification 深度掃描（完整掃描）*：Data Classification 使用標準協定和唯讀權限掃描您環境中的所有資料。系統會開啟選定的檔案並進行掃描，以尋找敏感的業務相關資料、私人資訊以及與勒索軟體相關的問題。</block>
   <block id="4029bdbd0165ca9b5362505519c89547" category="list-text">當您選取「View all Permissions」按鈕時，您可以看到每個檔案和目錄的 <block ref="3e9bb1533fcbed587af1c2c23ff12e21" category="inline-link-macro-rx"></block>。</block>
   <block id="574b787aab93bac5079f73578cff6c98" category="list-text">切換至 **Settings** 標籤。</block>
@@ -2805,7 +2745,6 @@
   <block id="c5efbb0c5c86f10e09723fd321118168" category="list-text">在對話方塊中、輸入「uninstall」以中斷 Data Classification 執行個體與 Console 代理程式的連線。選取 **Uninstall** 以確認。</block>
   <block id="9b70df306d1f1719fd9d70e02911394c" category="section-title">2026 年 5 月 11 日</block>
   <block id="bbb6c300cb8841042895c9d8861857a2" category="paragraph">*版本 1.54*</block>
-  <block id="4c6fc95f3cbd5ec1525e1e6fc454b0a0" category="admonition">只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。</block>
   <block id="d8ec5f9e43a5c50ccad1744ea2a31c6e" category="list-text">識別您要掃描的系統。選取 **Activate scan**。在下拉式選單中，選擇 **Scan all volumes: full scan**、**Scan all volumes: mapping only** 或 **Manage scans**，以開啟系統選單並在特定磁碟區上設定掃描。</block>
   <block id="a8349eec03103165ecc719d7e32b3318" category="paragraph">若要啟用或停用單一磁碟區的掃描，請在清單中找到對應的磁碟區。在掃描類型欄位中，選擇 **Map only** 或 **Full scan**。</block>
   <block id="cf975b28ba57e8d6ba85ec36d74a06c3" category="section-title">Compliance 管理員 IAM 角色</block>
@@ -2816,7 +2755,6 @@
   <block id="c105c16486992d9ad71af50fd3100019" category="paragraph">如需詳細資訊，請參閱 <block ref="96736731356e89817dd51fb3ef396df7" category="inline-link-macro-rx"></block>。</block>
   <block id="3b25e99cf35d3d075098a86e0854063e" category="paragraph">資料分類會擷取諸如檔案名稱、權限、建立時間、上次存取時間和上次修改時間等中繼資料。這包括「資料調查詳細資料」頁面和「資料調查報告」中顯示的所有中繼資料。</block>
   <block id="9dda8f9b32e4530c6a33ed3ca126bddd" category="list-text">在報表圖塊中，選擇完整資料映射概覽報表標題中的 **Download** 按鈕。</block>
-  <block id="e963c800edae5dd04e2ad17bb722cbf6" category="paragraph">如果您還沒有 Console 代理程式，請在雲端供應商中建立 Console 代理程式。請參閱<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>或<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>，或<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。在大多數情況下，您可能在嘗試啟動 Data Classification 之前就已經設定好 Console 代理程式，因為大多數<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>，但在某些情況下，您需要立即設定一個。</block>
   <block id="e4ba5595b199379fdf62976ff9dafe7a" category="list-text">*錯誤*（紅點）：掃描遇到問題，無法完成。如果您需要執行某個操作，錯誤訊息將顯示在「所需操作」列下方的工具提示中。否則，系統將顯示「錯誤」狀態並嘗試恢復。恢復完成後，狀態將會變更。</block>
   <block id="b9ea20ef9eb4c32abc0e2419fb5f8e92" category="paragraph">詳情請參閱 <block ref="5a1aa5110d4426eba46219fc7de6d695" category="inline-xref-macro-rx"></block>。</block>
   <block id="2b038039f3ef8f9ce689f8c48df69b42" category="list-text">在 **File property** 下拉式功能表中，選擇是否要根據檔案的 *Last accessed* 或 *Last modified* 來定義過期資料。</block>
@@ -2831,17 +2769,12 @@
   <block id="2c230f06afd3e4f3ed09632a70041ab6" category="paragraph">此版本的 Data Classification 包含安全性改進和效能增強。</block>
   <block id="3e323562bd488e4cbd90a025b9424181" category="section-title">2026 年 6 月 08 日</block>
   <block id="1dc91751896208f145bedd2bec6c3c49" category="paragraph">*版本 1.55*</block>
-  <block id="400d643b71c3364f054f36d1a364b010" category="paragraph">*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。<block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>。</block>
-  <block id="08d690ae4b804cef391f5252bd5c8790" category="paragraph">NetApp Data Classification 會在掃描資料來源和系統時收集元資料。大多數元資料都可用，但某些屬性並非所有協定都支援。</block>
   <block id="248175bb24e6c3f827fdcf2829459c43" category="cell">上次存取時間</block>
   <block id="8bf7825b2500bcd9e4136974d34b441d" category="cell">最後修改時間</block>
   <block id="f0561a3763aafb48cd008a051f3c7fc9" category="list-text">舊版的 Windows 作業系統（例如 Windows 7 和 Windows 8）預設會停用「上次存取時間」屬性的收集，因為這可能會影響系統效能。如果未收集此屬性，則基於「上次存取時間」的 Data Classification 分析將受到影響。如有需要，您可以在這些舊版 Windows 系統上啟用「上次存取時間」屬性的收集。</block>
   <block id="85d5603a6e68c4c44680e10abf168fa3" category="section-title">最後存取時間</block>
-  <block id="6d08aea005b1d5d4f7acfd946936e69f" category="paragraph">當 Data Classification 從檔案共用中提取資料時，作業系統會將其視為存取事件，並相應地更新「上次存取時間」。掃描完成後，Data Classification 會嘗試將上次存取時間還原為原始時間戳記。如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，則系統無法將上次存取時間還原為原始時間戳記。</block>
-  <block id="fc6dae26cc8f14598d77a643ee9241e1" category="paragraph">預設情況下，Data Classification 在沒有寫入權限來還原原始時間戳記時不會掃描檔案。如果您的資料可以容忍最後存取時間不重設為原始時間戳記，請在系統設定頁面中啟用 *Scan without write permissions*。</block>
   <block id="735015b572b2dc81aeebb2df9ee39c93" category="inline-image-macro">螢幕截圖顯示您可以使用的開關，即使 Data Classification 沒有正確的權限將上次存取時間還原為原始時間戳記，也可以掃描您的檔案。</block>
   <block id="7bcb97cafb36c44f084efcbc1c5be830" category="paragraph"><block ref="7bcb97cafb36c44f084efcbc1c5be830" category="inline-image-macro-rx" type="image"></block></block>
-  <block id="a7ad8a73e69c5d5f2aa0b3925d314af6" category="admonition">配置了 SnapLock 的 ONTAP 磁碟區具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。</block>
   <block id="8cdefa787a746da6737b670208407756" category="list-text">預設情況下，如果 Data Classification 在 CIFS 中沒有寫入屬性權限，或在 NFS 中沒有寫入權限，系統將不會掃描磁碟區中的檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您不介意上次存取時間是否重設，請選取 *Or select scanning type for each volume*。在產生的頁面中，有一個可啟用的設定，讓 Data Classification 無論權限如何都會掃描磁碟區。</block>
   <block id="48d7af530cc27d49af5ade8fe42c3203" category="list-text">Data Classification 無法從 7-Mode 系統擷取權限或「上次存取時間」。</block>
   <block id="d286f8a3091b047a9ce2123e0d54cc64" category="admonition">系統概覽頁面有一個「無寫入權限掃描」選項，預設為停用。如果 Data Classification 沒有相應的權限，則不會掃描檔案，因為 Data Classification 無法將「上次存取時間」還原為原始時間戳記。+ 您可以使用「無寫入權限掃描」選項覆寫此設定。若要深入瞭解此選項，請參閱 <block ref="475bb2fa4f19f7292416b967e8d92ecb" category="inline-link-macro-rx"></block>。</block>
@@ -2858,8 +2791,6 @@
   <block id="a0cea6bf19dc575d443135e2757e9433" category="paragraph">資料分類功能現在在「配置」選單中新增了「活動掃描」選項卡，從而提升了掃描管理體驗。「活動掃描」標籤提供所有已啟動掃描的磁碟區總覽，並提供熟悉的篩選器方便您整理資源。此選項卡還提供了一個中央位置，用於設定掃描優先順序、暫停掃描和審查錯誤。</block>
   <block id="3a5a93243a84be3819139aaa12091950" category="inline-link-macro">管理掃描</block>
   <block id="4654bf4010ded28801b1ead2622546bd" category="paragraph">如需詳細資訊，請參閱 <block ref="baaf78fc7ed88d18ef7a900963d01435" category="inline-link-macro-rx"></block>。</block>
-  <block id="05db99f9bf3fa30a45391861bf68ea89" category="list-text">將安裝程式檔案複製到虛擬機器主機：<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>。</block>
-  <block id="113d759ea479c7065aec91bafa8eea6a" category="list-text">在主機上解壓縮安裝程式檔案。</block>
   <block id="a7ddf9b71123a47ee9a5c6dbd14045c6" category="list-text">若要變更單一儲存桶、共用或磁碟區的掃描類型，請選擇 **Active scans** 索引標籤。套用適當的篩選器以識別您要修改的資源。</block>
   <block id="32ac8127b347019da93e705c38cb8c41" category="paragraph">在「掃描類型」欄位中，選擇指定的資源，並將其變更為「僅對應」或「完整掃描」。</block>
   <block id="26a9735f63e866a3d0de3e4e266e7af8" category="list-text">選擇 **Active scans** 索引標籤。</block>
@@ -2869,4 +2800,79 @@
   <block id="05ad566aec59d2434a4789dad053f408" category="paragraph">*版本 1.56*</block>
   <block id="2a6207bf09c73302b5baadda003d21a2" category="paragraph">NetApp Data Classification 可讓您對在調查儀表板中發現的檔案執行操作。篩選資料後，您可以複製、移動和刪除非結構化資料，以提高法規遵循（例如，將敏感檔案移至更安全的位置），或透過刪除舊檔案或重複檔案來節省成本。</block>
   <block id="f011267af7448f5cee47e71e75b30301" category="paragraph">在「調查」儀表板篩選資料以發現節省空間和成本的機會時，您可以刪除這些檔案。您只能刪除非結構化檔案。</block>
+  <block id="83acebb976e3ef6ea0b5028ba9f6ec61" category="paragraph">為確保 Data Classification 掃描不會變更檔案的「最後存取時間」，請為 Active Directory 使用者設定 CIFS 中的「寫入屬性」權限或 NFS 中的「寫入」權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案權限的父群組成員。</block>
+  <block id="820ccacca4d9b319f70ac3b2d6a554d0" category="paragraph">您可以隨時透過「設定」選單在任何系統上啟動或停止掃描。您也可以將掃描模式從僅地圖掃描切換至完整掃描，反之亦然。</block>
+  <block id="d924df34155c96f7b69a4670206f2357" category="paragraph">*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」回復為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。<block ref="916573eea998ab8bbc3e4ef591a53b7d" category="inline-link-macro-rx"></block>。</block>
+  <block id="c95d86ab5258661f46b408abab24b335" category="admonition">只有當您啟用所有 Volume 的掃描功能時，系統才會自動掃描新新增的 Volume。如果您僅啟用了部分 Volume 的掃描功能，則必須手動為新新增的 Volume 啟用掃描功能。</block>
+  <block id="533019dd2d13b284e4074d5fc5486981" category="list-text">Data Classification 必須在專用主機上進行。該主機不能與其他應用程式或第三方軟體（例如防毒軟體）共享。</block>
+  <block id="6f8540c98f414e05fe3d89ecd544ad3c" category="list-text">*Red Hat Subscription Management*：主機必須在 Red Hat Subscription Management 中註冊。如果未註冊，系統將無法存取儲存庫，從而無法在安裝期間更新所需的第三方軟體。</block>
+  <block id="8d08fccda0893d8d40e2c5d869a5a753" category="list-text">設定完所有篩選條件後，選擇 *Save query*。</block>
+  <block id="e222598bc566cac0f43ace03c8e6f293" category="paragraph">建立搜尋或原則後，您可以在「已儲存的查詢」標籤中檢視它。</block>
+  <block id="dacf5aea7e7319324c9628d70a61bee9" category="paragraph">使用 NetApp Data Classification REST API 可以存取與 Web UI 中相同的功能。</block>
+  <block id="2785718a055ce3eb6cb5ed15935f7914" category="list-text">資料以 JSON 格式匯出（易於解析並推送至第三方應用程式，例如 Splunk）。</block>
+  <block id="5654ffd000b9fbe18c30b01a639117e0" category="paragraph">例如，您可以尋找不含特定個人識別資訊 (PII) 的檔案（此功能在使用者介面中不提供）。您也可以排除匯出作業中的特定欄位。</block>
+  <block id="9fc8ab2cce2e84a70b93bbab4bd2e736" category="paragraph">要存取 Swagger，您需要 NetApp Data Classification 執行個體的 IP 位址。對於雲端部署，請使用公有 IP 位址。然後，您需要存取以下端點：</block>
+  <block id="a7af04a4f6baaf0f19d1c0df5a362c7f" category="paragraph">您需要取得系統的所有相關欄位和選項，才能在「調查」標籤中檢視所有篩選條件。</block>
+  <block id="ff54c307542c9abb29acf27c12ae98b6" category="paragraph">使用請求參數中的回應來篩選要複製的檔案。</block>
+  <block id="7365fe263e123fa4b8618090c10eaad8" category="paragraph">建立複本行動：</block>
+  <block id="33fc5c0160f0350d4934cdd9f713f8ac" category="paragraph">此 API 可讓您建立多個行動。</block>
+  <block id="1a33b468af6ff748a98764d1235e6249" category="paragraph">NetApp Data Classification 是 NetApp Console 中的資料管制服務，可掃描您的本地和雲端資料來源，對資料進行對應和分類，並識別私密資訊。它有助於降低安全性和循規風險、減少儲存設備成本，並支援資料移轉專案。</block>
+  <block id="81bee52bd79fbafb6488e16f85f33023" category="admonition">從 1.31 版開始，Data Classification 已作為 NetApp Console 的核心功能提供。無需額外付費。無需 Data Classification 授權或訂閱。+ 如果您之前使用的是舊版 1.30 或更早版本，該版本仍可在您的訂閱到期前繼續使用。</block>
+  <block id="d07b485359c52169277c3ff7aaed95d4" category="paragraph">NetApp Console 提供企業級本機和雲端環境中 NetApp 儲存設備和資料服務的集中管理。存取和使用 NetApp 資料服務需要透過 Console。作為管理介面，它可讓您透過單一介面管理多個儲存資源。Console 系統管理員可以控制企業內所有系統對儲存設備和服務的存取。</block>
+  <block id="9e7e966e8dd8a4b11f1fc4cc3a27b1f3" category="list-text">識別個人識別資訊（PII）。</block>
+  <block id="be79c6f9ac15f1838890e37d04c74a9a" category="paragraph">資料分類提供了一系列工具，可協助降低儲存設備總體擁有成本（TCO）。您可以使用資料分類來：</block>
+  <block id="361ec1b9b487842d75e66fa45e2f85c2" category="paragraph">資料傳輸成本取決於您的設定。如果 NetApp Data Classification 執行個體和資料來源位於相同可用度區和區域，則不會產生資料傳輸成本。但如果資料來源（例如 Cloud Volumes ONTAP 系統）位於不同的可用度區或區域，則您的雲端供應商會向您收取資料傳輸成本。如需更多詳情，請參閱以下連結：</block>
+  <block id="eb2b1d84772eaf7263ffe839f723f811" category="list-text">**完整掃描**可對您的資料進行深度掃描。完整掃描包括僅地圖掃描和對檔案內資料進行分類。</block>
+  <block id="1e7afecd12f3ad2f3b36c9bc5c65b8a3" category="paragraph">使用此常見問題解答可以快速找到有關 NetApp Data Classification 的常見問題的答案。</block>
+  <block id="c7a0b68ab5e1b9989e75208e4b60c482" category="paragraph">NetApp Data Classification 在您的 NetApp Console 系統和儲存系統旁部署了另一個 AI 階層。它會掃描 Volume、儲存桶、資料庫和其他儲存設備帳戶上的資料，並將發現的資料洞察建立索引。與通常基於正規表示式和模式比對的替代解決方案不同，NetApp Data Classification 同時運用了人工智慧和自然語言處理技術。</block>
+  <block id="792306851cb54cc02061a869562290a4" category="paragraph">Data Classification 利用 AI 提供對資料的情境理解，以實現精確的偵測和分類。它由 AI 驅動，專為現代資料類型和規模而設計。它也能理解資料情境，以提供強大且精確的探索和分類功能。</block>
+  <block id="8808538d9e96ef9be943cb00144b2422" category="paragraph">掃描效能會因網路頻寬和環境中的平均檔案大小而異。它還取決於主機系統的大小和位置（即，是在雲端還是在內部部署）。如需詳細資訊，請參閱 <block ref="a3df54ddf9d7afe458352d9d936eb35c" category="inline-link-macro-rx"></block> 和 <block ref="a5b872c942a928a25b61050c0d988d76" category="inline-link-macro-rx"></block>。</block>
+  <block id="e4f4d44ffb582b26687ab77d79db13bf" category="paragraph">若要徹底移除 Data Classification 執行個體，請手動從雲端供應商的入口網站或內部部署位置移除 Data Classification 執行個體。</block>
+  <block id="58bd3dbeeaebd8bd98c21361d17c5e4e" category="paragraph">僅地圖掃描不會對冷資料進行「加熱」：資料保持「冷」狀態並保留在物件儲存設備中。另一方面，如果執行完整掃描，某些組態可能會對冷資料進行「加熱」。</block>
+  <block id="594b91969de4b3e8751ae6329ba37816" category="paragraph">當資料分類偵測到個人識別資訊 (PII) 或執行資料主體存取請求 (DSAR) 搜尋時，僅支援以下檔案格式：</block>
+  <block id="81ff94e423f4efc455b51a1185448a7f" category="paragraph">Data Classification 可讓您對資料來源執行僅對應掃描或完整掃描。僅對應掃描僅提供資料的高階總覽，而完整掃描則提供資料的深度掃描。由於僅對應掃描無需存取檔案即可查看內部資料，因此可以非常快速地完成資料來源掃描。</block>
+  <block id="c2fcc0103968e36bbcfb33c6e05a6c11" category="paragraph">不。您的瀏覽器與資料分類執行個體之間傳輸的私有資料採用 TLS 1.2 端對端加密進行保護，這表示 NetApp 和第三方無法讀取這些資料。除非您要求並核准存取，否則資料分類不會與 NetApp 或任何第三方共享任何資料或結果。</block>
+  <block id="d33287bf12c56cd5e0ae7edf2fe62750" category="paragraph">NetApp Console 可讓您掃描並報告幾乎任何位置的系統，包括本機、雲端和混合式環境。Data Classification 通常採用 SaaS 模式部署，該服務透過 Console 介面啟用，無需安裝任何硬體或軟體。即使在這種即點即用的部署模式下，無論資料儲存在本地還是公有雲，都可以進行資料管理。</block>
+  <block id="c2b6da2d4c3663504314e2d7248d0d46" category="paragraph">NetApp 資料分類會在掃描資料來源和系統時收集中繼資料。某些中繼資料屬性並非所有協定都支援。</block>
+  <block id="debf3e6e945e7fbdb447ffb61f557199" category="cell">不可用（Linux 系統不支援）</block>
+  <block id="f873725d05f920f88082d8cf5804fd53" category="paragraph">當 NetApp Data Classification 從檔案共用中提取資料時，作業系統會將其視為一次存取事件，並相應地更新「上次存取時間」。掃描完成後，NetApp Data Classification 會嘗試將上次存取時間回復為原始時間戳記。如果 NetApp Data Classification 在 CIFS 中沒有寫入屬性的權限，或在 NFS 中沒有寫入權限，則系統無法將上次存取時間回復為原始時間戳記。</block>
+  <block id="4a4f7d7dd8f83b6912dca766836e2e46" category="paragraph">預設情況下，Data Classification 在沒有寫入權限來還原原始時間戳記時不會掃描檔案。如果您的資料可以容忍最後存取時間不重設為原始時間戳記，請在系統組態頁面啟用 *Scan without write permissions*。</block>
+  <block id="2a0f73140238b60fd86ff11bd66184b0" category="admonition">設定了 SnapLock 的 ONTAP Volume 具有唯讀權限，也無法將上次存取時間還原為原始時間戳記。</block>
+  <block id="17ceedeea11758f3c5c60288d5b8cf7e" category="paragraph">NetApp 資料分類軟體必須在符合特定作業系統要求、RAM 要求及軟體要求的主機上執行。在雲端部署 Data Classification 時，請使用具備「大型」特性的系統以獲得完整功能。</block>
+  <block id="fd1f124f20efe05160a442217b5561d7" category="list-text">在目錄調查期間，無法計算目錄中個人識別資訊 (PII) 資料的數量。</block>
+  <block id="9e236df86e964bef7fcc51a227a55889" category="paragraph">請注意，您也可以<block ref="5be30f09756f4a63d11643ef4bf59d3f" category="inline-link-macro-rx"></block>。如果您希望使用位於本機的 NetApp Data Classification 執行個體掃描本機 ONTAP 系統，這種安裝方式可能是個不錯的選擇——但這並非必要條件。無論您選擇哪種安裝方式，軟體的功能都完全相同。</block>
+  <block id="e7403f206495eaa7a8b4ad8b82d44847" category="paragraph">如果您還沒有 Console 代理程式，請在您的雲端供應商中建立 Console 代理程式。請參閱<block ref="b2c450c7df7c979218a1429cc503ab8d" category="inline-link-rx"></block>或<block ref="7691630da4595c7d76220391074f5afa" category="inline-link-rx"></block>，或<block ref="8606c10a78408f0e631fb74a4fa73403" category="inline-link-rx"></block>。在大多數情況下，您可能在嘗試啟動 Data Classification 之前就已設定好 Console 代理程式，因為大多數<block ref="5a10f16ec2dbaf433a4be955405143be" category="inline-link-rx"></block>，但在某些情況下您需要立即設定一個。</block>
+  <block id="2024235cc750e8a78398d856645b6221" category="paragraph">在某些情況下，您必須使用部署在特定雲端供應商中的 Console 代理程式：</block>
+  <block id="8be6fc274612dd95c5c61096d76101f7" category="doc">在私有模式下於 Linux 主機上安裝 NetApp Data Classification</block>
+  <block id="f986d80be616be392eef42e61eaa03f3" category="paragraph">使用「私有模式」在本地站台的 Linux 主機上安裝 NetApp Data Classification，該主機無法存取網際網路。此部署使用安裝指令碼，並將 Data Classification 執行個體與 NetApp Console SaaS 階層中斷連線，讓您在隔離的環境中掃描本機資料來源。</block>
+  <block id="52cc6c5c5119ce23df5222266c788298" category="paragraph">Data Classification 安裝指令碼會檢查系統和環境是否符合所需的先決條件。如果符合，則開始安裝。如果您希望在不執行 Data Classification 安裝的情況下驗證先決條件，可以下載一個分隔的軟體套件，該套件僅用於測試先決條件。<block ref="73a6280d3a4870acf61b76881089c551" category="inline-link-macro-rx"></block>。</block>
+  <block id="65f8261465925974e48975862e4b3526" category="paragraph">使用預先驗證的 Open Virtual Appliance (OVA)（一種可簡化安裝與作業的代管套件），在內部部署 VMware vSphere 環境中部署 NetApp Data Classification。</block>
+  <block id="408d01175a02c0b79ef407289a1d2244" category="list-text">開啟 vSphere 用戶端。右鍵點選目標叢集或主機，然後選取 *Deploy OVF Template* &gt; *Create VM from OVA*。</block>
+  <block id="f4bc6166e7df940fd2d75df3d3224895" category="list-text">在虛擬機器主機上執行<block ref="074de13e1cbe978eb55769428ed6d266" prefix=" " category="inline-code"></block>以解壓縮安裝程式歸檔。</block>
+  <block id="40bd417b10a370fe4b3217e008ed97af" category="list-text">在主機上解壓縮安裝程式歸檔。</block>
+  <block id="56d16acd0e3bc0d5c59016cbba576fbd" category="list-text">根據執行個體類型選擇適當的*部署*選項：雲端或本機部署。</block>
+  <block id="51b7b19fce3b6bb7307e430297627254" category="list-text">此時將顯示「在本機部署 NetApp Data Classification」對話方塊。將提供的命令（例如<block ref="a402a6c8a10b4c24d7596599c6dfb7db" prefix=" " category="inline-code"></block>）複製到文字檔案中以供後續使用。選取*關閉*以關閉對話方塊。</block>
+  <block id="44ff83113f1a40ebb141ea0894346f8e" category="list-text">使用 SSH 以系統管理員使用者身分連線到 OVA 應用裝置。</block>
+  <block id="ce53e9a3542d9025f5fdd4f9c75fa0c0" category="doc">NetApp Data Classification 部署方法</block>
+  <block id="60da4469359085c4d992dfaf384b3652" category="paragraph">NetApp 資料分類支援多種部署方式，以滿足不同的網路和連線需求。請查看可用方法，選擇最適合您環境的選項。</block>
+  <block id="53d94298cbe1640a4ac6a9e01e20592b" category="list-text"><block ref="953e3010369667b8110edc0847a61543" category="inline-link-macro-rx"></block>。在網路或雲端的 Linux 主機上安裝 NetApp Data Classification。如果您希望從位於內部部署的 NetApp Data Classification 執行個體掃描內部部署的 ONTAP 系統，此選項可能很有用，但並非必須將執行個體放置在內部部署環境中。</block>
+  <block id="a0ba5130f442948da538b01739337b44" category="list-text"><block ref="7ec82fd84f3aea81a9c6badedcfda318" category="inline-link-macro-rx"></block>，稱為「私有模式」。這種安裝方式使用安裝指令碼，與 Console SaaS 階層沒有連線。</block>
+  <block id="106ac53ed99f5c31a172e50c96478261" category="paragraph">兩種安裝方法都使用安裝指令碼。此指令碼會檢查系統和環境是否符合先決條件。如果符合，則開始安裝。</block>
+  <block id="58e3f7e73b147c29d9dd8edaf5af4786" category="paragraph">有個獨立的軟體套件可用於驗證您的 Linux 主機是否已準備就緒。若要執行驗證套件，請參閱<block ref="a3ff8db6958b78e3d36fc9bc3fcfe254" category="inline-link-macro-rx"></block>。</block>
+  <block id="e5e50f15e110fb381ca8296c8ffdc046" category="list-text">確保 NetApp Data Classification 執行個體與包含 Cloud Volumes ONTAP 或內部部署 ONTAP 叢集 Volume 的每個網路之間有網路連線。</block>
+  <block id="a82663d9c7605ad24dc4cbdd0e4e6983" category="paragraph">為確保檔案「最後存取時間」不受 Data Classification 掃描的影響，請將 Active Directory 使用者設定為具有 CIFS 中的「寫入屬性」權限或 NFS 中的「寫入」權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案存取權限的父群組成員。</block>
+  <block id="b413257632307fcb882ba8e50f680c0e" category="admonition">Data Classification 每次只掃描 Volume 下的一個檔案共享。如果您的 Volume 下有多個共享，則需要將這些共享作為共享群組分別掃描。<block ref="6dfc18994c4552d1f1c67fa40d6a2418" category="inline-link-macro-rx"></block>。</block>
+  <block id="a854f1390cc6770e5c3ac54f23286041" category="cell">選擇每個檔案中偵測到的敏感識別碼範圍。包括個人資料和敏感個人資料。按目錄篩選時，Data Classification 會統計每個資料夾（及其子資料夾）中所有檔案的符合項目總數。注意：2023 年 12 月（版本 1.26.6）版本移除了按目錄計算個人識別資訊 (PII) 資料數量的選項。</block>
+  <block id="3210b2d3712304d5d94daabc2b9ca55d" category="paragraph">NetApp Data Classification 可識別過時資料，協助您發現節省成本的機會並應對循規風險。您可以自訂過時資料的定義，使其符合組織的實際需求，並根據資料的最後存取時間或最後修改時間來識別過時資料。</block>
+  <block id="3ee48686bfb5ef35c021c8c597b867ba" category="paragraph">可以根據資料的_最後存取時間_或_最後修改時間_來定義過時資料。您可以選擇六個月到十年的時間段。</block>
+  <block id="86379cb5a875fa77c1367c58d8fb41b6" category="paragraph">NetApp Data Classification 可讓您儲存搜尋查詢並建立自訂篩選器，以便在「調查」頁面中尋找資料。您可以使用預先定義的查詢，也可以建立已儲存的查詢和原則，以便根據符合的資料執行行動。</block>
+  <block id="08466ab9483610bf11ec4c8d97b7de69" category="paragraph">您可以將已儲存的查詢轉換為**原則**。查詢用於篩選資料，而原則則允許您對資料執行操作。透過原則，您可以刪除已探索的資料或傳送有關該資料的電子郵件更新。</block>
+  <block id="396db08211eecd6a0bdfd77bb1c14d74" category="paragraph">若要在調查頁面中顯示已儲存的查詢結果，請選擇搜尋的 <block ref="aa89719a78a5f0c3ea3c4b3d03b565b2" category="inline-image-macro-rx" type="image"></block> 按鈕，然後選擇*調查結果*。</block>
+  <block id="6f5ceb3ee7914dcd6ecc211eaa743409" category="paragraph">您可以建立自訂的已儲存查詢，以傳回特定於您組織的結果。結果將傳回所有符合搜尋條件的檔案和目錄（共用和資料夾）。</block>
+  <block id="f73a79c8c377158b52358889b7d9e09e" category="paragraph">您無法修改預設的已儲存查詢或現有已儲存查詢的篩選條件。您可以檢視已儲存查詢的調查結果，變更篩選條件，然後將結果儲存為新的查詢或原則。</block>
+  <block id="b1501778914a2b9cb038b7acb0d4c812" category="list-text">修改名稱和執行摘要欄位。</block>
+  <block id="994d4f6fffb91fd569c780ee4ab86568" category="paragraph">您可以選擇將查詢轉換為原則，或將原則轉換為已儲存的查詢。根據需要切換 *Run as a policy* 切換開關。..如果您要將查詢轉換為原則，請選擇 *Delete permanently* 或 *Send email updates*。如果您選擇電子郵件更新，您可以將查詢結果以每日、每週或每月的電子郵件形式傳送給所有 Console 使用者。或者，您可以以相同的頻率將通知傳送到特定的電子郵件地址。</block>
+  <block id="a482ccaec906fdea018c252d7b469289" category="paragraph">包含個人或敏感個人資訊的檔案，上次修改時間超過七年</block>
+  <block id="750f1f9e452fdbe4031761e5c11be5fd" category="paragraph">超過三年未存取的檔案</block>
+  <block id="97717d7dfa17c00b3d260b7c4e76dca4" category="paragraph">包含個人資料識別碼的檔案或資料庫欄，包括身分證號碼、稅務識別號碼、駕駛證號碼、醫療識別號碼或護照號碼</block>
 </blocks>

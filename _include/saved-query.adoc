@@ -4,7 +4,7 @@
 
 .步驟
 . 在調查標籤中，透過選擇要使用的篩選器來定義搜尋。看link:task-investigate-data.html["在調查頁面中過濾數據"]了解詳情。
-. 一旦您根據自己的喜好設定了所有過濾器特性，請選擇*儲存查詢*。
+. 設定完所有篩選條件後，選擇 *Save query*。
 +
 image:../media/screenshot_compliance_save_as_highlight.png["螢幕截圖顯示如何將篩選後的查詢儲存為已儲存的查詢。"]
 
@@ -21,4 +21,4 @@ image:../media/screenshot_compliance_save_highlight2.png["顯示如何配置已�
 
 
 
-建立搜尋或策略後，您可以在**已儲存的查詢**標籤中查看它。
+建立搜尋或原則後，您可以在「已儲存的查詢」標籤中檢視它。

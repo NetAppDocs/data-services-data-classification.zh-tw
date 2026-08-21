@@ -4,7 +4,7 @@ permalink: task-deploy-compliance-dark-site.html
 keywords: cloud compliance, data sense, get started, web browser connectivity, cloud compliance access, privacy, linux, ubuntu, compliance, on-premises, dark site, upgrade, private mode, docker, podman, rhel, bluexp classification, classification, install, cloud data sense, linux host 
 summary: 完成幾個步驟即可在沒有網路存取的本機網站的 Linux 主機上安裝NetApp Data Classification- 也稱為「私有模式」。這種類型的安裝非常適合您的安全網站。 
 ---
-= 在沒有網路存取的 Linux 主機上安裝NetApp Data Classification
+= 在私有模式下於 Linux 主機上安裝 NetApp Data Classification
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,14 +14,14 @@ summary: 完成幾個步驟即可在沒有網路存取的本機網站的 Linux �
 
 
 [role="lead"]
-在沒有網路存取權限的本機站點的 Linux 主機上安裝NetApp Data Classification稱為_私有模式_。這種安裝類型使用安裝腳本，與NetApp Console SaaS 層沒有連線。
+使用「私有模式」在本地站台的 Linux 主機上安裝 NetApp Data Classification，該主機無法存取網際網路。此部署使用安裝指令碼，並將 Data Classification 執行個體與 NetApp Console SaaS 階層中斷連線，讓您在隔離的環境中掃描本機資料來源。
 
 link:https://docs.netapp.com/us-en/console-setup-admin/concept-modes.html["了解 Console 代理程式和 Data Classification 的不同部署模式"^]。
 
 
 TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化的link:task-deploy-ova.html["使用 OVA 進行部署"]。
 
-資料分類安裝腳本首先檢查系統和環境是否滿足所需的先決條件。如果所有先決條件都滿足，則安裝開始。如果您想獨立於執行資料分類安裝來驗證先決條件，您可以下載一個單獨的軟體包，該軟體包僅測試先決條件。link:task-test-linux-system.html["了解如何檢查您的 Linux 主機是否已準備好安裝資料分類"] 。
+Data Classification 安裝指令碼會檢查系統和環境是否符合所需的先決條件。如果符合，則開始安裝。如果您希望在不執行 Data Classification 安裝的情況下驗證先決條件，可以下載一個分隔的軟體套件，該套件僅用於測試先決條件。link:task-test-linux-system.html["了解如何檢查您的 Linux 主機是否已準備好安裝資料分類"]。
 
 
 
@@ -84,7 +84,7 @@ Console 代理程式和 Data Classification 都需要定期手動升級才能啟
 
 Data Classification 軟體必須在符合特定作業系統需求、RAM 需求、軟體需求等的主機上執行。
 
-* 資料分類必須運行在專用主機上。主機不能與其他應用程式或第三方軟體（例如防毒軟體）共用。
+* Data Classification 必須在專用主機上進行。該主機不能與其他應用程式或第三方軟體（例如防毒軟體）共享。
 * 選擇與您打算使用資料分類掃描的資料集相符的大小。
 +
 [cols="17,17,27,31"]
@@ -151,7 +151,7 @@ Data Classification 軟體必須在符合特定作業系統需求、RAM 需求�
 ** 必須在主機系統上啟用進階向量擴充 (AVX2)。
 
 
-* *Red Hat 訂閱管理*：主機必須在 Red Hat 訂閱管理中註冊。如果未註冊，系統將無法存取儲存庫來在安裝期間更新所需的第三方軟體。
+* *Red Hat Subscription Management*：主機必須在 Red Hat Subscription Management 中註冊。如果未註冊，系統將無法存取儲存庫，從而無法在安裝期間更新所需的第三方軟體。
 * *附加軟體*：安裝資料分類前，必須在主機上安裝以下軟體：
 +
 ** 根據您使用的作業系統，您需要安裝其中一個容器引擎：

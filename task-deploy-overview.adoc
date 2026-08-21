@@ -4,7 +4,7 @@ permalink: task-deploy-overview.html
 keywords: cloud compliance, data sense, get started, deploy cloud data sense, outbound internet, endpoints, cloud compliance internet, web browser connectivity, cloud compliance access, privacy, compliance, bluexp classification 
 summary: 規劃哪種NetApp Data Classification部署可以滿足您的需求。 
 ---
-= 選擇您的 NetApp Data Classification 部署方式
+= NetApp Data Classification 部署方法
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,11 +14,11 @@ summary: 規劃哪種NetApp Data Classification部署可以滿足您的需求。
 
 
 [role="lead"]
-您可以採用不同的方式部署 NetApp Data Classification。請查看可用的方法，選擇最適合您需求的方法。
+NetApp 資料分類支援多種部署方式，以滿足不同的網路和連線需求。請查看可用方法，選擇最適合您環境的選項。
 
 * link:task-deploy-cloud-compliance.html["使用控制台在雲端部署"] 。控制台將資料分類執行個體部署在與控制台代理相同的雲端提供者網路中。
-* link:task-deploy-compliance-onprem.html["在可以存取網際網路的 Linux 主機上安裝"] 。在您的網路中的 Linux 主機上或雲端中的 Linux 主機上安裝資料分類，前提是該主機可以存取網際網路。如果您希望使用同樣位於本機的資料分類實例來掃描本機ONTAP系統，則這種類型的安裝可能是一個不錯的選擇，儘管這不是必需的。
-* link:task-deploy-compliance-dark-site.html["在沒有網際網路存取的本機站點的 Linux 主機上安裝"]，也稱為_私人模式_。這種安裝類型使用安裝腳本，與控制台 SaaS 層沒有連接。
+* link:task-deploy-compliance-onprem.html["在可以存取網際網路的 Linux 主機上安裝"]。在網路或雲端的 Linux 主機上安裝 NetApp Data Classification。如果您希望從位於內部部署的 NetApp Data Classification 執行個體掃描內部部署的 ONTAP 系統，此選項可能很有用，但並非必須將執行個體放置在內部部署環境中。
+* link:task-deploy-compliance-dark-site.html["在沒有網際網路存取的本機站點的 Linux 主機上安裝"]，稱為「私有模式」。這種安裝方式使用安裝指令碼，與 Console SaaS 階層沒有連線。
 
 
 
@@ -29,6 +29,6 @@ TIP: 對於內部部署 VMware vSphere 部署、Data Classification 支援簡化
 [[on-premises-installation-script]]
 == 內部部署安裝指令碼
 
-無論是在存取網際網路的 Linux 主機上進行安裝，或是在無法存取網際網路的 Linux 主機上進行本機安裝，都使用安裝腳本。該腳本首先檢查系統和環境是否滿足先決條件。如果滿足先決條件，則開始安裝。
+兩種安裝方法都使用安裝指令碼。此指令碼會檢查系統和環境是否符合先決條件。如果符合，則開始安裝。
 
-另有一個軟體套件可用於驗證您的 Linux 系統是否已準備就緒。若要執行驗證套件，請參閱 link:task-test-linux-system.html["請確認您的 Linux 主機已準備好安裝 Data Classification"]。
+有個獨立的軟體套件可用於驗證您的 Linux 主機是否已準備就緒。若要執行驗證套件，請參閱link:task-test-linux-system.html["請確認您的 Linux 主機已準備好安裝 Data Classification"]。

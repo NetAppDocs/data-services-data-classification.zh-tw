@@ -32,10 +32,10 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 [[verify-that-data-classification-has-access-to-volumes]]
 == 驗證資料分類是否有權存取卷
 
-透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要向資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
+透過檢查網路、安全群組和匯出策略，確保資料分類可以存取磁碟區。您需要為資料分類提供 CIFS 憑證，以便它可以存取 CIFS 磁碟區。
 
 .清單
-* 確保資料分類實例與包含Cloud Volumes ONTAP或本地ONTAP叢集的磁碟區的每個網路之間存在網路連線。
+* 確保 NetApp Data Classification 執行個體與包含 Cloud Volumes ONTAP 或內部部署 ONTAP 叢集 Volume 的每個網路之間有網路連線。
 * 確保Cloud Volumes ONTAP的安全群組允許來自資料分類實例的入站流量。
 +
 您可以為來自資料分類實例的 IP 位址的流量開啟安全性群組，也可以為來自虛擬網路內部的所有流量開啟安全性群組。
@@ -51,7 +51,7 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 憑證可以是唯讀的，但提供管理員憑證可確保資料分類可以讀取任何需要提升權限的資料。憑證儲存在資料分類實例上。
 
 +
-如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。
+為確保檔案「最後存取時間」不受 Data Classification 掃描的影響，請將 Active Directory 使用者設定為具有 CIFS 中的「寫入屬性」權限或 NFS 中的「寫入」權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案存取權限的父群組成員。
 
 +
 如果您正確輸入了憑證，則會出現一則訊息確認所有 CIFS 磁碟區均已成功驗證。
@@ -63,12 +63,12 @@ summary: 完成幾個步驟即可開始使用NetApp Data Classification掃描您
 [[enable-or-disable-scans-on-volumes]]
 == 啟用或停用磁碟區掃描
 
-您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
+您可以隨時透過「設定」選單在任何系統上啟動或停止掃描。您也可以將掃描模式從僅地圖掃描切換至完整掃描，反之亦然。
 
-*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
+*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」回復為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
 
 
-NOTE: 只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。
+NOTE: 只有當您啟用所有 Volume 的掃描功能時，系統才會自動掃描新新增的 Volume。如果您僅啟用了部分 Volume 的掃描功能，則必須手動為新新增的 Volume 啟用掃描功能。
 
 image:screenshot_volume_compliance_selection.png["配置頁面的螢幕截圖，您可以在其中啟用或停用對單一磁碟區的掃描。"]
 
@@ -84,4 +84,4 @@ image:screenshot_volume_compliance_selection.png["配置頁面的螢幕截圖，
 當您啟用掃描時，資料分類將開始掃描您在系統中選擇的磁碟區。一旦資料分類開始掃描，結果就會開始出現在合規性儀表板中。掃描完成時間取決於資料量，從幾分鐘到幾小時不等。
 
 
-NOTE: 資料分類僅掃描卷下的一個檔案共用。如果您的磁碟區中有多個共享，則需要將這些其他共享作為共享群組單獨掃描。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["查看有關此數據分類限制的更多詳細信息"^] 。
+NOTE: Data Classification 每次只掃描 Volume 下的一個檔案共享。如果您的 Volume 下有多個共享，則需要將這些共享作為共享群組分別掃描。link:reference-limitations.html#data-classification-scans-only-one-share-under-a-volume["查看有關此數據分類限制的更多詳細信息"^]。

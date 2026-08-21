@@ -14,7 +14,7 @@ summary: 資料分類軟體必須在滿足特定作業系統需求、RAM 需求�
 
 
 [role="lead"]
-NetApp Data Classification 軟體必須在符合特定作業系統需求、RAM 需求和軟體需求的主機上執行。在雲端部署 Data Classification 時,我們建議您使用具有「大型」特性的系統以獲得完整功能。
+NetApp 資料分類軟體必須在符合特定作業系統要求、RAM 要求及軟體要求的主機上執行。在雲端部署 Data Classification 時，請使用具備「大型」特性的系統以獲得完整功能。
 
 在下表中，如果標記為「default」的系統在您安裝 Data Classification 的區域不可用，則會部署表中列出的下一個執行個體類型。
 

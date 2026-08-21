@@ -14,7 +14,7 @@ summary: NetApp Data Classification 支援在內部部署 vSphere 環境中使�
 
 
 [role="lead"]
-NetApp Data Classification 支援使用 VMware Open Virtual Appliance（OVA）部署，提供一個受管理的套件，以便在本地 VMware vSphere 環境中安裝及執行 Data Classification。OVA 部署方法提供一個經過預先驗證、由 NetApp 管理的環境，以簡化部署。
+使用預先驗證的 Open Virtual Appliance (OVA)（一種可簡化安裝與作業的代管套件），在內部部署 VMware vSphere 環境中部署 NetApp Data Classification。
 
 建議將此方法用於新的 VMware 型部署。
 
@@ -48,7 +48,7 @@ NetApp Data Classification 支援使用 VMware Open Virtual Appliance（OVA）�
 
 | `DataClassification-<version>-XL.ova` | 大型正式作業工作負載：32 個 CPU、128 GB RAM、1 TB 磁碟 | 5 億個檔案 
 |===
-. 進入 vSphere 客戶端。右鍵點選目標叢集或主機，然後選擇 *Deploy OVF Template* > *Create VM from OVA*。
+. 開啟 vSphere 用戶端。右鍵點選目標叢集或主機，然後選取 *Deploy OVF Template* > *Create VM from OVA*。
 . 上傳您在第一步中下載的 OVA 檔案。
 . 指定 *VM name* 、目標資料中心、主機或叢集以及資料儲存區。
 . 接受 NetApp 終端使用者授權合約。
@@ -82,16 +82,16 @@ NOTE: 此密碼用於 root 權限存取、SSH 存取和系統管理。請妥善�
 +
 選擇名為 *DATASENSE-INSTALLER-<version>.tar.gz* 的檔案。
 
-. 將安裝程式檔案複製到虛擬機器主機： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
-. 在主機上解壓縮安裝程式檔案。
+. 在虛擬機器主機上執行 `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`以解壓縮安裝程式歸檔。
+. 在主機上解壓縮安裝程式歸檔。
 . 在控制台中，選擇*治理>分類*。
 . 選擇 *Deploy Classification* 。
 +
 image:screenshot-deploy-classification.png["選擇按鈕以啟動資料分類的螢幕截圖。"]
 
-. 根據您是在雲端中準備的實例上還是在本機準備的實例上安裝資料分類，選擇適當的*部署*選項來啟動資料分類安裝。
-. 將顯示「在本機部署資料分類」對話方塊。複製提供的命令（例如： `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq` ) 並將其貼到文字檔案中，以便稍後使用。然後選擇*關閉*以關閉對話框。
-. 使用管理員使用者透過 SSH 連線至 OVA 應用裝置。
+. 根據執行個體類型選擇適當的*部署*選項：雲端或本機部署。
+. 此時將顯示「在本機部署 NetApp Data Classification」對話方塊。將提供的命令（例如 `sudo ./install.sh -a 12345 -c 27AG75 -t 2198qq`）複製到文字檔案中以供後續使用。選取*關閉*以關閉對話方塊。
+. 使用 SSH 以系統管理員使用者身分連線到 OVA 應用裝置。
 . 執行您產生的安裝命令以完成安裝，並將系統註冊到您的組織。
 
 

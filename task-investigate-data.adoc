@@ -57,7 +57,7 @@ image:screenshot_compliance_investigation_filtered.png["在調查頁面中優化
 | 敏感度等級 | 選擇敏感度等級：個人、敏感個人或非敏感。 
 
 
-| 識別符數量 | 選擇每個檔案偵測到的敏感標識符的範圍。包括個人資料和敏感個人資料。在目錄中過濾時，資料分類會將每個資料夾（和子資料夾）中所有檔案的匹配結果匯總。注意：2023 年 12 月（版本 1.26.6）版本刪除了按目錄計算個人識別資訊 (PII) 資料數量的選項。 
+| 識別符數量 | 選擇每個檔案中偵測到的敏感識別碼範圍。包括個人資料和敏感個人資料。按目錄篩選時，Data Classification 會統計每個資料夾（及其子資料夾）中所有檔案的符合項目總數。注意：2023 年 12 月（版本 1.26.6）版本移除了按目錄計算個人識別資訊 (PII) 資料數量的選項。 
 
 
 | 個人資料 | 選擇link:reference-private-data-categories.html["個人資料的類型"]。 
@@ -382,7 +382,7 @@ image:screenshot_compliance_investigation_report2.png["下載調查報告頁面�
 
 .步驟
 . 在調查標籤中，透過選擇要使用的篩選器來定義搜尋。看link:task-investigate-data.html["在調查頁面中過濾數據"]了解詳情。
-. 一旦您根據自己的喜好設定了所有過濾器特性，請選擇*儲存查詢*。
+. 設定完所有篩選條件後，選擇 *Save query*。
 +
 image:../media/screenshot_compliance_save_as_highlight.png["螢幕截圖顯示如何將篩選後的查詢儲存為已儲存的查詢。"]
 
@@ -399,7 +399,7 @@ image:../media/screenshot_compliance_save_highlight2.png["顯示如何配置已�
 
 
 
-建立搜尋或策略後，您可以在**已儲存的查詢**標籤中查看它。
+建立搜尋或原則後，您可以在「已儲存的查詢」標籤中檢視它。
 
 
 TIP: 結果可能需要最多 15 分鐘才會顯示在「已儲存的查詢」頁面上。

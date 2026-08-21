@@ -14,10 +14,10 @@ summary: 資料分類是NetApp Console的資料治理服務，它可以掃描您
 
 
 [role="lead"]
-NetApp Data Classification是NetApp Console的資料治理服務，它可以掃描您的企業內部和雲端資料來源以對應和分類資料並識別私人資訊。這可以幫助降低您的安全和合規風險，降低儲存成本，並協助您的資料遷移專案。
+NetApp Data Classification 是 NetApp Console 中的資料管制服務，可掃描您的本地和雲端資料來源，對資料進行對應和分類，並識別私密資訊。它有助於降低安全性和循規風險、減少儲存設備成本，並支援資料移轉專案。
 
 
-IMPORTANT: 從 1.31 版開始，資料分類作為NetApp Console中的一項核心功能提供。無需額外付費。無需分類許可或訂閱。  + 如果您一直在使用舊版本 1.30 或更早版本，則該版本在您的訂閱到期之前可用。
+IMPORTANT: 從 1.31 版開始，Data Classification 已作為 NetApp Console 的核心功能提供。無需額外付費。無需 Data Classification 授權或訂閱。+ 如果您之前使用的是舊版 1.30 或更早版本，該版本仍可在您的訂閱到期前繼續使用。
 
 
 
@@ -26,7 +26,7 @@ IMPORTANT: 從 1.31 版開始，資料分類作為NetApp Console中的一項核�
 
 可以透過NetApp Console存取資料分類。
 
-NetApp Console提供企業級跨本機和雲端環境的NetApp儲存和資料服務的集中管理。需要控制台才能存取和使用NetApp資料服務。作為管理介面，它使您能夠從一個介面管理許多儲存資源。控制台管理員可以控制企業內所有系統的儲存和服務的存取。
+NetApp Console 提供企業級本機和雲端環境中 NetApp 儲存設備和資料服務的集中管理。存取和使用 NetApp 資料服務需要透過 Console。作為管理介面，它可讓您透過單一介面管理多個儲存資源。Console 系統管理員可以控制企業內所有系統對儲存設備和服務的存取。
 
 您不需要許可證或訂閱即可開始使用NetApp Console，並且只有當您需要在雲端部署控制台代理程式以確保與儲存系統或NetApp資料服務的連線時才需要付費。但是，一些可從控制台存取的NetApp資料服務是需要授權或基於訂閱的。
 
@@ -44,7 +44,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 .保持合規
 資料分類提供了多種工具，可以幫助您實現合規性。您可以使用資料分類來：
 
-* 識別個人識別資訊 (PII)。
+* 識別個人識別資訊（PII）。
 * 根據 GDPR、CCPA、PCI 和 HIPAA 隱私法規的要求識別廣泛的敏感個人資訊。
 * 根據姓名或電子郵件地址回應資料主體存取請求 (DSAR)。
 
@@ -59,7 +59,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 
 
 .優化儲存使用情況
-資料分類提供可協助您降低儲存總擁有成本 (TCO) 的工具。您可以使用資料分類來：
+資料分類提供了一系列工具，可協助降低儲存設備總體擁有成本（TCO）。您可以使用資料分類來：
 
 * 透過識別重複或與業務無關的資料來提高儲存效率。
 * 透過識別可以分層到較便宜的物件儲存的非活動資料來節省儲存成本。 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["了解有關Cloud Volumes ONTAP系統分層的更多信息"^] 。 https://docs.netapp.com/us-en/data-services-cloud-tiering/concept-cloud-tiering.html["了解有關本地ONTAP系統分層的更多信息"^] 。
@@ -121,7 +121,7 @@ link:https://www.netapp.com/data-services/classification/["了解資料分類的
 [[data-transfer-costs]]
 === 資料傳輸成本
 
-資料傳輸成本取決於您的設定。如果資料分類實例和資料來源位於相同可用區和區域，則沒有資料傳輸成本。但是，如果資料來源（例如Cloud Volumes ONTAP系統）位於不同的可用區或區域，那麼您的雲端供應商將向您收取資料傳輸費用。請參閱以下連結以了解更多詳細資訊：
+資料傳輸成本取決於您的設定。如果 NetApp Data Classification 執行個體和資料來源位於相同可用度區和區域，則不會產生資料傳輸成本。但如果資料來源（例如 Cloud Volumes ONTAP 系統）位於不同的可用度區或區域，則您的雲端供應商會向您收取資料傳輸成本。如需更多詳情，請參閱以下連結：
 
 * https://aws.amazon.com/ec2/pricing/on-demand/["AWS：Amazon Elastic Compute Cloud (Amazon EC2) 定價"^]
 * https://azure.microsoft.com/en-us/pricing/details/bandwidth/["Microsoft Azure：頻寬定價詳情"^]
@@ -200,7 +200,7 @@ NOTE: 資料分類不會對其可以掃描的資料量施加限制。每個控�
 您可以在資料分類中進行兩種類型的掃描：
 
 * **僅對應掃描** 僅提供資料的高階概覽，並且僅針對選定的資料來源執行。由於僅對應掃描無需存取檔案來查看內部資料，因此比完整掃描耗時更短。您可以先執行此操作以確定研究領域，然後再對這些領域執行完整掃描。
-* **完整掃描** 可對您的資料進行深度掃描。完整掃描包括僅地圖掃描和對檔案內部資料進行分類。
+* **完整掃描**可對您的資料進行深度掃描。完整掃描包括僅地圖掃描和對檔案內資料進行分類。
 
 
 如需僅對應掃描與完整掃描之間差異的詳細資訊，請參閱 link:task-scanning-overview.html["映射和分類掃描之間有什麼區別？"]。

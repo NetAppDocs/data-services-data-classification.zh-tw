@@ -36,7 +36,7 @@ NOTE: 資料分類核心版本不支援掃描非NetApp檔案共享的資料。
 * 您可以將 DFS（分散式檔案系統）共用新增為常規 CIFS 共用。由於資料分類不知道共用是基於組合為單一 CIFS 共用的多個伺服器/磁碟區所建構的，因此當訊息實際上僅適用於位於不同伺服器/磁碟區上的一個資料夾/共用時，您可能會收到有關共用的權限或連線錯誤。
 * 對於 CIFS (SMB) 共用，請確保您擁有可提供共用讀取存取權限的 Active Directory 憑證。如果資料分類需要掃描任何需要提升權限的數據，則最好使用管理員憑證。
 +
-如果您想要確保檔案的「上次存取時間」不會因資料分類掃描而改變，建議使用者在 CIFS 中具有寫入屬性權限或在 NFS 中具有寫入權限。如果可能，請將 Active Directory 使用者設定為組織中具有所有檔案權限的父群組的一部分。
+為確保檔案「最後存取時間」不受 Data Classification 掃描的影響，請將 Active Directory 使用者設定為具有 CIFS 中的「寫入屬性」權限或 NFS 中的「寫入」權限。如果可能，請將 Active Directory 使用者設定為組織中擁有所有檔案存取權限的父群組成員。
 
 * 群組中的所有 CIFS 檔案共用必須使用相同的 Active Directory 憑證。
 * 您可以混合使用 NFS 和 CIFS（使用 Kerberos 或 NTLM）共用。您必須單獨將共用新增至群組。也就是說，您必須完成該過程兩次 - 每個協議一次。
@@ -150,12 +150,12 @@ image:add-shares.png["新增共享模式的螢幕截圖，顯示了選擇協定�
 [[enable-and-disable-scans-on-volumes]]
 == 啟用和停用磁碟區上的掃描
 
-您可以隨時從「組態」頁面啟動或停止任何系統的掃描。您也可以將掃描從僅對應掃描切換至對應和分類掃描，反之亦然。建議您掃描系統中的所有磁碟區。
+您可以隨時透過「設定」選單在任何系統上啟動或停止掃描。您也可以將掃描模式從僅地圖掃描切換至完整掃描，反之亦然。
 
-*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」還原為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
+*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」回復為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
 
 
-NOTE: 只有當您啟用所有磁碟區的掃描功能時，系統才會自動掃描新增的磁碟區。如果您僅啟用了部分磁碟區的掃描功能，則必須手動為新增的磁碟區啟用掃描功能。
+NOTE: 只有當您啟用所有 Volume 的掃描功能時，系統才會自動掃描新新增的 Volume。如果您僅啟用了部分 Volume 的掃描功能，則必須手動為新新增的 Volume 啟用掃描功能。
 
 image:screenshot_volume_compliance_selection.png["配置頁面的螢幕截圖，您可以在其中啟用或停用對單一磁碟區的掃描。"]
 

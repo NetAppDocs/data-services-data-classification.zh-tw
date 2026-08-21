@@ -14,7 +14,7 @@ summary: 透過 Web UI 提供的NetApp Data Classification功能也可透過 API
 
 
 [role="lead"]
-透過 Web UI 提供的NetApp Data Classification功能也可透過 REST API 提供。
+使用 NetApp Data Classification REST API 可以存取與 Web UI 中相同的功能。
 
 資料分類中定義了四個類別，與 UI 中的選項卡相對應：
 
@@ -36,12 +36,12 @@ Swagger 文件中的 API 可讓您搜尋、聚合資料、追蹤掃描以及執�
 * 匯出訊息
 +
 ** UI 中可用的所有內容都可以透過 API 匯出（報告除外）
-** 數據以 JSON 格式導出（易於解析並推送到第三方應用程序，如 Splunk）
+** 資料以 JSON 格式匯出（易於解析並推送至第三方應用程式，例如 Splunk）。
 
 
 * 使用“AND”和“OR”語句建立查詢，包括和排除資訊等等。
 +
-例如，您可以找到沒有特定個人識別資訊 (PII) 的檔案（UI 中不可用的功能）。您也可以排除導出操作的特定欄位。
+例如，您可以尋找不含特定個人識別資訊 (PII) 的檔案（此功能在使用者介面中不提供）。您也可以排除匯出作業中的特定欄位。
 
 * 執行操作
 +
@@ -60,7 +60,7 @@ API 是安全的，它使用與 UI 相同的身份驗證方法。您可以在lin
 [[accessing-the-swagger-api-reference]]
 == 存取 Swagger API 參考
 
-要存取 Swagger，您需要 Data Classification 執行個體的 IP 位址。如果是雲端部署，則需要使用公有 IP 位址。然後，您需要存取以下端點：
+要存取 Swagger，您需要 NetApp Data Classification 執行個體的 IP 位址。對於雲端部署，請使用公有 IP 位址。然後，您需要存取以下端點：
 
 \https://<classification_ip>/documentation
 
@@ -72,7 +72,7 @@ API 是安全的，它使用與 UI 相同的身份驗證方法。您可以在lin
 以下範例顯示了複製檔案的 API 呼叫。
 
 .API 請求
-您最初需要取得系統的所有相關欄位和選項，以查看調查標籤中的所有篩選器。
+您需要取得系統的所有相關欄位和選項，才能在「調查」標籤中檢視所有篩選條件。
 
 [source, http]
 ----
@@ -434,14 +434,14 @@ curl -X GET "http://{classification_ip}/api/{classification_version} /search/opt
   ]
 }
 ----
-我們將在請求參數中使用該回應來過濾我們想要複製的檔案。
+使用請求參數中的回應來篩選要複製的檔案。
 
 您可以對多個項目套用一個操作。支援的操作類型包括：移動、刪除和複製。
 
-我們將創建複製動作：
+建立複本行動：
 
 .API 請求
-下一個 API 是操作 API，它允許您建立多個操作。
+此 API 可讓您建立多個行動。
 
 [source, http]
 ----
