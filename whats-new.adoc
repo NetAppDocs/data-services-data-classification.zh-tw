@@ -792,7 +792,7 @@ BlueXP classification已將其針對 Microsoft Azure 和 Google Cloud Platform (
 * 文件數量
 * 文件大小
 * 文件創建
-* 文件上次訪問
+* 檔案上次存取時間
 * 文件上次修改時間
 * 文件發現時間
 * 權限擷取
