@@ -4,7 +4,7 @@
 
 您可以隨時透過「設定」選單在任何系統上啟動或停止掃描。您也可以將掃描模式從僅地圖掃描切換至完整掃描，反之亦然。
 
-*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」回復為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time-timestamp["了解更多"^]。
+*無寫入權限掃描* 選項預設為停用狀態。這表示如果 NetApp Data Classification 沒有適當的寫入權限，系統將不會掃描檔案，因為 NetApp Data Classification 無法將「上次存取時間」回復為原始時間戳記。如果您的系統可以容忍上次存取時間被修改，請選取此選項。link:reference-collected-metadata.html#last-accessed-time["了解更多"^]。
 
 
 NOTE: 只有當您啟用所有 Volume 的掃描功能時，系統才會自動掃描新新增的 Volume。如果您僅啟用了部分 Volume 的掃描功能，則必須手動為新新增的 Volume 啟用掃描功能。

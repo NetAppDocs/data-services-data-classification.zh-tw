@@ -18,6 +18,20 @@ summary: 了解NetApp Data Classification的新功能。
 
 
 
+[[16-september-2026]]
+== 2026 年 9 月 16 日
+
+*版本 1.57*
+
+
+
+[[general-improvements]]
+=== 一般改善
+
+此版本的 Data Classification 包含安全性改進和效能增強。
+
+
+
 [[10-august-2026]]
 == 2026年8月10日
 
