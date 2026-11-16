@@ -48,6 +48,10 @@ summary: NetApp Data Classification 支援在內部部署 vSphere 環境中使�
 
 | `DataClassification-<version>-XL.ova` | 大型正式作業工作負載：32 個 CPU、128 GB RAM、1 TB 磁碟 | 5 億個檔案 
 |===
++
+
+NOTE: OVA 檔案是基礎映像，且未綁定特定的資料分類版本。NetApp 支援網站上提供多個 OVA 版本，您可以使用其中任何一個來部署應用裝置。在 <<安裝 Data Classification,下一節>> 中的 OVA 之上安裝所需的資料分類版本。您不需要與您的資料分類版本相符的 OVA 版本。
+
 . 開啟 vSphere 用戶端。右鍵點選目標叢集或主機，然後選取 *Deploy OVF Template* > *Create VM from OVA*。
 . 上傳您在第一步中下載的 OVA 檔案。
 . 指定 *VM name* 、目標資料中心、主機或叢集以及資料儲存區。
@@ -78,12 +82,14 @@ NOTE: 此密碼用於 root 權限存取、SSH 存取和系統管理。請妥善�
 [[install-data-classification]]
 == 安裝 Data Classification
 
+
+NOTE: 您下載的安裝程式版本決定了應用裝置上執行的 Data Classification 版本。與 OVA 不同，安裝程式版本至關重要。請下載您要使用的 Data Classification 版本的安裝程式。
+
 . 從 link:https://mysupport.netapp.com/site/products/all/details/cloud-data-sense/downloads-tab/["NetApp支援站點"^] 下載 Data Classification 軟體。
 +
-選擇名為 *DATASENSE-INSTALLER-<version>.tar.gz* 的檔案。
+選擇名為 *DATASENSE-INSTALLER-<version>.tar.gz* 的檔案，確認您已選擇適當的版本。請在 link:whats-new.html["版本說明"] 中檢查最新版本。
 
-. 在虛擬機器主機上執行 `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`以解壓縮安裝程式歸檔。
-. 在主機上解壓縮安裝程式歸檔。
+. 在主機上解壓縮安裝程式歸檔： `tar -xzf DATASENSE-INSTALLER-<version>.tar.gz`。
 . 在控制台中，選擇*治理>分類*。
 . 選擇 *Deploy Classification* 。
 +
